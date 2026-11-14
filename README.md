@@ -2,7 +2,7 @@
 
 Research code from the Oxford NeuroTech Hackathon project, exploring sleep-stage decoding and evaluation across datasets.
 
-This repository currently contains a partial code upload. Data, model artifacts, protocols, and other supporting files have not yet been published, so the scripts are not currently runnable from this repository alone.
+This repository is a partial project upload. Most data, model artifacts, evaluation protocols and supporting files are not included yet, so the sleep-decoding scripts are not currently runnable from this repository alone. Selected formulation-research files and source data are included.
 
 - [Dataset sources and licenses](DATA_SOURCES.md)
 - [Formulation evidence and literature notes](research/formulation_evidence/data/)
