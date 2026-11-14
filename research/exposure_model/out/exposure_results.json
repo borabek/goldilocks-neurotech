@@ -1,0 +1,170 @@
+{
+  "task": "ln brain AUC from measured ln blood AUC + formulation descriptors + route; source-study held out",
+  "data_audit": {
+    "rows_in_workbook": 403,
+    "quarantined": 1,
+    "eligible_rows": 402,
+    "studies": 159,
+    "adhd_drug_rows": 0,
+    "routes": {
+      "iv": 174,
+      "in": 157,
+      "po": 48,
+      "ip": 23
+    },
+    "workbook_md5": "fdd98a50447d9fd21288b0c2ca653601"
+  },
+  "quarantine": {
+    "0": "baicalin record: curated blood AUC 267 (hours header) vs source Table 3 2266.38/2676.03 (minutes scale); cohort/units/interval unreconciled"
+  },
+  "forbidden_inputs": [
+    "Cmax brain  (\u00b5g/ ml)",
+    "C0 brain  (\u00b5g/ ml)",
+    "T max (brain) (mins)",
+    "T min (brain) (mins)",
+    "API Residence time in  brain (mins)",
+    "C max (brain/ Blood)",
+    "C min (brain/ Blood)",
+    "AUC",
+    "Tmax ratio (brain/plasma)",
+    "Tmin ratio (brain/plasma)",
+    "AUC brain (\u00b5g.h/ml)"
+  ],
+  "grouped_10fold_cv": {
+    "training_mean": {
+      "record_mae_ln": 2.9095696204259758,
+      "study_mae_ln": 3.049593271607725,
+      "study_mae_ln_95ci": [
+        2.7650887619573554,
+        3.348170201713867
+      ],
+      "minus_route_ratio_95ci": [
+        1.3329900231233267,
+        2.0184221559909616
+      ],
+      "fold_change_median_error": 16.63510210101012,
+      "in_support_record_mae_ln": 2.8799093429217466,
+      "in_support_fraction": 0.9950248756218906
+    },
+    "route_ratio_baseline": {
+      "record_mae_ln": 1.2697863990360663,
+      "study_mae_ln": 1.3722879397616405,
+      "study_mae_ln_95ci": [
+        1.207809585071228,
+        1.5463690560884438
+      ],
+      "minus_route_ratio_95ci": [
+        0.0,
+        0.0
+      ],
+      "fold_change_median_error": 2.578491066620858,
+      "in_support_record_mae_ln": 1.267732152707295,
+      "in_support_fraction": 0.9950248756218906
+    },
+    "blood_and_context_ridge": {
+      "record_mae_ln": 1.2467625588303721,
+      "study_mae_ln": 1.3158933924444414,
+      "study_mae_ln_95ci": [
+        1.1580150535822806,
+        1.4887833210850014
+      ],
+      "minus_route_ratio_95ci": [
+        -0.10888990497632081,
+        -0.004177517014711824
+      ],
+      "fold_change_median_error": 2.5456167678928368,
+      "in_support_record_mae_ln": 1.2449772533827923,
+      "in_support_fraction": 0.9950248756218906
+    },
+    "descriptors_and_context_ridge": {
+      "record_mae_ln": 3.180008799155569,
+      "study_mae_ln": 3.3081857964119297,
+      "study_mae_ln_95ci": [
+        2.9700400204416604,
+        3.6558809634207394
+      ],
+      "minus_route_ratio_95ci": [
+        1.5776577237297909,
+        2.297634593973807
+      ],
+      "fold_change_median_error": 13.99166657919244,
+      "in_support_record_mae_ln": 3.1512073415502555,
+      "in_support_fraction": 0.9950248756218906
+    },
+    "full_ridge": {
+      "record_mae_ln": 1.3261698398352162,
+      "study_mae_ln": 1.422560658878998,
+      "study_mae_ln_95ci": [
+        1.2383578913795494,
+        1.6258637495647885
+      ],
+      "minus_route_ratio_95ci": [
+        -0.0746576403670947,
+        0.1929439470673068
+      ],
+      "fold_change_median_error": 2.5123144732180878,
+      "in_support_record_mae_ln": 1.3253406406191395,
+      "in_support_fraction": 0.9950248756218906
+    },
+    "full_gradient_boosting": {
+      "record_mae_ln": 1.4701042203668386,
+      "study_mae_ln": 1.5191482703072867,
+      "study_mae_ln_95ci": [
+        1.350259488271953,
+        1.6807517993720904
+      ],
+      "minus_route_ratio_95ci": [
+        0.004160329667285523,
+        0.2868169025849492
+      ],
+      "fold_change_median_error": 3.4011313431179215,
+      "in_support_record_mae_ln": 1.4561343789968704,
+      "in_support_fraction": 0.9950248756218906
+    }
+  },
+  "fixed_holdout_20pct_studies": {
+    "split": {
+      "train_studies": 127,
+      "test_studies": 32,
+      "test_records": 93
+    },
+    "results": {
+      "training_mean": {
+        "study_mae_ln": 2.913235937299951,
+        "record_mae_ln": 2.8779119847903143
+      },
+      "route_ratio_baseline": {
+        "study_mae_ln": 1.3833590866517653,
+        "record_mae_ln": 0.9993515808301175
+      },
+      "blood_and_context_ridge": {
+        "study_mae_ln": 1.3205128782709896,
+        "record_mae_ln": 0.9636559227892008
+      },
+      "descriptors_and_context_ridge": {
+        "study_mae_ln": 3.2788387485121646,
+        "record_mae_ln": 3.6073660424018548
+      },
+      "full_ridge": {
+        "study_mae_ln": 1.5085934959937468,
+        "record_mae_ln": 1.1774801116063758
+      },
+      "full_gradient_boosting": {
+        "study_mae_ln": 1.3297279539616196,
+        "record_mae_ln": 1.076024405894547
+      }
+    }
+  },
+  "verdict": {
+    "best_learned_by_cv": "blood_and_context_ridge",
+    "beats_route_ratio_baseline": true,
+    "blood_adds_value_over_descriptors": true,
+    "descriptors_add_value_over_blood": false
+  },
+  "limits": [
+    "Blood/plasma/serum and brain tissue-mass vs volume bases are not separable in this compiled table; results are exploratory.",
+    "No ADHD drug is in the corpus; an ADHD case is out of domain and gets a support refusal.",
+    "Study titles are normalised strings, not verified DOIs; linked publications may remain split.",
+    "Licence CC BY-NC 4.0: no commercial use of models trained on these data."
+  ]
+}
