@@ -1,0 +1,14 @@
+# Extra packages for the CNN and the causal/live path (live_inference.py, cnn_*.py).
+# requirements.txt alone covers reproduce_v2.py, which uses the v2 feature model only.
+# Install both:  pip install -r requirements.txt -r requirements_live.txt
+jax==0.12.0.1
+jaxlib==0.12.0.1
+ml_dtypes==0.6.0
+opt_einsum==3.4.0
+# optax is imported at module level by cnn_challenger.py, so it is needed for inference
+# as well as training. live_inference.py imports cnn_challenger, so without it the replay
+# demo fails before it starts.
+optax==0.2.8
+absl-py==2.5.1
+# Optional, only for --lsl (streaming from a real device). Not needed for --replay or --evaluate.
+# pylsl==1.16.2
