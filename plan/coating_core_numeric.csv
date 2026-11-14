@@ -1,0 +1,62 @@
+evidence_id,quantity,value,unit,uncertainty,n,bound,model_term
+C01,uptake_fold_heparosan_over_peg_RAW264.7_55nm,230.0,fold,,3 to 4,max,choice.host_effect
+C01,uptake_log10_heparosan_minus_peg_RAW264.7_55nm,2.3617,log10,,3 to 4,max,choice.host_effect
+C01,uptake_fold_heparosan_over_peg_J774A.1_55nm,70.0,fold,,3 to 4,max,choice.host_effect
+C01,uptake_log10_heparosan_minus_peg_J774A.1_55nm,1.8451,log10,,3 to 4,max,choice.host_effect
+C01,uptake_fold_heparosan_over_peg_DC2.4_55nm,45.0,fold,,3 to 4,max,choice.host_effect
+C01,uptake_log10_heparosan_minus_peg_DC2.4_55nm,1.6532,log10,,3 to 4,max,choice.host_effect
+C01,uptake_fold_heparosan_over_peg_RAW264.7_15nm,21.0,fold,,3 to 4,max,choice.host_effect
+C01,uptake_log10_heparosan_minus_peg_RAW264.7_15nm,1.3222,log10,,3 to 4,max,choice.host_effect
+C01,uptake_fold_heparosan_over_peg_B16F10_55nm,,fold,,3 to 4,similar,choice.host_effect
+C01,uptake_fold_heparosan_over_peg_C2C12_55nm,,fold,,3 to 4,similar,choice.host_effect
+C01,uptake_fold_heparosan_over_peg_4T1_55nm,,fold,,3 to 4,similar,choice.host_effect
+C01,uptake_fold_heparosan_over_peg_HUVEC_55nm,,fold,,3 to 4,similar,choice.host_effect
+C01,coating_density_typical,5.0,polymers per nm2,,,approx,feature.coating_density
+C01,hydrodynamic_growth_uncoated_gold_in_100pct_serum,26.0,nm,,3,approx,context_only
+C01,gold_size_heparosan_coated,49.0,nm,,3,approx,context_only
+C02,stability_24h_37C_in_PBS_heparosan_dipalmitoyl,92.0,percent retained,,3,approx,context_only
+C02,stability_24h_37C_in_human_plasma_heparosan_dipalmitoyl,80.0,percent retained,,3,approx,context_only
+C02,anti_heparosan_antibody_positive_animals,0.0,animals of 3,,3,exact,prior.anti_heparosan
+C02,circulation_half_life_heparosan,,hours,,,missing,prior.circulation
+C03,prevalence_igg_or_igm_positive,83.0,percent,,500,exact,prior.titer_distribution
+C03,prevalence_igg_women,81.8,percent,,500,exact,prior.titer_distribution
+C03,prevalence_igg_men,74.4,percent,,500,exact,prior.titer_distribution
+C03,prevalence_igm_women,55.1,percent,,500,exact,prior.titer_distribution
+C03,prevalence_igm_men,54.1,percent,,500,exact,prior.titer_distribution
+C03,prevalence_igg_and_igm_both,48.8,percent,,500,exact,prior.titer_distribution
+C03,prevalence_other_cohort_han_chinese,44.3,percent,,,exact,prior.titer_distribution
+C03,prevalence_other_cohort_upper,72.0,percent,,,max,prior.titer_distribution
+C03,prevalence_naive_humans_cited_in_liposome_paper,24.0,percent,,,approx,prior.titer_distribution
+C03,pool_igg_pooled_plasma,9.6,ug/mL,0.8,pooled,exact,prior.titer_distribution
+C03,pool_igg_low,0.5,ug/mL,,pooled,max,prior.titer_distribution
+C03,pool_igg_high,110.5,ug/mL,,pooled,exact,prior.titer_distribution
+C03,limit_of_quantification_igg,0.5,ug/mL,,,exact,prior.titer_distribution
+C03,limit_of_quantification_igm,0.05,ug/mL,,,exact,prior.titer_distribution
+C03,dissociation_constant_anti_peg_igg_to_mpeg_2kDa,2690.0,nM,946.0,limited replicates,exact,feature.peg_antibody_occupancy
+C03,dissociation_constant_anti_peg_igg_to_mpeg_5kDa,249.0,nM,51.0,limited replicates,exact,feature.peg_antibody_occupancy
+C03,dissociation_constant_anti_peg_igg_to_mpeg_10kDa,24.0,nM,12.0,limited replicates,exact,feature.peg_antibody_occupancy
+C03,dissociation_constant_anti_peg_igg_to_mpeg_20kDa,44.0,nM,25.0,limited replicates,exact,feature.peg_antibody_occupancy
+C03,uptake_fold_pure_anti_peg_igg_in_corona_THP1,2.0,fold,,,approx,context_only
+C03,antibody_threshold_epitope_repeat_units,16.0,ethylene glycol units,,,approx,feature.peg_antibody_occupancy
+C04,neuron_uptake_either_coat,0.5,percent of cells,,2 cultures,max,domain.cell_type
+C04,uptake_order_microglia_gt_astrocytes_gt_opc_gt_nsc_gt_neurons,,rank,,4 to 5 cultures,missing,domain.cell_type
+C05,microglia_propidium_iodide_positive_max,41.7,percent,,,max,context_only
+C06,test_auc_bayesian_pancreatic,0.891,area under curve,,21 test compounds,exact,domain.cell_type
+C06,test_auc_bayesian_endothelial,0.861,area under curve,,21 test compounds,exact,domain.cell_type
+C06,test_auc_bayesian_monocyte,0.565,area under curve,,21 test compounds,exact,domain.cell_type
+C07,uptake_silica_polycaprolactone_cells_taking_up,87.0,percent of cells,,triplicate x2-3,exact,not_usable
+C07,uptake_silica_poly_l_lactide_cells_taking_up,84.0,percent of cells,,triplicate x2-3,exact,not_usable
+C08,brain_permeability_coefficient_gold_shell_no_field,0.000132,model units,,3 per group,exact,context_only
+C08,brain_permeability_coefficient_gold_shell_field,0.000341,model units,,3 per group,exact,context_only
+C08,measured_brain_gold_no_field,3.833,ng/mL,,3 per group,exact,context_only
+C08,measured_brain_gold_field,3.608,ng/mL,,3 per group,exact,context_only
+C09,tumour_iron_oxide_with_magnet,36.1,ug/g,4.2,4,exact,not_usable
+C09,tumour_iron_oxide_without_magnet,13.3,ug/g,4.1,4,exact,not_usable
+C09,tumour_iron_oxide_fold_magnet_over_no_magnet,0.4337,log10,,4,exact,not_usable
+C10,glycocalyx_surface_coverage_brain,40.1,percent of endothelial surface,4.5,,exact,host_feature.glycocalyx
+C10,glycocalyx_thickness_brain,301.0,nm,111.8,,exact,host_feature.glycocalyx
+C10,glycocalyx_surface_coverage_heart,15.1,percent of endothelial surface,3.7,,exact,host_feature.glycocalyx
+C10,glycocalyx_thickness_heart,135.5,nm,59.7,,exact,host_feature.glycocalyx
+C10,glycocalyx_surface_coverage_lung,3.7,percent of endothelial surface,0.3,,exact,host_feature.glycocalyx
+C10,glycocalyx_thickness_lung,65.4,nm,28.4,,exact,host_feature.glycocalyx
+C10,dextran_penetration_of_glycocalyx_40_and_150kDa,60.0,percent of volume,,,max,host_feature.glycocalyx
