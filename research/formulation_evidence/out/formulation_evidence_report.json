@@ -1,0 +1,99 @@
+{
+  "hydrogels": {
+    "rows": 39,
+    "pooling_groups": {
+      "nose_to_brain_intact": 14,
+      "other_site": 9,
+      "material_only": 8,
+      "systemic_depot": 3,
+      "in_vitro_only": 3,
+      "direct_brain": 1,
+      "unassigned_route": 1
+    },
+    "routes": {
+      "intranasal": 18,
+      "intraparenchymal": 7,
+      "not stated": 6,
+      "not applicable": 3,
+      "subcutaneous": 2,
+      "intramuscular": 1,
+      "intravitreal": 1,
+      "intracerebroventricular": 1
+    },
+    "gelation_triggers": {
+      "temperature": 12,
+      "not stated": 7,
+      "chemical crosslink": 4,
+      "ion": 4,
+      "shear-thinning (physical)": 3,
+      "self-assembly": 2,
+      "pH": 1,
+      "enzyme/inflammation-responsive": 1,
+      "temperature and ion": 1,
+      "ion (Ca2+)": 1,
+      "ROS": 1,
+      "light": 1,
+      "electro/magnetic/ultrasound/enzyme": 1
+    },
+    "surface_charge": {
+      "not stated": 16,
+      "anionic": 11,
+      "nonionic": 7,
+      "cationic": 3,
+      "cationic or nonionic": 1,
+      "cationic vs nonionic vs anionic": 1
+    },
+    "evidence_tiers": {
+      "A": 35,
+      "patent": 2,
+      "patent/grant": 1,
+      "news": 1
+    },
+    "rows_with_a_number": 9,
+    "human_rows": 0,
+    "rows_demonstrating_intact_barrier_transport": 0,
+    "chemical_model_rows": 9,
+    "cationic_rows": 5
+  },
+  "host_factors": {
+    "rows": 56,
+    "factors": 13,
+    "person_measurable_rows": 49,
+    "rows_paired_with_particle_outcome": 1,
+    "rows_at_particle_scale": 1,
+    "unread_sources": 3,
+    "individual_variation_bound": {
+      "glut1_fold_range": 14.271604938271604,
+      "mct1_fold_range": 13.428571428571427,
+      "abc_fold_range": "3 to 11",
+      "slc_fold_range": "2 to 14",
+      "age_and_sex_significant_associations": 0,
+      "source": "Al-Majdoub et al. 2019, 22 donors, frontal cortex microvessels, targeted mass spectrometry",
+      "meaning": "The receptor a ligand targets varies about 13-14 fold between people and none of that variation was explained by age or sex. Lifestyle and demographic features cannot stand in for measuring the receptor."
+    }
+  },
+  "ranking_attempts": {
+    "direct_brain": {
+      "refused": "cannot rank direct_brain: 0 rows carry a number at an admissible evidence tier (need 2 or more sharing a comparator). Request: open the full texts, or measure one panel in one assay."
+    },
+    "in_vitro_only": {
+      "refused": "cannot rank in_vitro_only: 0 rows carry a number at an admissible evidence tier (need 2 or more sharing a comparator). Request: open the full texts, or measure one panel in one assay."
+    },
+    "material_only": {
+      "refused": "cannot rank material_only: 0 rows carry a number at an admissible evidence tier (need 2 or more sharing a comparator). Request: open the full texts, or measure one panel in one assay."
+    },
+    "nose_to_brain_intact": {
+      "refused": "cannot rank nose_to_brain_intact: units differ ['fold', 'ng/mL at 2 h', 'percent higher', 'percent injected dose per g']; no conversion is supported"
+    },
+    "other_site": {
+      "refused": "cannot rank other_site: units differ ['Pa', 'days']; no conversion is supported"
+    },
+    "systemic_depot": {
+      "refused": "cannot rank systemic_depot: 1 rows carry a number at an admissible evidence tier (need 2 or more sharing a comparator). Request: open the full texts, or measure one panel in one assay."
+    },
+    "unassigned_route": {
+      "refused": "cannot rank unassigned_route: 0 rows carry a number at an admissible evidence tier (need 2 or more sharing a comparator). Request: open the full texts, or measure one panel in one assay."
+    }
+  },
+  "host_coefficient_attempt": "cannot produce an uptake coefficient for 'cigarette_smoking': 0 of 16 rows are paired with a particle outcome, and the whole table contains one such row (qualitative, mouse). Required: a particle panel measured in people or animals whose host factor was measured."
+}
