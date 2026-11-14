@@ -1,0 +1,340 @@
+{
+  "purpose": "test the study-title grouping assumption of exposure_model.py and measure the cost of breaking it (plan Appendix B, Independence and leakage)",
+  "data_audit": {
+    "rows_in_workbook": 403,
+    "quarantined": 1,
+    "eligible_rows": 402,
+    "studies": 159,
+    "adhd_drug_rows": 0,
+    "routes": {
+      "iv": 174,
+      "in": 157,
+      "po": 48,
+      "ip": 23
+    }
+  },
+  "self_test": [
+    {
+      "detector": "D1_exact_outcome_pair_under_two_studies",
+      "phase": "clean frame",
+      "fired": false,
+      "expected": false,
+      "pass": true
+    },
+    {
+      "detector": "D2_outcome_pair_to_4_sigfigs_under_two_studies",
+      "phase": "clean frame",
+      "fired": false,
+      "expected": false,
+      "pass": true
+    },
+    {
+      "detector": "D3_full_formulation_record_under_two_studies",
+      "phase": "clean frame",
+      "fired": false,
+      "expected": false,
+      "pass": true
+    },
+    {
+      "detector": "D4_title_variants_resolving_to_one_source",
+      "phase": "clean frame",
+      "fired": false,
+      "expected": false,
+      "pass": true
+    },
+    {
+      "detector": "D1_exact_outcome_pair_under_two_studies",
+      "phase": "duplicated outcome injected",
+      "fired": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "detector": "D2_outcome_pair_to_4_sigfigs_under_two_studies",
+      "phase": "duplicated outcome injected",
+      "fired": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "detector": "D3_full_formulation_record_under_two_studies",
+      "phase": "duplicated outcome injected",
+      "fired": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "detector": "D1_exact_outcome_pair_under_two_studies",
+      "phase": "near-duplicate injected",
+      "fired": false,
+      "expected": false,
+      "pass": true
+    },
+    {
+      "detector": "D2_outcome_pair_to_4_sigfigs_under_two_studies",
+      "phase": "near-duplicate injected",
+      "fired": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "detector": "D4_title_variants_resolving_to_one_source",
+      "phase": "title variant injected",
+      "fired": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "detector": "union_find_merge",
+      "phase": "two of three groups linked",
+      "fired": true,
+      "expected": true,
+      "pass": true
+    }
+  ],
+  "detectors": {
+    "sigfig": 4,
+    "jaccard_min": 0.9,
+    "findings": {
+      "D1_exact_outcome_pair_under_two_studies": {
+        "count": 1,
+        "evidence": [
+          {
+            "key": "('2612.31', '2389.17')",
+            "studies": [
+              "development of a new hplc method for in vitro and in vivo studies of haloperidol in solid lipid nanoparticles",
+              "solid lipid nanoparticles for nose to brain delivery of haloperidol in vitro drug release and pharmacokinetics evaluation"
+            ]
+          }
+        ]
+      },
+      "D2_outcome_pair_to_4_sigfigs_under_two_studies": {
+        "count": 2,
+        "evidence": [
+          {
+            "key": "(2612.0, 2389.0)",
+            "studies": [
+              "development of a new hplc method for in vitro and in vivo studies of haloperidol in solid lipid nanoparticles",
+              "solid lipid nanoparticles for nose to brain delivery of haloperidol in vitro drug release and pharmacokinetics evaluation"
+            ]
+          },
+          {
+            "key": "(2179.0, 3740.0)",
+            "studies": [
+              "lectin conjugated peg pla nanoparticles preparation and brain delivery after intranasal administration",
+              "uea i bearing nanoparticles for brain delivery following intranasal administration"
+            ]
+          }
+        ]
+      },
+      "D3_full_formulation_record_under_two_studies": {
+        "count": 0,
+        "evidence": []
+      },
+      "D4_title_variants_resolving_to_one_source": {
+        "count": 0,
+        "evidence": []
+      }
+    },
+    "leaking_detector_hits": 3,
+    "linked_study_pairs": [
+      [
+        "development of a new hplc method for in vitro and in vivo studies of haloperidol in solid lipid nanoparticles",
+        "solid lipid nanoparticles for nose to brain delivery of haloperidol in vitro drug release and pharmacokinetics evaluation"
+      ],
+      [
+        "lectin conjugated peg pla nanoparticles preparation and brain delivery after intranasal administration",
+        "uea i bearing nanoparticles for brain delivery following intranasal administration"
+      ]
+    ],
+    "linked_study_pair_count": 2
+  },
+  "grouping": {
+    "title_groups": 159,
+    "merged_groups": 157,
+    "groups_absorbed": 2
+  },
+  "unmerged_result": {
+    "n_groups": 159,
+    "cv": {
+      "training_mean": {
+        "study_mae_ln": 3.049593271607725,
+        "study_mae_ln_95ci": [
+          2.7650887619573554,
+          3.348170201713867
+        ],
+        "minus_route_ratio_95ci": [
+          1.3329900231233267,
+          2.0184221559909616
+        ]
+      },
+      "route_ratio_baseline": {
+        "study_mae_ln": 1.3722879397616405,
+        "study_mae_ln_95ci": [
+          1.207809585071228,
+          1.5463690560884438
+        ],
+        "minus_route_ratio_95ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "blood_and_context_ridge": {
+        "study_mae_ln": 1.3158933924444414,
+        "study_mae_ln_95ci": [
+          1.1580150535822806,
+          1.4887833210850014
+        ],
+        "minus_route_ratio_95ci": [
+          -0.10888990497632081,
+          -0.004177517014711824
+        ]
+      },
+      "descriptors_and_context_ridge": {
+        "study_mae_ln": 3.3081857964119297,
+        "study_mae_ln_95ci": [
+          2.9700400204416604,
+          3.6558809634207394
+        ],
+        "minus_route_ratio_95ci": [
+          1.5776577237297909,
+          2.297634593973807
+        ]
+      },
+      "full_ridge": {
+        "study_mae_ln": 1.422560658878998,
+        "study_mae_ln_95ci": [
+          1.2383578913795494,
+          1.6258637495647885
+        ],
+        "minus_route_ratio_95ci": [
+          -0.0746576403670947,
+          0.1929439470673068
+        ]
+      },
+      "full_gradient_boosting": {
+        "study_mae_ln": 1.5191482703072867,
+        "study_mae_ln_95ci": [
+          1.350259488271953,
+          1.6807517993720904
+        ],
+        "minus_route_ratio_95ci": [
+          0.004160329667285523,
+          0.2868169025849492
+        ]
+      }
+    },
+    "fixed_holdout_study_mae_ln": {
+      "training_mean": 2.913235937299951,
+      "route_ratio_baseline": 1.3833590866517653,
+      "blood_and_context_ridge": 1.3205128782709896,
+      "descriptors_and_context_ridge": 3.2788387485121646,
+      "full_ridge": 1.5085934959937468,
+      "full_gradient_boosting": 1.3297279539616196
+    },
+    "verdict": {
+      "best_learned_by_cv": "blood_and_context_ridge",
+      "beats_route_ratio_baseline": true,
+      "blood_adds_value_over_descriptors": true,
+      "descriptors_add_value_over_blood": false
+    }
+  },
+  "saved_result_check": {
+    "checked": true,
+    "reproduces_saved_result": true,
+    "tolerance": 1e-09,
+    "mismatches": []
+  },
+  "merged_result": {
+    "n_groups": 157,
+    "cv": {
+      "training_mean": {
+        "study_mae_ln": 3.056713386968258,
+        "study_mae_ln_95ci": [
+          2.739877175745711,
+          3.3590067808414434
+        ],
+        "minus_route_ratio_95ci": [
+          1.322987997820084,
+          2.0260509493727388
+        ]
+      },
+      "route_ratio_baseline": {
+        "study_mae_ln": 1.3719084512371436,
+        "study_mae_ln_95ci": [
+          1.2145266568107262,
+          1.5474881560896085
+        ],
+        "minus_route_ratio_95ci": [
+          0.0,
+          0.0
+        ]
+      },
+      "blood_and_context_ridge": {
+        "study_mae_ln": 1.335164281480256,
+        "study_mae_ln_95ci": [
+          1.1803696101684604,
+          1.4971930806278604
+        ],
+        "minus_route_ratio_95ci": [
+          -0.09646575484189578,
+          0.015428823518622074
+        ]
+      },
+      "descriptors_and_context_ridge": {
+        "study_mae_ln": 3.361649264388196,
+        "study_mae_ln_95ci": [
+          2.984802867827346,
+          3.731447754236335
+        ],
+        "minus_route_ratio_95ci": [
+          1.5762741634507027,
+          2.3681905373958836
+        ]
+      },
+      "full_ridge": {
+        "study_mae_ln": 1.3717152680347247,
+        "study_mae_ln_95ci": [
+          1.1980258494019038,
+          1.5508814095135544
+        ],
+        "minus_route_ratio_95ci": [
+          -0.1157172552798551,
+          0.12028805200944946
+        ]
+      },
+      "full_gradient_boosting": {
+        "study_mae_ln": 1.5649514155446993,
+        "study_mae_ln_95ci": [
+          1.4013795770549904,
+          1.7268235839618187
+        ],
+        "minus_route_ratio_95ci": [
+          0.04395266109031976,
+          0.3420735883880759
+        ]
+      }
+    },
+    "fixed_holdout_study_mae_ln": {
+      "training_mean": 2.842589135422066,
+      "route_ratio_baseline": 1.312611494836333,
+      "blood_and_context_ridge": 1.2560564306937934,
+      "descriptors_and_context_ridge": 3.4302781594426675,
+      "full_ridge": 1.348400328883223,
+      "full_gradient_boosting": 1.4559203144688213
+    },
+    "verdict": {
+      "best_learned_by_cv": "blood_and_context_ridge",
+      "beats_route_ratio_baseline": false,
+      "blood_adds_value_over_descriptors": true,
+      "descriptors_add_value_over_blood": false
+    }
+  },
+  "verdict_changes_under_merged_grouping": {
+    "beats_route_ratio_baseline": [
+      true,
+      false
+    ]
+  },
+  "conclusion": "headline conclusions CHANGE under merged grouping"
+}
