@@ -1,0 +1,52 @@
+{
+  "seed": 20261107,
+  "target": "fractional in-vitro release at specified time",
+  "features": [
+    "Drug MW",
+    "Drug TPSA",
+    "Drug LogP",
+    "Polymer MW",
+    "LA/GA",
+    "Initial Drug-to-Polymer Ratio",
+    "Particle Size",
+    "Drug Loading Capacity",
+    "Drug Encapsulation Efficiency",
+    "Solubility Enhancer Concentration",
+    "Time"
+  ],
+  "test_source_dois": [
+    "10.1002/btm2.10298",
+    "10.1002/jbm.a.32512",
+    "10.1002/jbm.b.33844",
+    "10.1002/jps.21073",
+    "10.1002/lary.20713",
+    "10.1007/bf03218313",
+    "10.1007/s12247-018-9346-9",
+    "10.1007/s12247-021-09544-7",
+    "10.1007/s13346-020-00758-9",
+    "10.1016/j.actbio.2014.06.038",
+    "10.1016/j.ajps.2020.01.001",
+    "10.1016/j.ejpb.2023.08.006",
+    "10.1016/j.ijpharm.2017.12.006",
+    "10.1016/j.ijpharm.2019.118819",
+    "10.1016/j.jconrel.2004.01.011",
+    "10.1016/j.jconrel.2017.03.396",
+    "10.1016/j.jddst.2015.10.009",
+    "10.1016/j.xphs.2023.08.011",
+    "10.1021/bm050228k",
+    "10.1021/ja306866w",
+    "10.1080/02652040500273902",
+    "10.1208/s12249-010-9445-5",
+    "10.3109/02652049809008239"
+  ],
+  "split": "whole DOI, no shared formulation/source",
+  "baseline": "training median release in fixed time bins",
+  "domain": "small-molecule emulsion PLGA microparticles; not transferable to hydrogels",
+  "created_unix": 1794068816.273151,
+  "model": {
+    "max_iter": 100,
+    "max_leaf_nodes": 15,
+    "learning_rate": 0.08,
+    "l2_regularization": 1.0
+  }
+}
