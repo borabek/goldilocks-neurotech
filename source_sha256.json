@@ -1,0 +1,14 @@
+{
+  "extract_watch.py": "63b85b2391226b7b3bea13b34ecda9e6774095e1e31cbf73495b6e1847cb4b02",
+  "package_build.py": "2ce5a9b0ea0380cde39d5ea5c886e1ed377f1964b08460935a99f1aec2f183ca",
+  "reproduce.py": "8178018f687ec72f7a7e144f8c55d955b0efbe7d1fdbcc5d3c85902c856000b6",
+  "diagnostics.py": "a322e708cdddecd6911bbd51a190e5b9b121f068f18ec47b4382155676365901",
+  "release_audit.py": "3cde1756c74c5d96366db09f1c546458e69543b8d7d71b5d05a184a6e1b17962",
+  "build_report.py": "dc36c0b37bcdfd2fff11c15641a855b5411c35b70fefe554835c411c46b982e6",
+  "pipeline.py": "ed6e315948b26d8d28c59b830c78eabd7e3ef5aa20817d5df1110394330cfeea",
+  "test_pipeline.py": "3af6d39c0bdd3663c0de430c8cfb81fa8d93e900d8e30aab0c7fcdcc1a8268f1",
+  "acquire.mjs": "c3f36cb116b69fb0f5fca5aa8cce3514b917c81b2b4d8995f344fb50c922c2c3",
+  "requirements.txt": "87fd8596db6ace4cb2c3a5047b2d2bca131cd5412bd318e31e0283dd714c6d16",
+  "protocol.json": "b297cf9870a54cbb3754b6225874b16ee2e129326ffcf1bc3dfc61bbd9fe03f0",
+  "release_protocol.json": "5b9122ff41472ee9c073f074db9d3c2288a0aa0831b9eece4fc36f8b13031ab5"
+}
