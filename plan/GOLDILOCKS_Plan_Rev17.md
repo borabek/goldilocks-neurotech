@@ -1071,7 +1071,7 @@ These apply to the formulation workbench and, where relevant, the conditional PK
 ## Sources
 
 
-[1] Supplied event brief, all four pages: https://chatgpt.com/library?file_id=libfile_d4eedc70b4288191a66edbd386d73062&account_id=personal  
+[1] Supplied event brief, all four pages  
 [2] Ritalin Summary of Product Characteristics, pharmacokinetics: https://www.medicines.org.uk/emc/product/15987/smpc  
 [3] NHS Specialist Pharmacy Service, modified-release methylphenidate: https://sps.nhs.uk/articles/prescribing-and-switching-between-modified-release-methylphenidate/  
 [4] Khalil et al., intranasal methylphenidate transfersomal gel. DOI: 10.1016/j.jddst.2024.106125. https://www.sciencedirect.com/science/article/pii/S1773224724007949  
@@ -1100,22 +1100,22 @@ These apply to the formulation workbench and, where relevant, the conditional PK
 [27] ChEMBL indication, mechanism and related public web services: https://chembl.gitbook.io/chembl-interface-documentation/web-services/chembl-data-web-services
 [28] Primary atomoxetine NLC/in-situ-gel study, DOI 10.3390/pharmaceutics15071985; formulation/release sections and PK Tables 5-6 inspected: https://pmc.ncbi.nlm.nih.gov/articles/PMC10386213/
 [29] Qiu et al., DOI 10.1016/j.celbio.2025.100130: https://www.sciencedirect.com/science/article/pii/S3050562325001217 . Released code inspected without execution: https://github.com/jxzly/NanoMed/blob/master/main.py and https://github.com/jxzly/NanoMed/blob/master/utils.py . Repository tree SHA observed: f51c218d40774517c046e3d68de31b6589e3a630. Group provenance and reuse terms remain verification items.
-[30] Supplied nanoparticle screener README: https://chatgpt.com/library?file_id=libfile_1e70ab9f9f8c819190b86902e483d52d&account_id=personal
-[31] Supplied evidence map and proteome feasibility review: https://chatgpt.com/library?file_id=libfile_4fdae60938c08191a5586c89f1ed96f0&account_id=personal
-[32] Supplied ADHD receptor evidence map: https://chatgpt.com/library?file_id=libfile_2ebd169207f88191b7c0375222d62564&account_id=personal
-[33] Supplied OCD receptor evidence map: https://chatgpt.com/library?file_id=libfile_06b9b1a6cb4081919e127915e672d3af&account_id=personal
-[34] Supplied autism receptor evidence map: https://chatgpt.com/library?file_id=libfile_222350a5ce308191a7a429861fd3f830&account_id=personal
-[35] Supplied research ZIP, including six Markdown notes, Alzheimer hydrogel DOCX, additional bioengineering PDF and two duplicate copies of the carrier screenshot PDF: https://chatgpt.com/library?file_id=libfile_f5db0792640c8191a8c3dd8b62b376d0&account_id=personal . The archive contains research materials, not executable screener Python source.
-[36] Supplied Claude.pdf, seven pages visually inspected: https://chatgpt.com/library?file_id=libfile_b5a8114a4b7c8191969d35a8f612af2a&account_id=personal
-[37] Supplied Claude 2.pdf, seven pages visually inspected; byte-identical to both Claude PDF copies inside the ZIP: https://chatgpt.com/library?file_id=libfile_4353e4c622dc819182488bc4acd61b72&account_id=personal
-[38] Supplied additional bioengineering parts.pdf, ten-page text reviewed: https://chatgpt.com/library?file_id=libfile_6d6aef89a9e88191ab51202eb3c78f43&account_id=personal
-[39] Supplied Paraskevaidi et al. spectroscopy commentary, DOI 10.1186/s13024-018-0252-x, three pages read: https://chatgpt.com/library?file_id=libfile_e23a55a473e0819193ffdd17de2dbd05&account_id=personal
-[40] Current NeuroBridge Battle Plan, 40 pages, version 6: https://chatgpt.com/library?file_id=libfile_710e1d5b37dc8191a323917f1107bec1&account_id=personal
-[41] Earlier Oxford NeuroTech Hackathon Battle Plan, 36 pages: https://chatgpt.com/library?file_id=libfile_2bf9e7572ff081918a98ef1570893011&account_id=personal
-[42] Superseded VETO plan: https://chatgpt.com/library?file_id=libfile_82144b2bb390819186a8cb7a9f3f05d5&account_id=personal
-[43] Dataset screenshot, visually inspected: https://chatgpt.com/library?file_id=libfile_edc7577299608191acf7595863d17a78&account_id=personal . It lists https://openneuro.org/datasets/ds005555/ ; https://github.com/unicorn-bi/Hackathon ; https://neurallatents.github.io/datasets.html . The NLB dataset overview and repository landing information were checked; recordings were not audited as drug-delivery data.
-[44] Duplicate supplied participant information sheet, all four pages read: https://chatgpt.com/library?file_id=libfile_d6cc9a9d35148191993cd599f089ab12&account_id=personal
-[45] Supplied Goldilocks AI — Battle Plan v3 (AI stream), all 20 pages read: https://chatgpt.com/library?file_id=libfile_f616322e7c1c8191b5ce228fae9f3363&account_id=personal
+[30] Supplied nanoparticle screener README
+[31] Supplied evidence map and proteome feasibility review
+[32] Supplied ADHD receptor evidence map
+[33] Supplied OCD receptor evidence map
+[34] Supplied autism receptor evidence map
+[35] Supplied research ZIP, including six Markdown notes, Alzheimer hydrogel DOCX, additional bioengineering PDF and two duplicate copies of the carrier screenshot PDF. The archive contains research materials, not executable screener Python source.
+[36] Supplied Claude.pdf, seven pages visually inspected
+[37] Supplied Claude 2.pdf, seven pages visually inspected; byte-identical to both Claude PDF copies inside the ZIP
+[38] Supplied additional bioengineering parts.pdf, ten-page text reviewed
+[39] Supplied Paraskevaidi et al. spectroscopy commentary, DOI 10.1186/s13024-018-0252-x, three pages read
+[40] Current NeuroBridge Battle Plan, 40 pages, version 6
+[41] Earlier Oxford NeuroTech Hackathon Battle Plan, 36 pages
+[42] Superseded VETO plan
+[43] Dataset screenshot, visually inspected. It lists https://openneuro.org/datasets/ds005555/ ; https://github.com/unicorn-bi/Hackathon ; https://neurallatents.github.io/datasets.html . The NLB dataset overview and repository landing information were checked; recordings were not audited as drug-delivery data.
+[44] Duplicate supplied participant information sheet, all four pages read
+[45] Supplied Goldilocks AI — Battle Plan v3 (AI stream), all 20 pages read
 [46] BOAS official OpenNeuro repository, README, participants.tsv, dataset_description.json, acquisition/channel/event definitions and 256 event TSVs inspected: https://github.com/OpenNeuroDatasets/ds005555 . Dataset DOI in inspected metadata: https://doi.org/10.18112/openneuro.ds005555.v1.1.3 . Observed repository tree SHA: `face09565c4337ddbce7a048c9b02060ad20df45`. Counts and released-score statistics in section 2 were independently recomputed on 7 November 2026; they are not new-model performance. That sentence described the earlier metadata audit; section 13 records the subsequent complete raw-signal acquisition/loader checks.
 [47] YASA official SleepStaging documentation, input/preprocessing and channel guidance inspected: https://yasa-sleep.org/generated/yasa.SleepStaging.html
 [48] ISO 14971:2019 official catalogue, current status inspected: https://www.iso.org/standard/72704.html
@@ -1123,10 +1123,10 @@ These apply to the formulation workbench and, where relevant, the conditional PK
 [50] Atomoxetine Summary of Product Characteristics; pharmacokinetics and clinical-response distinction checked: https://www.medicines.org.uk/emc/product/100476/smpc
 [51] Intuniv (guanfacine prolonged-release) Summary of Product Characteristics; time-varying pharmacokinetics checked: https://www.medicines.org.uk/emc/product/5099/smpc
 
-[52] Supplied Add AI determine.docx, both pages read: https://chatgpt.com/library?file_id=libfile_16bc3c71b9688191afd7ad06b2b4ca5d&account_id=personal
-[53] Supplied hydrogel_ai_datasets.xlsx, all four sheets/rows/formulas inspected: https://chatgpt.com/library?file_id=libfile_d45373df0fb4819192b0381f8e604004&account_id=personal
-[54] Supplied matched_pairs.xlsx, both sheets inspected: https://chatgpt.com/library?file_id=libfile_d46fe83e4460819190f5da8bc653d15f&account_id=personal
-[55] Supplied coating_core_evidence.md, full text read; mentioned CSV and code not included: https://chatgpt.com/library?file_id=libfile_4d5345fb0a0881919aae46c0afc3edcb&account_id=personal
+[52] Supplied Add AI determine.docx, both pages read
+[53] Supplied hydrogel_ai_datasets.xlsx, all four sheets/rows/formulas inspected
+[54] Supplied matched_pairs.xlsx, both sheets inspected
+[55] Supplied coating_core_evidence.md, full text read; mentioned CSV and code not included
 [56] Bannigan long-acting injectable dataset primary record, counts/file listing and early-feature imputation description inspected, initial metadata-stage review; the original files were subsequently acquired and verified in section 13: https://zenodo.org/records/7309021 ; associated study DOI 10.1038/s41467-022-35343-w: https://www.nature.com/articles/s41467-022-35343-w
 [57] Bao et al., PLGA microparticle dataset, methods/data-record sections inspected, initial publication-stage review; the original workbooks were subsequently acquired and verified in section 13; DOI 10.1038/s41597-025-04621-9: https://pmc.ncbi.nlm.nih.gov/articles/PMC11873201/ ; data record: https://data.mendeley.com/datasets/zzvtdrcy76/2
 [58] B3DB primary description and domain inspected, DOI 10.1038/s41597-021-01069-5: https://pmc.ncbi.nlm.nih.gov/articles/PMC8556334/ ; source repository: https://github.com/theochem/B3DB
