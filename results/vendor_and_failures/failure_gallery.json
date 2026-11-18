@@ -1,0 +1,228 @@
+{
+  "model": "Ensemble of seven models",
+  "cohort": "historical_boas, 20 held-out people, confirmatory nights",
+  "scope": "Development cohort, already inspected at v1. Three nights chosen by absolute total-sleep error, which is the summary the product reports; they are not the three worst by stage agreement and are not representative of the aggregate.",
+  "all_people": [
+    {
+      "subject": "sub-1",
+      "signed_error_minutes": 5.5,
+      "abs_error_minutes": 5.5,
+      "kappa": 0.6783842638014789,
+      "epochs": 240,
+      "reference_tst_minutes": 88.0,
+      "model_tst_minutes": 93.5
+    },
+    {
+      "subject": "sub-6",
+      "signed_error_minutes": -3.0,
+      "abs_error_minutes": 3.0,
+      "kappa": 0.8104158940397351,
+      "epochs": 994,
+      "reference_tst_minutes": 441.5,
+      "model_tst_minutes": 438.5
+    },
+    {
+      "subject": "sub-7",
+      "signed_error_minutes": 11.0,
+      "abs_error_minutes": 11.0,
+      "kappa": 0.7735438432640771,
+      "epochs": 935,
+      "reference_tst_minutes": 378.0,
+      "model_tst_minutes": 389.0
+    },
+    {
+      "subject": "sub-9",
+      "signed_error_minutes": -35.0,
+      "abs_error_minutes": 35.0,
+      "kappa": 0.6820793738596302,
+      "epochs": 1055,
+      "reference_tst_minutes": 458.5,
+      "model_tst_minutes": 423.5
+    },
+    {
+      "subject": "sub-19",
+      "signed_error_minutes": -3.5,
+      "abs_error_minutes": 3.5,
+      "kappa": 0.7773315712635009,
+      "epochs": 1012,
+      "reference_tst_minutes": 411.0,
+      "model_tst_minutes": 407.5
+    },
+    {
+      "subject": "sub-20",
+      "signed_error_minutes": -1.0,
+      "abs_error_minutes": 1.0,
+      "kappa": 0.8177843480558951,
+      "epochs": 1031,
+      "reference_tst_minutes": 453.5,
+      "model_tst_minutes": 452.5
+    },
+    {
+      "subject": "sub-30",
+      "signed_error_minutes": 1.0,
+      "abs_error_minutes": 1.0,
+      "kappa": 0.7013465012775741,
+      "epochs": 834,
+      "reference_tst_minutes": 387.5,
+      "model_tst_minutes": 388.5
+    },
+    {
+      "subject": "sub-34",
+      "signed_error_minutes": -23.5,
+      "abs_error_minutes": 23.5,
+      "kappa": 0.7155370091102526,
+      "epochs": 918,
+      "reference_tst_minutes": 222.5,
+      "model_tst_minutes": 199.0
+    },
+    {
+      "subject": "sub-37",
+      "signed_error_minutes": 3.5,
+      "abs_error_minutes": 3.5,
+      "kappa": 0.8298577439084918,
+      "epochs": 857,
+      "reference_tst_minutes": 379.5,
+      "model_tst_minutes": 383.0
+    },
+    {
+      "subject": "sub-49",
+      "signed_error_minutes": 1.5,
+      "abs_error_minutes": 1.5,
+      "kappa": 0.8754872042040344,
+      "epochs": 873,
+      "reference_tst_minutes": 394.5,
+      "model_tst_minutes": 396.0
+    },
+    {
+      "subject": "sub-50",
+      "signed_error_minutes": -7.0,
+      "abs_error_minutes": 7.0,
+      "kappa": 0.7280207847364103,
+      "epochs": 884,
+      "reference_tst_minutes": 284.0,
+      "model_tst_minutes": 277.0
+    },
+    {
+      "subject": "sub-52",
+      "signed_error_minutes": 6.5,
+      "abs_error_minutes": 6.5,
+      "kappa": 0.7824905928112608,
+      "epochs": 923,
+      "reference_tst_minutes": 448.5,
+      "model_tst_minutes": 455.0
+    },
+    {
+      "subject": "sub-63",
+      "signed_error_minutes": 17.5,
+      "abs_error_minutes": 17.5,
+      "kappa": 0.7632186179263406,
+      "epochs": 884,
+      "reference_tst_minutes": 365.0,
+      "model_tst_minutes": 382.5
+    },
+    {
+      "subject": "sub-70",
+      "signed_error_minutes": -3.5,
+      "abs_error_minutes": 3.5,
+      "kappa": 0.717024719878439,
+      "epochs": 881,
+      "reference_tst_minutes": 415.5,
+      "model_tst_minutes": 412.0
+    },
+    {
+      "subject": "sub-87",
+      "signed_error_minutes": 8.0,
+      "abs_error_minutes": 8.0,
+      "kappa": 0.6948700916665085,
+      "epochs": 957,
+      "reference_tst_minutes": 381.0,
+      "model_tst_minutes": 389.0
+    },
+    {
+      "subject": "sub-88",
+      "signed_error_minutes": -10.5,
+      "abs_error_minutes": 10.5,
+      "kappa": 0.8522015753015417,
+      "epochs": 763,
+      "reference_tst_minutes": 241.0,
+      "model_tst_minutes": 230.5
+    },
+    {
+      "subject": "sub-101",
+      "signed_error_minutes": 0.5,
+      "abs_error_minutes": 0.5,
+      "kappa": 0.7133970773654192,
+      "epochs": 935,
+      "reference_tst_minutes": 431.0,
+      "model_tst_minutes": 431.5
+    },
+    {
+      "subject": "sub-102",
+      "signed_error_minutes": -24.0,
+      "abs_error_minutes": 24.0,
+      "kappa": 0.7849172706139751,
+      "epochs": 963,
+      "reference_tst_minutes": 382.5,
+      "model_tst_minutes": 358.5
+    },
+    {
+      "subject": "sub-118",
+      "signed_error_minutes": 3.0,
+      "abs_error_minutes": 3.0,
+      "kappa": 0.8355796513984597,
+      "epochs": 885,
+      "reference_tst_minutes": 408.0,
+      "model_tst_minutes": 411.0
+    },
+    {
+      "subject": "sub-122",
+      "signed_error_minutes": -17.5,
+      "abs_error_minutes": 17.5,
+      "kappa": 0.2798635132573447,
+      "epochs": 876,
+      "reference_tst_minutes": 370.5,
+      "model_tst_minutes": 353.0
+    }
+  ],
+  "worst_three": [
+    {
+      "subject": "sub-9",
+      "signed_error_minutes": -35.0,
+      "abs_error_minutes": 35.0,
+      "kappa": 0.6820793738596302,
+      "epochs": 1055,
+      "reference_tst_minutes": 458.5,
+      "model_tst_minutes": 423.5,
+      "hardest_stage": "N1",
+      "recall_of_hardest_stage": 0.4489795918367347,
+      "mostly_called": "W",
+      "reading": "On this night the model recovers 45% of N1 epochs and calls most of the rest W. This is one night out of twenty; it illustrates the error, it does not explain the aggregate."
+    },
+    {
+      "subject": "sub-102",
+      "signed_error_minutes": -24.0,
+      "abs_error_minutes": 24.0,
+      "kappa": 0.7849172706139751,
+      "epochs": 963,
+      "reference_tst_minutes": 382.5,
+      "model_tst_minutes": 358.5,
+      "hardest_stage": "N1",
+      "recall_of_hardest_stage": 0.2,
+      "mostly_called": "W",
+      "reading": "On this night the model recovers 20% of N1 epochs and calls most of the rest W. This is one night out of twenty; it illustrates the error, it does not explain the aggregate."
+    },
+    {
+      "subject": "sub-34",
+      "signed_error_minutes": -23.5,
+      "abs_error_minutes": 23.5,
+      "kappa": 0.7155370091102526,
+      "epochs": 918,
+      "reference_tst_minutes": 222.5,
+      "model_tst_minutes": 199.0,
+      "hardest_stage": "N1",
+      "recall_of_hardest_stage": 0.38461538461538464,
+      "mostly_called": "W",
+      "reading": "On this night the model recovers 38% of N1 epochs and calls most of the rest W. This is one night out of twenty; it illustrates the error, it does not explain the aggregate."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "frozen_unix": 1794070464.092282,
+  "model_sha256": "121837c16b4ff3a045421355048b538c53158119b2afd52dcbd32a641021cb0b",
+  "protocol_sha256": "ad3fb648f8eedcd429884abe8f018f24c5eb3e85b54a3f87ffc164183f29882c",
+  "external_reference_labels_accessed": false,
+  "sequence_candidates": [
+    {
+      "sequence_weight": 0,
+      "mean_person_kappa": 0.6547474184211487
+    },
+    {
+      "sequence_weight": 0.5,
+      "mean_person_kappa": 0.6682463222699614
+    },
+    {
+      "sequence_weight": 1.0,
+      "mean_person_kappa": 0.6258856072258937
+    }
+  ],
+  "selected_weight": 0.5,
+  "temperature": 2.452204118142857,
+  "global_q_minutes": 24.5,
+  "normalized_q": 4.9
+}

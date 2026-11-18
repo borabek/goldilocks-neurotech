@@ -1,0 +1,153 @@
+{
+  "version": "2",
+  "seed": 20261108,
+  "created_unix": 1794070456.696715,
+  "fit_people": 48,
+  "model_selection_pids": [
+    "10",
+    "15",
+    "18",
+    "36",
+    "38",
+    "84"
+  ],
+  "probability_calibration_pids": [
+    "32",
+    "33",
+    "62",
+    "80",
+    "96",
+    "98"
+  ],
+  "summary_calibration": "original 20 BOAS people, first night",
+  "historical_test": "original 20 BOAS people, already inspected at v1; not independent confirmation",
+  "new_external_test": {
+    "dataset": "Sleep-EDF Expanded 1.0.0",
+    "license": "Open Data Commons Attribution License v1.0",
+    "doi": "10.13026/C2X676",
+    "rule": "first night for subject IDs 00 through 19, fixed before external reference access",
+    "records": [
+      {
+        "subject": "SC400",
+        "psg": "SC4001E0-PSG.edf",
+        "hypnogram": "SC4001EC-Hypnogram.edf"
+      },
+      {
+        "subject": "SC401",
+        "psg": "SC4011E0-PSG.edf",
+        "hypnogram": "SC4011EH-Hypnogram.edf"
+      },
+      {
+        "subject": "SC402",
+        "psg": "SC4021E0-PSG.edf",
+        "hypnogram": "SC4021EH-Hypnogram.edf"
+      },
+      {
+        "subject": "SC403",
+        "psg": "SC4031E0-PSG.edf",
+        "hypnogram": "SC4031EC-Hypnogram.edf"
+      },
+      {
+        "subject": "SC404",
+        "psg": "SC4041E0-PSG.edf",
+        "hypnogram": "SC4041EC-Hypnogram.edf"
+      },
+      {
+        "subject": "SC405",
+        "psg": "SC4051E0-PSG.edf",
+        "hypnogram": "SC4051EC-Hypnogram.edf"
+      },
+      {
+        "subject": "SC406",
+        "psg": "SC4061E0-PSG.edf",
+        "hypnogram": "SC4061EC-Hypnogram.edf"
+      },
+      {
+        "subject": "SC407",
+        "psg": "SC4071E0-PSG.edf",
+        "hypnogram": "SC4071EC-Hypnogram.edf"
+      },
+      {
+        "subject": "SC408",
+        "psg": "SC4081E0-PSG.edf",
+        "hypnogram": "SC4081EC-Hypnogram.edf"
+      },
+      {
+        "subject": "SC409",
+        "psg": "SC4091E0-PSG.edf",
+        "hypnogram": "SC4091EC-Hypnogram.edf"
+      },
+      {
+        "subject": "SC410",
+        "psg": "SC4101E0-PSG.edf",
+        "hypnogram": "SC4101EC-Hypnogram.edf"
+      },
+      {
+        "subject": "SC411",
+        "psg": "SC4111E0-PSG.edf",
+        "hypnogram": "SC4111EC-Hypnogram.edf"
+      },
+      {
+        "subject": "SC412",
+        "psg": "SC4121E0-PSG.edf",
+        "hypnogram": "SC4121EC-Hypnogram.edf"
+      },
+      {
+        "subject": "SC413",
+        "psg": "SC4131E0-PSG.edf",
+        "hypnogram": "SC4131EC-Hypnogram.edf"
+      },
+      {
+        "subject": "SC414",
+        "psg": "SC4141E0-PSG.edf",
+        "hypnogram": "SC4141EU-Hypnogram.edf"
+      },
+      {
+        "subject": "SC415",
+        "psg": "SC4151E0-PSG.edf",
+        "hypnogram": "SC4151EC-Hypnogram.edf"
+      },
+      {
+        "subject": "SC416",
+        "psg": "SC4161E0-PSG.edf",
+        "hypnogram": "SC4161EC-Hypnogram.edf"
+      },
+      {
+        "subject": "SC417",
+        "psg": "SC4171E0-PSG.edf",
+        "hypnogram": "SC4171EU-Hypnogram.edf"
+      },
+      {
+        "subject": "SC418",
+        "psg": "SC4181E0-PSG.edf",
+        "hypnogram": "SC4181EC-Hypnogram.edf"
+      },
+      {
+        "subject": "SC419",
+        "psg": "SC4191E0-PSG.edf",
+        "hypnogram": "SC4191EP-Hypnogram.edf"
+      }
+    ]
+  },
+  "external_scope": "Sleep-EDF Fpz-Cz only, different device/montage/R&K labels; external domain-shift test, not ADHD or in-domain headband confirmation",
+  "candidate_sequence_weights": [
+    0,
+    0.5,
+    1.0
+  ],
+  "classifier": {
+    "max_iter": 180,
+    "max_leaf_nodes": 31,
+    "learning_rate": 0.08,
+    "l2_regularization": 2.0,
+    "max_bins": 128
+  },
+  "features": "channel-shared 14 spectral/statistical inputs with centered 5/15 epoch context, 56 values per channel; channel probabilities averaged",
+  "selection": "mean person kappa on six selection participants; no old test, summary calibration or external outcomes used",
+  "intervals": "both fixed global and normalized 90% split-conformal absolute residual intervals, 20 BOAS calibration people; no tuning to attain test coverage",
+  "external_windows": [
+    "all valid scored epochs",
+    "secondary sleep span with 30-minute margins, defined using reference for evaluation only"
+  ],
+  "external_label_mapping": "W=0,1=1,2=2,3/4=3,R=4; movement/unscored excluded, no Wake imputation"
+}

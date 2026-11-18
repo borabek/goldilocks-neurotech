@@ -1,0 +1,91 @@
+{"external_features": "SC400", "raw_grid_epochs": 2650, "valid_reference_epochs": 2650, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 79470.0}
+{"evaluated": "SC400", "kappa": 0.751839831131779, "tst_error": 29.5}
+{"external_features": "SC401", "raw_grid_epochs": 2802, "valid_reference_epochs": 2802, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 84030.0}
+{"evaluated": "SC401", "kappa": 0.1111760345340368, "tst_error": 910.0}
+{"external_features": "SC402", "raw_grid_epochs": 2804, "valid_reference_epochs": 2804, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 84090.0}
+{"evaluated": "SC402", "kappa": 0.15298021397790484, "tst_error": 870.5}
+{"external_features": "SC403", "raw_grid_epochs": 2820, "valid_reference_epochs": 2820, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 84570.0}
+{"evaluated": "SC403", "kappa": 0.5178328657207787, "tst_error": 344.0}
+{"external_features": "SC404", "raw_grid_epochs": 2570, "valid_reference_epochs": 2569, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 77070.0}
+{"evaluated": "SC404", "kappa": 0.7788414298417474, "tst_error": 32.0}
+{"external_features": "SC405", "raw_grid_epochs": 2722, "valid_reference_epochs": 2722, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 81630.0}
+{"evaluated": "SC405", "kappa": 0.3825214543785388, "tst_error": 277.0}
+{"external_features": "SC406", "raw_grid_epochs": 2770, "valid_reference_epochs": 2770, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 83070.0}
+{"evaluated": "SC406", "kappa": 0.8476723238835688, "tst_error": 1.5}
+{"external_features": "SC407", "raw_grid_epochs": 2810, "valid_reference_epochs": 2810, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 84270.0}
+{"evaluated": "SC407", "kappa": 0.3393500312574136, "tst_error": 446.0}
+{"external_features": "SC408", "raw_grid_epochs": 2796, "valid_reference_epochs": 2796, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 83850.0}
+{"evaluated": "SC408", "kappa": 0.6186768148108488, "tst_error": 83.5}
+{"external_features": "SC409", "raw_grid_epochs": 2732, "valid_reference_epochs": 2721, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 81930.0}
+{"evaluated": "SC409", "kappa": 0.7265944886834634, "tst_error": 48.5}
+{"external_features": "SC410", "raw_grid_epochs": 2720, "valid_reference_epochs": 2719, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 81570.0}
+{"evaluated": "SC410", "kappa": 0.1460603662651897, "tst_error": 808.0}
+{"external_features": "SC411", "raw_grid_epochs": 2642, "valid_reference_epochs": 2641, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 79230.0}
+{"evaluated": "SC411", "kappa": 0.6394800874991242, "tst_error": 124.0}
+{"external_features": "SC412", "raw_grid_epochs": 2786, "valid_reference_epochs": 2685, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 83550.0}
+{"evaluated": "SC412", "kappa": 0.5795376580893014, "tst_error": 228.0}
+{"external_features": "SC413", "raw_grid_epochs": 2814, "valid_reference_epochs": 2814, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 84390.0}
+{"evaluated": "SC413", "kappa": 0.8842218629415564, "tst_error": 8.5}
+{"external_features": "SC414", "raw_grid_epochs": 2756, "valid_reference_epochs": 2756, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 82650.0}
+{"evaluated": "SC414", "kappa": 0.8202244706509294, "tst_error": 21.5}
+{"external_features": "SC415", "raw_grid_epochs": 2620, "valid_reference_epochs": 2616, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 78570.0}
+{"evaluated": "SC415", "kappa": 0.500342501027503, "tst_error": 243.5}
+{"external_features": "SC416", "raw_grid_epochs": 2626, "valid_reference_epochs": 2621, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 78750.0}
+{"evaluated": "SC416", "kappa": 0.6968137098966437, "tst_error": 60.5}
+{"external_features": "SC417", "raw_grid_epochs": 2742, "valid_reference_epochs": 2741, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 82230.0}
+{"evaluated": "SC417", "kappa": 0.6968003397201032, "tst_error": 52.5}
+{"external_features": "SC418", "raw_grid_epochs": 2756, "valid_reference_epochs": 2756, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 82650.0}
+{"evaluated": "SC418", "kappa": 0.6054073340503108, "tst_error": 108.0}
+{"external_features": "SC419", "raw_grid_epochs": 2774, "valid_reference_epochs": 2774, "channel": "EEG Fpz-Cz", "source_hz": 100, "feature_hz": 256, "min_onset": 0.0, "max_onset": 83190.0}
+{"evaluated": "SC419", "kappa": 0.7894165593842617, "tst_error": 20.5}
+{
+  "cohort": "external",
+  "scope": "Independent cohort, different montage/scorer/recording window; a domain-shift evaluation, not same-device or ADHD validation.",
+  "model_sha256": "121837c16b4ff3a045421355048b538c53158119b2afd52dcbd32a641021cb0b",
+  "model_frozen_unix": 1794070464.092282,
+  "results": {
+    "people": 20,
+    "accuracy": 0.7371560058612674,
+    "kappa": 0.5792895188872503,
+    "macro_f1": 0.47821820447271346,
+    "tst_error_minutes": 235.875,
+    "log_loss": 0.7981150825115211,
+    "global_covered": 0.2,
+    "global_width": 48.675,
+    "normalized_covered": 0.25,
+    "normalized_width": 67.83835746599058,
+    "signal_coverage_of_scored": 1.0,
+    "global_coverage_wilson95": [
+      0.08065766257979998,
+      0.41601743225188714
+    ],
+    "normalized_coverage_wilson95": [
+      0.11186170140766816,
+      0.4687008776187378
+    ]
+  },
+  "nominal_interval_coverage": 0.9,
+  "interval_warning": "No external exchangeability guarantee; report empirical coverage and width, including failure.",
+  "reference_labels_opened_after_freeze": true,
+  "secondary_reference_defined_sleep_window": {
+    "people": 20,
+    "accuracy": 0.6871628651632614,
+    "kappa": 0.5145340465936796,
+    "macro_f1": 0.4877022570471946,
+    "tst_error_minutes": 36.75,
+    "log_loss": 0.849595754405259,
+    "global_covered": 0.3,
+    "global_width": 46.25,
+    "normalized_covered": 0.3,
+    "normalized_width": 46.25,
+    "signal_coverage_of_scored": 1.0,
+    "global_coverage_wilson95": [
+      0.1454772448676072,
+      0.5189728183535174
+    ],
+    "normalized_coverage_wilson95": [
+      0.1454772448676072,
+      0.5189728183535174
+    ]
+  }
+}

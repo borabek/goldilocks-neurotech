@@ -1,0 +1,944 @@
+{
+  "question_1": "does the sequence smoother buy kappa by destroying the rare stages?",
+  "question_2": "would macro-F1 have chosen a different sequence weight than kappa?",
+  "note": "the test rows are reported, never used to choose anything",
+  "variants": {
+    "cnn": {
+      "frozen_sequence_weight": 0.5,
+      "temperature": 1.603461731982612,
+      "selection_metric_used": "kappa",
+      "weights": {
+        "0.0": {
+          "selection_people": {
+            "people": 6,
+            "kappa": 0.5463561567282941,
+            "macro_f1": 0.4798485726285467,
+            "tst_error_minutes": 14.166666666666666,
+            "per_stage_f1": {
+              "W": 0.7167,
+              "N1": 0.1025,
+              "N2": 0.8368,
+              "N3": 0.163,
+              "REM": 0.5802
+            },
+            "per_stage_recall": {
+              "W": 0.7241,
+              "N1": 0.0684,
+              "N2": 0.8612,
+              "N3": 0.1392,
+              "REM": 0.6301
+            },
+            "per_stage_precision": {
+              "W": 0.7451,
+              "N1": 0.2858,
+              "N2": 0.8227,
+              "N3": 0.3627,
+              "REM": 0.5782
+            }
+          },
+          "test_people": {
+            "people": 20,
+            "kappa": 0.5934510940798247,
+            "macro_f1": 0.47182010148515563,
+            "tst_error_minutes": 14.825,
+            "per_stage_f1": {
+              "W": 0.7242,
+              "N1": 0.0581,
+              "N2": 0.8531,
+              "N3": 0.1662,
+              "REM": 0.5574
+            },
+            "per_stage_recall": {
+              "W": 0.7876,
+              "N1": 0.0383,
+              "N2": 0.9004,
+              "N3": 0.1517,
+              "REM": 0.5516
+            },
+            "per_stage_precision": {
+              "W": 0.6911,
+              "N1": 0.263,
+              "N2": 0.8258,
+              "N3": 0.2787,
+              "REM": 0.6024
+            }
+          }
+        },
+        "0.5": {
+          "selection_people": {
+            "people": 6,
+            "kappa": 0.6847682852146528,
+            "macro_f1": 0.5823683861684023,
+            "tst_error_minutes": 13.583333333333334,
+            "per_stage_f1": {
+              "W": 0.8087,
+              "N1": 0.2126,
+              "N2": 0.8752,
+              "N3": 0.248,
+              "REM": 0.7672
+            },
+            "per_stage_recall": {
+              "W": 0.7999,
+              "N1": 0.1973,
+              "N2": 0.8446,
+              "N3": 0.3052,
+              "REM": 0.9049
+            },
+            "per_stage_precision": {
+              "W": 0.8538,
+              "N1": 0.2826,
+              "N2": 0.9189,
+              "N3": 0.3466,
+              "REM": 0.6973
+            }
+          },
+          "test_people": {
+            "people": 20,
+            "kappa": 0.7281509100617163,
+            "macro_f1": 0.5947537801507974,
+            "tst_error_minutes": 16.525,
+            "per_stage_f1": {
+              "W": 0.8124,
+              "N1": 0.2628,
+              "N2": 0.8908,
+              "N3": 0.2476,
+              "REM": 0.7603
+            },
+            "per_stage_recall": {
+              "W": 0.8677,
+              "N1": 0.2517,
+              "N2": 0.8855,
+              "N3": 0.3242,
+              "REM": 0.7882
+            },
+            "per_stage_precision": {
+              "W": 0.7808,
+              "N1": 0.4101,
+              "N2": 0.9145,
+              "N3": 0.2996,
+              "REM": 0.7728
+            }
+          }
+        },
+        "1.0": {
+          "selection_people": {
+            "people": 6,
+            "kappa": 0.6319312071108745,
+            "macro_f1": 0.593186082738119,
+            "tst_error_minutes": 11.833333333333334,
+            "per_stage_f1": {
+              "W": 0.8235,
+              "N1": 0.3046,
+              "N2": 0.8036,
+              "N3": 0.2857,
+              "REM": 0.7485
+            },
+            "per_stage_recall": {
+              "W": 0.7879,
+              "N1": 0.3718,
+              "N2": 0.7114,
+              "N3": 0.3917,
+              "REM": 0.9634
+            },
+            "per_stage_precision": {
+              "W": 0.9018,
+              "N1": 0.3247,
+              "N2": 0.9505,
+              "N3": 0.2934,
+              "REM": 0.6454
+            }
+          },
+          "test_people": {
+            "people": 20,
+            "kappa": 0.6785423549563729,
+            "macro_f1": 0.6023443990398266,
+            "tst_error_minutes": 13.725,
+            "per_stage_f1": {
+              "W": 0.8185,
+              "N1": 0.2887,
+              "N2": 0.8423,
+              "N3": 0.2982,
+              "REM": 0.764
+            },
+            "per_stage_recall": {
+              "W": 0.8406,
+              "N1": 0.3471,
+              "N2": 0.769,
+              "N3": 0.5596,
+              "REM": 0.8799
+            },
+            "per_stage_precision": {
+              "W": 0.82,
+              "N1": 0.3199,
+              "N2": 0.9553,
+              "N3": 0.2809,
+              "REM": 0.7135
+            }
+          }
+        }
+      },
+      "selection_metric_ablation": {
+        "weight_chosen_by_kappa": 0.5,
+        "weight_chosen_by_macro_f1": 1.0,
+        "metrics_disagree": true
+      },
+      "smoothing_cost": {
+        "test_N1_f1_without_smoothing": 0.0581,
+        "test_N1_f1_at_frozen_weight": 0.2628,
+        "smoothing_reduces_N1_f1": false,
+        "test_kappa_without_smoothing": 0.5934510940798247,
+        "test_kappa_at_frozen_weight": 0.7281509100617163
+      }
+    },
+    "cnn_sqrtbalanced": {
+      "frozen_sequence_weight": 0.5,
+      "temperature": 1.6354822567886749,
+      "selection_metric_used": "macro_f1",
+      "weights": {
+        "0.0": {
+          "selection_people": {
+            "people": 6,
+            "kappa": 0.538758939765633,
+            "macro_f1": 0.5179460457988808,
+            "tst_error_minutes": 17.666666666666668,
+            "per_stage_f1": {
+              "W": 0.6981,
+              "N1": 0.2348,
+              "N2": 0.8182,
+              "N3": 0.2375,
+              "REM": 0.6011
+            },
+            "per_stage_recall": {
+              "W": 0.6584,
+              "N1": 0.3259,
+              "N2": 0.7943,
+              "N3": 0.311,
+              "REM": 0.6709
+            },
+            "per_stage_precision": {
+              "W": 0.7877,
+              "N1": 0.1927,
+              "N2": 0.8526,
+              "N3": 0.312,
+              "REM": 0.5772
+            }
+          },
+          "test_people": {
+            "people": 20,
+            "kappa": 0.5772848020609779,
+            "macro_f1": 0.5176582057104641,
+            "tst_error_minutes": 8.375,
+            "per_stage_f1": {
+              "W": 0.7047,
+              "N1": 0.2213,
+              "N2": 0.8436,
+              "N3": 0.2638,
+              "REM": 0.5549
+            },
+            "per_stage_recall": {
+              "W": 0.6824,
+              "N1": 0.2437,
+              "N2": 0.8495,
+              "N3": 0.3897,
+              "REM": 0.5713
+            },
+            "per_stage_precision": {
+              "W": 0.7441,
+              "N1": 0.2518,
+              "N2": 0.8512,
+              "N3": 0.2808,
+              "REM": 0.5726
+            }
+          }
+        },
+        "0.5": {
+          "selection_people": {
+            "people": 6,
+            "kappa": 0.6227000753249259,
+            "macro_f1": 0.5871859989866295,
+            "tst_error_minutes": 15.333333333333334,
+            "per_stage_f1": {
+              "W": 0.7766,
+              "N1": 0.2972,
+              "N2": 0.8257,
+              "N3": 0.2747,
+              "REM": 0.7617
+            },
+            "per_stage_recall": {
+              "W": 0.705,
+              "N1": 0.5993,
+              "N2": 0.7423,
+              "N3": 0.3859,
+              "REM": 0.8775
+            },
+            "per_stage_precision": {
+              "W": 0.9088,
+              "N1": 0.2112,
+              "N2": 0.9443,
+              "N3": 0.2882,
+              "REM": 0.7064
+            }
+          },
+          "test_people": {
+            "people": 20,
+            "kappa": 0.6616443633195422,
+            "macro_f1": 0.6040405343058867,
+            "tst_error_minutes": 9.75,
+            "per_stage_f1": {
+              "W": 0.7946,
+              "N1": 0.3461,
+              "N2": 0.8483,
+              "N3": 0.2917,
+              "REM": 0.7394
+            },
+            "per_stage_recall": {
+              "W": 0.7381,
+              "N1": 0.575,
+              "N2": 0.7815,
+              "N3": 0.5559,
+              "REM": 0.7798
+            },
+            "per_stage_precision": {
+              "W": 0.8833,
+              "N1": 0.2758,
+              "N2": 0.9481,
+              "N3": 0.2489,
+              "REM": 0.7577
+            }
+          }
+        },
+        "1.0": {
+          "selection_people": {
+            "people": 6,
+            "kappa": 0.515511494086631,
+            "macro_f1": 0.5447135733798047,
+            "tst_error_minutes": 17.75,
+            "per_stage_f1": {
+              "W": 0.7837,
+              "N1": 0.2175,
+              "N2": 0.6717,
+              "N3": 0.308,
+              "REM": 0.7427
+            },
+            "per_stage_recall": {
+              "W": 0.7017,
+              "N1": 0.6446,
+              "N2": 0.5372,
+              "N3": 0.4771,
+              "REM": 0.8795
+            },
+            "per_stage_precision": {
+              "W": 0.9416,
+              "N1": 0.1403,
+              "N2": 0.9724,
+              "N3": 0.2587,
+              "REM": 0.6875
+            }
+          },
+          "test_people": {
+            "people": 20,
+            "kappa": 0.5346251066159267,
+            "macro_f1": 0.5453911158523799,
+            "tst_error_minutes": 14.625,
+            "per_stage_f1": {
+              "W": 0.7575,
+              "N1": 0.2887,
+              "N2": 0.7152,
+              "N3": 0.262,
+              "REM": 0.7035
+            },
+            "per_stage_recall": {
+              "W": 0.6652,
+              "N1": 0.6752,
+              "N2": 0.5819,
+              "N3": 0.663,
+              "REM": 0.786
+            },
+            "per_stage_precision": {
+              "W": 0.9241,
+              "N1": 0.1981,
+              "N2": 0.9743,
+              "N3": 0.204,
+              "REM": 0.7107
+            }
+          }
+        }
+      },
+      "selection_metric_ablation": {
+        "weight_chosen_by_kappa": 0.5,
+        "weight_chosen_by_macro_f1": 0.5,
+        "metrics_disagree": false
+      },
+      "smoothing_cost": {
+        "test_N1_f1_without_smoothing": 0.2213,
+        "test_N1_f1_at_frozen_weight": 0.3461,
+        "smoothing_reduces_N1_f1": false,
+        "test_kappa_without_smoothing": 0.5772848020609779,
+        "test_kappa_at_frozen_weight": 0.6616443633195422
+      }
+    },
+    "cnn_balanced": {
+      "frozen_sequence_weight": 0.5,
+      "temperature": 2.0529004838263405,
+      "selection_metric_used": "macro_f1",
+      "weights": {
+        "0.0": {
+          "selection_people": {
+            "people": 6,
+            "kappa": 0.4748530546786971,
+            "macro_f1": 0.50671182808522,
+            "tst_error_minutes": 18.333333333333332,
+            "per_stage_f1": {
+              "W": 0.6794,
+              "N1": 0.1839,
+              "N2": 0.7477,
+              "N3": 0.3406,
+              "REM": 0.582
+            },
+            "per_stage_recall": {
+              "W": 0.6791,
+              "N1": 0.4095,
+              "N2": 0.6386,
+              "N3": 0.4898,
+              "REM": 0.684
+            },
+            "per_stage_precision": {
+              "W": 0.7364,
+              "N1": 0.1208,
+              "N2": 0.915,
+              "N3": 0.3403,
+              "REM": 0.5362
+            }
+          },
+          "test_people": {
+            "people": 20,
+            "kappa": 0.4918977743013323,
+            "macro_f1": 0.49656981960160984,
+            "tst_error_minutes": 10.375,
+            "per_stage_f1": {
+              "W": 0.6739,
+              "N1": 0.2376,
+              "N2": 0.7606,
+              "N3": 0.264,
+              "REM": 0.5467
+            },
+            "per_stage_recall": {
+              "W": 0.6922,
+              "N1": 0.4095,
+              "N2": 0.6604,
+              "N3": 0.6216,
+              "REM": 0.593
+            },
+            "per_stage_precision": {
+              "W": 0.67,
+              "N1": 0.1931,
+              "N2": 0.915,
+              "N3": 0.2128,
+              "REM": 0.5373
+            }
+          }
+        },
+        "0.5": {
+          "selection_people": {
+            "people": 6,
+            "kappa": 0.4732094495622003,
+            "macro_f1": 0.535903105808574,
+            "tst_error_minutes": 16.166666666666668,
+            "per_stage_f1": {
+              "W": 0.7809,
+              "N1": 0.1926,
+              "N2": 0.644,
+              "N3": 0.3475,
+              "REM": 0.7144
+            },
+            "per_stage_recall": {
+              "W": 0.7474,
+              "N1": 0.7006,
+              "N2": 0.4934,
+              "N3": 0.5195,
+              "REM": 0.7846
+            },
+            "per_stage_precision": {
+              "W": 0.8709,
+              "N1": 0.1153,
+              "N2": 0.9715,
+              "N3": 0.319,
+              "REM": 0.7128
+            }
+          },
+          "test_people": {
+            "people": 20,
+            "kappa": 0.4793558919265092,
+            "macro_f1": 0.5248533819494835,
+            "tst_error_minutes": 8.375,
+            "per_stage_f1": {
+              "W": 0.7696,
+              "N1": 0.2692,
+              "N2": 0.6509,
+              "N3": 0.2423,
+              "REM": 0.6923
+            },
+            "per_stage_recall": {
+              "W": 0.7338,
+              "N1": 0.7083,
+              "N2": 0.5011,
+              "N3": 0.6562,
+              "REM": 0.7147
+            },
+            "per_stage_precision": {
+              "W": 0.8311,
+              "N1": 0.1797,
+              "N2": 0.9757,
+              "N3": 0.1861,
+              "REM": 0.7522
+            }
+          }
+        },
+        "1.0": {
+          "selection_people": {
+            "people": 6,
+            "kappa": 0.33719446242329515,
+            "macro_f1": 0.45853658907422873,
+            "tst_error_minutes": 17.333333333333332,
+            "per_stage_f1": {
+              "W": 0.7833,
+              "N1": 0.143,
+              "N2": 0.386,
+              "N3": 0.2843,
+              "REM": 0.6961
+            },
+            "per_stage_recall": {
+              "W": 0.713,
+              "N1": 0.8035,
+              "N2": 0.248,
+              "N3": 0.5627,
+              "REM": 0.7199
+            },
+            "per_stage_precision": {
+              "W": 0.9257,
+              "N1": 0.0806,
+              "N2": 0.9778,
+              "N3": 0.2299,
+              "REM": 0.7617
+            }
+          },
+          "test_people": {
+            "people": 20,
+            "kappa": 0.3459554854136199,
+            "macro_f1": 0.4363996106303295,
+            "tst_error_minutes": 15.95,
+            "per_stage_f1": {
+              "W": 0.7169,
+              "N1": 0.2153,
+              "N2": 0.3684,
+              "N3": 0.2092,
+              "REM": 0.6722
+            },
+            "per_stage_recall": {
+              "W": 0.6286,
+              "N1": 0.825,
+              "N2": 0.2404,
+              "N3": 0.6972,
+              "REM": 0.705
+            },
+            "per_stage_precision": {
+              "W": 0.9168,
+              "N1": 0.1301,
+              "N2": 0.9883,
+              "N3": 0.1511,
+              "REM": 0.7392
+            }
+          }
+        }
+      },
+      "selection_metric_ablation": {
+        "weight_chosen_by_kappa": 0.0,
+        "weight_chosen_by_macro_f1": 0.5,
+        "metrics_disagree": true
+      },
+      "smoothing_cost": {
+        "test_N1_f1_without_smoothing": 0.2376,
+        "test_N1_f1_at_frozen_weight": 0.2692,
+        "smoothing_reduces_N1_f1": false,
+        "test_kappa_without_smoothing": 0.4918977743013323,
+        "test_kappa_at_frozen_weight": 0.4793558919265092
+      }
+    },
+    "cnn_augmented": {
+      "frozen_sequence_weight": 0.5,
+      "temperature": 1.6291085687741682,
+      "selection_metric_used": "kappa",
+      "weights": {
+        "0.0": {
+          "selection_people": {
+            "people": 6,
+            "kappa": 0.561830879836854,
+            "macro_f1": 0.4933454729150246,
+            "tst_error_minutes": 14.666666666666666,
+            "per_stage_f1": {
+              "W": 0.715,
+              "N1": 0.1216,
+              "N2": 0.8421,
+              "N3": 0.187,
+              "REM": 0.6011
+            },
+            "per_stage_recall": {
+              "W": 0.6927,
+              "N1": 0.09,
+              "N2": 0.8598,
+              "N3": 0.1804,
+              "REM": 0.6708
+            },
+            "per_stage_precision": {
+              "W": 0.781,
+              "N1": 0.252,
+              "N2": 0.8345,
+              "N3": 0.341,
+              "REM": 0.5796
+            }
+          },
+          "test_people": {
+            "people": 20,
+            "kappa": 0.6050026014243752,
+            "macro_f1": 0.4892281586686339,
+            "tst_error_minutes": 10.0,
+            "per_stage_f1": {
+              "W": 0.7343,
+              "N1": 0.0817,
+              "N2": 0.8553,
+              "N3": 0.1988,
+              "REM": 0.576
+            },
+            "per_stage_recall": {
+              "W": 0.7586,
+              "N1": 0.0569,
+              "N2": 0.9031,
+              "N3": 0.2115,
+              "REM": 0.5949
+            },
+            "per_stage_precision": {
+              "W": 0.7284,
+              "N1": 0.4051,
+              "N2": 0.8277,
+              "N3": 0.3503,
+              "REM": 0.5965
+            }
+          }
+        },
+        "0.5": {
+          "selection_people": {
+            "people": 6,
+            "kappa": 0.6925904359793873,
+            "macro_f1": 0.5963783111043727,
+            "tst_error_minutes": 11.916666666666666,
+            "per_stage_f1": {
+              "W": 0.8084,
+              "N1": 0.2728,
+              "N2": 0.8759,
+              "N3": 0.2435,
+              "REM": 0.7814
+            },
+            "per_stage_recall": {
+              "W": 0.7632,
+              "N1": 0.2737,
+              "N2": 0.8391,
+              "N3": 0.3181,
+              "REM": 0.9429
+            },
+            "per_stage_precision": {
+              "W": 0.8931,
+              "N1": 0.3391,
+              "N2": 0.9273,
+              "N3": 0.3331,
+              "REM": 0.6921
+            }
+          },
+          "test_people": {
+            "people": 20,
+            "kappa": 0.726817855473292,
+            "macro_f1": 0.5911860394118393,
+            "tst_error_minutes": 11.525,
+            "per_stage_f1": {
+              "W": 0.8295,
+              "N1": 0.2401,
+              "N2": 0.8876,
+              "N3": 0.2498,
+              "REM": 0.7489
+            },
+            "per_stage_recall": {
+              "W": 0.8464,
+              "N1": 0.2217,
+              "N2": 0.8815,
+              "N3": 0.3656,
+              "REM": 0.8195
+            },
+            "per_stage_precision": {
+              "W": 0.8291,
+              "N1": 0.4326,
+              "N2": 0.9135,
+              "N3": 0.3153,
+              "REM": 0.7228
+            }
+          }
+        },
+        "1.0": {
+          "selection_people": {
+            "people": 6,
+            "kappa": 0.6251475139847912,
+            "macro_f1": 0.5812889217962263,
+            "tst_error_minutes": 13.833333333333334,
+            "per_stage_f1": {
+              "W": 0.8093,
+              "N1": 0.2778,
+              "N2": 0.7971,
+              "N3": 0.274,
+              "REM": 0.7482
+            },
+            "per_stage_recall": {
+              "W": 0.7554,
+              "N1": 0.3621,
+              "N2": 0.7089,
+              "N3": 0.3787,
+              "REM": 0.976
+            },
+            "per_stage_precision": {
+              "W": 0.9145,
+              "N1": 0.2848,
+              "N2": 0.947,
+              "N3": 0.2945,
+              "REM": 0.6374
+            }
+          },
+          "test_people": {
+            "people": 20,
+            "kappa": 0.6751335992743083,
+            "macro_f1": 0.5986390055541997,
+            "tst_error_minutes": 10.55,
+            "per_stage_f1": {
+              "W": 0.8303,
+              "N1": 0.2835,
+              "N2": 0.8348,
+              "N3": 0.3017,
+              "REM": 0.7429
+            },
+            "per_stage_recall": {
+              "W": 0.8268,
+              "N1": 0.3101,
+              "N2": 0.7602,
+              "N3": 0.5795,
+              "REM": 0.8824
+            },
+            "per_stage_precision": {
+              "W": 0.8537,
+              "N1": 0.3286,
+              "N2": 0.9551,
+              "N3": 0.2676,
+              "REM": 0.6788
+            }
+          }
+        }
+      },
+      "selection_metric_ablation": {
+        "weight_chosen_by_kappa": 0.5,
+        "weight_chosen_by_macro_f1": 0.5,
+        "metrics_disagree": false
+      },
+      "smoothing_cost": {
+        "test_N1_f1_without_smoothing": 0.0817,
+        "test_N1_f1_at_frozen_weight": 0.2401,
+        "smoothing_reduces_N1_f1": false,
+        "test_kappa_without_smoothing": 0.6050026014243752,
+        "test_kappa_at_frozen_weight": 0.726817855473292
+      }
+    },
+    "cnn_twochannel": {
+      "frozen_sequence_weight": 0.5,
+      "temperature": 1.484567478977035,
+      "selection_metric_used": "kappa",
+      "weights": {
+        "0.0": {
+          "selection_people": {
+            "people": 6,
+            "kappa": 0.5154336701302619,
+            "macro_f1": 0.45445428801947546,
+            "tst_error_minutes": 17.083333333333332,
+            "per_stage_f1": {
+              "W": 0.6638,
+              "N1": 0.0698,
+              "N2": 0.8292,
+              "N3": 0.1583,
+              "REM": 0.5513
+            },
+            "per_stage_recall": {
+              "W": 0.6841,
+              "N1": 0.051,
+              "N2": 0.8661,
+              "N3": 0.1746,
+              "REM": 0.5652
+            },
+            "per_stage_precision": {
+              "W": 0.6826,
+              "N1": 0.146,
+              "N2": 0.8028,
+              "N3": 0.2822,
+              "REM": 0.578
+            }
+          },
+          "test_people": {
+            "people": 20,
+            "kappa": 0.5064074604395589,
+            "macro_f1": 0.4312295741035731,
+            "tst_error_minutes": 16.05,
+            "per_stage_f1": {
+              "W": 0.6227,
+              "N1": 0.0358,
+              "N2": 0.8253,
+              "N3": 0.1909,
+              "REM": 0.4815
+            },
+            "per_stage_recall": {
+              "W": 0.6402,
+              "N1": 0.0217,
+              "N2": 0.8733,
+              "N3": 0.1855,
+              "REM": 0.5046
+            },
+            "per_stage_precision": {
+              "W": 0.6281,
+              "N1": 0.2463,
+              "N2": 0.7939,
+              "N3": 0.3119,
+              "REM": 0.5007
+            }
+          }
+        },
+        "0.5": {
+          "selection_people": {
+            "people": 6,
+            "kappa": 0.7107309921087582,
+            "macro_f1": 0.5999601183504869,
+            "tst_error_minutes": 15.75,
+            "per_stage_f1": {
+              "W": 0.7696,
+              "N1": 0.2392,
+              "N2": 0.9002,
+              "N3": 0.3009,
+              "REM": 0.7898
+            },
+            "per_stage_recall": {
+              "W": 0.7543,
+              "N1": 0.266,
+              "N2": 0.8867,
+              "N3": 0.3796,
+              "REM": 0.8836
+            },
+            "per_stage_precision": {
+              "W": 0.8635,
+              "N1": 0.2659,
+              "N2": 0.9201,
+              "N3": 0.3147,
+              "REM": 0.7467
+            }
+          },
+          "test_people": {
+            "people": 20,
+            "kappa": 0.6530522117906783,
+            "macro_f1": 0.553923782088401,
+            "tst_error_minutes": 9.425,
+            "per_stage_f1": {
+              "W": 0.7495,
+              "N1": 0.1751,
+              "N2": 0.8583,
+              "N3": 0.2951,
+              "REM": 0.6916
+            },
+            "per_stage_recall": {
+              "W": 0.7612,
+              "N1": 0.1601,
+              "N2": 0.8489,
+              "N3": 0.4499,
+              "REM": 0.7532
+            },
+            "per_stage_precision": {
+              "W": 0.7513,
+              "N1": 0.3111,
+              "N2": 0.8827,
+              "N3": 0.3042,
+              "REM": 0.673
+            }
+          }
+        },
+        "1.0": {
+          "selection_people": {
+            "people": 6,
+            "kappa": 0.660325724393015,
+            "macro_f1": 0.5887772244925125,
+            "tst_error_minutes": 15.583333333333334,
+            "per_stage_f1": {
+              "W": 0.7656,
+              "N1": 0.2305,
+              "N2": 0.8534,
+              "N3": 0.3199,
+              "REM": 0.7745
+            },
+            "per_stage_recall": {
+              "W": 0.736,
+              "N1": 0.3475,
+              "N2": 0.7664,
+              "N3": 0.4855,
+              "REM": 0.9581
+            },
+            "per_stage_precision": {
+              "W": 0.9058,
+              "N1": 0.2033,
+              "N2": 0.9686,
+              "N3": 0.2709,
+              "REM": 0.6815
+            }
+          },
+          "test_people": {
+            "people": 20,
+            "kappa": 0.5831147241478255,
+            "macro_f1": 0.5529760459469761,
+            "tst_error_minutes": 8.25,
+            "per_stage_f1": {
+              "W": 0.7684,
+              "N1": 0.2277,
+              "N2": 0.771,
+              "N3": 0.2451,
+              "REM": 0.7526
+            },
+            "per_stage_recall": {
+              "W": 0.7428,
+              "N1": 0.2997,
+              "N2": 0.6715,
+              "N3": 0.5905,
+              "REM": 0.9114
+            },
+            "per_stage_precision": {
+              "W": 0.8132,
+              "N1": 0.2522,
+              "N2": 0.935,
+              "N3": 0.2084,
+              "REM": 0.6759
+            }
+          }
+        }
+      },
+      "selection_metric_ablation": {
+        "weight_chosen_by_kappa": 0.5,
+        "weight_chosen_by_macro_f1": 0.5,
+        "metrics_disagree": false
+      },
+      "smoothing_cost": {
+        "test_N1_f1_without_smoothing": 0.0358,
+        "test_N1_f1_at_frozen_weight": 0.1751,
+        "smoothing_reduces_N1_f1": false,
+        "test_kappa_without_smoothing": 0.5064074604395589,
+        "test_kappa_at_frozen_weight": 0.6530522117906783
+      }
+    }
+  },
+  "created_unix": 1794097810.667378,
+  "seconds": 145.5
+}

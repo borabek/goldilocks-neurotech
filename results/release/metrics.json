@@ -1,0 +1,17 @@
+{
+  "rows": 4913,
+  "formulations": 321,
+  "sources": 113,
+  "train_sources": 90,
+  "test_sources": 23,
+  "test_formulations": 98,
+  "study_averaged_model_mae_fraction": 0.14391386329515446,
+  "study_averaged_baseline_mae_fraction": 0.16062668568794475,
+  "outside_0_1_observations": 108,
+  "limitations": [
+    "Separate PLGA in-vitro experiment; not the neural-stream core.",
+    "Literature measurements/digitisation and reporting quality limit interpretation.",
+    "No hydrogel, protein-payload, brain exposure, toxicity or clinical validation.",
+    "No cross-corpus pooling; overlap with Bannigan has not been ruled out."
+  ]
+}

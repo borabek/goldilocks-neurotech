@@ -1,0 +1,22 @@
+{
+  "created_unix": 1794070504.971,
+  "labels_accessed": false,
+  "input_channel": "EEG Fpz-Cz only",
+  "input_sampling_hz": 100,
+  "target_sampling_hz": 256,
+  "resampling": "scipy.signal.resample_poly, up=64, down=25",
+  "units": "MNE-calibrated volts converted to microvolts",
+  "primary_window": "all valid scored 30-second epochs in recording",
+  "secondary_window": "first to last scored sleep with 30-minute margins, reference-defined evaluation window only",
+  "label_map": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 3,
+    "W": 0,
+    "R": 4
+  },
+  "unknown": "movement/unscored excluded; context resets at gaps",
+  "point_model": "frozen channel-shared BOAS model, no external fitting or adaptation",
+  "intervals": "BOAS-calibrated intervals transported without recalibration; exchangeability under device/cohort shift not assumed"
+}

@@ -1,0 +1,96 @@
+{
+  "what_varies": "the temporal head's seed only; the trunk is frozen and identical across runs",
+  "trunk": "results/cnn",
+  "seeds": 5,
+  "runs": [
+    {
+      "seed": 20261108,
+      "selected_pass": 6,
+      "sequence_weight": 0.5,
+      "kappa": 0.7320404118669016,
+      "macro_f1": 0.6158585335334725,
+      "accuracy": 0.8423598286615279,
+      "tst_error_minutes": 9.625
+    },
+    {
+      "seed": 20261109,
+      "selected_pass": 5,
+      "sequence_weight": 0.5,
+      "kappa": 0.7283689771979003,
+      "macro_f1": 0.6039578193166986,
+      "accuracy": 0.8388259371952544,
+      "tst_error_minutes": 11.05
+    },
+    {
+      "seed": 20261110,
+      "selected_pass": 8,
+      "sequence_weight": 0.5,
+      "kappa": 0.7283614246980942,
+      "macro_f1": 0.6018320798862205,
+      "accuracy": 0.8374136111437119,
+      "tst_error_minutes": 20.325
+    },
+    {
+      "seed": 20261111,
+      "selected_pass": 4,
+      "sequence_weight": 0.5,
+      "kappa": 0.7312947505981923,
+      "macro_f1": 0.610672232663101,
+      "accuracy": 0.8404180077903615,
+      "tst_error_minutes": 11.625
+    },
+    {
+      "seed": 20261112,
+      "selected_pass": 4,
+      "sequence_weight": 0.5,
+      "kappa": 0.7328165901319071,
+      "macro_f1": 0.6011762521422185,
+      "accuracy": 0.8390702741439601,
+      "tst_error_minutes": 12.175
+    }
+  ],
+  "statistics": {
+    "kappa": {
+      "mean": 0.730576430898599,
+      "sd": 0.002089057273386433,
+      "min": 0.7283614246980942,
+      "max": 0.7328165901319071,
+      "spread": 0.004455165433812969
+    },
+    "macro_f1": {
+      "mean": 0.6066993835083422,
+      "sd": 0.006351876857346859,
+      "min": 0.6011762521422185,
+      "max": 0.6158585335334725,
+      "spread": 0.014682281391254048
+    },
+    "accuracy": {
+      "mean": 0.8396175317869632,
+      "sd": 0.0018671055880333108,
+      "min": 0.8374136111437119,
+      "max": 0.8423598286615279,
+      "spread": 0.004946217517815987
+    },
+    "tst_error_minutes": {
+      "mean": 12.959999999999999,
+      "sd": 4.2252810557405525,
+      "min": 9.625,
+      "max": 20.325,
+      "spread": 10.7
+    }
+  },
+  "observed_gaps": {
+    "context_vs_context_sqrtbalanced_macro_f1": -0.005744095653827386
+  },
+  "verdict": "the gap between those two context variants is smaller than the head-seed spread, so it is not a finding",
+  "not_measured": "trunk variance, which needs full retraining at about 25 minutes a seed",
+  "created_unix": 1794099696.7742093,
+  "seconds": 492.0,
+  "environment_note": "These five runs executed in the cloud Linux workspace with JAX 0.12.0.1. The context model shipped in this package was trained on the Mac's Linux workspace with JAX 0.6.2 and the same seed 20261108, and it reads macro-F1 0.618 against 0.616 here. So the same seed does not reproduce across these two environments either: training is reproducible to about two decimal places, unlike the frozen evaluation, which reproduces to fifteen significant figures. The shipped model was restored after this study; these runs changed no published result.",
+  "claims_this_forces": [
+    "The 0.618 macro-F1 of the context model is the top of a 0.601-0.616 seed range whose mean is 0.607. Quote the seed mean, or quote 0.618 with the spread beside it.",
+    "The 0.011 macro-F1 gap between the context model and the one on the square-root-balanced trunk is smaller than the 0.015 seed spread. It is not a finding and the plan must not order those two.",
+    "The 8.7-minute sleep-time error is the fragile number: across seeds it ranges 9.6 to 20.3 minutes with a standard deviation of 4.2. Do not claim 8.7 minutes. The defensible statement is that the context model roughly halves the frozen model's 31.8 minutes, to somewhere around 13 minutes.",
+    "Kappa is the stable one: spread 0.004 across seeds, so the kappa ordering survives."
+  ]
+}

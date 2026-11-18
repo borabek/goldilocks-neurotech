@@ -1,0 +1,14 @@
+{
+  "subject": "sub-98",
+  "channels": [
+    "HB_1",
+    "HB_2"
+  ],
+  "sampling_hz": 256.0,
+  "samples": 6920192,
+  "duration_seconds": 27032.0,
+  "epochs": 901,
+  "alignment": "onsets, durations, one-based begin/end sample checked",
+  "input_unit": "MNE-calibrated volts converted to microvolts",
+  "finite_nonflat_epochs": 901
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<meta charset="utf-8"><title>Bioconjugate — Oxford Neurotech</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:#0b1118}
+#fit{position:fixed;left:50%;top:50%;width:1920px;height:1080px;transform-origin:center center}
+.scene{position:absolute;inset:0;padding:92px 118px;opacity:0;transition:opacity .45s ease;
+ display:flex;flex-direction:column;justify-content:center;gap:30px;
+ color:#eef2f6;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.scene.on{opacity:1}
+h1{font-size:84px;font-weight:600;line-height:1.08;letter-spacing:-1px}
+h2{font-size:54px;font-weight:600;line-height:1.14}
+.kick{font-size:23px;letter-spacing:4px;color:#54a8c7;font-weight:600}
+.sub{font-size:32px;line-height:1.45;color:#9fb0c0;max-width:1520px}
+.row{display:flex;gap:30px}
+.card{background:#141d27;border:1px solid #2c3e50;border-radius:18px;padding:34px;flex:1;
+ display:flex;flex-direction:column;gap:10px;justify-content:center}
+.num{font-size:120px;font-weight:700;line-height:1;letter-spacing:-3px}
+.cap{font-size:27px;color:#9fb0c0;line-height:1.35}
+.hot{color:#ff9263}.cool{color:#6cc5e8}.good{color:#7fd6a8}
+table{width:100%;border-collapse:collapse;font-size:32px}
+th{text-align:left;padding:14px 16px;border-bottom:2px solid #2c3e50;color:#9fb0c0;font-weight:600;font-size:25px}
+td{padding:15px 16px;border-bottom:1px solid #1d2935}
+td.n{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+canvas{background:#111c27;border:1px solid #2c3e50;border-radius:14px;display:block}
+.lab{font-size:23px;color:#9fb0c0;letter-spacing:2px;font-weight:600}
+.mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:26px;line-height:1.7;color:#9fb0c0}
+.mono b{color:#eef2f6;font-weight:600}
+#tick{position:fixed;left:0;bottom:0;height:4px;background:#54a8c7;width:0}
+</style>
+<body><div id="fit">
+
+<div class="scene" id="s1">
+ <div class="kick">BIOCONJUGATE · OXFORD NEUROTECH · STREAM 2</div>
+ <h1>Getting a drug into the brain is hard.<br>Proving it got there is harder.</h1>
+ <div class="sub">Our target is delivery for Alzheimer's, Parkinson's and ADHD. Before we claim anything
+  about a therapy, we have to be able to trust a measurement. So we built the measurement discipline first.</div>
+</div>
+
+<div class="scene" id="s2">
+ <div class="kick">THE CHALLENGE</div>
+ <h2>In this field, claims outrun the measurements</h2>
+ <div class="row">
+  <div class="card"><div class="cap">Brain exposure in humans cannot be measured directly. A plasma level
+   is not a brain level, and PET with a labelled drug is the best available option, not a convenient one.</div></div>
+  <div class="card"><div class="cap">ADHD has no validated imaging biomarker at all, which makes a symptom
+   scale the endpoint — and a symptom scale cannot separate a delivery effect from a placebo one.</div></div>
+ </div>
+ <div class="sub">A method that cannot tell you when it is wrong is worth nothing here. So the first thing
+  we built is not a therapy. It is an evaluation that fails loudly.</div>
+</div>
+
+<div class="scene" id="s3">
+ <div class="kick">OUR APPROACH</div>
+ <h2>Prove the discipline on data we can actually get</h2>
+ <div class="sub">We have no patients and no imaging. What we do have is public neurophysiology, so we
+  tested the method end to end on it: one model for wearable EEG sleep staging, frozen before testing,
+  held out by person, then run unchanged on a second independent cohort.</div>
+ <canvas id="c3" width="1620" height="230"></canvas>
+ <div class="sub" style="font-size:28px">Five stages every thirty seconds, each with a calibrated confidence.
+  A held-out person from the public BOAS cohort. We recorded no one.</div>
+</div>
+
+<div class="scene" id="s4">
+ <div class="kick">STEP 1 — IT WORKS WHERE IT WAS TRAINED</div>
+ <h2>On the home device, we beat the open-source baseline</h2>
+ <table>
+  <tr><th>20 held-out people</th><th style="text-align:right">Kappa</th><th style="text-align:right">Sleep-time error</th></tr>
+  <tr><td>Ours</td><td class="n cool">0.661</td><td class="n cool">31.8 min</td></tr>
+  <tr><td>YASA 0.7.0 baseline</td><td class="n">0.532</td><td class="n">57.6 min</td></tr>
+  <tr><td>Best configuration</td><td class="n cool">0.734</td><td class="n cool">8.7 min</td></tr>
+ </table>
+ <div class="sub" style="font-size:28px">This is the part every project shows. It is also the part that proves nothing.</div>
+</div>
+
+<div class="scene" id="s5">
+ <div class="kick">STEP 2 — AND THEN IT FAILS, VISIBLY</div>
+ <h2>The same model, on a device it never saw</h2>
+ <div style="font-size:23px;color:#9fb0c0">Rows, top to bottom: <b style="color:#c3d4e3">Wake</b> ·
+  <b style="color:#c0a6ff">REM</b> · <b style="color:#8fe0f7">N1</b> · <b style="color:#4bb8e0">N2</b> ·
+  <b style="color:#2a93bd">N3</b></div>
+ <div class="lab">REFERENCE — SCORED BY A HUMAN</div>
+ <canvas id="c5a" width="1620" height="118"></canvas>
+ <div class="lab">OUR MODEL</div>
+ <canvas id="c5b" width="1620" height="118"></canvas>
+ <div class="row">
+  <div class="card"><div class="num cool" style="font-size:84px">473</div><div class="cap">minutes of sleep, reference</div></div>
+  <div class="card"><div class="num hot" style="font-size:84px" id="cnt">0</div><div class="cap">minutes we reported</div></div>
+  <div class="card"><div class="num hot" style="font-size:84px">910</div><div class="cap">minutes wrong, one night</div></div>
+ </div>
+</div>
+
+<div class="scene" id="s6">
+ <div class="kick">AND THE EVALUATION CAUGHT IT</div>
+ <h2>The best model at home was the worst one away</h2>
+ <div class="row">
+  <div class="card"><div class="cap">our strongest model · home device</div><div class="num cool" style="font-size:140px">0.728</div></div>
+  <div class="card"><div class="cap">the same model · new device</div><div class="num hot" style="font-size:140px">0.086</div></div>
+ </div>
+ <div class="sub">Picking by the in-domain score would have picked the most fragile system. Per stage,
+  REM falls from <b class="cool">0.78</b> to <b class="hot">0.09</b>. An aggregate number calls that a moderate decline.</div>
+</div>
+
+<div class="scene" id="s7">
+ <div class="kick">THE PART THAT TRANSFERS TO OUR REAL TARGET</div>
+ <h2>A method that can say no</h2>
+ <div class="row">
+  <div class="card"><div class="num hot" style="font-size:98px">3</div>
+   <div class="cap">claims we withdrew, because they fell inside the seed noise we measured</div></div>
+  <div class="card"><div class="num hot" style="font-size:98px">11</div>
+   <div class="cap">controlled cases the leakage audit runs against itself, with known answers</div></div>
+  <div class="card"><div class="num good" style="font-size:98px">215</div>
+   <div class="cap">figures in this deck checked automatically against the saved results</div></div>
+ </div>
+ <div class="sub" style="font-size:28px">A leakage audit merged two duplicated studies and removed a win we had claimed.
+  Intervals missed their coverage target, so that claim is switched off rather than softened.</div>
+</div>
+
+<div class="scene" id="s8">
+ <div class="kick">APPLIED TO DELIVERY — THE EVIDENCE BURDEN</div>
+ <h2>What we would have to measure, before claiming anything</h2>
+ <table>
+  <tr><th>Indication</th><th>Entry and confirmation</th><th>Outcome</th></tr>
+  <tr><td>Parkinson's</td><td>DAT or FDOPA PET; alpha-synuclein seed amplification</td><td>Motor scales, wearables, levodopa-equivalent dose</td></tr>
+  <tr><td>ADHD</td><td>Symptom scales; fMRI only if research-grade — no validated imaging biomarker exists</td><td>Symptom scales, attention tasks</td></tr>
+  <tr><td>MPS IIIA, fragile X</td><td>CSF heparan sulfate</td><td>Developmental scales</td></tr>
+  <tr><td>Any route</td><td>Serial MRI for oedema and gel position; GFAP and neurofilament light</td><td>Adverse event logs</td></tr>
+ </table>
+ <div class="sub" style="font-size:27px">Written down as an unmet burden, not as work we did. The longest repeated-dose
+  nasal evidence we found runs to about 14 days, so a first pilot stays short.</div>
+</div>
+
+<div class="scene" id="s9">
+ <div class="kick">DO NOT TAKE OUR WORD FOR IT</div>
+ <h2>Thirty seconds, no network, bit-identical</h2>
+ <div class="card" style="flex:0">
+  <div class="mono"><b>$ python reproduce_v2.py</b></div>
+  <div class="mono" id="st9"></div>
+ </div>
+ <div class="sub">Reproduced to the last digit on three machines and two operating systems. Every figure
+  here traces to a result file, and the script that checks that ships in the folder.</div>
+</div>
+
+<div class="scene" id="s10">
+ <h1 style="font-size:70px">We have not cured anything.<br>We built the part that tells you when to stop believing us.</h1>
+ <div class="sub">In a field where a wrong measurement sends a therapy down a decade-long dead end,
+  an evaluation that fails loudly is the prerequisite — not the afterthought.</div>
+ <div class="sub" style="font-size:25px;color:#6f8294">Bioconjugate &mdash; Ceren · biomaterials &nbsp;|&nbsp; Bora · coding &nbsp;|&nbsp; Jacob · neurotechnology<br>
+  Public, de-identified data only: BOAS via OpenNeuro, Sleep-EDF via PhysioNet. No patients, no imaging,
+  no hardware, no clinical claim.</div>
+</div>
+
+</div><div id="tick"></div>
+<script>
+const D = {"sc401": {"reference": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 1, 1, 1, 1, 1, 2, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 1, 2, 2, 2, 2, 0, 1, 1, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 2, 2, 2, 2, 4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "model": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 3, 3, 2, 4, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 2, 2, 2, 2, 2, 2, 0, 4, 4, 4, 4, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 2, 4, 4, 2, 2, 2, 2, 2, 4, 4, 4, 2, 4, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 2, 2, 2, 0, 2, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 1, 3, 2, 2, 2, 2, 2, 3, 3, 3, 3, 2, 2, 2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 2, 2, 2, 3, 2, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 2, 2, 3, 3, 3, 2, 2, 3, 3, 2, 2, 3, 2, 3, 3, 2, 2, 2, 3, 2, 2, 2, 2, 3, 2, 2, 2, 3, 3, 2, 2, 2, 3, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 2, 2, 2, 2], "good": [true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]}, "home": {"subject": "sub-49", "reference": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 2, 3, 3, 3, 2, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 3, 2, 2, 2, 0, 0, 1, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 2, 2, 2, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 0, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 1, 1, 0, 0, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 1, 1, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2], "model": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 1, 1, 0, 0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]}, "m": {"home_kappa": 0.6612737502932162, "home_tst": 31.8, "home_macro": 0.5612071122498967, "ext_kappa": 0.5792895188872503, "ext_tst": 235.875, "ext_macro": 0.47821820447271346, "yasa_kappa": 0.5315947610386906, "yasa_tst": 57.6, "cnn_home": 0.7281509100617163, "cnn_ext": 0.08625671563614042, "ctx_kappa": 0.7336942872111543, "ctx_macro": 0.6180172584364748, "ctx_tst": 8.65, "e2e_macro": 0.4343384869892407, "seed": 0.014682281391254048, "gap": 0.1836787714472341, "live_cost": 0.037810188108501896, "live_off": 0.7281509100617163, "live_on": 0.6903407219532144, "stages_home": [0.817382873804027, 0.3400759511733314, 0.8927254504262263, 0.2592329226465543, 0.7806690941322355], "stages_ext": [0.14933984763241792, 0.12263521038062708, 0.4053623926731767, 0.2615265595984527, 0.08510089423096182], "sc401_ref": 473.0, "sc401_model": 1383.0, "sc401_off": 910.0, "sc401_kappa": 0.1111760345340368}};
+function fit(){ const s = Math.min(innerWidth/1920, innerHeight/1080);
+  document.getElementById('fit').style.transform = 'translate(-50%,-50%) scale('+s+')'; }
+addEventListener('resize', fit); fit();
+const COL = {0:'#c3d4e3',4:'#c0a6ff',1:'#8fe0f7',2:'#4bb8e0',3:'#2a93bd'};
+const ROW = {0:0,4:1,1:2,2:3,3:4};
+function hyp(cv, arr, upto){ const x=cv.getContext('2d'), W=cv.width, H=cv.height, n=arr.length;
+  x.clearRect(0,0,W,H); const rh=H/5, bw=W/n;
+  for(let i=0;i<Math.min(upto,n);i++){ const s=arr[i]; if(s<0||s>4) continue;
+    x.fillStyle=COL[s]; x.fillRect(i*bw, ROW[s]*rh+rh*0.18, Math.max(bw,1.4), rh*0.64); } }
+function show(id){ document.querySelectorAll('.scene').forEach(e=>e.classList.remove('on'));
+  document.getElementById(id).classList.add('on'); }
+const T=[]; function at(s,f){ T.push([s*1000,f]); }
+at(0.1, ()=>show('s1'));
+at(16, ()=>show('s2'));
+at(34, ()=>{ show('s3'); const c=document.getElementById('c3'); let i=0;
+  const iv=setInterval(()=>{ i+=14; hyp(c, D.home.model, i); if(i>D.home.model.length) clearInterval(iv); }, 24); });
+at(54, ()=>show('s4'));
+at(70, ()=>{ show('s5'); const A=document.getElementById('c5a'), B=document.getElementById('c5b');
+  const r=D.sc401.reference, m=D.sc401.model; let i=0;
+  const iv=setInterval(()=>{ i+=11; hyp(A,r,i); hyp(B,m,i); if(i>=r.length) clearInterval(iv); }, 22);
+  let v=0; const tv=setInterval(()=>{ v+=D.m.sc401_model/42; if(v>=D.m.sc401_model){v=D.m.sc401_model;clearInterval(tv);}
+    document.getElementById('cnt').textContent=Math.round(v); }, 34); });
+at(92, ()=>show('s6'));
+at(110, ()=>show('s7'));
+at(128, ()=>show('s8'));
+at(150, ()=>{ show('s9'); const st=document.getElementById('st9');
+  const L=['7 passed','kappa  '+D.m.home_kappa,'sleep-time error  '+D.m.home_tst+' min',
+           'verify_claims: 215 figures, 0 unsupported, hashes match'];
+  let i=0; const iv=setInterval(()=>{ if(i>=L.length){clearInterval(iv);return;} st.innerHTML+=L[i++]+'<br>'; }, 800); });
+at(166, ()=>show('s10'));
+const S=performance.now(), TOT=180000;
+T.forEach(([t,f])=>setTimeout(f,t));
+(function tk(){ const e=performance.now()-S;
+  document.getElementById('tick').style.width=Math.min(100,e/TOT*100)+'%';
+  if(e<TOT) requestAnimationFrame(tk); })();
+</script>

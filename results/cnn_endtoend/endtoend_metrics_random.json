@@ -1,0 +1,140 @@
+{
+  "what_this_is": "The first end-to-end arm (random sequence sampling). Recovered from the run script's own stdout in e2e_quality.log because the control arm overwrote endtoend_metrics.json in place. No value was retyped by hand.",
+  "config": {
+    "sampling": "random",
+    "epochs_per_sequence": 21,
+    "stride": null,
+    "target_exposure_per_epoch_per_pass": 3,
+    "steps_per_pass": 2684,
+    "fit_nights_held_in_memory": 59,
+    "megabytes": 432.9,
+    "load_seconds": 9.8
+  },
+  "summary": {
+    "endtoend": {
+      "people": 20,
+      "accuracy": 0.6633510035853277,
+      "kappa": 0.48112272916268495,
+      "macro_f1": 0.4345137954290944,
+      "tst_error_minutes": 41.375
+    },
+    "frozen_trunk_context": {
+      "people": 20,
+      "accuracy": 0.8433466885544169,
+      "kappa": 0.7336942872111543,
+      "macro_f1": 0.6180172584364748,
+      "tst_error_minutes": 8.65
+    },
+    "v2": {
+      "people": 20,
+      "accuracy": 0.8015156190699255,
+      "kappa": 0.6612737502932162,
+      "macro_f1": 0.5612071122498967,
+      "tst_error_minutes": 31.8
+    },
+    "gain": -0.1835034630073804,
+    "verdict": "the gain exceeds the head-seed spread"
+  },
+  "per_person": [
+    {
+      "evaluated": "sub-1",
+      "kappa": 0.479,
+      "macro_f1": 0.468
+    },
+    {
+      "evaluated": "sub-6",
+      "kappa": 0.578,
+      "macro_f1": 0.552
+    },
+    {
+      "evaluated": "sub-7",
+      "kappa": 0.265,
+      "macro_f1": 0.363
+    },
+    {
+      "evaluated": "sub-9",
+      "kappa": 0.48,
+      "macro_f1": 0.442
+    },
+    {
+      "evaluated": "sub-19",
+      "kappa": 0.584,
+      "macro_f1": 0.601
+    },
+    {
+      "evaluated": "sub-20",
+      "kappa": 0.43,
+      "macro_f1": 0.422
+    },
+    {
+      "evaluated": "sub-30",
+      "kappa": 0.481,
+      "macro_f1": 0.434
+    },
+    {
+      "evaluated": "sub-34",
+      "kappa": 0.508,
+      "macro_f1": 0.415
+    },
+    {
+      "evaluated": "sub-37",
+      "kappa": 0.432,
+      "macro_f1": 0.392
+    },
+    {
+      "evaluated": "sub-49",
+      "kappa": 0.492,
+      "macro_f1": 0.413
+    },
+    {
+      "evaluated": "sub-50",
+      "kappa": 0.676,
+      "macro_f1": 0.499
+    },
+    {
+      "evaluated": "sub-52",
+      "kappa": 0.397,
+      "macro_f1": 0.354
+    },
+    {
+      "evaluated": "sub-63",
+      "kappa": 0.719,
+      "macro_f1": 0.629
+    },
+    {
+      "evaluated": "sub-70",
+      "kappa": 0.54,
+      "macro_f1": 0.42
+    },
+    {
+      "evaluated": "sub-87",
+      "kappa": 0.45,
+      "macro_f1": 0.435
+    },
+    {
+      "evaluated": "sub-88",
+      "kappa": 0.496,
+      "macro_f1": 0.4
+    },
+    {
+      "evaluated": "sub-101",
+      "kappa": 0.526,
+      "macro_f1": 0.431
+    },
+    {
+      "evaluated": "sub-102",
+      "kappa": 0.398,
+      "macro_f1": 0.333
+    },
+    {
+      "evaluated": "sub-118",
+      "kappa": 0.62,
+      "macro_f1": 0.5
+    },
+    {
+      "evaluated": "sub-122",
+      "kappa": 0.073,
+      "macro_f1": 0.187
+    }
+  ]
+}

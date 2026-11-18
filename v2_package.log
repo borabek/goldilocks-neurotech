@@ -1,0 +1,14 @@
+{
+  "Goldilocks_Build_v2.zip": {
+    "bytes": 22498817,
+    "sha256": "2bf07bf3883f98f9f9fedfcec9753a264ce72bf7e77ec4babe4b6ef9d8fd98f6"
+  },
+  "Goldilocks_External_SleepEDF_part_01_of_02.zip": {
+    "bytes": 351826509,
+    "sha256": "a83c1b9f38f040070db687a8912d6634ff44b6425d958ce637803142ebc20c5a"
+  },
+  "Goldilocks_External_SleepEDF_part_02_of_02.zip": {
+    "bytes": 342552856,
+    "sha256": "46ce4b00067a281a11dddc5dfcc283c52be9d029c7642a58b519ef375a950168"
+  }
+}

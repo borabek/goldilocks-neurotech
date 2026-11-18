@@ -1,0 +1,51 @@
+{
+  "cohort": "external",
+  "scope": "Independent cohort, different montage/scorer/recording window; a domain-shift evaluation, not same-device or ADHD validation.",
+  "model_sha256": "121837c16b4ff3a045421355048b538c53158119b2afd52dcbd32a641021cb0b",
+  "model_frozen_unix": 1794070464.092282,
+  "results": {
+    "people": 20,
+    "accuracy": 0.7371560058612674,
+    "kappa": 0.5792895188872503,
+    "macro_f1": 0.47821820447271346,
+    "tst_error_minutes": 235.875,
+    "log_loss": 0.7981150825115211,
+    "global_covered": 0.2,
+    "global_width": 48.675,
+    "normalized_covered": 0.25,
+    "normalized_width": 67.83835746599058,
+    "signal_coverage_of_scored": 1.0,
+    "global_coverage_wilson95": [
+      0.08065766257979998,
+      0.41601743225188714
+    ],
+    "normalized_coverage_wilson95": [
+      0.11186170140766816,
+      0.4687008776187378
+    ]
+  },
+  "nominal_interval_coverage": 0.9,
+  "interval_warning": "No external exchangeability guarantee; report empirical coverage and width, including failure.",
+  "reference_labels_opened_after_freeze": true,
+  "secondary_reference_defined_sleep_window": {
+    "people": 20,
+    "accuracy": 0.6871628651632614,
+    "kappa": 0.5145340465936796,
+    "macro_f1": 0.4877022570471946,
+    "tst_error_minutes": 36.75,
+    "log_loss": 0.849595754405259,
+    "global_covered": 0.3,
+    "global_width": 46.25,
+    "normalized_covered": 0.3,
+    "normalized_width": 46.25,
+    "signal_coverage_of_scored": 1.0,
+    "global_coverage_wilson95": [
+      0.1454772448676072,
+      0.5189728183535174
+    ],
+    "normalized_coverage_wilson95": [
+      0.1454772448676072,
+      0.5189728183535174
+    ]
+  }
+}

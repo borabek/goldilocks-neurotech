@@ -1,0 +1,54 @@
+{"evaluated": "sub-1", "kappa": 0.5924802910855064, "tst_error": 31.0}
+{"evaluated": "sub-6", "kappa": 0.7416420849912518, "tst_error": 32.5}
+{"evaluated": "sub-7", "kappa": 0.5931673506472098, "tst_error": 4.0}
+{"evaluated": "sub-9", "kappa": 0.6445197411160261, "tst_error": 65.5}
+{"evaluated": "sub-19", "kappa": 0.62352138243924, "tst_error": 26.0}
+{"evaluated": "sub-20", "kappa": 0.7158483386479213, "tst_error": 4.5}
+{"evaluated": "sub-30", "kappa": 0.7905982785421493, "tst_error": 5.5}
+{"evaluated": "sub-34", "kappa": 0.6004767229315782, "tst_error": 81.0}
+{"evaluated": "sub-37", "kappa": 0.7319532314828, "tst_error": 8.0}
+{"evaluated": "sub-49", "kappa": 0.8415452538631347, "tst_error": 1.5}
+{"evaluated": "sub-50", "kappa": 0.7061473599015564, "tst_error": 48.0}
+{"evaluated": "sub-52", "kappa": 0.7341639032381657, "tst_error": 9.0}
+{"evaluated": "sub-63", "kappa": 0.766956362598505, "tst_error": 22.5}
+{"evaluated": "sub-70", "kappa": 0.6802793280730213, "tst_error": 15.0}
+{"evaluated": "sub-87", "kappa": 0.6028586135484875, "tst_error": 4.0}
+{"evaluated": "sub-88", "kappa": 0.8865977935939069, "tst_error": 17.0}
+{"evaluated": "sub-101", "kappa": 0.7604990566155614, "tst_error": 3.5}
+{"evaluated": "sub-102", "kappa": 0.4372063029112767, "tst_error": 149.5}
+{"evaluated": "sub-118", "kappa": 0.4641344368055782, "tst_error": 8.5}
+{"evaluated": "sub-122", "kappa": 0.3108791728314484, "tst_error": 99.5}
+{
+  "cohort": "historical_boas",
+  "scope": "Previously inspected v1 cohort; development comparison, not new independent confirmation.",
+  "model_sha256": "121837c16b4ff3a045421355048b538c53158119b2afd52dcbd32a641021cb0b",
+  "model_frozen_unix": 1794070464.092282,
+  "results": {
+    "people": 20,
+    "accuracy": 0.8015156190699255,
+    "kappa": 0.6612737502932162,
+    "macro_f1": 0.5612071122498967,
+    "tst_error_minutes": 31.8,
+    "log_loss": 0.5454562281953728,
+    "global_covered": 0.6,
+    "global_width": 47.975,
+    "normalized_covered": 0.6,
+    "normalized_width": 48.503338553492625,
+    "signal_coverage_of_scored": 0.953040752286134,
+    "global_coverage_wilson95": [
+      0.3865815007622585,
+      0.7811934676271791
+    ],
+    "normalized_coverage_wilson95": [
+      0.3865815007622585,
+      0.7811934676271791
+    ]
+  },
+  "nominal_interval_coverage": 0.9,
+  "interval_warning": "No external exchangeability guarantee; report empirical coverage and width, including failure.",
+  "reference_labels_opened_after_freeze": false,
+  "same_mask_tst": {
+    "model": 31.3,
+    "vendor": 14.375
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "people": 20,
+  "checked_same_v2_reference_signal_masks": true,
+  "macro_f1": 0.6180172584364749,
+  "kappa": 0.7336942872111543,
+  "tst_mae_minutes": 8.65,
+  "scope": "Saved-prediction recomputation; this is a historical development comparison, not newly trained or independently confirmed in this run."
+}

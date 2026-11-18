@@ -1,0 +1,14 @@
+{
+  "subject": "sub-90",
+  "channels": [
+    "HB_1",
+    "HB_2"
+  ],
+  "sampling_hz": 256.0,
+  "samples": 7987968,
+  "duration_seconds": 31203.0,
+  "epochs": 1040,
+  "alignment": "onsets, durations, one-based begin/end sample checked",
+  "input_unit": "MNE-calibrated volts converted to microvolts",
+  "finite_nonflat_epochs": 982
+}

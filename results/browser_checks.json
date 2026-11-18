@@ -1,0 +1,7 @@
+{
+  "title": "Goldilocks | Evidence explorer",
+  "options": 20,
+  "svgPaths": 3,
+  "unsupported": "Unavailable: no lights-off marker is established for this analysis. Recording-start to first scored sleep is a different quantity. Supply a verified lights-off marker to estimate clinical latency.",
+  "errors": []
+}

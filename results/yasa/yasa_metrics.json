@@ -1,0 +1,51 @@
+{
+  "method": "YASA 0.7.0 pre-trained SleepStaging, documented path, no metadata",
+  "channels": {
+    "historical_boas": "HB_1 (approx. AF7, forehead; channel mismatch: YASA prefers central)",
+    "external": "EEG Fpz-Cz (frontal; channel mismatch: YASA prefers central)"
+  },
+  "scoring": "Same people, masks, windows and stage_metrics as v2_evaluate.py",
+  "created_unix": 1794073670.1375933,
+  "results": {
+    "historical_boas": {
+      "primary_complete_recording": {
+        "people": 20,
+        "accuracy": 0.681945931093255,
+        "kappa": 0.5315947610386906,
+        "macro_f1": 0.5176499154758252,
+        "tst_error_minutes": 57.6,
+        "signed_tst_error_minutes": -57.6,
+        "coverage": 1.0
+      },
+      "secondary_reference_window": {
+        "people": 20,
+        "accuracy": 0.6759593901519174,
+        "kappa": 0.5232084678240688,
+        "macro_f1": 0.5139438516584225,
+        "tst_error_minutes": 57.6,
+        "signed_tst_error_minutes": -57.6,
+        "coverage": 1.0
+      }
+    },
+    "external": {
+      "primary_complete_recording": {
+        "people": 20,
+        "accuracy": 0.8215771236422776,
+        "kappa": 0.6750477312984856,
+        "macro_f1": 0.6242104050562207,
+        "tst_error_minutes": 110.35,
+        "signed_tst_error_minutes": 101.6,
+        "coverage": 1.0
+      },
+      "secondary_reference_window": {
+        "people": 20,
+        "accuracy": 0.7288059062775567,
+        "kappa": 0.6283743437146236,
+        "macro_f1": 0.6345973849489244,
+        "tst_error_minutes": 23.125,
+        "signed_tst_error_minutes": -3.225,
+        "coverage": 1.0
+      }
+    }
+  }
+}

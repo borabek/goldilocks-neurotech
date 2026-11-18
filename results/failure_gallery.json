@@ -1,0 +1,29 @@
+[
+  {
+    "subject": "sub-1",
+    "epoch": 8,
+    "onset_seconds": 240.0,
+    "reference": 3,
+    "prediction": 2,
+    "confidence": 0.5249343651042896,
+    "interpretation": "Observed stage disagreement; no causal artefact explanation has been established."
+  },
+  {
+    "subject": "sub-1",
+    "epoch": 37,
+    "onset_seconds": 1110.0,
+    "reference": 2,
+    "prediction": 0,
+    "confidence": 0.7540337423463404,
+    "interpretation": "Observed stage disagreement; no causal artefact explanation has been established."
+  },
+  {
+    "subject": "sub-1",
+    "epoch": 58,
+    "onset_seconds": 1740.0,
+    "reference": 1,
+    "prediction": 0,
+    "confidence": 0.6334425992550526,
+    "interpretation": "Observed stage disagreement; no causal artefact explanation has been established."
+  }
+]

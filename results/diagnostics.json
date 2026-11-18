@@ -1,0 +1,17 @@
+{
+  "description": "Secondary diagnostics of frozen predictions, not a new tuned model. Full-reference metrics count unavailable model epochs as abstentions.",
+  "mean_signal_coverage_of_valid_reference": 0.953040752286134,
+  "probability_metrics": {
+    "raw": {
+      "log_loss": 0.609196040556694,
+      "multiclass_brier": 0.3275103892010756,
+      "confidence_ece_10bins": 0.07456862259416001
+    },
+    "temperature_scaled": {
+      "log_loss": 0.6167232341005796,
+      "multiclass_brier": 0.3281882092190732,
+      "confidence_ece_10bins": 0.09136992756127287
+    }
+  },
+  "failure_selection": "First three distinct confusion types in ascending source-record order, not worst/best case selection."
+}

@@ -1,0 +1,54 @@
+{
+  "protocol_sha256": "b297cf9870a54cbb3754b6225874b16ee2e129326ffcf1bc3dfc61bbd9fe03f0",
+  "seed": 20261107,
+  "fit_people": 48,
+  "probability_validation_people": 12,
+  "summary_calibration_people": 20,
+  "test_people": 20,
+  "fit_epochs": 54718,
+  "features": 28,
+  "temperature": 1.3145398676744633,
+  "nominal_summary_coverage": 0.9,
+  "summary_interval_halfwidth_minutes": 32.5,
+  "observed_summary_coverage": 0.8,
+  "model_tst_mae_minutes": 27.6,
+  "mean_interval_width_minutes": 64.025,
+  "methods": {
+    "feature_model": {
+      "accuracy": 0.7700894777013957,
+      "kappa": 0.5837574639088725,
+      "macro_f1": 0.4711176407932367,
+      "coverage": 1.0
+    },
+    "released_bitbrain": {
+      "accuracy": 0.8637879030202635,
+      "kappa": 0.7653457120303029,
+      "macro_f1": 0.6074952437878494,
+      "coverage": 0.9817387316019625
+    },
+    "majority": {
+      "accuracy": 0.5820594414418857,
+      "kappa": 0.0,
+      "macro_f1": 0.1456375091256235,
+      "coverage": 1.0
+    }
+  },
+  "limitations": [
+    "Adult BOAS cohort only; no ADHD/medication-response validation.",
+    "Retrospective research analysis, not clinical sleep diagnosis.",
+    "Intervals calibrated on 20 independent people; empirical coverage has sampling uncertainty.",
+    "Vendor training provenance differs; released predictions are a reference comparator.",
+    "YASA not run; no fabricated fourth prediction lane.",
+    "Quality rule rejects only nonfinite or flat signal; it is not a comprehensive artefact detector."
+  ],
+  "common_mask_tst": {
+    "model_mae_minutes": 27.1,
+    "vendor_mae_minutes": 14.375,
+    "paired_model_minus_vendor_minutes": 12.725,
+    "paired_bootstrap_95ci": [
+      -2.4,
+      27.75
+    ],
+    "mask": "human-valid, both EEG channels nonflat/finite, vendor nonabstaining; same epochs for both"
+  }
+}

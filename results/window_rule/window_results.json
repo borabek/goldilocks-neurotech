@@ -1,0 +1,35 @@
+{
+  "params_frozen_utc": "2026-11-07T17:50:37Z",
+  "results": {
+    "historical_boas": {
+      "status": "BOAS development comparison (inspected at v1)",
+      "v2": {
+        "people": 20,
+        "rule_mae_min": 45.275,
+        "unwindowed_mae_min": 31.8,
+        "rule_signed_min": -38.725
+      },
+      "yasa": {
+        "people": 20,
+        "rule_mae_min": 72.5,
+        "unwindowed_mae_min": 57.6,
+        "rule_signed_min": -72.5
+      }
+    },
+    "external": {
+      "status": "EXPLORATORY DEVELOPMENT: Sleep-EDF already inspected, not confirmation",
+      "v2": {
+        "people": 20,
+        "rule_mae_min": 177.5,
+        "unwindowed_mae_min": 235.875,
+        "rule_signed_min": 175.75
+      },
+      "yasa": {
+        "people": 20,
+        "rule_mae_min": 73.85,
+        "unwindowed_mae_min": 110.35,
+        "rule_signed_min": 58.45
+      }
+    }
+  }
+}

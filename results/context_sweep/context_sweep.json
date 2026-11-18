@@ -1,0 +1,110 @@
+{
+  "question": "how wide a context window, and how large a temporal head, with the trunk frozen",
+  "selection_rule": "mean person kappa on the six selection people; test numbers reported only",
+  "shipped_configuration": {
+    "context_epochs_each_side": 7,
+    "head": "64x2",
+    "test_macro_f1": 0.6180172584364748,
+    "test_kappa": 0.7336942872111543
+  },
+  "runs": [
+    {
+      "tag": "ctx3_head64x2",
+      "context_epochs_each_side": 3,
+      "window_epochs": 7,
+      "head": "64x2 (shipped)",
+      "selected_pass": 13,
+      "sequence_weight": 0.5,
+      "selection_people_kappa": 0.7050952851331559,
+      "test_kappa": 0.7164279422126498,
+      "test_macro_f1": 0.6010352644764656,
+      "test_accuracy": 0.8305687366250432,
+      "test_tst_error_minutes": 12.05
+    },
+    {
+      "tag": "ctx5_head64x2",
+      "context_epochs_each_side": 5,
+      "window_epochs": 11,
+      "head": "64x2 (shipped)",
+      "selected_pass": 3,
+      "sequence_weight": 0.5,
+      "selection_people_kappa": 0.7155246531401486,
+      "test_kappa": 0.7339423938166473,
+      "test_macro_f1": 0.6131579840170918,
+      "test_accuracy": 0.8406222863526919,
+      "test_tst_error_minutes": 8.175
+    },
+    {
+      "tag": "ctx7_head64x2",
+      "context_epochs_each_side": 7,
+      "window_epochs": 15,
+      "head": "64x2 (shipped)",
+      "selected_pass": 6,
+      "sequence_weight": 0.5,
+      "selection_people_kappa": 0.7256260138491676,
+      "test_kappa": 0.7320404118669016,
+      "test_macro_f1": 0.6158585335334725,
+      "test_accuracy": 0.8423598286615279,
+      "test_tst_error_minutes": 9.625
+    },
+    {
+      "tag": "ctx11_head64x2",
+      "context_epochs_each_side": 11,
+      "window_epochs": 23,
+      "head": "64x2 (shipped)",
+      "selected_pass": 3,
+      "sequence_weight": 0.5,
+      "selection_people_kappa": 0.7104935003586398,
+      "test_kappa": 0.7175600242748326,
+      "test_macro_f1": 0.6038435523102424,
+      "test_accuracy": 0.8319528011499948,
+      "test_tst_error_minutes": 10.475
+    },
+    {
+      "tag": "ctx7_head128x3",
+      "context_epochs_each_side": 7,
+      "window_epochs": 15,
+      "head": "128x3 (wider)",
+      "selected_pass": 2,
+      "sequence_weight": 0.5,
+      "selection_people_kappa": 0.7242385994725883,
+      "test_kappa": 0.7319113060943275,
+      "test_macro_f1": 0.6172744341372262,
+      "test_accuracy": 0.8383982204647792,
+      "test_tst_error_minutes": 9.1
+    }
+  ],
+  "chosen_by_selection_people": {
+    "tag": "ctx7_head64x2",
+    "context_epochs_each_side": 7,
+    "window_epochs": 15,
+    "head": "64x2 (shipped)",
+    "selected_pass": 6,
+    "sequence_weight": 0.5,
+    "selection_people_kappa": 0.7256260138491676,
+    "test_kappa": 0.7320404118669016,
+    "test_macro_f1": 0.6158585335334725,
+    "test_accuracy": 0.8423598286615279,
+    "test_tst_error_minutes": 9.625
+  },
+  "best_on_test_for_reference_only": {
+    "tag": "ctx7_head128x3",
+    "context_epochs_each_side": 7,
+    "window_epochs": 15,
+    "head": "128x3 (wider)",
+    "selected_pass": 2,
+    "sequence_weight": 0.5,
+    "selection_people_kappa": 0.7242385994725883,
+    "test_kappa": 0.7319113060943275,
+    "test_macro_f1": 0.6172744341372262,
+    "test_accuracy": 0.8383982204647792,
+    "test_tst_error_minutes": 9.1
+  },
+  "selection_picked_the_test_winner": false,
+  "gain_over_shipped_macro_f1": -0.002158724903002285,
+  "head_seed_spread_macro_f1": 0.014682281391254048,
+  "verdict": "the gain is smaller than the head-seed spread, so it is not a finding",
+  "note": "The shipped context model was restored after the sweep; no published result changed.",
+  "created_unix": 1794123548.0409887,
+  "seconds": 686.3
+}

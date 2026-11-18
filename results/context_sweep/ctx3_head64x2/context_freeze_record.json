@@ -1,0 +1,161 @@
+{
+  "frozen_unix": 1794122988.1010945,
+  "context_epochs_each_side": 3,
+  "head": [
+    [
+      128,
+      64,
+      5
+    ],
+    [
+      64,
+      64,
+      5
+    ]
+  ],
+  "trunk_source": "results/cnn",
+  "trunk_weights_sha256": "2624b77654749b1f648c31415629c61f93d5aaf3267b98f40a340d4907568642",
+  "trunk_frozen": true,
+  "selected_pass": 13,
+  "passes_run": 20,
+  "selection_candidates": [
+    {
+      "sequence_weight": 0.0,
+      "mean_person_kappa": 0.6762147174134391
+    },
+    {
+      "sequence_weight": 0.5,
+      "mean_person_kappa": 0.7050952851331559
+    },
+    {
+      "sequence_weight": 1.0,
+      "mean_person_kappa": 0.7003075002740017
+    }
+  ],
+  "selected_sequence_weight": 0.5,
+  "temperature": 2.454684143426664,
+  "history": [
+    {
+      "pass": 1,
+      "train_loss": 0.6505458824668053,
+      "selection_mean_person_kappa_unsmoothed": 0.6612773895865788,
+      "seconds": 4.3
+    },
+    {
+      "pass": 2,
+      "train_loss": 0.33043554439198497,
+      "selection_mean_person_kappa_unsmoothed": 0.669562386099479,
+      "seconds": 1.9
+    },
+    {
+      "pass": 3,
+      "train_loss": 0.27054659139356235,
+      "selection_mean_person_kappa_unsmoothed": 0.6706581858456571,
+      "seconds": 2.0
+    },
+    {
+      "pass": 4,
+      "train_loss": 0.2405057013279102,
+      "selection_mean_person_kappa_unsmoothed": 0.6666236610362284,
+      "seconds": 2.0
+    },
+    {
+      "pass": 5,
+      "train_loss": 0.22106052408173715,
+      "selection_mean_person_kappa_unsmoothed": 0.6709514712132264,
+      "seconds": 1.9
+    },
+    {
+      "pass": 6,
+      "train_loss": 0.20722219651560594,
+      "selection_mean_person_kappa_unsmoothed": 0.6568128651041609,
+      "seconds": 1.9
+    },
+    {
+      "pass": 7,
+      "train_loss": 0.19549320254309116,
+      "selection_mean_person_kappa_unsmoothed": 0.6746499842782162,
+      "seconds": 2.0
+    },
+    {
+      "pass": 8,
+      "train_loss": 0.1863148816331209,
+      "selection_mean_person_kappa_unsmoothed": 0.6510272783798515,
+      "seconds": 1.9
+    },
+    {
+      "pass": 9,
+      "train_loss": 0.17860848079729974,
+      "selection_mean_person_kappa_unsmoothed": 0.6615018509442874,
+      "seconds": 2.0
+    },
+    {
+      "pass": 10,
+      "train_loss": 0.17383569609853647,
+      "selection_mean_person_kappa_unsmoothed": 0.6709592856056124,
+      "seconds": 1.9
+    },
+    {
+      "pass": 11,
+      "train_loss": 0.16714622441513477,
+      "selection_mean_person_kappa_unsmoothed": 0.6367865065854968,
+      "seconds": 1.8
+    },
+    {
+      "pass": 12,
+      "train_loss": 0.16319996413427995,
+      "selection_mean_person_kappa_unsmoothed": 0.6660230576972602,
+      "seconds": 1.9
+    },
+    {
+      "pass": 13,
+      "train_loss": 0.15620263761882203,
+      "selection_mean_person_kappa_unsmoothed": 0.6762147174134391,
+      "seconds": 1.8
+    },
+    {
+      "pass": 14,
+      "train_loss": 0.15081270127197338,
+      "selection_mean_person_kappa_unsmoothed": 0.6583642033843357,
+      "seconds": 1.9
+    },
+    {
+      "pass": 15,
+      "train_loss": 0.1461810660254062,
+      "selection_mean_person_kappa_unsmoothed": 0.6661308618647291,
+      "seconds": 1.8
+    },
+    {
+      "pass": 16,
+      "train_loss": 0.145458779164723,
+      "selection_mean_person_kappa_unsmoothed": 0.6761419331726931,
+      "seconds": 1.8
+    },
+    {
+      "pass": 17,
+      "train_loss": 0.1377469988439485,
+      "selection_mean_person_kappa_unsmoothed": 0.6578024165711465,
+      "seconds": 1.8
+    },
+    {
+      "pass": 18,
+      "train_loss": 0.13569505989062983,
+      "selection_mean_person_kappa_unsmoothed": 0.655093374070376,
+      "seconds": 1.8
+    },
+    {
+      "pass": 19,
+      "train_loss": 0.12934138686058114,
+      "selection_mean_person_kappa_unsmoothed": 0.6676475757288832,
+      "seconds": 1.8
+    },
+    {
+      "pass": 20,
+      "train_loss": 0.12639017135288733,
+      "selection_mean_person_kappa_unsmoothed": 0.6618628844271357,
+      "seconds": 1.8
+    }
+  ],
+  "seed": 20261108,
+  "head_weights_sha256": "8860506e6671c183c2614688aef88fb8225acf2e4d81577403790a8989da9890"
+}

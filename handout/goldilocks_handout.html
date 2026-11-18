@@ -1,0 +1,100 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+    <title>Goldilocks AI — one page</title><style>@page{size:A4;margin:0}
+    :root{--ink:#14181f;--mute:#5d6774;--line:#d9dee6;--accent:#1f5f8b;--bad:#9b2c2c;--good:#1f6f4a}
+    *{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{margin:0;font-family:Helvetica,Arial,sans-serif;color:var(--ink)}
+    .slide{width:297mm;height:167mm;padding:16mm 18mm;page-break-after:always;position:relative;
+      display:flex;flex-direction:column;background:#fff}
+    .slide:last-child{page-break-after:auto}
+    .kicker{font-size:10pt;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700}
+    h1{font-size:30pt;line-height:1.1;margin:4mm 0 2mm;font-weight:700;letter-spacing:-.01em}
+    h2{font-size:21pt;line-height:1.15;margin:3mm 0 4mm;font-weight:700;letter-spacing:-.01em}
+    .sub{font-size:11pt;color:var(--mute);line-height:1.4;max-width:215mm}
+    table{border-collapse:collapse;width:100%;font-size:10pt;margin-top:1.5mm}
+    th,td{text-align:left;padding:1.7mm 3mm;border-bottom:1px solid var(--line)}
+    th{font-size:9.5pt;text-transform:uppercase;letter-spacing:.07em;color:var(--mute);font-weight:700}
+    td:nth-child(n+2),th:nth-child(n+2){text-align:right;font-variant-numeric:tabular-nums}
+    .win{color:var(--good);font-weight:700}.lose{color:var(--bad);font-weight:700}
+    .muted{color:var(--mute);font-size:10pt;text-align:left!important}
+    ul{font-size:12pt;line-height:1.5;margin:2mm 0 0;padding-left:6mm}
+    li{margin-bottom:2.4mm}li b{font-weight:700}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:10mm}
+    .foot{position:absolute;bottom:8mm;left:18mm;right:18mm;font-size:8.5pt;color:var(--mute);
+      border-top:1px solid var(--line);padding-top:2.5mm;display:flex;justify-content:space-between}
+    .big{font-size:40pt;font-weight:700;letter-spacing:-.02em;line-height:1}
+    .bignum{display:flex;gap:14mm;margin:5mm 0 3mm}
+    .bignum div{flex:1}.bignum .lab{font-size:10pt;color:var(--mute);margin-top:1.5mm;line-height:1.35}
+    code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f4f6f9;padding:.6mm 1.2mm;
+      border-radius:1mm;word-break:break-all}
+    
+    .page{width:210mm;height:297mm;padding:14mm 15mm;background:#fff;position:relative;display:flex;
+      flex-direction:column}
+    h1{font-size:19pt;margin:2.5mm 0 1mm;line-height:1.12}
+    h2{font-size:10pt;margin:3.4mm 0 .8mm;text-transform:uppercase;letter-spacing:.09em;color:var(--accent)}
+    .sub{font-size:9pt;max-width:none;line-height:1.4}table{font-size:9pt}th,td{padding:1.4mm 2mm}
+    ul{font-size:9.5pt;line-height:1.45}li{margin-bottom:1.4mm}
+    .foot{position:absolute;bottom:10mm;left:15mm;right:15mm;font-size:8pt}
+    .bignum{margin:2.5mm 0 .5mm;gap:8mm}.big{font-size:23pt}.bignum .lab{font-size:8pt;line-height:1.3}
+    .cmd{display:block;background:#f4f6f9;border-radius:1mm;padding:1.6mm 2.5mm;margin:1.2mm 0;
+      font-family:ui-monospace,Menlo,Consolas,monospace;font-size:8pt;line-height:1.45;
+      white-space:pre-wrap;word-break:normal;overflow-wrap:break-word}
+    </style></head><body>
+    <div class="page">
+      <div class="kicker">Goldilocks AI · Stream 2, AI / Neural Decoding · sponsored by Tobii</div>
+      <h1>A wearable can stage sleep well and still get the night wrong.</h1>
+      <div class="sub">One sleep-stage model trained on the BOAS forehead headband, frozen before testing,
+      evaluated person-held-out, then run unchanged on an independent dataset. 20 people in each cohort.</div>
+      <div class="bignum">
+        <div><div class="big">0.661</div><div class="lab">kappa, BOAS headband,
+          20 held-out people</div></div>
+        <div><div class="big">32 min</div><div class="lab">sleep-time error,
+          same people</div></div>
+        <div><div class="big">236 min</div><div class="lab">sleep-time error,
+          20 new Sleep-EDF people, full recording</div></div>
+      </div>
+      <h2>Every number, and the baselines</h2>
+      <table><tr><th>20 people per cohort</th><th>Kappa</th><th>Sleep-time error</th></tr>
+      <tr><td>BOAS headband — ours</td><td>0.661</td><td>31.8 min</td></tr>
+      <tr><td>BOAS headband — YASA 0.7.0</td><td>0.532</td><td>57.6 min</td></tr>
+      <tr><td>Sleep-EDF full recording — ours</td><td>0.579</td><td>235.9 min</td></tr>
+      <tr><td>Sleep-EDF full recording — YASA</td><td>0.675</td><td>110.3 min</td></tr>
+      <tr><td>Sleep-EDF sleep window — ours / YASA</td><td>0.515 / 0.628</td>
+        <td>36.8 min / 23.1 min</td></tr>
+      <tr><td>BOAS headband — CNN challenger (trained tonight)</td><td>0.728</td><td>16.5 min</td></tr><tr><td>Sleep-EDF full recording — CNN challenger</td><td>0.086</td><td>803.2 min</td></tr></table>
+      <h2>The result that decides the pitch</h2>
+      <div class="sub">The CNN trained tonight is the <b>best</b> model on the headband and the <b>worst</b>
+      on Sleep-EDF: kappa 0.728 → 0.086,
+      sleep-time error 16.5 min →
+      803.2 min, calling daytime wake sleep. Choosing a wearable
+      model by its in-domain score would have picked the one that fails hardest away from home. That is the
+      argument for inspectable evaluation rather than a single accuracy number.</div>
+      <h2>The demo, in three acts</h2>
+      <div class="sub">Decode a held-out night → reveal the human reference and the YASA lane and challenge
+      the evidence → inspect the resulting summary, its error and what it cannot say. Asked for lights-off
+      sleep-onset latency, the viewer refuses: the recording does not establish lights-off, so it offers
+      recording-start to first scored sleep instead. The viewer itself is precomputed retrospective
+      analysis. Live inference is a separate, measured path: <code>live_inference.py</code> scores epoch by
+      epoch with trailing-window normalisation, and costs 0.038 kappa against the same model scored retrospectively (0.728 &rarr; 0.690), with no lookahead.</div>
+      <h2>Main limitation</h2>
+      <div class="sub">Prediction intervals missed their 90% target (60% coverage on
+      BOAS, 20% externally), so calibrated-range claims are disabled in the release
+      gate and exported intervals are null. The BOAS cohort was inspected at v1, so it is a development
+      comparison, not independent confirmation. No clinical, ADHD, medication or paediatric claim is made.</div>
+      <h2>Where the work is, and how to check it</h2>
+      <div class="sub">No public repository, by team decision: the artefact is the folder
+      <code>Goldilocks_Submission/</code> on the team machine, 72 MB, with code, derived features,
+      every result, the viewer and the backup video. Reproduce the frozen evaluation with:</div>
+      <span class="cmd">python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+.venv/bin/python reproduce_v2.py</span>
+      <div class="sub">31 seconds, no network. Verified from a clean environment: 294,208 numbers compared,
+      largest relative difference 2.6 × 10⁻¹⁵, nothing differing at four decimal places
+      (<code>REPRODUCTION.md</code>).</div>
+      <h2>Identity of this build</h2>
+      <div class="sub">Frozen protocol <code>ad3fb648f8eedcd429884abe8f018f24c5eb3e85b54a3f87ffc164183f29882c</code><br>
+      Frozen model <code>121837c16b4ff3a045421355048b538c53158119b2afd52dcbd32a641021cb0b</code><br>
+      Both match <code>results/v2/freeze_record.json</code>, written before the external reference labels were
+      opened. Seeds 20261108 and 20261107. Built 08 November 2026, 13:13 UTC.</div>
+      <div class="foot"><span>Public data only: BOAS via OpenNeuro (CC0), Sleep-EDF via PhysioNet (ODC-By 1.0).
+      No teammate recording, no health inference, no clinical function.</span><span>1/1</span></div>
+    </div></body></html>

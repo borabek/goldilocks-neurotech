@@ -1,0 +1,46 @@
+{
+  "historical_boas": {
+    "kappa": {
+      "recomputed": 0.6613,
+      "saved": 0.6613,
+      "match": true
+    },
+    "macro_f1": {
+      "recomputed": 0.5612,
+      "saved": 0.5612,
+      "match": true
+    },
+    "tst_mae": {
+      "recomputed": 31.8,
+      "saved": 31.8,
+      "match": true
+    }
+  },
+  "external": {
+    "kappa": {
+      "recomputed": 0.5793,
+      "saved": 0.5793,
+      "match": true
+    },
+    "macro_f1": {
+      "recomputed": 0.4782,
+      "saved": 0.4782,
+      "match": true
+    },
+    "tst_mae": {
+      "recomputed": 235.875,
+      "saved": 235.875,
+      "match": true
+    },
+    "secondary_kappa": {
+      "recomputed": 0.5145,
+      "saved": 0.5145,
+      "match": true
+    },
+    "secondary_tst_mae": {
+      "recomputed": 36.75,
+      "saved": 36.75,
+      "match": true
+    }
+  }
+}

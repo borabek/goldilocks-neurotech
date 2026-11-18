@@ -1,0 +1,148 @@
+.......                                                                  [100%]
+7 passed in 1.19s
+{"evaluated": "sub-1", "kappa": 0.5924802910855064, "tst_error": 31.0}
+{"evaluated": "sub-6", "kappa": 0.7416420849912518, "tst_error": 32.5}
+{"evaluated": "sub-7", "kappa": 0.5931673506472098, "tst_error": 4.0}
+{"evaluated": "sub-9", "kappa": 0.6445197411160261, "tst_error": 65.5}
+{"evaluated": "sub-19", "kappa": 0.62352138243924, "tst_error": 26.0}
+{"evaluated": "sub-20", "kappa": 0.7158483386479213, "tst_error": 4.5}
+{"evaluated": "sub-30", "kappa": 0.7905982785421493, "tst_error": 5.5}
+{"evaluated": "sub-34", "kappa": 0.6004767229315782, "tst_error": 81.0}
+{"evaluated": "sub-37", "kappa": 0.7319532314828, "tst_error": 8.0}
+{"evaluated": "sub-49", "kappa": 0.8415452538631347, "tst_error": 1.5}
+{"evaluated": "sub-50", "kappa": 0.7061473599015564, "tst_error": 48.0}
+{"evaluated": "sub-52", "kappa": 0.7341639032381657, "tst_error": 9.0}
+{"evaluated": "sub-63", "kappa": 0.766956362598505, "tst_error": 22.5}
+{"evaluated": "sub-70", "kappa": 0.6802793280730213, "tst_error": 15.0}
+{"evaluated": "sub-87", "kappa": 0.6028586135484875, "tst_error": 4.0}
+{"evaluated": "sub-88", "kappa": 0.8865977935939069, "tst_error": 17.0}
+{"evaluated": "sub-101", "kappa": 0.7604990566155614, "tst_error": 3.5}
+{"evaluated": "sub-102", "kappa": 0.4372063029112767, "tst_error": 149.5}
+{"evaluated": "sub-118", "kappa": 0.4641344368055782, "tst_error": 8.5}
+{"evaluated": "sub-122", "kappa": 0.3108791728314484, "tst_error": 99.5}
+{
+  "cohort": "historical_boas",
+  "scope": "Previously inspected v1 cohort; development comparison, not new independent confirmation.",
+  "model_sha256": "121837c16b4ff3a045421355048b538c53158119b2afd52dcbd32a641021cb0b",
+  "model_frozen_unix": 1794070464.092282,
+  "results": {
+    "people": 20,
+    "accuracy": 0.8015156190699255,
+    "kappa": 0.6612737502932162,
+    "macro_f1": 0.5612071122498967,
+    "tst_error_minutes": 31.8,
+    "log_loss": 0.5454562281953728,
+    "global_covered": 0.6,
+    "global_width": 47.975,
+    "normalized_covered": 0.6,
+    "normalized_width": 48.503338553492625,
+    "signal_coverage_of_scored": 0.953040752286134,
+    "global_coverage_wilson95": [
+      0.3865815007622585,
+      0.7811934676271791
+    ],
+    "normalized_coverage_wilson95": [
+      0.3865815007622585,
+      0.7811934676271791
+    ]
+  },
+  "nominal_interval_coverage": 0.9,
+  "interval_warning": "No external exchangeability guarantee; report empirical coverage and width, including failure.",
+  "reference_labels_opened_after_freeze": false,
+  "same_mask_tst": {
+    "model": 31.3,
+    "vendor": 14.375
+  }
+}
+{"evaluated": "SC400", "kappa": 0.751839831131779, "tst_error": 29.5}
+{"evaluated": "SC401", "kappa": 0.1111760345340368, "tst_error": 910.0}
+{"evaluated": "SC402", "kappa": 0.15298021397790484, "tst_error": 870.5}
+{"evaluated": "SC403", "kappa": 0.5178328657207787, "tst_error": 344.0}
+{"evaluated": "SC404", "kappa": 0.7788414298417474, "tst_error": 32.0}
+{"evaluated": "SC405", "kappa": 0.3825214543785388, "tst_error": 277.0}
+{"evaluated": "SC406", "kappa": 0.8476723238835688, "tst_error": 1.5}
+{"evaluated": "SC407", "kappa": 0.3393500312574136, "tst_error": 446.0}
+{"evaluated": "SC408", "kappa": 0.6186768148108488, "tst_error": 83.5}
+{"evaluated": "SC409", "kappa": 0.7265944886834634, "tst_error": 48.5}
+{"evaluated": "SC410", "kappa": 0.1460603662651897, "tst_error": 808.0}
+{"evaluated": "SC411", "kappa": 0.6394800874991242, "tst_error": 124.0}
+{"evaluated": "SC412", "kappa": 0.5795376580893014, "tst_error": 228.0}
+{"evaluated": "SC413", "kappa": 0.8842218629415564, "tst_error": 8.5}
+{"evaluated": "SC414", "kappa": 0.8202244706509294, "tst_error": 21.5}
+{"evaluated": "SC415", "kappa": 0.500342501027503, "tst_error": 243.5}
+{"evaluated": "SC416", "kappa": 0.6968137098966437, "tst_error": 60.5}
+{"evaluated": "SC417", "kappa": 0.6968003397201032, "tst_error": 52.5}
+{"evaluated": "SC418", "kappa": 0.6054073340503108, "tst_error": 108.0}
+{"evaluated": "SC419", "kappa": 0.7894165593842617, "tst_error": 20.5}
+{
+  "cohort": "external",
+  "scope": "Independent cohort, different montage/scorer/recording window; a domain-shift evaluation, not same-device or ADHD validation.",
+  "model_sha256": "121837c16b4ff3a045421355048b538c53158119b2afd52dcbd32a641021cb0b",
+  "model_frozen_unix": 1794070464.092282,
+  "results": {
+    "people": 20,
+    "accuracy": 0.7371560058612674,
+    "kappa": 0.5792895188872503,
+    "macro_f1": 0.47821820447271346,
+    "tst_error_minutes": 235.875,
+    "log_loss": 0.7981150825115211,
+    "global_covered": 0.2,
+    "global_width": 48.675,
+    "normalized_covered": 0.25,
+    "normalized_width": 67.83835746599058,
+    "signal_coverage_of_scored": 1.0,
+    "global_coverage_wilson95": [
+      0.08065766257979998,
+      0.41601743225188714
+    ],
+    "normalized_coverage_wilson95": [
+      0.11186170140766816,
+      0.4687008776187378
+    ]
+  },
+  "nominal_interval_coverage": 0.9,
+  "interval_warning": "No external exchangeability guarantee; report empirical coverage and width, including failure.",
+  "reference_labels_opened_after_freeze": true,
+  "secondary_reference_defined_sleep_window": {
+    "people": 20,
+    "accuracy": 0.6871628651632614,
+    "kappa": 0.5145340465936796,
+    "macro_f1": 0.4877022570471946,
+    "tst_error_minutes": 36.75,
+    "log_loss": 0.849595754405259,
+    "global_covered": 0.3,
+    "global_width": 46.25,
+    "normalized_covered": 0.3,
+    "normalized_width": 46.25,
+    "signal_coverage_of_scored": 1.0,
+    "global_coverage_wilson95": [
+      0.1454772448676072,
+      0.5189728183535174
+    ],
+    "normalized_coverage_wilson95": [
+      0.1454772448676072,
+      0.5189728183535174
+    ]
+  }
+}
+{
+  "gate": {
+    "interval_release_enabled": false,
+    "reason": "Observed 90%-target interval coverage was 60% on historical BOAS and 20%/25% on the new full-window external test. Calibrated-range claims are withheld.",
+    "point_summary_status": "experimental estimate; not a clinical quantity",
+    "external_validation_scope": "Independent cohort/device/scoring shift. Not in-domain headband confirmation or ADHD/medication validation.",
+    "historical_status": "Development comparison on previously inspected people, never relabelled as new independent evidence."
+  },
+  "probability_calibration": {
+    "after_temperature": {
+      "log_loss": 0.5454562281953728,
+      "brier": 0.28133063057031127,
+      "ece": 0.08660067633146762
+    },
+    "before_temperature": {
+      "log_loss": 0.739292039705205,
+      "brier": 0.32018820947851784,
+      "ece": 0.1279784548065084
+    }
+  }
+}

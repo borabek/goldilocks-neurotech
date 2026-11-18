@@ -1,0 +1,116 @@
+{
+  "method": "frozen CNN challenger from cnn_challenger.py, applied unchanged to Sleep-EDF Fpz-Cz",
+  "status": "EXPLORATORY DEVELOPMENT: these external people were already inspected at the v2 evaluation, so this is not a fresh independent test for any model.",
+  "input": "100 Hz Fpz-Cz resampled to 64 Hz, frozen epoch grid, reference and quality mask from results/v2/external_predictions.json",
+  "channel_note": "The CNN was fitted on two forehead headband channels at 64 Hz and is applied here to a single frontal PSG channel: a device, montage and scorer shift.",
+  "frozen_weights_sha256": "2624b77654749b1f648c31415629c61f93d5aaf3267b98f40a340d4907568642",
+  "sequence_weight": 0.5,
+  "temperature": 1.603461731982612,
+  "refitted_anything": false,
+  "cnn_results": {
+    "primary_complete_recording": {
+      "people": 20,
+      "accuracy": 0.2693911856439642,
+      "kappa": 0.08625671563614042,
+      "macro_f1": 0.18777486921217695,
+      "tst_error_minutes": 803.2,
+      "signed_tst_error_minutes": 803.2,
+      "coverage": 1.0
+    },
+    "secondary_reference_window": {
+      "people": 20,
+      "accuracy": 0.5137232696559424,
+      "kappa": 0.1890654611707922,
+      "macro_f1": 0.2811182609355911,
+      "tst_error_minutes": 55.725,
+      "signed_tst_error_minutes": 55.725,
+      "coverage": 1.0
+    }
+  },
+  "v2_results": {
+    "primary_complete_recording": {
+      "people": 20,
+      "accuracy": 0.7371560058612674,
+      "kappa": 0.5792895188872503,
+      "macro_f1": 0.47821820447271346,
+      "tst_error_minutes": 235.875,
+      "log_loss": 0.7981150825115211,
+      "global_covered": 0.2,
+      "global_width": 48.675,
+      "normalized_covered": 0.25,
+      "normalized_width": 67.83835746599058,
+      "signal_coverage_of_scored": 1.0,
+      "global_coverage_wilson95": [
+        0.08065766257979998,
+        0.41601743225188714
+      ],
+      "normalized_coverage_wilson95": [
+        0.11186170140766816,
+        0.4687008776187378
+      ]
+    },
+    "secondary_reference_window": {
+      "people": 20,
+      "accuracy": 0.6871628651632614,
+      "kappa": 0.5145340465936796,
+      "macro_f1": 0.4877022570471946,
+      "tst_error_minutes": 36.75,
+      "log_loss": 0.849595754405259,
+      "global_covered": 0.3,
+      "global_width": 46.25,
+      "normalized_covered": 0.3,
+      "normalized_width": 46.25,
+      "signal_coverage_of_scored": 1.0,
+      "global_coverage_wilson95": [
+        0.1454772448676072,
+        0.5189728183535174
+      ],
+      "normalized_coverage_wilson95": [
+        0.1454772448676072,
+        0.5189728183535174
+      ]
+    }
+  },
+  "yasa_results": {
+    "primary_complete_recording": {
+      "people": 20,
+      "accuracy": 0.8215771236422776,
+      "kappa": 0.6750477312984856,
+      "macro_f1": 0.6242104050562207,
+      "tst_error_minutes": 110.35,
+      "signed_tst_error_minutes": 101.6,
+      "coverage": 1.0
+    },
+    "secondary_reference_window": {
+      "people": 20,
+      "accuracy": 0.7288059062775567,
+      "kappa": 0.6283743437146236,
+      "macro_f1": 0.6345973849489244,
+      "tst_error_minutes": 23.125,
+      "signed_tst_error_minutes": -3.225,
+      "coverage": 1.0
+    }
+  },
+  "cnn_results_on_headband_for_reference": {
+    "people": 20,
+    "accuracy": 0.8383494361163674,
+    "kappa": 0.7281509100617163,
+    "macro_f1": 0.5947537801507974,
+    "tst_error_minutes": 16.525
+  },
+  "verdict": {
+    "cnn_kappa_primary": 0.08625671563614042,
+    "v2_kappa_primary": 0.5792895188872503,
+    "yasa_kappa_primary": 0.6750477312984856,
+    "cnn_tst_error_primary": 803.2,
+    "v2_tst_error_primary": 235.875,
+    "yasa_tst_error_primary": 110.35,
+    "cnn_beats_v2_on_kappa": false,
+    "cnn_beats_yasa_on_kappa": false,
+    "cnn_sleep_time_error_still_large": true,
+    "cnn_headband_to_external_kappa_drop": 0.6418941944255758,
+    "cnn_headband_to_external_sleep_time_change": 786.6750000000001
+  },
+  "created_unix": 1794084598.005318,
+  "seconds": 19.2
+}

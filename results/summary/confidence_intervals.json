@@ -1,0 +1,676 @@
+{
+  "baseline": "frozen v2 feature model, same people, same masks",
+  "people_per_cohort": 20,
+  "bootstrap_resamples": 10000,
+  "paired": true,
+  "caveat": "No multiplicity correction across the twelve comparisons below. With this many models, an interval that only just excludes zero is weak evidence. Twenty people is a small cohort and these intervals are wide on purpose.",
+  "results": {
+    "historical_boas": {
+      "CNN challenger": {
+        "kappa_vs_v2": {
+          "difference": 0.06687715976850006,
+          "ci95": [
+            0.027786715874459023,
+            0.11271429990733063
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "macro_f1_vs_v2": {
+          "difference": 0.03354666790090068,
+          "ci95": [
+            0.008495071321013356,
+            0.06013799873725827
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "sleep_time_error_vs_v2": {
+          "difference": -15.275,
+          "ci95": [
+            -28.575,
+            -5.675
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "model_means": {
+          "kappa": 0.7281509100617163,
+          "macro_f1": 0.5947537801507974,
+          "sleep_time_error_minutes": 16.525
+        },
+        "v2_means": {
+          "kappa": 0.6612737502932162,
+          "macro_f1": 0.5612071122498967,
+          "sleep_time_error_minutes": 31.8
+        }
+      },
+      "Context model": {
+        "kappa_vs_v2": {
+          "difference": 0.072420536917938,
+          "ci95": [
+            0.027676238447096855,
+            0.12167956792702403
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "macro_f1_vs_v2": {
+          "difference": 0.05681014618657818,
+          "ci95": [
+            0.02794322207272665,
+            0.08878615587740099
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "sleep_time_error_vs_v2": {
+          "difference": -23.15,
+          "ci95": [
+            -40.10125,
+            -9.65
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "model_means": {
+          "kappa": 0.7336942872111543,
+          "macro_f1": 0.6180172584364748,
+          "sleep_time_error_minutes": 8.65
+        },
+        "v2_means": {
+          "kappa": 0.6612737502932162,
+          "macro_f1": 0.5612071122498967,
+          "sleep_time_error_minutes": 31.8
+        }
+      },
+      "Context model, sqrt-balanced trunk": {
+        "kappa_vs_v2": {
+          "difference": 0.07558587167650226,
+          "ci95": [
+            0.03346090327339186,
+            0.12423678966896794
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "macro_f1_vs_v2": {
+          "difference": 0.0457132355461492,
+          "ci95": [
+            0.02399663355793069,
+            0.0692812358534063
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "sleep_time_error_vs_v2": {
+          "difference": -21.625,
+          "ci95": [
+            -36.6,
+            -9.37437500000001
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "model_means": {
+          "kappa": 0.7368596219697184,
+          "macro_f1": 0.6069203477960459,
+          "sleep_time_error_minutes": 10.175
+        },
+        "v2_means": {
+          "kappa": 0.6612737502932162,
+          "macro_f1": 0.5612071122498967,
+          "sleep_time_error_minutes": 31.8
+        }
+      },
+      "Square-root-balanced CNN": {
+        "kappa_vs_v2": {
+          "difference": 0.0003706130263259777,
+          "ci95": [
+            -0.05684209908305942,
+            0.06191222243669164
+          ],
+          "excludes_zero": false,
+          "verdict": "not established by this cohort"
+        },
+        "macro_f1_vs_v2": {
+          "difference": 0.042833422055990014,
+          "ci95": [
+            0.009956818922937498,
+            0.0768697696538981
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "sleep_time_error_vs_v2": {
+          "difference": -22.05,
+          "ci95": [
+            -40.200625,
+            -7.425
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "model_means": {
+          "kappa": 0.6616443633195422,
+          "macro_f1": 0.6040405343058867,
+          "sleep_time_error_minutes": 9.75
+        },
+        "v2_means": {
+          "kappa": 0.6612737502932162,
+          "macro_f1": 0.5612071122498967,
+          "sleep_time_error_minutes": 31.8
+        }
+      },
+      "Class-balanced CNN": {
+        "kappa_vs_v2": {
+          "difference": -0.18191785836670712,
+          "ci95": [
+            -0.24694914974811893,
+            -0.115003804258945
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "macro_f1_vs_v2": {
+          "difference": -0.0363537303004132,
+          "ci95": [
+            -0.07179519697336198,
+            0.0015203263950071704
+          ],
+          "excludes_zero": false,
+          "verdict": "not established by this cohort"
+        },
+        "sleep_time_error_vs_v2": {
+          "difference": -23.425,
+          "ci95": [
+            -39.250625,
+            -10.025
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "model_means": {
+          "kappa": 0.4793558919265092,
+          "macro_f1": 0.5248533819494835,
+          "sleep_time_error_minutes": 8.375
+        },
+        "v2_means": {
+          "kappa": 0.6612737502932162,
+          "macro_f1": 0.5612071122498967,
+          "sleep_time_error_minutes": 31.8
+        }
+      },
+      "Augmented CNN": {
+        "kappa_vs_v2": {
+          "difference": 0.06554410518007574,
+          "ci95": [
+            0.02127836625001986,
+            0.11665494217855588
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "macro_f1_vs_v2": {
+          "difference": 0.02997892716194265,
+          "ci95": [
+            0.002177952273253079,
+            0.05760839529567497
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "sleep_time_error_vs_v2": {
+          "difference": -20.275,
+          "ci95": [
+            -35.5,
+            -8.15
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "model_means": {
+          "kappa": 0.726817855473292,
+          "macro_f1": 0.5911860394118393,
+          "sleep_time_error_minutes": 11.525
+        },
+        "v2_means": {
+          "kappa": 0.6612737502932162,
+          "macro_f1": 0.5612071122498967,
+          "sleep_time_error_minutes": 31.8
+        }
+      },
+      "Two-channel CNN": {
+        "kappa_vs_v2": {
+          "difference": -0.008221538502537946,
+          "ci95": [
+            -0.0557533973256849,
+            0.039723472502426846
+          ],
+          "excludes_zero": false,
+          "verdict": "not established by this cohort"
+        },
+        "macro_f1_vs_v2": {
+          "difference": -0.007283330161495766,
+          "ci95": [
+            -0.04597892769821081,
+            0.028715606844414644
+          ],
+          "excludes_zero": false,
+          "verdict": "not established by this cohort"
+        },
+        "sleep_time_error_vs_v2": {
+          "difference": -22.375,
+          "ci95": [
+            -40.675625,
+            -6.425
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "model_means": {
+          "kappa": 0.6530522117906783,
+          "macro_f1": 0.553923782088401,
+          "sleep_time_error_minutes": 9.425
+        },
+        "v2_means": {
+          "kappa": 0.6612737502932162,
+          "macro_f1": 0.5612071122498967,
+          "sleep_time_error_minutes": 31.8
+        }
+      },
+      "Ensemble of seven models": {
+        "kappa_vs_v2": {
+          "difference": 0.07939383209380227,
+          "ci95": [
+            0.03223806832204051,
+            0.13190639063442108
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "macro_f1_vs_v2": {
+          "difference": 0.06741476307921165,
+          "ci95": [
+            0.0399391787666336,
+            0.09661137175198962
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "sleep_time_error_vs_v2": {
+          "difference": -22.475,
+          "ci95": [
+            -37.925,
+            -10.125
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "model_means": {
+          "kappa": 0.7406675823870186,
+          "macro_f1": 0.6286218753291084,
+          "sleep_time_error_minutes": 9.325
+        },
+        "v2_means": {
+          "kappa": 0.6612737502932162,
+          "macro_f1": 0.5612071122498967,
+          "sleep_time_error_minutes": 31.8
+        }
+      },
+      "YASA 0.7.0 baseline": {
+        "kappa_vs_v2": {
+          "difference": -0.12967898925452556,
+          "ci95": [
+            -0.18256222006997552,
+            -0.06931941128677718
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "macro_f1_vs_v2": {
+          "difference": -0.04355719677407164,
+          "ci95": [
+            -0.08619691301189854,
+            0.0052386166412372506
+          ],
+          "excludes_zero": false,
+          "verdict": "not established by this cohort"
+        },
+        "sleep_time_error_vs_v2": {
+          "difference": 25.8,
+          "ci95": [
+            9.25,
+            45.02624999999998
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "model_means": {
+          "kappa": 0.5315947610386906,
+          "macro_f1": 0.5176499154758252,
+          "sleep_time_error_minutes": 57.6
+        },
+        "v2_means": {
+          "kappa": 0.6612737502932162,
+          "macro_f1": 0.5612071122498967,
+          "sleep_time_error_minutes": 31.8
+        }
+      }
+    },
+    "external": {
+      "CNN challenger": {
+        "kappa_vs_v2": {
+          "difference": -0.4930328032511097,
+          "ci95": [
+            -0.5821233166423025,
+            -0.3965521254252957
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "macro_f1_vs_v2": {
+          "difference": -0.2904433352605365,
+          "ci95": [
+            -0.3506222860783381,
+            -0.23518231245541305
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "sleep_time_error_vs_v2": {
+          "difference": 567.325,
+          "ci95": [
+            446.66562500000003,
+            672.9281249999999
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "model_means": {
+          "kappa": 0.08625671563614043,
+          "macro_f1": 0.18777486921217695,
+          "sleep_time_error_minutes": 803.2
+        },
+        "v2_means": {
+          "kappa": 0.5792895188872503,
+          "macro_f1": 0.47821820447271346,
+          "sleep_time_error_minutes": 235.875
+        }
+      },
+      "Context model": {
+        "kappa_vs_v2": {
+          "difference": -0.4764568419484657,
+          "ci95": [
+            -0.5690058970603836,
+            -0.3739443415204088
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "macro_f1_vs_v2": {
+          "difference": -0.2734252235695861,
+          "ci95": [
+            -0.33096420214176103,
+            -0.22069728063565544
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "sleep_time_error_vs_v2": {
+          "difference": 613.475,
+          "ci95": [
+            489.295,
+            722.953125
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "model_means": {
+          "kappa": 0.10283267693878444,
+          "macro_f1": 0.2047929809031272,
+          "sleep_time_error_minutes": 849.35
+        },
+        "v2_means": {
+          "kappa": 0.5792895188872503,
+          "macro_f1": 0.47821820447271346,
+          "sleep_time_error_minutes": 235.875
+        }
+      },
+      "Context model, sqrt-balanced trunk": {
+        "kappa_vs_v2": {
+          "difference": -0.4807275359608495,
+          "ci95": [
+            -0.5753953785325984,
+            -0.38102632455395735
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "macro_f1_vs_v2": {
+          "difference": -0.268396050491469,
+          "ci95": [
+            -0.3270825799075836,
+            -0.21477966706809615
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "sleep_time_error_vs_v2": {
+          "difference": 606.475,
+          "ci95": [
+            481.99375,
+            715.850625
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "model_means": {
+          "kappa": 0.09856198292640064,
+          "macro_f1": 0.20982215398124446,
+          "sleep_time_error_minutes": 842.35
+        },
+        "v2_means": {
+          "kappa": 0.5792895188872503,
+          "macro_f1": 0.47821820447271346,
+          "sleep_time_error_minutes": 235.875
+        }
+      },
+      "Square-root-balanced CNN": {
+        "kappa_vs_v2": {
+          "difference": -0.46506296486491105,
+          "ci95": [
+            -0.5582184161729934,
+            -0.3657523550370733
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "macro_f1_vs_v2": {
+          "difference": -0.23229461534828816,
+          "ci95": [
+            -0.2873421943108575,
+            -0.18118585269863133
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "sleep_time_error_vs_v2": {
+          "difference": 618.025,
+          "ci95": [
+            493.04562500000003,
+            728.4775
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "model_means": {
+          "kappa": 0.11422655402233921,
+          "macro_f1": 0.2459235891244253,
+          "sleep_time_error_minutes": 853.9
+        },
+        "v2_means": {
+          "kappa": 0.5792895188872503,
+          "macro_f1": 0.47821820447271346,
+          "sleep_time_error_minutes": 235.875
+        }
+      },
+      "Class-balanced CNN": {
+        "kappa_vs_v2": {
+          "difference": -0.3982589273093271,
+          "ci95": [
+            -0.4847383443483102,
+            -0.3055514669841255
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "macro_f1_vs_v2": {
+          "difference": -0.17164613026961645,
+          "ci95": [
+            -0.22654537211002632,
+            -0.120133414380053
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "sleep_time_error_vs_v2": {
+          "difference": 480.825,
+          "ci95": [
+            366.52187499999997,
+            585.65
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "model_means": {
+          "kappa": 0.1810305915779231,
+          "macro_f1": 0.30657207420309696,
+          "sleep_time_error_minutes": 716.7
+        },
+        "v2_means": {
+          "kappa": 0.5792895188872503,
+          "macro_f1": 0.47821820447271346,
+          "sleep_time_error_minutes": 235.875
+        }
+      },
+      "Augmented CNN": {
+        "kappa_vs_v2": {
+          "difference": -0.504480533205141,
+          "ci95": [
+            -0.5965713460842332,
+            -0.40864501520646573
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "macro_f1_vs_v2": {
+          "difference": -0.29087232246612,
+          "ci95": [
+            -0.3515251457424238,
+            -0.23443787004011923
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "sleep_time_error_vs_v2": {
+          "difference": 619.825,
+          "ci95": [
+            496.0225,
+            731.47625
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "model_means": {
+          "kappa": 0.07480898568210928,
+          "macro_f1": 0.18734588200659344,
+          "sleep_time_error_minutes": 855.7
+        },
+        "v2_means": {
+          "kappa": 0.5792895188872503,
+          "macro_f1": 0.47821820447271346,
+          "sleep_time_error_minutes": 235.875
+        }
+      },
+      "Ensemble of seven models": {
+        "kappa_vs_v2": {
+          "difference": -0.4812568209319391,
+          "ci95": [
+            -0.5742636146317621,
+            -0.3816211719007498
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "macro_f1_vs_v2": {
+          "difference": -0.2607965806589025,
+          "ci95": [
+            -0.3216598585128563,
+            -0.20483332734193815
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "sleep_time_error_vs_v2": {
+          "difference": 606.75,
+          "ci95": [
+            482.995625,
+            715.725
+          ],
+          "excludes_zero": true,
+          "verdict": "worse, interval excludes zero"
+        },
+        "model_means": {
+          "kappa": 0.098032697955311,
+          "macro_f1": 0.21742162381381092,
+          "sleep_time_error_minutes": 842.625
+        },
+        "v2_means": {
+          "kappa": 0.5792895188872503,
+          "macro_f1": 0.47821820447271346,
+          "sleep_time_error_minutes": 235.875
+        }
+      },
+      "YASA 0.7.0 baseline": {
+        "kappa_vs_v2": {
+          "difference": 0.09575821241123537,
+          "ci95": [
+            0.021905274016279647,
+            0.17111423455756591
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "macro_f1_vs_v2": {
+          "difference": 0.14599220058350723,
+          "ci95": [
+            0.09282257765115456,
+            0.1934119834226018
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "sleep_time_error_vs_v2": {
+          "difference": -125.525,
+          "ci95": [
+            -225.805,
+            -38.615625000000136
+          ],
+          "excludes_zero": true,
+          "verdict": "better, interval excludes zero"
+        },
+        "model_means": {
+          "kappa": 0.6750477312984856,
+          "macro_f1": 0.6242104050562207,
+          "sleep_time_error_minutes": 110.35
+        },
+        "v2_means": {
+          "kappa": 0.5792895188872503,
+          "macro_f1": 0.47821820447271346,
+          "sleep_time_error_minutes": 235.875
+        }
+      }
+    }
+  }
+}

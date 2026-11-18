@@ -1,0 +1,898 @@
+[
+  {
+    "path": "sub-1/eeg/sub-1_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-1/eeg/sub-1_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 28118784,
+    "sha256": "56f376aaf1f2e4b1b11e53ae5c6abab9610aa4acd6cf53e3c6c6e2481ad35db8",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-10/eeg/sub-10_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-10/eeg/sub-10_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 30527232,
+    "sha256": "a0d6671b8172bd24f5561e81ab360de319342f91cc2c7c5d49474972d195bd38",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-100/eeg/sub-100_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-100/eeg/sub-100_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 137772544,
+    "sha256": "902d8c4b7103579fd5536e515a8ba3a2d30ed94db89fad0cff1fbeb92456dfb7",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-101/eeg/sub-101_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-101/eeg/sub-101_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 129353728,
+    "sha256": "4f372453294158ed78758d0f04a8720db680719bccc169812793f70af6fd20bf",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-102/eeg/sub-102_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-102/eeg/sub-102_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 133219840,
+    "sha256": "fa2ea7745a67a97230286fc937f1bce4f54ca3ed3e8f501009d9b513f282693e",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-103/eeg/sub-103_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-103/eeg/sub-103_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 118626304,
+    "sha256": "fc2bd76f19a1dce29ce9ab844d61036638ad75c2c69101526a035385dcc879ca",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-104/eeg/sub-104_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-104/eeg/sub-104_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 115985920,
+    "sha256": "4b2813a724994fd23b16c4815097008cf197aa2b81ecd5b422c419ec9bead621",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-105/eeg/sub-105_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-105/eeg/sub-105_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 134537728,
+    "sha256": "74d3994a124dd694457be8d5cdfd81e3d598e78b49beb066e120410cb1b8d085",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-106/eeg/sub-106_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-106/eeg/sub-106_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 121464832,
+    "sha256": "0e0d42006578bd4bfc610baef44cb9b2603929137f3ad61aa6af13bc20272b85",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-107/eeg/sub-107_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-107/eeg/sub-107_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 131685376,
+    "sha256": "f7c0c1d865171a8d5d4017dd44436cda59192c91ba232fe85c635609c9b9fefc",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-108/eeg/sub-108_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-108/eeg/sub-108_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 138394624,
+    "sha256": "40bfe72107b5edd90f37c58f845938f2fff4300a5e754a1f560f9fad5d4cd026",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-109/eeg/sub-109_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-109/eeg/sub-109_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 38875648,
+    "sha256": "011f735ea9deaf6eed07a4fb6d15c3a1d7d0232cf8142dcfaac71c317d1fb093",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-11/eeg/sub-11_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-11/eeg/sub-11_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 136228864,
+    "sha256": "30648eff11ee3f933efd6ebb281e70c4908f571ac258934395bf423dba375a44",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-110/eeg/sub-110_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-110/eeg/sub-110_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 43944448,
+    "sha256": "9a49b896835f5cc2dc81f1c9070981db058d1b6ef66c6b202317e2bfb0b515d0",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-111/eeg/sub-111_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-111/eeg/sub-111_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 44311552,
+    "sha256": "120cb2e820594678f62a5b8fd6cc612a1aabcdaea21a13c05be3cd3c98a0e18b",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-112/eeg/sub-112_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-112/eeg/sub-112_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 42370048,
+    "sha256": "c14a01e4052a3c61db339e753a9f099af4250848a90929d64d415444fb343279",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-113/eeg/sub-113_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-113/eeg/sub-113_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 43188736,
+    "sha256": "81d7c74555baae5f028298a048cb5b9f5f18ac19829ebd716ccbd3a5aef7a40a",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-114/eeg/sub-114_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-114/eeg/sub-114_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 43028992,
+    "sha256": "799a35bf0941fa44546ecb26e6a522434d98ca1c0dcb6e5c1448eda45254f81a",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-115/eeg/sub-115_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-115/eeg/sub-115_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 39549952,
+    "sha256": "88ffa5be6109200839ae9ec7c2eb73cad5349ebc73942fff72f2152d7d5da7ee",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-116/eeg/sub-116_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-116/eeg/sub-116_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 40250368,
+    "sha256": "1b2729b4091179c7ec06d016204b1dfca5982c20d05e5ecdc69784e75fbe55d5",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-117/eeg/sub-117_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-117/eeg/sub-117_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 36556288,
+    "sha256": "20991ff2a938e5f372d3a3ff3d64b90087137c7696a3614e02c770a067d6e8d3",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-118/eeg/sub-118_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-118/eeg/sub-118_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 41204224,
+    "sha256": "37a19afa3f7f90e1a7f9843300bb30d56c2dbbc67b1a1a0c349d10646d4f7111",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-119/eeg/sub-119_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-119/eeg/sub-119_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 41413120,
+    "sha256": "ff377f44a536046346568371458e52972ab7894da3486c053c60d9406d17ba2a",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-12/eeg/sub-12_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-12/eeg/sub-12_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 31134464,
+    "sha256": "acf8c67beb601928712494e7e4a0c6ecc0572d658dc82de5e1e1e90790d3776e",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-120/eeg/sub-120_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-120/eeg/sub-120_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 36359680,
+    "sha256": "4f58635bef8a9cec33db85122a6a056443666cb045d45746bb0a81d29e664d85",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-121/eeg/sub-121_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-121/eeg/sub-121_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 41167360,
+    "sha256": "8c16e2e0de3ce2f6a6aa2f40ef2ab4991fc39f3aa264cb5660fdef60db7348bf",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-122/eeg/sub-122_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-122/eeg/sub-122_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 40370176,
+    "sha256": "fdb1497794a26ffc54a5fca845a8314c0afc298be8e35ca6bbe890c67fefed7f",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-123/eeg/sub-123_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-123/eeg/sub-123_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 40534528,
+    "sha256": "01bf231b5ceb7747de19b892a91d15f6eef7dcb003e03bc8f972c5e7117ba3a7",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-124/eeg/sub-124_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-124/eeg/sub-124_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 122907136,
+    "sha256": "cab08ffcc616cbdf3cac3cf0f6d3197165d016998c110faece6837292e63cb15",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-125/eeg/sub-125_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-125/eeg/sub-125_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 135159808,
+    "sha256": "a47a43d4841fd00055cbac79d982b0136689177bafc2272d01ac3c316842fa7e",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-126/eeg/sub-126_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-126/eeg/sub-126_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 40136704,
+    "sha256": "8e0276dfb5769f1fd9697a23aba87cd285664f8392a0095723f7427b11ab1f9f",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-127/eeg/sub-127_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-127/eeg/sub-127_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 38348800,
+    "sha256": "af2c0b2ec60609c9380afd74242d306ce74012343d9c2124a1354f1988ec2ec7",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-128/eeg/sub-128_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-128/eeg/sub-128_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 37860352,
+    "sha256": "472a09c04615b1674acc69603e7f9a1b518e7c25a9302853ceda1788821c7e52",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-13/eeg/sub-13_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-13/eeg/sub-13_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 30654208,
+    "sha256": "1d871102335a1c37045010f22c885bccb7c31a438c8607fd2a0e528f15d0af6a",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-14/eeg/sub-14_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-14/eeg/sub-14_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 147979264,
+    "sha256": "1e890e9b4896c369e425b012e74a4e18ec76f63f9eb2af2d86d1da338b546175",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-15/eeg/sub-15_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-15/eeg/sub-15_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 33615616,
+    "sha256": "096902099abbe3f25aa33f972c6609b5b9cc997aaa0676cef0eff2c1b15bd957",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-16/eeg/sub-16_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-16/eeg/sub-16_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 31596288,
+    "sha256": "7e55b0559fe8a0db410346ae343b1c901895348fe9f04544799f1c20eefae47e",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-17/eeg/sub-17_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-17/eeg/sub-17_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 30339840,
+    "sha256": "451f8c619ab62e121ecc8e2d1f02a73d6eb309aee2648b0eb14a73106583ffd3",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-18/eeg/sub-18_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-18/eeg/sub-18_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 144790528,
+    "sha256": "0738fde14bcac798a3c9695b500f24ff618ebc46f16dc314d06fd39dacf9dd64",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-19/eeg/sub-19_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-19/eeg/sub-19_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 31106816,
+    "sha256": "ed4bd6b2be4000d1f31154dafb2a7b80863f31b458fc7ba3b9c6adc411d14835",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-2/eeg/sub-2_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-2/eeg/sub-2_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 28058368,
+    "sha256": "8a69cc11865bd410b0dbd7f5cf10137a40c4e2e69041d4bdc077c5c69819c7b8",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-20/eeg/sub-20_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-20/eeg/sub-20_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 144947200,
+    "sha256": "5b648f9fc48c6c4d47ad6a0063b7bc5d6f74bdaf7bff9cd4a4b2804792d185fb",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-21/eeg/sub-21_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-21/eeg/sub-21_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 32050944,
+    "sha256": "50f0b9dd4165e73eac6bb916d4edb74b8bb60dab19531d9383f9ecad7595edaa",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-22/eeg/sub-22_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-22/eeg/sub-22_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 143021056,
+    "sha256": "31cb9a2003eb4ffbb10f21e03ea28394a628945959277bcc94281420cb3da0f3",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-23/eeg/sub-23_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-23/eeg/sub-23_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 154822144,
+    "sha256": "8480f29e2a95096d38fb0ca3dc33b81efbf73a3bfb0f01e2430ff6d1955025a8",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-24/eeg/sub-24_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-24/eeg/sub-24_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 129035776,
+    "sha256": "e372f6bcc998a4cbbd04eb5f36a493b69a44ff61b4cdfc688b56750338d762bc",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-25/eeg/sub-25_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-25/eeg/sub-25_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 149790208,
+    "sha256": "503651b289da5ee6eb86b388326256f4e1f236ceb1765bc5e4b7af57127f7b28",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-26/eeg/sub-26_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-26/eeg/sub-26_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 134477824,
+    "sha256": "f2ba0a8168ae33debc92c31159d659989d0b681b6086f0801aa087bd6fb47208",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-27/eeg/sub-27_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-27/eeg/sub-27_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 29247232,
+    "sha256": "23adcbcad50162d63f8ead94376de65ff15e2115e328c0914e5850cffbdab284",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-28/eeg/sub-28_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-28/eeg/sub-28_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 26393344,
+    "sha256": "aff8de1a7380e78c6c354227239cc69c177dbea841e4d90c294458c01f75d0f7",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-29/eeg/sub-29_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-29/eeg/sub-29_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 34042624,
+    "sha256": "436c3cd7714a7862289c58e5a2367a80e2e85768d921f0d0590ad8c7caf2dd5b",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-3/eeg/sub-3_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-3/eeg/sub-3_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 137878528,
+    "sha256": "9a022eb7c70292b96ad32c2f17d9bf7817288be4bb61bcc49f4b7329de8619f6",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-30/eeg/sub-30_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-30/eeg/sub-30_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 115350016,
+    "sha256": "0e945f8634edcef9592d905cc62f9f7ef2c5c92208abd8701caeae5b14a6bdf9",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-31/eeg/sub-31_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-31/eeg/sub-31_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 117612544,
+    "sha256": "29f6b39cdee40c3585c6290c7a127e27a646c5cb679860ba2029d14dd42f2c9c",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-32/eeg/sub-32_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-32/eeg/sub-32_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 115101184,
+    "sha256": "331574dbd5d909467e651099639576cc9239e56212c655d96675706c13c34dc9",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-33/eeg/sub-33_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-33/eeg/sub-33_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 121197568,
+    "sha256": "8c5024443abbb4ed17ff47924d71fc91a6eb9f301e36e958559b88241b414c8f",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-34/eeg/sub-34_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-34/eeg/sub-34_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 129869824,
+    "sha256": "89a564fe82d2d6afa1fa1f574a865d77322a6f82d002b7a74ceffe8711abc0f5",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-35/eeg/sub-35_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-35/eeg/sub-35_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 121105408,
+    "sha256": "2d2412f0b3db8caa588f802bbc9b3c4a7b36adbeed2bdea06c15926aedea9f65",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-36/eeg/sub-36_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-36/eeg/sub-36_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 123727360,
+    "sha256": "341f0e4a644dd2e3c0ded9e181bbce9ed8974d26221f9a6a658c6c50dc7b5d46",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-37/eeg/sub-37_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-37/eeg/sub-37_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 118492672,
+    "sha256": "cf4a5880af6a9dfce696ad6b1b29264add05702f1c8c24a9964bd12684f3cde0",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-38/eeg/sub-38_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-38/eeg/sub-38_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 117736960,
+    "sha256": "141017a2e90337a147a57d6471ceb6ee83916d482819d4de00cdee065ec00112",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-39/eeg/sub-39_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-39/eeg/sub-39_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 125400064,
+    "sha256": "9721148c0ecb3579765284e8460e0c40339eccbbe2d508f812ac47afb87aa849",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-4/eeg/sub-4_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-4/eeg/sub-4_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 147956224,
+    "sha256": "5c2eb69c37bc8e96d123a8c720cf9756d47ae018d1737ec18ea8ca58afc4a5e0",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-40/eeg/sub-40_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-40/eeg/sub-40_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 115234816,
+    "sha256": "8f65431bcd8e801f7a8f074b418a8fda2867caceccbd1b012587736f707f487f",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-41/eeg/sub-41_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-41/eeg/sub-41_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 126731776,
+    "sha256": "2aa5248f13188bf8dab6ed1fe876b7969dfe908228d7e5f9f176a9453fa2ed4b",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-42/eeg/sub-42_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-42/eeg/sub-42_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 123681280,
+    "sha256": "c6e6a3c426c4e88b05c59bd4ba78d1694877cdfcebea1818d5ae22dcdc215ef6",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-43/eeg/sub-43_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-43/eeg/sub-43_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 116147200,
+    "sha256": "22a854c213046b93c858c2a0fe6c9152918879816d98267342107b72a7183b59",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-44/eeg/sub-44_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-44/eeg/sub-44_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 117621760,
+    "sha256": "de327c0d930625971c4df1638b17012bd3171825f9f422be634e92f0e01198e5",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-45/eeg/sub-45_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-45/eeg/sub-45_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 113552896,
+    "sha256": "5dcc73cf9725cfda22d06448de96f1eb39bde57ae45a24211ede882732d266a7",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-46/eeg/sub-46_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-46/eeg/sub-46_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 133832704,
+    "sha256": "4f75804228e7ab96b85924af348ef08731cf42dd8d2b53948332c9cd6be00162",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-47/eeg/sub-47_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-47/eeg/sub-47_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 112262656,
+    "sha256": "d084c51a77251ea6fba4ddb451d5eca1ac6ec207fefcdc0b6ab1212943f6b230",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-48/eeg/sub-48_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-48/eeg/sub-48_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 145002496,
+    "sha256": "d680a09cf796c6a481b013c6f0e97be34a3ae69c986414d94258f6bd12a0cde7",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-49/eeg/sub-49_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-49/eeg/sub-49_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 124810240,
+    "sha256": "bfea62e42c6b81578d74d4d457872f80c61c785b2ab6ed1333069c0f9f2fc3c8",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-5/eeg/sub-5_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-5/eeg/sub-5_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 30903040,
+    "sha256": "772b739c321cfec705df03dccd82f3beb9194f149f040adafc3a89866941882e",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-50/eeg/sub-50_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-50/eeg/sub-50_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 123773440,
+    "sha256": "b0ac2e1754ab41f7f80b36ebd677e63d144b9f5461164367fc62455633c67d3f",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-51/eeg/sub-51_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-51/eeg/sub-51_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 123773440,
+    "sha256": "aa022e77786be93bbe408f8e210948235ff7ad91964823191ca2585238d2aa23",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-52/eeg/sub-52_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-52/eeg/sub-52_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 127699456,
+    "sha256": "798ec627051d45d9eb80b3fae118d737346516b2aa24176dbc646591d10bc5a4",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-53/eeg/sub-53_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-53/eeg/sub-53_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 92199424,
+    "sha256": "f7c2756bb5d1563d38fd1859f8c057b3d657d5a4485135c360b4b9e88f7822f0",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-54/eeg/sub-54_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-54/eeg/sub-54_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 109318144,
+    "sha256": "024c7a168ab4d4bad35059ee014567d4234ce1db01f67154ff3e957d00c376a3",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-55/eeg/sub-55_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-55/eeg/sub-55_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 148375552,
+    "sha256": "7efbd22699c4e0dd58fafd9fc1da25a7e1774d250b490768f74169d3168c47dc",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-56/eeg/sub-56_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-56/eeg/sub-56_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 132468736,
+    "sha256": "65233bd43362bb78bc87ec9963cc839429e23eb89f15ce56371a6f5004ab9200",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-57/eeg/sub-57_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-57/eeg/sub-57_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 142666240,
+    "sha256": "03577ca86530860b37fa71c769e859e96eb79e758fd9e3de0b81c96ff86ef164",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-58/eeg/sub-58_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-58/eeg/sub-58_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 138989056,
+    "sha256": "fbfeba1212b56f217ac1f39e2b9c218c8298b7d88915792aadfed99798e39741",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-59/eeg/sub-59_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-59/eeg/sub-59_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 146214400,
+    "sha256": "2ab93f2491ee8b2f840e436ad1608b544bf83a887a6a5f9bd52fed5808f47502",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-6/eeg/sub-6_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-6/eeg/sub-6_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 138062848,
+    "sha256": "bd1a025a6a3446ea675f00080f3c18fbee79cf0b2f8382226136de120445788e",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-60/eeg/sub-60_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-60/eeg/sub-60_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 127575040,
+    "sha256": "5ed6c6bf9ae35ee41cba865912b4c6ecbd7a35376b0677d102f1232b53e55a62",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-61/eeg/sub-61_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-61/eeg/sub-61_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 131178496,
+    "sha256": "7f8088aca9cc73f6bf8e0ac65de82415bfcbd1958ad9086eb59b116bab1ce0c3",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-62/eeg/sub-62_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-62/eeg/sub-62_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 135910912,
+    "sha256": "51390d71f97e73b30616ab1d07cb724b51e2cf2a615d0c44ed4a556d3ddee9a7",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-63/eeg/sub-63_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-63/eeg/sub-63_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 122856448,
+    "sha256": "77d54b4792e8f10a3aaef47d6741d6ac32bdc93dfb7634bdc8a9d5ba0d70040c",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-64/eeg/sub-64_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-64/eeg/sub-64_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 122492416,
+    "sha256": "4b9dcae97af3fc910d9a37ef1a27b5a1e316716c6646473049e995d828155280",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-65/eeg/sub-65_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-65/eeg/sub-65_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 124096000,
+    "sha256": "565e1bb321c1f4c611e19dfc2ff4213ee63f3fe622626e6d5f9837077dc58f0b",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-66/eeg/sub-66_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-66/eeg/sub-66_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 149513728,
+    "sha256": "c05bd77e098c6878d543004cd60d9f28c3d9b3968f406ef80aafe3af79f6b108",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-67/eeg/sub-67_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-67/eeg/sub-67_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 127814656,
+    "sha256": "f37467db9b5b20588ec396f9b3635ce78f3906c0fce1188b3f66fe39a1e76b57",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-68/eeg/sub-68_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-68/eeg/sub-68_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 120372736,
+    "sha256": "bc9b947b605616cdae10000765a146dcadc974d6c0596b0e89318dee7eda133b",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-69/eeg/sub-69_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-69/eeg/sub-69_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 138777088,
+    "sha256": "125609b56632f569eb8ba130e4b72899a961420d4b77aaddd70e5f618dcbf062",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-7/eeg/sub-7_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-7/eeg/sub-7_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 28752640,
+    "sha256": "e3c66714df27c103f15d9df42abc44b65960d7eced06e1646dc1e8bd157d7ea3",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-70/eeg/sub-70_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-70/eeg/sub-70_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 122999296,
+    "sha256": "c0a6972218eefabf995ba07cfba07ea8026ba078ffccaff2f65cef00799a2dc1",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-71/eeg/sub-71_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-71/eeg/sub-71_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 154024960,
+    "sha256": "fabf0e1338192c60ff0c7ca8f959d73884c39fe36756d35406d7c61d67e4bef8",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-72/eeg/sub-72_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-72/eeg/sub-72_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 133565440,
+    "sha256": "44ca8730bce5876be1fe86d86f4a721d6f42e141f0c9d9640fff2c29ea351e09",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-73/eeg/sub-73_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-73/eeg/sub-73_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 119607808,
+    "sha256": "813bd20b8981b0f207ca416a39ebcf922a6c639dc087e6c024ca716eb30af909",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-74/eeg/sub-74_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-74/eeg/sub-74_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 133980160,
+    "sha256": "52afa06a042331910febfe62450658d574cd96da5791cd54331da414e90c2f93",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-75/eeg/sub-75_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-75/eeg/sub-75_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 119414272,
+    "sha256": "786f1c0b9c055772e2fdaefcef141acb8b53fa30813f69a9c697102033bc3e17",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-76/eeg/sub-76_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-76/eeg/sub-76_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 144901120,
+    "sha256": "e6fc9e68c0bd40d9e6d4d20750250944b949b4e40ef616f1f51c306fcc25d3ce",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-77/eeg/sub-77_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-77/eeg/sub-77_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 149075968,
+    "sha256": "240378ca415d85a2ce5a779bb076e0a9b668ca1027aa9a7499a2862bc5281db0",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-78/eeg/sub-78_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-78/eeg/sub-78_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 121778176,
+    "sha256": "b72d97ca9ef15a44b1345a103b4b8b8994b19167e811563616cbbda8cca8ddc9",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-79/eeg/sub-79_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-79/eeg/sub-79_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 142951936,
+    "sha256": "b44262fe76bb10e5f602dd3e82f397d4517fc73f0b57fa7e5e43f71a448a0ca0",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-8/eeg/sub-8_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-8/eeg/sub-8_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 56634880,
+    "sha256": "37e9ca51a39fa87b63e4995569f84c370b92419525df06e7a7c2933e844dc9c1",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-80/eeg/sub-80_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-80/eeg/sub-80_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 113479168,
+    "sha256": "2f4def93bf79a663ad052699b328b37abeffbd3249da5ffeb7f803e1073a572b",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-81/eeg/sub-81_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-81/eeg/sub-81_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 125206528,
+    "sha256": "dac936e0fe1f0982125128e28c6635f236ed7b591bb6336c9e812882f773b5fa",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-82/eeg/sub-82_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-82/eeg/sub-82_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 122865664,
+    "sha256": "466b0c0d2f6f5bfe132420caa0312557c6f30805f0ad2a065152fab8cb1e9a2d",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-83/eeg/sub-83_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-83/eeg/sub-83_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 125980672,
+    "sha256": "b0c6a9e75b8f7a93c32f5ab179bb205674cf3b15198056204e0d866864228132",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-84/eeg/sub-84_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-84/eeg/sub-84_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 140698624,
+    "sha256": "1ad284dfcc9e7e16e44ebb27fb1376bdf46c7337656751ba4f1e2df27d399648",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-85/eeg/sub-85_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-85/eeg/sub-85_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 149504512,
+    "sha256": "b554ec9cd5e377cb2a4117d9144e7e48b5d38c8b78834335033e6f35fb6310b2",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-86/eeg/sub-86_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-86/eeg/sub-86_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 130579456,
+    "sha256": "ecf675002e2914150c0436f7105be4018d9f8b68a9bb37785ac4a803028a9032",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-87/eeg/sub-87_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-87/eeg/sub-87_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 132431872,
+    "sha256": "0988142633ec3047d110fe8063a72f165791c8537b5ad3afb68fa24bcf6c421e",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-88/eeg/sub-88_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-88/eeg/sub-88_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 124026880,
+    "sha256": "a24005d89f53dc8af9bc4c5fb0d422844606d18e36f958c8b5c72e506becbea5",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-89/eeg/sub-89_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-89/eeg/sub-89_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 134745088,
+    "sha256": "b965ff607840a89008c62d9e2e83126ee3b345051a8e4848a07d7baebc3824e9",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-9/eeg/sub-9_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-9/eeg/sub-9_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 32431872,
+    "sha256": "9e3ed1a7419af4300f00a46e31c886e0c5b5b73ffd5b1de477584d383840f39c",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-90/eeg/sub-90_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-90/eeg/sub-90_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 143785984,
+    "sha256": "8287c52aaf8f806b9429f5b8d705587922998ce61eb2a8d193c39e98d32f6f25",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-91/eeg/sub-91_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-91/eeg/sub-91_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 141256192,
+    "sha256": "6d890b741fa849b5ef710ee0a5352ce7d1a8e969445892fe30602bc36af1fa15",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-92/eeg/sub-92_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-92/eeg/sub-92_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 136675840,
+    "sha256": "88d6e0f6960cc11656d16e5fff4034bbad34be3c064c4ee048105cd24dc66bba",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-93/eeg/sub-93_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-93/eeg/sub-93_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 121510912,
+    "sha256": "4cf69796db3856158f038ae29eb46a6f09522e3ebe53aa131268754d2617a751",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-94/eeg/sub-94_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-94/eeg/sub-94_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 138975232,
+    "sha256": "0468cfcf66dab33512e2b65e4589bb044c56a1763d738dfbb1dd42ad08b4a384",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-95/eeg/sub-95_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-95/eeg/sub-95_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 135947776,
+    "sha256": "0821709a36f3be80517eb4031eccb05e3c3457be4651a39baa0234dbfa5db0bb",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-96/eeg/sub-96_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-96/eeg/sub-96_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 134284288,
+    "sha256": "b5a09a6304fc10a3c126f45f85e9839d7e5581364dc965a2eb0c9651aaf80f8a",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-97/eeg/sub-97_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-97/eeg/sub-97_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 150011392,
+    "sha256": "34df7798b0800df498caadbe081d39294c6a26fd015f18cfdd630a52141ed930",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-98/eeg/sub-98_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-98/eeg/sub-98_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 124566016,
+    "sha256": "0730ed6bc7a18cceb3267207f89f624b919d7943757695e6dc33e76eeea43e21",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  },
+  {
+    "path": "sub-99/eeg/sub-99_task-Sleep_acq-headband_eeg.edf",
+    "url": "https://s3.amazonaws.com/openneuro.org/ds005555/sub-99/eeg/sub-99_task-Sleep_acq-headband_eeg.edf",
+    "bytes": 147753472,
+    "sha256": "99898914b7359d25490f7bcfc2206dbac79953ef01d32c6383cc361eaa1404f9",
+    "pin": "face09565c4337ddbce7a048c9b02060ad20df45"
+  }
+]

@@ -1,0 +1,141 @@
+{
+  "rule": "longest predicted-sleep block, gap-tolerant, with margins; uses model predictions only",
+  "gap_min": 30,
+  "margin_min": 30,
+  "tuned_on": "BOAS summary-calibration people (20, first night), v2 frozen predictions",
+  "people": [
+    "sub-3",
+    "sub-24",
+    "sub-31",
+    "sub-56",
+    "sub-74",
+    "sub-78",
+    "sub-80",
+    "sub-83",
+    "sub-84",
+    "sub-93",
+    "sub-98",
+    "sub-99",
+    "sub-100",
+    "sub-104",
+    "sub-105",
+    "sub-106",
+    "sub-108",
+    "sub-123",
+    "sub-125",
+    "sub-126"
+  ],
+  "model_sha256": "121837c16b4ff3a045421355048b538c53158119b2afd52dcbd32a641021cb0b",
+  "grid": [
+    {
+      "gap_min": 30,
+      "margin_min": 30,
+      "rule_mae": 9.725,
+      "unwindowed_mae": 9.8
+    },
+    {
+      "gap_min": 30,
+      "margin_min": 15,
+      "rule_mae": 9.725,
+      "unwindowed_mae": 9.8
+    },
+    {
+      "gap_min": 30,
+      "margin_min": 0,
+      "rule_mae": 9.725,
+      "unwindowed_mae": 9.8
+    },
+    {
+      "gap_min": 90,
+      "margin_min": 30,
+      "rule_mae": 9.8,
+      "unwindowed_mae": 9.8
+    },
+    {
+      "gap_min": 90,
+      "margin_min": 15,
+      "rule_mae": 9.8,
+      "unwindowed_mae": 9.8
+    },
+    {
+      "gap_min": 90,
+      "margin_min": 0,
+      "rule_mae": 9.8,
+      "unwindowed_mae": 9.8
+    },
+    {
+      "gap_min": 60,
+      "margin_min": 30,
+      "rule_mae": 9.8,
+      "unwindowed_mae": 9.8
+    },
+    {
+      "gap_min": 60,
+      "margin_min": 15,
+      "rule_mae": 9.8,
+      "unwindowed_mae": 9.8
+    },
+    {
+      "gap_min": 60,
+      "margin_min": 0,
+      "rule_mae": 9.8,
+      "unwindowed_mae": 9.8
+    },
+    {
+      "gap_min": 45,
+      "margin_min": 30,
+      "rule_mae": 9.8,
+      "unwindowed_mae": 9.8
+    },
+    {
+      "gap_min": 45,
+      "margin_min": 15,
+      "rule_mae": 9.8,
+      "unwindowed_mae": 9.8
+    },
+    {
+      "gap_min": 45,
+      "margin_min": 0,
+      "rule_mae": 9.8,
+      "unwindowed_mae": 9.8
+    },
+    {
+      "gap_min": 20,
+      "margin_min": 30,
+      "rule_mae": 16.575,
+      "unwindowed_mae": 9.8
+    },
+    {
+      "gap_min": 20,
+      "margin_min": 15,
+      "rule_mae": 17.15,
+      "unwindowed_mae": 9.8
+    },
+    {
+      "gap_min": 20,
+      "margin_min": 0,
+      "rule_mae": 17.15,
+      "unwindowed_mae": 9.8
+    },
+    {
+      "gap_min": 10,
+      "margin_min": 30,
+      "rule_mae": 17.6,
+      "unwindowed_mae": 9.8
+    },
+    {
+      "gap_min": 10,
+      "margin_min": 15,
+      "rule_mae": 19.05,
+      "unwindowed_mae": 9.8
+    },
+    {
+      "gap_min": 10,
+      "margin_min": 0,
+      "rule_mae": 19.15,
+      "unwindowed_mae": 9.8
+    }
+  ],
+  "frozen_utc": "2026-11-07T17:50:37Z",
+  "tie_break": "equal MAE -> larger gap, then larger margin (least restrictive)"
+}

@@ -1,0 +1,226 @@
+{
+  "frozen_unix": 1794088294.5564108,
+  "weights_sha256": "dcde0233000295806275551ba19995bcf44336750863d225bc3bc5158dd58c74",
+  "selected_pass": 17,
+  "passes_run": 25,
+  "selection_candidates": [
+    {
+      "sequence_weight": 0.0,
+      "mean_person_kappa": 0.5154336701302619
+    },
+    {
+      "sequence_weight": 0.5,
+      "mean_person_kappa": 0.7107309921087582
+    },
+    {
+      "sequence_weight": 1.0,
+      "mean_person_kappa": 0.660325724393015
+    }
+  ],
+  "selected_sequence_weight": 0.5,
+  "temperature": 1.484567478977035,
+  "history": [
+    {
+      "pass": 1,
+      "train_loss": 1.0090203088396328,
+      "selection_mean_person_kappa_unsmoothed": 0.33371448515434726,
+      "seconds": 30.8
+    },
+    {
+      "pass": 2,
+      "train_loss": 0.8669359041879551,
+      "selection_mean_person_kappa_unsmoothed": 0.3875684758170075,
+      "seconds": 26.9
+    },
+    {
+      "pass": 3,
+      "train_loss": 0.8004550658846906,
+      "selection_mean_person_kappa_unsmoothed": 0.45604824440198916,
+      "seconds": 27.8
+    },
+    {
+      "pass": 4,
+      "train_loss": 0.7573100896574015,
+      "selection_mean_person_kappa_unsmoothed": 0.4390373906742952,
+      "seconds": 27.8
+    },
+    {
+      "pass": 5,
+      "train_loss": 0.7223978613522907,
+      "selection_mean_person_kappa_unsmoothed": 0.446055977790152,
+      "seconds": 27.6
+    },
+    {
+      "pass": 6,
+      "train_loss": 0.6951583251182591,
+      "selection_mean_person_kappa_unsmoothed": 0.46974540422642813,
+      "seconds": 26.9
+    },
+    {
+      "pass": 7,
+      "train_loss": 0.6689792237739652,
+      "selection_mean_person_kappa_unsmoothed": 0.473507150261969,
+      "seconds": 26.8
+    },
+    {
+      "pass": 8,
+      "train_loss": 0.6476907182912357,
+      "selection_mean_person_kappa_unsmoothed": 0.44197640014079526,
+      "seconds": 26.5
+    },
+    {
+      "pass": 9,
+      "train_loss": 0.6283086037189117,
+      "selection_mean_person_kappa_unsmoothed": 0.5012478684633647,
+      "seconds": 26.9
+    },
+    {
+      "pass": 10,
+      "train_loss": 0.6073342651058974,
+      "selection_mean_person_kappa_unsmoothed": 0.508170990764166,
+      "seconds": 27.9
+    },
+    {
+      "pass": 11,
+      "train_loss": 0.5909295415012842,
+      "selection_mean_person_kappa_unsmoothed": 0.48226570181301925,
+      "seconds": 27.3
+    },
+    {
+      "pass": 12,
+      "train_loss": 0.573436334973476,
+      "selection_mean_person_kappa_unsmoothed": 0.4897293924633301,
+      "seconds": 25.2
+    },
+    {
+      "pass": 13,
+      "train_loss": 0.5585826016979977,
+      "selection_mean_person_kappa_unsmoothed": 0.5132458712099813,
+      "seconds": 26.6
+    },
+    {
+      "pass": 14,
+      "train_loss": 0.5428582714648101,
+      "selection_mean_person_kappa_unsmoothed": 0.5145119850925612,
+      "seconds": 26.8
+    },
+    {
+      "pass": 15,
+      "train_loss": 0.5296217414618097,
+      "selection_mean_person_kappa_unsmoothed": 0.5144323553427773,
+      "seconds": 27.9
+    },
+    {
+      "pass": 16,
+      "train_loss": 0.5161261771406446,
+      "selection_mean_person_kappa_unsmoothed": 0.49491195083069256,
+      "seconds": 27.2
+    },
+    {
+      "pass": 17,
+      "train_loss": 0.5034159885357359,
+      "selection_mean_person_kappa_unsmoothed": 0.5154336701302619,
+      "seconds": 26.3
+    },
+    {
+      "pass": 18,
+      "train_loss": 0.4902688737356691,
+      "selection_mean_person_kappa_unsmoothed": 0.495394299313062,
+      "seconds": 23.9
+    },
+    {
+      "pass": 19,
+      "train_loss": 0.47763476585336817,
+      "selection_mean_person_kappa_unsmoothed": 0.49443129812773834,
+      "seconds": 26.4
+    },
+    {
+      "pass": 20,
+      "train_loss": 0.46775123086131987,
+      "selection_mean_person_kappa_unsmoothed": 0.48408798709623985,
+      "seconds": 26.8
+    },
+    {
+      "pass": 21,
+      "train_loss": 0.45673791432548183,
+      "selection_mean_person_kappa_unsmoothed": 0.5125273304381787,
+      "seconds": 26.4
+    },
+    {
+      "pass": 22,
+      "train_loss": 0.44503351997156615,
+      "selection_mean_person_kappa_unsmoothed": 0.509456119566682,
+      "seconds": 27.2
+    },
+    {
+      "pass": 23,
+      "train_loss": 0.43525287229785875,
+      "selection_mean_person_kappa_unsmoothed": 0.506899231986461,
+      "seconds": 27.0
+    },
+    {
+      "pass": 24,
+      "train_loss": 0.42593004441093785,
+      "selection_mean_person_kappa_unsmoothed": 0.5079053498380607,
+      "seconds": 26.7
+    },
+    {
+      "pass": 25,
+      "train_loss": 0.41508604177825625,
+      "selection_mean_person_kappa_unsmoothed": 0.502231854884657,
+      "seconds": 27.8
+    }
+  ],
+  "seed": 20261108,
+  "learning_rate": 0.0003,
+  "batch": 128,
+  "architecture": [
+    [
+      1,
+      16,
+      15,
+      4
+    ],
+    [
+      16,
+      32,
+      9,
+      1
+    ],
+    [
+      32,
+      64,
+      9,
+      1
+    ],
+    [
+      64,
+      64,
+      5,
+      1
+    ]
+  ],
+  "pool_after": {
+    "0": 2,
+    "1": 2,
+    "2": 2
+  },
+  "input_hz": 64,
+  "samples_per_epoch": 1920,
+  "clip": 20.0,
+  "test_labels_read_before_freeze": false,
+  "class_weighted_loss": false,
+  "selection_metric": "kappa",
+  "class_weight_scheme": null,
+  "person_normalised_sample_weights": false,
+  "class_weights": null,
+  "augmentation": null,
+  "two_channel_input": true,
+  "training_class_counts": [
+    8977,
+    2018,
+    33204,
+    2349,
+    8170
+  ]
+}

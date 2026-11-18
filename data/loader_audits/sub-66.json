@@ -1,0 +1,14 @@
+{
+  "subject": "sub-66",
+  "channels": [
+    "HB_1",
+    "HB_2"
+  ],
+  "sampling_hz": 256.0,
+  "samples": 8306176,
+  "duration_seconds": 32446.0,
+  "epochs": 1081,
+  "alignment": "onsets, durations, one-based begin/end sample checked",
+  "input_unit": "MNE-calibrated volts converted to microvolts",
+  "finite_nonflat_epochs": 1048
+}

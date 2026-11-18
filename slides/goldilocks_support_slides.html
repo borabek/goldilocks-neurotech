@@ -1,0 +1,261 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Goldilocks AI — support slides</title><style>@page{size:297mm 167mm;margin:0}
+    :root{--ink:#14181f;--mute:#5d6774;--line:#d9dee6;--accent:#1f5f8b;--bad:#9b2c2c;--good:#1f6f4a}
+    *{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    body{margin:0;font-family:Helvetica,Arial,sans-serif;color:var(--ink)}
+    .slide{width:297mm;height:167mm;padding:16mm 18mm;page-break-after:always;position:relative;
+      display:flex;flex-direction:column;background:#fff}
+    .slide:last-child{page-break-after:auto}
+    .kicker{font-size:10pt;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700}
+    h1{font-size:30pt;line-height:1.1;margin:4mm 0 2mm;font-weight:700;letter-spacing:-.01em}
+    h2{font-size:21pt;line-height:1.15;margin:3mm 0 4mm;font-weight:700;letter-spacing:-.01em}
+    .sub{font-size:11pt;color:var(--mute);line-height:1.4;max-width:215mm}
+    table{border-collapse:collapse;width:100%;font-size:10pt;margin-top:1.5mm}
+    th,td{text-align:left;padding:1.7mm 3mm;border-bottom:1px solid var(--line)}
+    th{font-size:9.5pt;text-transform:uppercase;letter-spacing:.07em;color:var(--mute);font-weight:700}
+    td:nth-child(n+2),th:nth-child(n+2){text-align:right;font-variant-numeric:tabular-nums}
+    .win{color:var(--good);font-weight:700}.lose{color:var(--bad);font-weight:700}
+    .muted{color:var(--mute);font-size:10pt;text-align:left!important}
+    ul{font-size:12pt;line-height:1.5;margin:2mm 0 0;padding-left:6mm}
+    li{margin-bottom:2.4mm}li b{font-weight:700}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:10mm}
+    .foot{position:absolute;bottom:8mm;left:18mm;right:18mm;font-size:8.5pt;color:var(--mute);
+      border-top:1px solid var(--line);padding-top:2.5mm;display:flex;justify-content:space-between}
+    .big{font-size:40pt;font-weight:700;letter-spacing:-.02em;line-height:1}
+    .bignum{display:flex;gap:14mm;margin:5mm 0 3mm}
+    .bignum div{flex:1}.bignum .lab{font-size:10pt;color:var(--mute);margin-top:1.5mm;line-height:1.35}
+    code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9pt;background:#f4f6f9;padding:.6mm 1.2mm;
+      border-radius:1mm;word-break:break-all}
+    </style></head><body><section class="slide">
+      <div class="kicker">Goldilocks AI · support slides</div>
+      <h1>A wearable can stage sleep well<br>and still get the night wrong.</h1>
+      <div class="bignum">
+        <div><div class="big">0.661</div><div class="lab">stage agreement (kappa) on the
+          BOAS forehead headband, 20 held-out people</div></div>
+        <div><div class="big">32 min</div><div class="lab">average error in total
+          sleep time, same 20 people</div></div>
+        <div><div class="big">236 min</div><div class="lab">same model, 20 new
+          Sleep-EDF people, full recording with daytime wake</div></div>
+      </div>
+      <div class="sub">One frozen model, person-held-out. The 236-minute figure is the finding, not the
+      footnote: stage accuracy mostly survived the move to a new device, and the night summary a user
+      would actually read did not. We then trained a stronger model to check whether that is a property
+      of our model or of the problem. It is the problem — see slide 2.</div>
+      <div class="foot"><span>Goldilocks AI · Stream 2, AI / Neural Decoding · 20 people per cohort</span><span>1/10</span></div></section><section class="slide">
+      <div class="kicker">The comparison we did not want</div>
+      <h2>We are not the best sleep stager. We say so.</h2>
+      <table><tr><th>20 people per cohort</th><th>Kappa</th><th>Sleep-time error</th><th>Note</th></tr>
+      <tr><td><b>BOAS headband</b> — ours</td><td class="win">0.661</td>
+        <td class="win">31.8 min</td><td class="muted">development comparison</td></tr>
+      <tr><td>BOAS headband — YASA 0.7.0</td><td>0.532</td><td>57.6 min</td>
+        <td class="muted">open-source baseline</td></tr>
+      <tr><td><b>Sleep-EDF full recording</b> — ours</td><td class="lose">0.579</td>
+        <td class="lose">235.9 min</td><td class="muted">independent test</td></tr>
+      <tr><td>Sleep-EDF full recording — YASA</td><td class="win">0.675</td>
+        <td class="win">110.3 min</td><td class="muted">beats us here</td></tr>
+      <tr><td>Sleep-EDF sleep window — ours</td><td>0.515</td>
+        <td>36.8 min</td><td class="muted">secondary window</td></tr>
+      <tr><td>Sleep-EDF sleep window — YASA</td><td>0.628</td>
+        <td>23.1 min</td><td class="muted">secondary window</td></tr>
+      <tr><td><b>BOAS headband</b> — CNN challenger</td><td class="win">0.728</td>
+        <td class="win">16.5 min</td><td class="muted">best here</td></tr><tr><td><b>Sleep-EDF full recording</b> — CNN challenger</td>
+        <td class="lose">0.086</td><td class="lose">803.2 min</td>
+        <td class="muted">worst here</td></tr><tr><td>BOAS headband — context model, sqrt-balanced trunk</td>
+        <td>0.737</td><td>10.2 min</td>
+        <td class="muted">variant</td></tr><tr><td><b>BOAS headband — ensemble of seven models</b></td>
+        <td class="win">0.741</td><td class="win">9.3 min</td>
+        <td class="muted">best on this cohort only</td></tr>
+      </table>
+      <div class="sub" style="margin-top:2mm"><b>Read the CNN's two rows together.</b> It is the best model
+      on the headband, kappa 0.728 against our 0.661, and by far
+      the worst on Sleep-EDF at 0.086 and
+      803.2 min, calling daytime wake sleep. Picking a wearable
+      model by its in-domain score would have picked exactly that one. On the vendor-covered mask the released
+      Bitbrain scorer still leads on sleep time, 14.4 against
+      31.3 minutes. All eight members of the CNN family, the ensemble included, were then
+      scored on Sleep-EDF: none reaches kappa 0.22 and every one exceeds 700 minutes of sleep-time error.</div>
+      <div class="foot"><span>Goldilocks AI · Stream 2, AI / Neural Decoding · 20 people per cohort</span><span>2/10</span></div></section><section class="slide">
+      <div class="kicker">Scope</div>
+      <h2>What we cut, and why</h2>
+      <div class="two"><ul>
+        <li><b>Calibrated sleep-time ranges.</b> Built, then switched off. Observed coverage was
+          60% on BOAS and 20% externally against a
+          90% target, so the release gate disables the claim and exported intervals are null.</li>
+        <li><b>The label-free sleep-window rule.</b> Tested, not adopted: it cut the external error from
+          235.9 to 177.5 minutes
+          but made the headband worse, 31.8 to
+          45.3. Moved to next work.</li>
+        <li><b>The daytime experiment.</b> Needs teammates recorded on the headset. Not run, so there is no
+          pre-stimulus claim here. The live path itself was built and measured: scoring epoch by epoch as
+          the night arrives costs 0.038 kappa against the same model scored retrospectively (0.728 &rarr; 0.690), with no lookahead.</li>
+      </ul><ul>
+        <li><b>A public repository and QR code.</b> Team decision: no public repo tonight. The identifier is a
+          content hash, not an invented link, and the folder is the artefact.</li>
+        <li><b>Drug, hydrogel and nanoparticle modules.</b> Kept as a bounded research track outside the
+          scored core. The coating/core model refuses to fit until matched pairs from ten studies exist —
+          by its own rule, not by our choice.</li>
+        <li><b>Any clinical, ADHD or medication claim.</b> Out of scope by construction: no paired outcomes,
+          no children, no treatment data in anything we evaluated.</li>
+      </ul></div>
+      <div class="sub" style="margin-top:3mm">Protected throughout: the trained model, the frozen
+      person-held-out evaluation, and the baselines. The CNN challenger was the one stretch item we did
+      finish tonight — it beats the frozen model on the headband and then collapses on Sleep-EDF.</div>
+      <div class="foot"><span>Goldilocks AI · Stream 2, AI / Neural Decoding · 20 people per cohort</span><span>3/10</span></div></section><section class="slide">
+      <div class="kicker">Falsifiability</div>
+      <h2>What would change our mind</h2>
+      <ul>
+        <li><b>A matched baseline beating us.</b> Two did. YASA beats us on Sleep-EDF,
+          0.675 against 0.579, and the CNN we trained tonight beats us on the
+          headband, 0.728 against 0.661. We report both. The
+          contribution was never "our model is best": it is the evaluation that shows which one to trust
+          where.</li>
+        <li><b>Interval coverage near the nominal target.</b> It was not: 60% and
+          20% against 90%. That is why the range claim is switched off rather than
+          softened. Probability calibration improved (log loss 0.739 →
+          0.545); that is a different property.</li>
+        <li><b>A new population.</b> Sleep-EDF was exactly that, and the summary claim failed on it. The honest
+          boundary is the device and population we evaluated, not "wearables".</li>
+        <li><b>A better architecture than the frozen trunk.</b> We built the obvious upgrade and it lost.
+          Training the encoder jointly over 21-epoch sequences scored macro-F1 0.434 with grid sampling and 0.435 with random sampling, against 0.618 for the frozen trunk with a temporal head &mdash; a gap of 0.184, about 13&times; the 0.015 seed spread, and two independent sampling strategies agree.</li>
+        <li><b>In the research track, an audit that removes a win.</b> That also happened: merging two
+          duplicated study measurements moved the exposure model from beating its baseline to not beating it
+          (159 title groups → 157 source groups).</li>
+      </ul>
+      <div class="sub" style="margin-top:3mm">More exposure, more epochs or more datasets without paired
+      functional outcomes would still not establish benefit.</div>
+      <div class="foot"><span>Goldilocks AI · Stream 2, AI / Neural Decoding · 20 people per cohort</span><span>4/10</span></div></section><section class="slide">
+      <div class="kicker">Landscape</div>
+      <h2>Who else does this, and what we compared to what</h2>
+      <table><tr><th>Work</th><th>Its task</th><th>How we compared</th></tr>
+      <tr><td><b>YASA</b> (Vallat &amp; Walker)</td><td class="muted">established automatic sleep staging</td>
+        <td class="muted">Run as a baseline on both cohorts, our masks, windows and metric. It beats us
+        externally and loses on the headband</td></tr>
+      <tr><td><b>Bitbrain / BOAS</b></td><td class="muted">released headband scorer with PSG reference</td>
+        <td class="muted">Vendor baseline on its own covered mask: still ahead on sleep time,
+        14.4 vs 31.3 minutes</td></tr>
+      <tr><td><b>Yousfan et al.</b></td><td class="muted">brain-delivery exposure modelling</td>
+        <td class="muted">Adjacent research track, not a staging competitor. Reproduced held out by study;
+        descriptors did not transfer</td></tr>
+      <tr><td><b>Qiu et al.</b></td><td class="muted">ML optimisation of grouped procedures</td>
+        <td class="muted">Method context for the formulation track only</td></tr>
+      </table>
+      <div class="sub" style="margin-top:4mm">Delivery models are adjacent work, not sleep-staging
+      competitors, and we do not list consumer apps whose actual claims we have not checked. What is new here
+      is not the stager: it is a frozen, inspectable evaluation that shows where the night summary breaks.</div>
+      <div class="foot"><span>Goldilocks AI · Stream 2, AI / Neural Decoding · 20 people per cohort</span><span>5/10</span></div></section><section class="slide">
+      <div class="kicker">How it is built</div>
+      <h2>Five pieces, each there because something failed without it</h2>
+      <div class="two"><ul>
+        <li><b>Per-recording robust scaling.</b> Amplitude on a forehead headband depends on how well the
+          electrode sits, and that changes between people and across a single night. Scaling each recording
+          by its own median and MAD, rather than a global constant, is what lets one set of weights read a
+          stranger's signal at all.</li>
+        <li><b>A small convolutional trunk.</b> 44,581 parameters over the raw 30-second epoch. It is
+          deliberately small: with 48 people to fit on, a larger trunk memorises individuals rather than
+          learning what N2 looks like.</li>
+        <li><b>A temporal head on top.</b> One epoch in isolation is genuinely ambiguous — N1 and wake share
+          most of their spectrum. The head sees 21 epochs at once, which is roughly the span a human scorer uses
+          when they look at the page before and after.</li>
+      </ul><ul>
+        <li><b>A sequence smoother.</b> Sleep does not jump between stages at random; the transition matrix
+          estimated from the fitting nights encodes that, and a forward-backward pass over the night removes
+          single-epoch flicker that no scorer would produce.</li>
+        <li><b>Temperature calibration.</b> The raw network is overconfident. One scalar, fitted on six people
+          who are in neither the fitting nor the test set, takes log loss from
+          0.739 to 0.545 and expected
+          calibration error from 0.128 to 0.087.
+          It changes no prediction, only how much the prediction claims to know.</li>
+      </ul></div>
+      <div class="sub" style="margin-top:3mm">The live path keeps all five but gives up the lookahead: a
+      trailing window replaces whole-recording scaling and the smoother runs forward only.</div>
+      <div class="foot"><span>Goldilocks AI · Stream 2, AI / Neural Decoding · 20 people per cohort</span><span>6/10</span></div></section><section class="slide">
+      <div class="kicker">The architecture question we actually tested</div>
+      <h2>Reusing a frozen trunk beat training the whole thing together</h2>
+      <div class="sub">The obvious next step, once a trunk and a temporal head both work, is to stop treating
+      them as separate stages and train one network end to end over whole sequences. We built it. It lost, and
+      it lost by a margin that is not noise.</div>
+      <ul>
+        <li><b>Grid sampling, stride 21:</b> macro-F1 0.434, kappa 0.530.</li>
+        <li><b>Random window sampling, three exposures per epoch:</b> macro-F1 0.435,
+          kappa 0.481.</li>
+        <li><b>Frozen trunk with a temporal head:</b> macro-F1 0.618,
+          kappa 0.734, sleep-time error 8.7 minutes.</li>
+      </ul>
+      <div class="sub" style="margin-top:3mm">Two sampling strategies that share no code path landed on the
+      two figures above, and both sat 0.184 below the staged model — about
+      13 times the 0.015 spread we measured across random seeds. The reading
+      we take from it is unglamorous: with 48 people to fit on, a jointly trained encoder has enough freedom to
+      fit the fitting set and not enough data to generalise from it. Freezing a trunk that was fitted on single
+      epochs is a constraint, and the constraint is what helps.</div>
+      <div class="sub" style="margin-top:3mm">We report it because the opposite is what we expected, and because
+      a negative result that cost a night of compute is still evidence about where the ceiling sits. It also
+      sharpens the main finding: the limit here is the number of people, not the number of epochs. More nights
+      from the same device would not fix a model that has seen 48 of them — and the Sleep-EDF collapse says
+      the same thing from the other direction.</div>
+      <div class="foot"><span>Goldilocks AI · Stream 2, AI / Neural Decoding · 20 people per cohort</span><span>7/10</span></div></section><section class="slide">
+      <div class="kicker">How the code holds the line</div>
+      <h2>The protocol is enforced by file boundaries, not by discipline</h2>
+      <div class="two"><ul>
+        <li><b>Fitting and evaluation live in different files.</b> <code>v2_evaluate.py</code> cannot fit a model,
+          a calibrator or a threshold — there is no code in it that could. If a number needs to change, it has to
+          change somewhere visible.</li>
+        <li><b>One mask, written once.</b> <code>(y &gt;= 0) &amp; (y &lt; 5) &amp; good</code> appears in every
+          scorer. Comparing two models on two different masks is the easiest way to manufacture a win, so the
+          mask is not a parameter anywhere.</li>
+        <li><b>The split is a file, not a convention.</b> <code>protocol.json</code> names who is in the 48
+          fitting people, the six selection people, the six calibration people and the 20 test people. Selection
+          reads the six; nothing reads the 20 until the end.</li>
+      </ul><ul>
+        <li><b>Every slide number is read at build time.</b> This deck is generated by
+          <code>make_presentation.py</code> from the saved result JSONs. There is no typed-in figure to go stale,
+          which is why the deck can be rebuilt after a result changes and simply be right.</li>
+        <li><b>The seed spread is a gate, not a footnote.</b> <code>seed_variance.py</code> puts a number
+          (0.015 macro-F1) on how much two identical runs differ. Anything smaller than it is not
+          reported as an improvement. Three claims were withdrawn under that rule.</li>
+        <li><b>The audit tests itself.</b> <code>leakage_audit.py</code> ships eleven controlled cases with
+          known answers, so a detector that silently stops working fails loudly instead.</li>
+      </ul></div>
+      <div class="sub" style="margin-top:3mm">One command re-runs the frozen evaluation offline in about half a
+      minute, and it has now reproduced to the last digit on three machines and two operating systems.</div>
+      <div class="foot"><span>Goldilocks AI · Stream 2, AI / Neural Decoding · 20 people per cohort</span><span>8/10</span></div></section><section class="slide">
+      <div class="kicker">Privacy and ethics</div>
+      <h2>Public data, visible provenance, nothing covert</h2>
+      <div class="two"><ul>
+        <li><b>Every result uses public, de-identified releases</b> — BOAS via OpenNeuro (CC0) and Sleep-EDF via
+          PhysioNet (ODC-By 1.0), both credited with DOIs.</li>
+        <li><b>No teammate or attendee recording</b> exists in this project. The optional day experiment that
+          would have involved teammates was not run, so there is no consent question to answer after the fact.</li>
+        <li><b>No health inference about anyone at the event.</b></li>
+      </ul><ul>
+        <li><b>Local storage only.</b> No upload, no public repository, no third-party service holds the data.
+          The folder stays on the team's machine.</li>
+        <li><b>Provenance is part of the product:</b> frozen protocol and model hashes, acquisition logs,
+          published dataset checksums and per-person loader audits all ship with the results.</li>
+        <li><b>No clinical function.</b> Nothing here diagnoses, titrates medication, or applies to children.</li>
+      </ul></div>
+      <div class="sub" style="margin-top:3mm">Consent to EEG collection would not have permitted a public
+      face or video recording; that distinction is why the demo video shows only the viewer.</div>
+      <div class="foot"><span>Goldilocks AI · Stream 2, AI / Neural Decoding · 20 people per cohort</span><span>9/10</span></div></section><section class="slide">
+      <div class="kicker">Credits</div>
+      <h2>Data, software and people</h2>
+      <div class="two"><ul>
+        <li><b>BOAS — Bitbrain Open Access Sleep</b>, López-Larraz, Sierra-Torralba, Clemente, Fierro, Oriol,
+          Minguez, Montesano, Klinzing. OpenNeuro <code>doi:10.18112/openneuro.ds005555.v1.1.3</code>, CC0.</li>
+        <li><b>Sleep-EDF Expanded 1.0.0</b>, Kemp et al. 2000, PhysioNet <code>10.13026/C2X676</code>,
+          ODC-By 1.0.</li>
+        <li><b>Yousfan et al. 2023</b>, <i>Molecular Pharmaceutics</i> supporting data, CC BY-NC 4.0 —
+          research track only, not redistributed.</li>
+        <li><b>Bannigan et al.</b> PLGA release data, MIT licence retained.</li>
+      </ul><ul>
+        <li><b>YASA 0.7.0</b> (Vallat &amp; Walker) as the open-source baseline; <b>MNE-Python</b>,
+          <b>scikit-learn</b>, <b>SciPy</b>, <b>NumPy</b>, <b>pandas</b>, <b>JAX</b> for the CNN challenger.</li>
+        <li><b>Tobii</b> sponsors the AI stream. No Tobii hardware was used, and no g.tec or other borrowed
+          kit produced any result here.</li>
+        <li><b>The team:</b> <b>Ceren</b> &mdash; biomaterials · <b>Bora</b> &mdash; coding ·
+          <b>Jacob</b> &mdash; neurotechnology.
+          <span class="muted">Anyone who contributed and is not named here should be added before this
+          slide is shown.</span></li>
+      </ul></div>
+      <div class="sub" style="margin-top:2mm">Built with AI assistance (Claude; earlier planning with
+      ChatGPT). Generated text is not evidence — every number here was recomputed from the saved result
+      files by <code>make_presentation.py</code>.</div>
+      <div class="foot"><span>Goldilocks AI · Stream 2, AI / Neural Decoding · 20 people per cohort</span><span>10/10</span></div></section></body></html>

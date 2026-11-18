@@ -1,0 +1,794 @@
+{
+  "seed": 20261107,
+  "pin": "face09565c4337ddbce7a048c9b02060ad20df45",
+  "records": [
+    {
+      "subject": "sub-1",
+      "pid": "89",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-2",
+      "pid": "89",
+      "split": "test",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-3",
+      "pid": "1",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-4",
+      "pid": "2",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-5",
+      "pid": "3",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-6",
+      "pid": "4",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-7",
+      "pid": "5",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-8",
+      "pid": "6",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-9",
+      "pid": "90",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-10",
+      "pid": "91",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-11",
+      "pid": "8",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-12",
+      "pid": "92",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-13",
+      "pid": "91",
+      "split": "fit",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-14",
+      "pid": "9",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-15",
+      "pid": "10",
+      "split": "probability_validation",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-16",
+      "pid": "11",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-17",
+      "pid": "92",
+      "split": "fit",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-18",
+      "pid": "12",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-19",
+      "pid": "93",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-20",
+      "pid": "13",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-21",
+      "pid": "93",
+      "split": "test",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-22",
+      "pid": "14",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-23",
+      "pid": "15",
+      "split": "probability_validation",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-24",
+      "pid": "16",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-25",
+      "pid": "17",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-26",
+      "pid": "18",
+      "split": "probability_validation",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-27",
+      "pid": "19",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-28",
+      "pid": "20",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-29",
+      "pid": "21",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-30",
+      "pid": "94",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-31",
+      "pid": "95",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-32",
+      "pid": "83",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-33",
+      "pid": "84",
+      "split": "probability_validation",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-34",
+      "pid": "22",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-35",
+      "pid": "83",
+      "split": "fit",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-36",
+      "pid": "84",
+      "split": "probability_validation",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-37",
+      "pid": "86",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-38",
+      "pid": "87",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-39",
+      "pid": "85",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-40",
+      "pid": "86",
+      "split": "test",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-41",
+      "pid": "83",
+      "split": "fit",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-42",
+      "pid": "84",
+      "split": "probability_validation",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-43",
+      "pid": "87",
+      "split": "fit",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-44",
+      "pid": "23",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-45",
+      "pid": "24",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-46",
+      "pid": "26",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-47",
+      "pid": "87",
+      "split": "fit",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-48",
+      "pid": "28",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-49",
+      "pid": "29",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-50",
+      "pid": "88",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-51",
+      "pid": "30",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-52",
+      "pid": "31",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-53",
+      "pid": "88",
+      "split": "test",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-54",
+      "pid": "88",
+      "split": "test",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-55",
+      "pid": "77",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-56",
+      "pid": "78",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-57",
+      "pid": "77",
+      "split": "fit",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-58",
+      "pid": "78",
+      "split": "summary_calibration",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-59",
+      "pid": "79",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-60",
+      "pid": "80",
+      "split": "probability_validation",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-61",
+      "pid": "79",
+      "split": "fit",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-62",
+      "pid": "80",
+      "split": "probability_validation",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-63",
+      "pid": "81",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-64",
+      "pid": "82",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-65",
+      "pid": "81",
+      "split": "test",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-66",
+      "pid": "82",
+      "split": "fit",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-67",
+      "pid": "32",
+      "split": "probability_validation",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-68",
+      "pid": "33",
+      "split": "probability_validation",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-69",
+      "pid": "34",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-70",
+      "pid": "35",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-71",
+      "pid": "36",
+      "split": "probability_validation",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-72",
+      "pid": "37",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-73",
+      "pid": "38",
+      "split": "probability_validation",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-74",
+      "pid": "39",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-75",
+      "pid": "40",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-76",
+      "pid": "41",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-77",
+      "pid": "42",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-78",
+      "pid": "43",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-79",
+      "pid": "44",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-80",
+      "pid": "45",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-81",
+      "pid": "46",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-82",
+      "pid": "48",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-83",
+      "pid": "50",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-84",
+      "pid": "51",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-85",
+      "pid": "52",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-86",
+      "pid": "53",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-87",
+      "pid": "54",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-88",
+      "pid": "55",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-89",
+      "pid": "56",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-90",
+      "pid": "57",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-91",
+      "pid": "58",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-92",
+      "pid": "59",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-93",
+      "pid": "60",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-94",
+      "pid": "61",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-95",
+      "pid": "62",
+      "split": "probability_validation",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-96",
+      "pid": "63",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-97",
+      "pid": "64",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-98",
+      "pid": "65",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-99",
+      "pid": "66",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-100",
+      "pid": "67",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-101",
+      "pid": "68",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-102",
+      "pid": "69",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-103",
+      "pid": "71",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-104",
+      "pid": "72",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-105",
+      "pid": "73",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-106",
+      "pid": "74",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-107",
+      "pid": "75",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-108",
+      "pid": "76",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-109",
+      "pid": "96",
+      "split": "probability_validation",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-110",
+      "pid": "96",
+      "split": "probability_validation",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-111",
+      "pid": "96",
+      "split": "probability_validation",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-112",
+      "pid": "97",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-113",
+      "pid": "97",
+      "split": "fit",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-114",
+      "pid": "97",
+      "split": "fit",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-115",
+      "pid": "98",
+      "split": "probability_validation",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-116",
+      "pid": "98",
+      "split": "probability_validation",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-117",
+      "pid": "98",
+      "split": "probability_validation",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-118",
+      "pid": "99",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-119",
+      "pid": "99",
+      "split": "test",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-120",
+      "pid": "99",
+      "split": "test",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-121",
+      "pid": "100",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-122",
+      "pid": "101",
+      "split": "test",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-123",
+      "pid": "102",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-124",
+      "pid": "15",
+      "split": "probability_validation",
+      "confirmatory_night": false
+    },
+    {
+      "subject": "sub-125",
+      "pid": "104",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-126",
+      "pid": "106",
+      "split": "summary_calibration",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-127",
+      "pid": "107",
+      "split": "fit",
+      "confirmatory_night": true
+    },
+    {
+      "subject": "sub-128",
+      "pid": "108",
+      "split": "fit",
+      "confirmatory_night": true
+    }
+  ],
+  "model": {
+    "max_iter": 100,
+    "max_leaf_nodes": 15,
+    "learning_rate": 0.08,
+    "l2_regularization": 1.0,
+    "max_bins": 128
+  },
+  "probability_calibration": "single temperature fitted on probability_validation people only",
+  "summary_interval": "90% split conformal absolute TST residual; first night per person; empirical coverage/width reported",
+  "headline": "first-night-per-test-person total-sleep-time MAE, same valid reference/signal mask",
+  "stage_metrics": [
+    "person-averaged kappa",
+    "person-averaged macro F1",
+    "pooled metrics secondary"
+  ],
+  "stage_target": "PSG stage_hum only",
+  "baseline": "released headband stage_ai and training-majority",
+  "time_definition": "recording-window quantities; no clinical lights-off latency",
+  "tuning": "fixed parameters, no final-test tuning",
+  "created_unix": 1794068509.5536032
+}

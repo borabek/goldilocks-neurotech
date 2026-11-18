@@ -1,0 +1,20 @@
+{
+  "people": 20,
+  "results": {
+    "macro_f1": 0.5660954863043806,
+    "kappa": 0.6445637682839258,
+    "accuracy": 0.7862249060777544,
+    "tst_error_minutes": 29.125,
+    "log_loss": 0.5633589061501283,
+    "per_stage_f1": [
+      0.7707955741073697,
+      0.29265673882066456,
+      0.8359692973614414,
+      0.25748766934141276,
+      0.6735681518910145
+    ]
+  },
+  "model_sha256": "2a8969c6ed0b316886811bd88fe993289e2c64fd7c7b404bc9bc598b79a3eddc",
+  "scope": "All BOAS/Sleep-EDF evaluation people already inspected. V3 comparisons are exploratory development, not fresh confirmation.",
+  "interval_release_enabled": false
+}

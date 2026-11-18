@@ -1,0 +1,15 @@
+{
+  "frozen_unix": 1794088532.016006,
+  "model_sha256": "2a8969c6ed0b316886811bd88fe993289e2c64fd7c7b404bc9bc598b79a3eddc",
+  "protocol_sha256": "dc0354b80f94a64d8ce8b571a11ef6206ad6657b4c488a99101dd44d3455b4ee",
+  "chosen": {
+    "scheme": "person_sqrt_class",
+    "strength": 0.25,
+    "macro_f1": 0.5975597791532024,
+    "kappa": 0.6424137286837092,
+    "accuracy": 0.7812893476792673,
+    "tst_error_minutes": 19.145833333333332
+  },
+  "temperature": 1.9194890739885815,
+  "new_independent_test": false
+}

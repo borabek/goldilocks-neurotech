@@ -1,0 +1,214 @@
+{
+  "method": "frozen CNN trunk from results/cnn as an epoch encoder, plus a temporal head over a 15-epoch centred window; v2 sequence smoother and temperature",
+  "cohort": "historical_boas, 20 held-out people, confirmatory nights",
+  "limitation": "the encoder was trained without context and is frozen here, so this is a lower bound on what end-to-end multi-epoch training would give",
+  "frozen": {
+    "frozen_unix": 1794123540.2071097,
+    "context_epochs_each_side": 7,
+    "head": [
+      [
+        128,
+        128,
+        5
+      ],
+      [
+        128,
+        128,
+        5
+      ],
+      [
+        128,
+        64,
+        5
+      ]
+    ],
+    "trunk_source": "results/cnn",
+    "trunk_weights_sha256": "2624b77654749b1f648c31415629c61f93d5aaf3267b98f40a340d4907568642",
+    "trunk_frozen": true,
+    "selected_pass": 2,
+    "passes_run": 20,
+    "selection_candidates": [
+      {
+        "sequence_weight": 0.0,
+        "mean_person_kappa": 0.7134334524035498
+      },
+      {
+        "sequence_weight": 0.5,
+        "mean_person_kappa": 0.7242385994725883
+      },
+      {
+        "sequence_weight": 1.0,
+        "mean_person_kappa": 0.6894342279833995
+      }
+    ],
+    "selected_sequence_weight": 0.5,
+    "temperature": 2.2051518022224363,
+    "history": [
+      {
+        "pass": 1,
+        "train_loss": 0.5485546285639882,
+        "selection_mean_person_kappa_unsmoothed": 0.6674515766967059,
+        "seconds": 10.8
+      },
+      {
+        "pass": 2,
+        "train_loss": 0.2849886270820117,
+        "selection_mean_person_kappa_unsmoothed": 0.7134334524035498,
+        "seconds": 7.7
+      },
+      {
+        "pass": 3,
+        "train_loss": 0.23227689294820647,
+        "selection_mean_person_kappa_unsmoothed": 0.6918595439116583,
+        "seconds": 8.1
+      },
+      {
+        "pass": 4,
+        "train_loss": 0.19226544542320997,
+        "selection_mean_person_kappa_unsmoothed": 0.6811541970121767,
+        "seconds": 8.5
+      },
+      {
+        "pass": 5,
+        "train_loss": 0.16704363227588512,
+        "selection_mean_person_kappa_unsmoothed": 0.6775666368282502,
+        "seconds": 7.5
+      },
+      {
+        "pass": 6,
+        "train_loss": 0.1462033027543117,
+        "selection_mean_person_kappa_unsmoothed": 0.6447729804999937,
+        "seconds": 7.6
+      },
+      {
+        "pass": 7,
+        "train_loss": 0.12643258318095632,
+        "selection_mean_person_kappa_unsmoothed": 0.683641739059566,
+        "seconds": 7.6
+      },
+      {
+        "pass": 8,
+        "train_loss": 0.10451295570551093,
+        "selection_mean_person_kappa_unsmoothed": 0.6830883481821499,
+        "seconds": 7.9
+      },
+      {
+        "pass": 9,
+        "train_loss": 0.09211487302107331,
+        "selection_mean_person_kappa_unsmoothed": 0.657922977512793,
+        "seconds": 7.9
+      },
+      {
+        "pass": 10,
+        "train_loss": 0.07989356527650245,
+        "selection_mean_person_kappa_unsmoothed": 0.6877084704069582,
+        "seconds": 7.8
+      },
+      {
+        "pass": 11,
+        "train_loss": 0.06479651941557958,
+        "selection_mean_person_kappa_unsmoothed": 0.6895199236290676,
+        "seconds": 7.6
+      },
+      {
+        "pass": 12,
+        "train_loss": 0.05613955646858003,
+        "selection_mean_person_kappa_unsmoothed": 0.6983776768357925,
+        "seconds": 7.8
+      },
+      {
+        "pass": 13,
+        "train_loss": 0.04804821260517738,
+        "selection_mean_person_kappa_unsmoothed": 0.7007227072611185,
+        "seconds": 7.8
+      },
+      {
+        "pass": 14,
+        "train_loss": 0.03684633312445893,
+        "selection_mean_person_kappa_unsmoothed": 0.6914965474173655,
+        "seconds": 7.5
+      },
+      {
+        "pass": 15,
+        "train_loss": 0.0321570914151448,
+        "selection_mean_person_kappa_unsmoothed": 0.6822541525405166,
+        "seconds": 7.6
+      },
+      {
+        "pass": 16,
+        "train_loss": 0.02619636910738515,
+        "selection_mean_person_kappa_unsmoothed": 0.6749435114961101,
+        "seconds": 7.5
+      },
+      {
+        "pass": 17,
+        "train_loss": 0.02008060758510295,
+        "selection_mean_person_kappa_unsmoothed": 0.6758347995333548,
+        "seconds": 7.6
+      },
+      {
+        "pass": 18,
+        "train_loss": 0.015341224022366682,
+        "selection_mean_person_kappa_unsmoothed": 0.6883470820767803,
+        "seconds": 7.7
+      },
+      {
+        "pass": 19,
+        "train_loss": 0.01810964317534302,
+        "selection_mean_person_kappa_unsmoothed": 0.6938849972528347,
+        "seconds": 7.6
+      },
+      {
+        "pass": 20,
+        "train_loss": 0.020911511358754836,
+        "selection_mean_person_kappa_unsmoothed": 0.694426109740296,
+        "seconds": 7.8
+      }
+    ],
+    "seed": 20261108,
+    "head_weights_sha256": "f3f2e0cb84f8c78024150e3586c8b1e03f6dde01f180efd156e77b9ff6932335"
+  },
+  "context_results": {
+    "people": 20,
+    "accuracy": 0.8383982204647792,
+    "kappa": 0.7319113060943275,
+    "macro_f1": 0.6172744341372262,
+    "tst_error_minutes": 9.1
+  },
+  "trunk_results_without_context": {
+    "people": 20,
+    "accuracy": 0.8383494361163674,
+    "kappa": 0.7281509100617163,
+    "macro_f1": 0.5947537801507974,
+    "tst_error_minutes": 16.525
+  },
+  "v2_results_for_the_same_people": {
+    "people": 20,
+    "accuracy": 0.8015156190699255,
+    "kappa": 0.6612737502932162,
+    "macro_f1": 0.5612071122498967,
+    "tst_error_minutes": 31.8,
+    "log_loss": 0.5454562281953728,
+    "global_covered": 0.6,
+    "global_width": 47.975,
+    "normalized_covered": 0.6,
+    "normalized_width": 48.503338553492625,
+    "signal_coverage_of_scored": 0.953040752286134,
+    "global_coverage_wilson95": [
+      0.3865815007622585,
+      0.7811934676271791
+    ],
+    "normalized_coverage_wilson95": [
+      0.3865815007622585,
+      0.7811934676271791
+    ]
+  },
+  "verdict": {
+    "context_beats_trunk_on_kappa": true,
+    "context_beats_trunk_on_macro_f1": true,
+    "context_beats_v2_on_kappa": true,
+    "context_beats_v2_on_macro_f1": true
+  },
+  "created_unix": 1794123548.0138006,
+  "seconds": 202.6
+}

@@ -1,0 +1,7 @@
+{
+  "interval_release_enabled": false,
+  "reason": "Observed 90%-target interval coverage was 60% on historical BOAS and 20%/25% on the new full-window external test. Calibrated-range claims are withheld.",
+  "point_summary_status": "experimental estimate; not a clinical quantity",
+  "external_validation_scope": "Independent cohort/device/scoring shift. Not in-domain headband confirmation or ADHD/medication validation.",
+  "historical_status": "Development comparison on previously inspected people, never relabelled as new independent evidence."
+}

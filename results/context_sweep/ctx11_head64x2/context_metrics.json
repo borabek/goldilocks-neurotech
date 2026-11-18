@@ -1,0 +1,209 @@
+{
+  "method": "frozen CNN trunk from results/cnn as an epoch encoder, plus a temporal head over a 23-epoch centred window; v2 sequence smoother and temperature",
+  "cohort": "historical_boas, 20 held-out people, confirmatory nights",
+  "limitation": "the encoder was trained without context and is frozen here, so this is a lower bound on what end-to-end multi-epoch training would give",
+  "frozen": {
+    "frozen_unix": 1794123337.2042253,
+    "context_epochs_each_side": 11,
+    "head": [
+      [
+        128,
+        64,
+        5
+      ],
+      [
+        64,
+        64,
+        5
+      ]
+    ],
+    "trunk_source": "results/cnn",
+    "trunk_weights_sha256": "2624b77654749b1f648c31415629c61f93d5aaf3267b98f40a340d4907568642",
+    "trunk_frozen": true,
+    "selected_pass": 3,
+    "passes_run": 20,
+    "selection_candidates": [
+      {
+        "sequence_weight": 0.0,
+        "mean_person_kappa": 0.6974382336845402
+      },
+      {
+        "sequence_weight": 0.5,
+        "mean_person_kappa": 0.7104935003586398
+      },
+      {
+        "sequence_weight": 1.0,
+        "mean_person_kappa": 0.6707986674781387
+      }
+    ],
+    "selected_sequence_weight": 0.5,
+    "temperature": 2.022609712857951,
+    "history": [
+      {
+        "pass": 1,
+        "train_loss": 0.7108021601860082,
+        "selection_mean_person_kappa_unsmoothed": 0.6594319840005095,
+        "seconds": 6.9
+      },
+      {
+        "pass": 2,
+        "train_loss": 0.37183882219311226,
+        "selection_mean_person_kappa_unsmoothed": 0.6585408841999653,
+        "seconds": 4.3
+      },
+      {
+        "pass": 3,
+        "train_loss": 0.3103554615929758,
+        "selection_mean_person_kappa_unsmoothed": 0.6974382336845402,
+        "seconds": 4.1
+      },
+      {
+        "pass": 4,
+        "train_loss": 0.27820239238772515,
+        "selection_mean_person_kappa_unsmoothed": 0.683221351909908,
+        "seconds": 4.3
+      },
+      {
+        "pass": 5,
+        "train_loss": 0.2579608652086392,
+        "selection_mean_person_kappa_unsmoothed": 0.6959084692527822,
+        "seconds": 4.1
+      },
+      {
+        "pass": 6,
+        "train_loss": 0.2400907725968182,
+        "selection_mean_person_kappa_unsmoothed": 0.6796272635230465,
+        "seconds": 4.1
+      },
+      {
+        "pass": 7,
+        "train_loss": 0.22559578233426852,
+        "selection_mean_person_kappa_unsmoothed": 0.6841623127767251,
+        "seconds": 4.2
+      },
+      {
+        "pass": 8,
+        "train_loss": 0.21331292847978425,
+        "selection_mean_person_kappa_unsmoothed": 0.6913209848146181,
+        "seconds": 4.3
+      },
+      {
+        "pass": 9,
+        "train_loss": 0.20304609301218662,
+        "selection_mean_person_kappa_unsmoothed": 0.6638186073328459,
+        "seconds": 4.3
+      },
+      {
+        "pass": 10,
+        "train_loss": 0.19459572568780087,
+        "selection_mean_person_kappa_unsmoothed": 0.6831501726788453,
+        "seconds": 4.4
+      },
+      {
+        "pass": 11,
+        "train_loss": 0.18637282376895187,
+        "selection_mean_person_kappa_unsmoothed": 0.650299502384344,
+        "seconds": 4.3
+      },
+      {
+        "pass": 12,
+        "train_loss": 0.18021283333628182,
+        "selection_mean_person_kappa_unsmoothed": 0.6763575387544217,
+        "seconds": 4.3
+      },
+      {
+        "pass": 13,
+        "train_loss": 0.17246585698750316,
+        "selection_mean_person_kappa_unsmoothed": 0.6957444758446267,
+        "seconds": 4.4
+      },
+      {
+        "pass": 14,
+        "train_loss": 0.16493572422087333,
+        "selection_mean_person_kappa_unsmoothed": 0.6618938298620349,
+        "seconds": 4.4
+      },
+      {
+        "pass": 15,
+        "train_loss": 0.15834928907680845,
+        "selection_mean_person_kappa_unsmoothed": 0.6809316366744443,
+        "seconds": 4.4
+      },
+      {
+        "pass": 16,
+        "train_loss": 0.15236197765349505,
+        "selection_mean_person_kappa_unsmoothed": 0.6822418301368488,
+        "seconds": 4.2
+      },
+      {
+        "pass": 17,
+        "train_loss": 0.14588329544949588,
+        "selection_mean_person_kappa_unsmoothed": 0.6905141403602469,
+        "seconds": 4.5
+      },
+      {
+        "pass": 18,
+        "train_loss": 0.14136153481359784,
+        "selection_mean_person_kappa_unsmoothed": 0.6841118340425191,
+        "seconds": 4.3
+      },
+      {
+        "pass": 19,
+        "train_loss": 0.13620814770913794,
+        "selection_mean_person_kappa_unsmoothed": 0.657230885120193,
+        "seconds": 4.2
+      },
+      {
+        "pass": 20,
+        "train_loss": 0.13068583717600243,
+        "selection_mean_person_kappa_unsmoothed": 0.6728053489701972,
+        "seconds": 4.3
+      }
+    ],
+    "seed": 20261108,
+    "head_weights_sha256": "a7cc52784582d43cc81884975b7a4fd7696b3e28ba688227917fab2bb382baf4"
+  },
+  "context_results": {
+    "people": 20,
+    "accuracy": 0.8319528011499948,
+    "kappa": 0.7175600242748326,
+    "macro_f1": 0.6038435523102424,
+    "tst_error_minutes": 10.475
+  },
+  "trunk_results_without_context": {
+    "people": 20,
+    "accuracy": 0.8383494361163674,
+    "kappa": 0.7281509100617163,
+    "macro_f1": 0.5947537801507974,
+    "tst_error_minutes": 16.525
+  },
+  "v2_results_for_the_same_people": {
+    "people": 20,
+    "accuracy": 0.8015156190699255,
+    "kappa": 0.6612737502932162,
+    "macro_f1": 0.5612071122498967,
+    "tst_error_minutes": 31.8,
+    "log_loss": 0.5454562281953728,
+    "global_covered": 0.6,
+    "global_width": 47.975,
+    "normalized_covered": 0.6,
+    "normalized_width": 48.503338553492625,
+    "signal_coverage_of_scored": 0.953040752286134,
+    "global_coverage_wilson95": [
+      0.3865815007622585,
+      0.7811934676271791
+    ],
+    "normalized_coverage_wilson95": [
+      0.3865815007622585,
+      0.7811934676271791
+    ]
+  },
+  "verdict": {
+    "context_beats_trunk_on_kappa": false,
+    "context_beats_trunk_on_macro_f1": true,
+    "context_beats_v2_on_kappa": true,
+    "context_beats_v2_on_macro_f1": true
+  },
+  "created_unix": 1794123345.4338262,
+  "seconds": 133.7
+}

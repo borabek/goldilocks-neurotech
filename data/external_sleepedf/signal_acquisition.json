@@ -1,0 +1,182 @@
+[
+  {
+    "subject": "SC403",
+    "file": "SC4031E0-PSG.edf",
+    "bytes": 51438848,
+    "sha256": "ce2314a60dd6e1437f9cd720c2e59c23aabe471e4821f9544593109a9b0715dd",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4031E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070509.197
+  },
+  {
+    "subject": "SC401",
+    "file": "SC4011E0-PSG.edf",
+    "bytes": 51110528,
+    "sha256": "9e4c34f3f631275990fd7a2d61a24e998c7b03eb9b37ebe5cd7c8323d8310a15",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4011E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070509.56
+  },
+  {
+    "subject": "SC400",
+    "file": "SC4001E0-PSG.edf",
+    "bytes": 48338048,
+    "sha256": "2b40a18adf76af69a42d6db1f30f31d26b369f6d27ca0050ef30147ef892b131",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4001E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070510.947
+  },
+  {
+    "subject": "SC404",
+    "file": "SC4041E0-PSG.edf",
+    "bytes": 46878848,
+    "sha256": "28ae3a51cca93bb1502a2c613b4a84758d09feee042b925a09a7cdce0c1bf4f5",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4041E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070512.181
+  },
+  {
+    "subject": "SC405",
+    "file": "SC4051E0-PSG.edf",
+    "bytes": 49651328,
+    "sha256": "e460a9589726f19a1fe544fb79c46f82562229f19696e0c0fb5ffd9f959dab7c",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4051E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070512.812
+  },
+  {
+    "subject": "SC407",
+    "file": "SC4071E0-PSG.edf",
+    "bytes": 51256448,
+    "sha256": "417081e551fb60e3a735059c5df4ee2cf320cb342c563e666cb2b3fde98f64e3",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4071E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070516.284
+  },
+  {
+    "subject": "SC408",
+    "file": "SC4081E0-PSG.edf",
+    "bytes": 51001088,
+    "sha256": "3210ff3851996b1d04fb879765ebb3de6012152fab6fcbb11896c7636068e6dc",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4081E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070516.546
+  },
+  {
+    "subject": "SC406",
+    "file": "SC4061E0-PSG.edf",
+    "bytes": 50526848,
+    "sha256": "8a1c1d812f3207e006c8f1ae7b7a9d5625a8aaba09869aea42562ac61d1c984a",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4061E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070518.097
+  },
+  {
+    "subject": "SC409",
+    "file": "SC4091E0-PSG.edf",
+    "bytes": 49833728,
+    "sha256": "db5ac16a5438a0ff1e67dbf4c729e3b42ffc131c3e586370c8f8297591960476",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4091E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070519.914
+  },
+  {
+    "subject": "SC410",
+    "file": "SC4101E0-PSG.edf",
+    "bytes": 49614848,
+    "sha256": "90f0cb69b101e60f7ebc1d52216677a5aa420fbd2dce3909eaaca373d921a099",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4101E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070520.605
+  },
+  {
+    "subject": "SC402",
+    "file": "SC4021E0-PSG.edf",
+    "bytes": 51147008,
+    "sha256": "810adaedf42621e389ca767274045fbafb123bbc5d99bc15ce2c5bacb52e378c",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4021E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070522.443
+  },
+  {
+    "subject": "SC412",
+    "file": "SC4121E0-PSG.edf",
+    "bytes": 50818688,
+    "sha256": "2453150077736b8f4817bb5c20e58d6160fc6cd9e8e47531982847a71c9be4e0",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4121E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070524.205
+  },
+  {
+    "subject": "SC411",
+    "file": "SC4111E0-PSG.edf",
+    "bytes": 48192128,
+    "sha256": "6bb1ba9fdf0bfab05aeba98edded640ce65a05d286115ceadb38dd8d4dfae0b8",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4111E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070525.217
+  },
+  {
+    "subject": "SC413",
+    "file": "SC4131E0-PSG.edf",
+    "bytes": 51329408,
+    "sha256": "443586b0f2c620d073405b938314357eb33ef1a03eb0eca36b6d1861f31d8665",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4131E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070525.449
+  },
+  {
+    "subject": "SC415",
+    "file": "SC4151E0-PSG.edf",
+    "bytes": 47790848,
+    "sha256": "e2d4dda6a1aa7b58394e102e44ba03924f14f4a19bdff1808d96e0d09fd0f74e",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4151E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070528.317
+  },
+  {
+    "subject": "SC417",
+    "file": "SC4171E0-PSG.edf",
+    "bytes": 50016128,
+    "sha256": "01acc3f69ecf38052eac9bc04b0e8154010e111de707aeda3fd40af6a5267ae8",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4171E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070530.013
+  },
+  {
+    "subject": "SC416",
+    "file": "SC4161E0-PSG.edf",
+    "bytes": 47900288,
+    "sha256": "60a3e257b0dd97893415fa46c79c2ffad63d37445f3b6e0e0b0f67b5e71eeee6",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4161E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070531.645
+  },
+  {
+    "subject": "SC414",
+    "file": "SC4141E0-PSG.edf",
+    "bytes": 50271488,
+    "sha256": "eb14f483f5675798fdda51954d6914c9442884cda02cebb6af44c96ac3cd12e5",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4141E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070532.015
+  },
+  {
+    "subject": "SC418",
+    "file": "SC4181E0-PSG.edf",
+    "bytes": 50271488,
+    "sha256": "f98d5e2c97aa99c57adc886445c23d52dc97541f2b2f84efbc08afb86b7adba5",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4181E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070532.428
+  },
+  {
+    "subject": "SC419",
+    "file": "SC4191E0-PSG.edf",
+    "bytes": 50599808,
+    "sha256": "b3d8e9d75fa2f54b1aa1dc936b482733e70bdd5b9f0a5809edf57c7ce4c406e2",
+    "url": "https://physionet.org/files/sleep-edfx/1.0.0/sleep-cassette/SC4191E0-PSG.edf",
+    "reference": false,
+    "acquired_unix": 1794070534.193
+  }
+]

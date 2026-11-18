@@ -1,0 +1,286 @@
+{
+  "method": "single-channel 1-D CNN on 64 Hz headband epochs, v2 sequence smoother and temperature",
+  "cohort": "historical_boas, 20 held-out people, confirmatory nights",
+  "scope": "Development comparison on people already inspected at v1; not new independent confirmation. BOAS forehead headband only; no external cohort, no ADHD claim.",
+  "frozen": {
+    "frozen_unix": 1794087568.277807,
+    "weights_sha256": "00e6770859698cf325b2f6d1a1e4ecb20f47d64e5b98f030a42c17c771e6df2f",
+    "selected_pass": 21,
+    "passes_run": 25,
+    "selection_candidates": [
+      {
+        "sequence_weight": 0.0,
+        "mean_person_kappa": 0.561830879836854
+      },
+      {
+        "sequence_weight": 0.5,
+        "mean_person_kappa": 0.6925904359793873
+      },
+      {
+        "sequence_weight": 1.0,
+        "mean_person_kappa": 0.6251475139847912
+      }
+    ],
+    "selected_sequence_weight": 0.5,
+    "temperature": 1.6291085687741682,
+    "history": [
+      {
+        "pass": 1,
+        "train_loss": 0.944404383523682,
+        "selection_mean_person_kappa_unsmoothed": 0.3945273962799136,
+        "seconds": 54.2
+      },
+      {
+        "pass": 2,
+        "train_loss": 0.7952928849489405,
+        "selection_mean_person_kappa_unsmoothed": 0.4420620380560152,
+        "seconds": 51.5
+      },
+      {
+        "pass": 3,
+        "train_loss": 0.7273256274799552,
+        "selection_mean_person_kappa_unsmoothed": 0.44130941012849484,
+        "seconds": 52.4
+      },
+      {
+        "pass": 4,
+        "train_loss": 0.6854359792322967,
+        "selection_mean_person_kappa_unsmoothed": 0.46690239571579634,
+        "seconds": 52.2
+      },
+      {
+        "pass": 5,
+        "train_loss": 0.6517703059615798,
+        "selection_mean_person_kappa_unsmoothed": 0.5151544981376893,
+        "seconds": 51.9
+      },
+      {
+        "pass": 6,
+        "train_loss": 0.6249819901145872,
+        "selection_mean_person_kappa_unsmoothed": 0.5001440051850145,
+        "seconds": 52.0
+      },
+      {
+        "pass": 7,
+        "train_loss": 0.6026100091269759,
+        "selection_mean_person_kappa_unsmoothed": 0.5359728729714287,
+        "seconds": 52.1
+      },
+      {
+        "pass": 8,
+        "train_loss": 0.5838031060731942,
+        "selection_mean_person_kappa_unsmoothed": 0.5170617632381833,
+        "seconds": 57.5
+      },
+      {
+        "pass": 9,
+        "train_loss": 0.5666034700091606,
+        "selection_mean_person_kappa_unsmoothed": 0.5460028375430621,
+        "seconds": 53.9
+      },
+      {
+        "pass": 10,
+        "train_loss": 0.5520609534526597,
+        "selection_mean_person_kappa_unsmoothed": 0.5478825002536646,
+        "seconds": 54.4
+      },
+      {
+        "pass": 11,
+        "train_loss": 0.5388739436725264,
+        "selection_mean_person_kappa_unsmoothed": 0.5357387307317563,
+        "seconds": 53.2
+      },
+      {
+        "pass": 12,
+        "train_loss": 0.5266084609950175,
+        "selection_mean_person_kappa_unsmoothed": 0.5269813435048051,
+        "seconds": 52.6
+      },
+      {
+        "pass": 13,
+        "train_loss": 0.5141281222431665,
+        "selection_mean_person_kappa_unsmoothed": 0.5049950487647973,
+        "seconds": 51.6
+      },
+      {
+        "pass": 14,
+        "train_loss": 0.5040075379037745,
+        "selection_mean_person_kappa_unsmoothed": 0.5206113914822026,
+        "seconds": 51.7
+      },
+      {
+        "pass": 15,
+        "train_loss": 0.49391269251110964,
+        "selection_mean_person_kappa_unsmoothed": 0.5382323690682467,
+        "seconds": 53.7
+      },
+      {
+        "pass": 16,
+        "train_loss": 0.4847854101546196,
+        "selection_mean_person_kappa_unsmoothed": 0.5362307211498761,
+        "seconds": 54.2
+      },
+      {
+        "pass": 17,
+        "train_loss": 0.47527213370213744,
+        "selection_mean_person_kappa_unsmoothed": 0.5148897020895543,
+        "seconds": 53.9
+      },
+      {
+        "pass": 18,
+        "train_loss": 0.46807251968344704,
+        "selection_mean_person_kappa_unsmoothed": 0.5294440714898075,
+        "seconds": 51.8
+      },
+      {
+        "pass": 19,
+        "train_loss": 0.4612858752246763,
+        "selection_mean_person_kappa_unsmoothed": 0.5522028547850407,
+        "seconds": 55.4
+      },
+      {
+        "pass": 20,
+        "train_loss": 0.4530895423554146,
+        "selection_mean_person_kappa_unsmoothed": 0.5548109293383017,
+        "seconds": 54.1
+      },
+      {
+        "pass": 21,
+        "train_loss": 0.4460990584217692,
+        "selection_mean_person_kappa_unsmoothed": 0.561830879836854,
+        "seconds": 54.9
+      },
+      {
+        "pass": 22,
+        "train_loss": 0.4381791632404372,
+        "selection_mean_person_kappa_unsmoothed": 0.5483506857089618,
+        "seconds": 54.7
+      },
+      {
+        "pass": 23,
+        "train_loss": 0.4298423830882169,
+        "selection_mean_person_kappa_unsmoothed": 0.5479761535023963,
+        "seconds": 54.3
+      },
+      {
+        "pass": 24,
+        "train_loss": 0.4268359911455762,
+        "selection_mean_person_kappa_unsmoothed": 0.5597884694635523,
+        "seconds": 54.9
+      },
+      {
+        "pass": 25,
+        "train_loss": 0.4193791617100635,
+        "selection_mean_person_kappa_unsmoothed": 0.5591665952901506,
+        "seconds": 53.2
+      }
+    ],
+    "seed": 20261108,
+    "learning_rate": 0.0003,
+    "batch": 128,
+    "architecture": [
+      [
+        1,
+        16,
+        15,
+        4
+      ],
+      [
+        16,
+        32,
+        9,
+        1
+      ],
+      [
+        32,
+        64,
+        9,
+        1
+      ],
+      [
+        64,
+        64,
+        5,
+        1
+      ]
+    ],
+    "pool_after": {
+      "0": 2,
+      "1": 2,
+      "2": 2
+    },
+    "input_hz": 64,
+    "samples_per_epoch": 1920,
+    "clip": 20.0,
+    "test_labels_read_before_freeze": false,
+    "class_weighted_loss": false,
+    "selection_metric": "kappa",
+    "class_weight_scheme": null,
+    "person_normalised_sample_weights": false,
+    "class_weights": null,
+    "augmentation": "amplitude scale 0.8-1.25 and Gaussian noise 0.05",
+    "two_channel_input": false,
+    "training_class_counts": [
+      17954,
+      4036,
+      66408,
+      4698,
+      16340
+    ]
+  },
+  "identical_to_v2": [
+    "person split",
+    "channel sharing",
+    "sequence smoother and candidate weights",
+    "selection people",
+    "calibration people",
+    "evaluation mask",
+    "stage_metrics",
+    "total sleep time definition"
+  ],
+  "differences_from_v2": [
+    "raw 64 Hz signal input instead of spectral features",
+    "1-D CNN instead of gradient boosting",
+    "selection people also chose the number of training passes",
+    "no class weighting"
+  ],
+  "cnn_results": {
+    "people": 20,
+    "accuracy": 0.8369929457194608,
+    "kappa": 0.726817855473292,
+    "macro_f1": 0.5911860394118393,
+    "tst_error_minutes": 11.525
+  },
+  "v2_results_for_the_same_people": {
+    "people": 20,
+    "accuracy": 0.8015156190699255,
+    "kappa": 0.6612737502932162,
+    "macro_f1": 0.5612071122498967,
+    "tst_error_minutes": 31.8,
+    "log_loss": 0.5454562281953728,
+    "global_covered": 0.6,
+    "global_width": 47.975,
+    "normalized_covered": 0.6,
+    "normalized_width": 48.50333855349263,
+    "signal_coverage_of_scored": 0.953040752286134,
+    "global_coverage_wilson95": [
+      0.3865815007622585,
+      0.7811934676271791
+    ],
+    "normalized_coverage_wilson95": [
+      0.3865815007622585,
+      0.7811934676271791
+    ]
+  },
+  "verdict": {
+    "cnn_kappa": 0.726817855473292,
+    "v2_kappa": 0.6612737502932162,
+    "cnn_beats_v2_on_kappa": true,
+    "cnn_tst_error_minutes": 11.525,
+    "v2_tst_error_minutes": 31.8,
+    "cnn_beats_v2_on_sleep_time": true,
+    "per_person_kappa_wins_for_cnn": 13
+  },
+  "created_unix": 1794087580.2168405,
+  "total_seconds": 1366.2
+}

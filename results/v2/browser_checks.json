@@ -1,0 +1,22 @@
+{
+  "page_errors": [],
+  "desktop_viewport": [
+    1440,
+    1000
+  ],
+  "mobile_viewport": [
+    390,
+    844
+  ],
+  "checked": [
+    "cohort and recording selectors",
+    "reference reveal",
+    "BOAS reference/vendor/v1/v2 tracks",
+    "external reference/v2 tracks",
+    "calibration claim refusal",
+    "clinical latency refusal",
+    "downloaded JSON interval null and model hash",
+    "mobile controls and plot scroll"
+  ],
+  "passed": true
+}

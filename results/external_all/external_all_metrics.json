@@ -1,0 +1,208 @@
+{
+  "status": "EXPLORATORY DEVELOPMENT: these external people were inspected at the v2 evaluation, so this is not a fresh independent test for any model",
+  "scoring": "yasa_evaluate.py windows, masks and metrics, identical to v2, YASA and the plain CNN",
+  "refitted_anything": false,
+  "ensemble_members": [
+    "cnn",
+    "cnn_balanced",
+    "cnn_sqrtbalanced",
+    "cnn_augmented",
+    "cnn_context",
+    "cnn_context_sqrtbalanced",
+    "cnn_context_balanced"
+  ],
+  "results": {
+    "cnn": {
+      "primary_complete_recording": {
+        "people": 20,
+        "accuracy": 0.2693911856439642,
+        "kappa": 0.08625671563614042,
+        "macro_f1": 0.18777486921217695,
+        "tst_error_minutes": 803.2,
+        "signed_tst_error_minutes": 803.2,
+        "coverage": 1.0
+      },
+      "secondary_reference_window": {
+        "people": 20,
+        "accuracy": 0.5137232696559424,
+        "kappa": 0.1890654611707922,
+        "macro_f1": 0.2811182609355911,
+        "tst_error_minutes": 55.725,
+        "signed_tst_error_minutes": 55.725,
+        "coverage": 1.0
+      }
+    },
+    "cnn_balanced": {
+      "primary_complete_recording": {
+        "people": 20,
+        "accuracy": 0.3275930208430686,
+        "kappa": 0.1810305915779231,
+        "macro_f1": 0.30657207420309696,
+        "tst_error_minutes": 716.7,
+        "signed_tst_error_minutes": 716.7,
+        "coverage": 1.0
+      },
+      "secondary_reference_window": {
+        "people": 20,
+        "accuracy": 0.5495214695726924,
+        "kappa": 0.36964195830234575,
+        "macro_f1": 0.443948051268913,
+        "tst_error_minutes": 36.5,
+        "signed_tst_error_minutes": 33.25,
+        "coverage": 1.0
+      }
+    },
+    "cnn_sqrtbalanced": {
+      "primary_complete_recording": {
+        "people": 20,
+        "accuracy": 0.2580708118782934,
+        "kappa": 0.11422655402233921,
+        "macro_f1": 0.2459235891244253,
+        "tst_error_minutes": 853.9,
+        "signed_tst_error_minutes": 853.9,
+        "coverage": 1.0
+      },
+      "secondary_reference_window": {
+        "people": 20,
+        "accuracy": 0.56683522427282,
+        "kappa": 0.3126874547098342,
+        "macro_f1": 0.3844550051395103,
+        "tst_error_minutes": 64.85,
+        "signed_tst_error_minutes": 64.85,
+        "coverage": 1.0
+      }
+    },
+    "cnn_augmented": {
+      "primary_complete_recording": {
+        "people": 20,
+        "accuracy": 0.2407863035244188,
+        "kappa": 0.07480898568210925,
+        "macro_f1": 0.18734588200659344,
+        "tst_error_minutes": 855.7,
+        "signed_tst_error_minutes": 855.7,
+        "coverage": 1.0
+      },
+      "secondary_reference_window": {
+        "people": 20,
+        "accuracy": 0.5252547237928402,
+        "kappa": 0.21204028986905527,
+        "macro_f1": 0.29481508932984524,
+        "tst_error_minutes": 63.75,
+        "signed_tst_error_minutes": 63.75,
+        "coverage": 1.0
+      }
+    },
+    "cnn_context": {
+      "primary_complete_recording": {
+        "people": 20,
+        "accuracy": 0.2540501545411943,
+        "kappa": 0.10283267693878446,
+        "macro_f1": 0.2047929809031272,
+        "tst_error_minutes": 849.35,
+        "signed_tst_error_minutes": 849.35,
+        "coverage": 1.0
+      },
+      "secondary_reference_window": {
+        "people": 20,
+        "accuracy": 0.5399600765927117,
+        "kappa": 0.24450807037141145,
+        "macro_f1": 0.33765031566750314,
+        "tst_error_minutes": 67.95,
+        "signed_tst_error_minutes": 67.95,
+        "coverage": 1.0
+      }
+    },
+    "cnn_context_sqrtbalanced": {
+      "primary_complete_recording": {
+        "people": 20,
+        "accuracy": 0.2568244434736981,
+        "kappa": 0.09856198292640066,
+        "macro_f1": 0.20982215398124446,
+        "tst_error_minutes": 842.35,
+        "signed_tst_error_minutes": 842.35,
+        "coverage": 1.0
+      },
+      "secondary_reference_window": {
+        "people": 20,
+        "accuracy": 0.5380430067777929,
+        "kappa": 0.23524377249417067,
+        "macro_f1": 0.32113087100935295,
+        "tst_error_minutes": 66.35,
+        "signed_tst_error_minutes": 66.35,
+        "coverage": 1.0
+      }
+    },
+    "cnn_context_balanced": {
+      "primary_complete_recording": {
+        "people": 20,
+        "accuracy": 0.24929359750499117,
+        "kappa": 0.08903720010409588,
+        "macro_f1": 0.19553942138011243,
+        "tst_error_minutes": 846.7,
+        "signed_tst_error_minutes": 846.7,
+        "coverage": 1.0
+      },
+      "secondary_reference_window": {
+        "people": 20,
+        "accuracy": 0.5154070295229669,
+        "kappa": 0.18103153906112407,
+        "macro_f1": 0.27781996756062116,
+        "tst_error_minutes": 71.625,
+        "signed_tst_error_minutes": 71.625,
+        "coverage": 1.0
+      }
+    },
+    "ensemble_of_7": {
+      "primary_complete_recording": {
+        "people": 20,
+        "accuracy": 0.25847836947989883,
+        "kappa": 0.09803269795531099,
+        "macro_f1": 0.21742162381381092,
+        "tst_error_minutes": 842.625,
+        "signed_tst_error_minutes": 842.625,
+        "coverage": 1.0
+      },
+      "secondary_reference_window": {
+        "people": 20,
+        "accuracy": 0.5439799876932783,
+        "kappa": 0.23998802333821495,
+        "macro_f1": 0.3227142310320811,
+        "tst_error_minutes": 65.475,
+        "signed_tst_error_minutes": 65.475,
+        "coverage": 1.0
+      }
+    }
+  },
+  "frozen_v2_for_comparison": {
+    "people": 20,
+    "accuracy": 0.7371560058612674,
+    "kappa": 0.5792895188872503,
+    "macro_f1": 0.47821820447271346,
+    "tst_error_minutes": 235.875,
+    "log_loss": 0.7981150825115211,
+    "global_covered": 0.2,
+    "global_width": 48.675,
+    "normalized_covered": 0.25,
+    "normalized_width": 67.83835746599058,
+    "signal_coverage_of_scored": 1.0,
+    "global_coverage_wilson95": [
+      0.08065766257979998,
+      0.41601743225188714
+    ],
+    "normalized_coverage_wilson95": [
+      0.11186170140766816,
+      0.4687008776187378
+    ]
+  },
+  "yasa_for_comparison": {
+    "people": 20,
+    "accuracy": 0.8215771236422776,
+    "kappa": 0.6750477312984856,
+    "macro_f1": 0.6242104050562207,
+    "tst_error_minutes": 110.35,
+    "signed_tst_error_minutes": 101.6,
+    "coverage": 1.0
+  },
+  "created_unix": 1794134890.6416352,
+  "seconds": 162.5
+}
