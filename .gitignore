@@ -11,3 +11,7 @@ data/external_hmc/raw/
 data/external_sleepedf_dev/raw/
 data/external_dodh/compact/*.npz
 data/external_dodh/compact/_tmp/
+
+# raw BOAS recordings downloaded by acquire.mjs (about 17 GB)
+data/boas/sub-*/
+data/eeg_digital/
