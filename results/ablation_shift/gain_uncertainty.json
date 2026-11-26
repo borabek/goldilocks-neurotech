@@ -1,0 +1,70 @@
+{
+  "status": "EXPLORATORY: Sleep-EDF people were inspected at the v2 evaluation",
+  "resamples": 10000,
+  "split_half_repeats": 1000,
+  "seed": 20261126,
+  "rules": {
+    "dataset_q75": {
+      "gain_full": 1.1982427501395538,
+      "paired_change_vs_uncalibrated": {
+        "kappa": {
+          "mean_change": 0.05703282607146393,
+          "ci95": [
+            0.018994125348345978,
+            0.099973835732841
+          ]
+        },
+        "macro_f1": {
+          "mean_change": 0.027099727940481162,
+          "ci95": [
+            -0.006588803285022027,
+            0.058405504121490974
+          ]
+        },
+        "tst_error_minutes": {
+          "mean_change": -61.45,
+          "ci95": [
+            -98.300625,
+            -32.725
+          ]
+        }
+      },
+      "gain_from_half_the_recordings": {
+        "median": 1.1982427501395538,
+        "p2_5": 1.0666546689107066,
+        "p97_5": 1.3739853420084558
+      }
+    },
+    "dataset_q90": {
+      "gain_full": 1.7004950807581392,
+      "paired_change_vs_uncalibrated": {
+        "kappa": {
+          "mean_change": 0.1018320162590816,
+          "ci95": [
+            0.019619585951532976,
+            0.18361967772627258
+          ]
+        },
+        "macro_f1": {
+          "mean_change": 0.03930529058797238,
+          "ci95": [
+            -0.025031687400246565,
+            0.10058508204865181
+          ]
+        },
+        "tst_error_minutes": {
+          "mean_change": -125.175,
+          "ci95": [
+            -212.87875,
+            -39.75
+          ]
+        }
+      },
+      "gain_from_half_the_recordings": {
+        "median": 1.7004950807581392,
+        "p2_5": 1.520624198977323,
+        "p97_5": 1.9114203024285565
+      }
+    }
+  }
+}

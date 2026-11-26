@@ -1,0 +1,516 @@
+{
+  "status": "EXPLORATORY: diagnostic perturbation, nothing refitted or selected",
+  "filter": "4th-order Butterworth band-stop, zero-phase (sosfiltfilt), 64 Hz, before robust scaling",
+  "boas_test": {
+    "cnn": {
+      "none": {
+        "people": 20,
+        "accuracy": 0.8383494361163674,
+        "kappa": 0.7281509100617163,
+        "macro_f1": 0.5947537801507974,
+        "tst_error_minutes": 16.525,
+        "signed_tst_error_minutes": -13.275,
+        "coverage": 1.0,
+        "wake_recall": 0.8677104070241238,
+        "wake_f1": 0.8123558394957195,
+        "wake_predicted_as": {
+          "W": 0.907,
+          "N1": 0.023,
+          "N2": 0.035,
+          "N3": 0.0,
+          "REM": 0.035
+        }
+      },
+      "theta_4_8": {
+        "people": 20,
+        "accuracy": 0.8210517085431407,
+        "kappa": 0.6921654050835588,
+        "macro_f1": 0.5695618704146623,
+        "tst_error_minutes": 27.725,
+        "signed_tst_error_minutes": -26.175,
+        "coverage": 1.0,
+        "wake_recall": 0.8916903600583108,
+        "wake_f1": 0.7818900283943245,
+        "wake_predicted_as": {
+          "W": 0.926,
+          "N1": 0.017,
+          "N2": 0.042,
+          "N3": 0.0,
+          "REM": 0.016
+        }
+      },
+      "alpha_8_12": {
+        "people": 20,
+        "accuracy": 0.813925603474875,
+        "kappa": 0.6913126365483155,
+        "macro_f1": 0.5822406401279918,
+        "tst_error_minutes": 21.275,
+        "signed_tst_error_minutes": -9.075,
+        "coverage": 1.0,
+        "wake_recall": 0.8062440382376437,
+        "wake_f1": 0.7901148691678045,
+        "wake_predicted_as": {
+          "W": 0.858,
+          "N1": 0.02,
+          "N2": 0.043,
+          "N3": 0.0,
+          "REM": 0.079
+        }
+      },
+      "sigma_12_16": {
+        "people": 20,
+        "accuracy": 0.8362712162679523,
+        "kappa": 0.7229178066214873,
+        "macro_f1": 0.5931545623462762,
+        "tst_error_minutes": 9.1,
+        "signed_tst_error_minutes": -4.05,
+        "coverage": 1.0,
+        "wake_recall": 0.8322488724698897,
+        "wake_f1": 0.8212927412548952,
+        "wake_predicted_as": {
+          "W": 0.876,
+          "N1": 0.031,
+          "N2": 0.044,
+          "N3": 0.0,
+          "REM": 0.048
+        }
+      },
+      "beta_16_30": {
+        "people": 20,
+        "accuracy": 0.8186258926030197,
+        "kappa": 0.6907664929485795,
+        "macro_f1": 0.5635596638455334,
+        "tst_error_minutes": 14.925,
+        "signed_tst_error_minutes": 14.625,
+        "coverage": 1.0,
+        "wake_recall": 0.7009958709959009,
+        "wake_f1": 0.7788232964742863,
+        "wake_predicted_as": {
+          "W": 0.749,
+          "N1": 0.037,
+          "N2": 0.102,
+          "N3": 0.0,
+          "REM": 0.112
+        }
+      },
+      "beta_16_20": {
+        "people": 20,
+        "accuracy": 0.8428697821520039,
+        "kappa": 0.7340019114680169,
+        "macro_f1": 0.5988891489972575,
+        "tst_error_minutes": 10.925,
+        "signed_tst_error_minutes": -3.175,
+        "coverage": 1.0,
+        "wake_recall": 0.8188784466425123,
+        "wake_f1": 0.8210378302567847,
+        "wake_predicted_as": {
+          "W": 0.869,
+          "N1": 0.027,
+          "N2": 0.054,
+          "N3": 0.0,
+          "REM": 0.05
+        }
+      },
+      "beta_20_24": {
+        "people": 20,
+        "accuracy": 0.8401184017306891,
+        "kappa": 0.730858726920388,
+        "macro_f1": 0.5911909461306645,
+        "tst_error_minutes": 14.275,
+        "signed_tst_error_minutes": -9.775,
+        "coverage": 1.0,
+        "wake_recall": 0.8521506475596275,
+        "wake_f1": 0.8149120538559707,
+        "wake_predicted_as": {
+          "W": 0.896,
+          "N1": 0.026,
+          "N2": 0.043,
+          "N3": 0.0,
+          "REM": 0.035
+        }
+      },
+      "beta_24_30": {
+        "people": 20,
+        "accuracy": 0.841452077992489,
+        "kappa": 0.7323350912355542,
+        "macro_f1": 0.5960386022370578,
+        "tst_error_minutes": 14.175,
+        "signed_tst_error_minutes": -9.425,
+        "coverage": 1.0,
+        "wake_recall": 0.8511533229772417,
+        "wake_f1": 0.8158753059538485,
+        "wake_predicted_as": {
+          "W": 0.896,
+          "N1": 0.023,
+          "N2": 0.042,
+          "N3": 0.0,
+          "REM": 0.039
+        }
+      }
+    },
+    "cnn_balanced": {
+      "none": {
+        "people": 20,
+        "accuracy": 0.6186766120993266,
+        "kappa": 0.4793558919265092,
+        "macro_f1": 0.5248533819494835,
+        "tst_error_minutes": 8.375,
+        "signed_tst_error_minutes": 3.525,
+        "coverage": 1.0,
+        "wake_recall": 0.7338307141242126,
+        "wake_f1": 0.7696205225475559,
+        "wake_predicted_as": {
+          "W": 0.79,
+          "N1": 0.179,
+          "N2": 0.007,
+          "N3": 0.002,
+          "REM": 0.022
+        }
+      },
+      "theta_4_8": {
+        "people": 20,
+        "accuracy": 0.5855544453454946,
+        "kappa": 0.4384016107280349,
+        "macro_f1": 0.48723305257000826,
+        "tst_error_minutes": 17.125,
+        "signed_tst_error_minutes": -10.425,
+        "coverage": 1.0,
+        "wake_recall": 0.755989256481616,
+        "wake_f1": 0.7358152212248348,
+        "wake_predicted_as": {
+          "W": 0.811,
+          "N1": 0.171,
+          "N2": 0.008,
+          "N3": 0.003,
+          "REM": 0.006
+        }
+      },
+      "alpha_8_12": {
+        "people": 20,
+        "accuracy": 0.5762622798679433,
+        "kappa": 0.43710193576652834,
+        "macro_f1": 0.5034764835996375,
+        "tst_error_minutes": 18.7,
+        "signed_tst_error_minutes": 0.25,
+        "coverage": 1.0,
+        "wake_recall": 0.7028558960245739,
+        "wake_f1": 0.7323641158415202,
+        "wake_predicted_as": {
+          "W": 0.763,
+          "N1": 0.178,
+          "N2": 0.009,
+          "N3": 0.003,
+          "REM": 0.048
+        }
+      },
+      "sigma_12_16": {
+        "people": 20,
+        "accuracy": 0.612362379560526,
+        "kappa": 0.47222521031418063,
+        "macro_f1": 0.5249617143485263,
+        "tst_error_minutes": 13.75,
+        "signed_tst_error_minutes": 13.3,
+        "coverage": 1.0,
+        "wake_recall": 0.6663135076808209,
+        "wake_f1": 0.7451041103653784,
+        "wake_predicted_as": {
+          "W": 0.734,
+          "N1": 0.206,
+          "N2": 0.014,
+          "N3": 0.005,
+          "REM": 0.041
+        }
+      },
+      "beta_16_30": {
+        "people": 20,
+        "accuracy": 0.6477643374761739,
+        "kappa": 0.5036467472057132,
+        "macro_f1": 0.5362601486849496,
+        "tst_error_minutes": 17.175,
+        "signed_tst_error_minutes": 17.125,
+        "coverage": 1.0,
+        "wake_recall": 0.6310232478544656,
+        "wake_f1": 0.719984595256118,
+        "wake_predicted_as": {
+          "W": 0.703,
+          "N1": 0.198,
+          "N2": 0.026,
+          "N3": 0.01,
+          "REM": 0.063
+        }
+      },
+      "beta_16_20": {
+        "people": 20,
+        "accuracy": 0.643131499660278,
+        "kappa": 0.503814231913851,
+        "macro_f1": 0.5433782355743937,
+        "tst_error_minutes": 12.4,
+        "signed_tst_error_minutes": 11.7,
+        "coverage": 1.0,
+        "wake_recall": 0.6825950309134695,
+        "wake_f1": 0.7534740374394768,
+        "wake_predicted_as": {
+          "W": 0.746,
+          "N1": 0.202,
+          "N2": 0.013,
+          "N3": 0.003,
+          "REM": 0.036
+        }
+      },
+      "beta_20_24": {
+        "people": 20,
+        "accuracy": 0.6294284567876207,
+        "kappa": 0.48797823688109015,
+        "macro_f1": 0.5279413648207163,
+        "tst_error_minutes": 9.35,
+        "signed_tst_error_minutes": 5.15,
+        "coverage": 1.0,
+        "wake_recall": 0.7208829674764631,
+        "wake_f1": 0.7648506178487592,
+        "wake_predicted_as": {
+          "W": 0.78,
+          "N1": 0.181,
+          "N2": 0.009,
+          "N3": 0.002,
+          "REM": 0.028
+        }
+      },
+      "beta_24_30": {
+        "people": 20,
+        "accuracy": 0.6338270305770531,
+        "kappa": 0.4931807288917659,
+        "macro_f1": 0.5319332730725395,
+        "tst_error_minutes": 9.05,
+        "signed_tst_error_minutes": 2.4,
+        "coverage": 1.0,
+        "wake_recall": 0.7339906210754497,
+        "wake_f1": 0.7671150048102907,
+        "wake_predicted_as": {
+          "W": 0.794,
+          "N1": 0.172,
+          "N2": 0.008,
+          "N3": 0.003,
+          "REM": 0.023
+        }
+      }
+    }
+  },
+  "sleep_edf_wake_beta_vs_recall": {
+    "cnn": {
+      "spearman_rho": 0.5518796992481202,
+      "p_value": 0.011642373367085755,
+      "people": 20,
+      "per_recording": [
+        {
+          "recording": "SC400",
+          "wake_beta_share": 0.02148541808128357,
+          "wake_recall": 0.008512769153730596
+        },
+        {
+          "recording": "SC401",
+          "wake_beta_share": 0.003538222052156925,
+          "wake_recall": 0.010775862068965518
+        },
+        {
+          "recording": "SC402",
+          "wake_beta_share": 0.012784787453711033,
+          "wake_recall": 0.004195070791819612
+        },
+        {
+          "recording": "SC403",
+          "wake_beta_share": 0.045622341334819794,
+          "wake_recall": 0.15587649402390438
+        },
+        {
+          "recording": "SC404",
+          "wake_beta_share": 0.01705486699938774,
+          "wake_recall": 0.03455019556714472
+        },
+        {
+          "recording": "SC405",
+          "wake_beta_share": 0.007187194190919399,
+          "wake_recall": 0.1886625332152347
+        },
+        {
+          "recording": "SC406",
+          "wake_beta_share": 0.05976433679461479,
+          "wake_recall": 0.2653455775737071
+        },
+        {
+          "recording": "SC407",
+          "wake_beta_share": 0.022762157022953033,
+          "wake_recall": 0.027579162410623085
+        },
+        {
+          "recording": "SC408",
+          "wake_beta_share": 0.027736397460103035,
+          "wake_recall": 0.10881612090680101
+        },
+        {
+          "recording": "SC409",
+          "wake_beta_share": 0.04356944188475609,
+          "wake_recall": 0.281196089706728
+        },
+        {
+          "recording": "SC410",
+          "wake_beta_share": 0.008127253502607346,
+          "wake_recall": 0.007344632768361582
+        },
+        {
+          "recording": "SC411",
+          "wake_beta_share": 0.02990417554974556,
+          "wake_recall": 0.09516041326808047
+        },
+        {
+          "recording": "SC412",
+          "wake_beta_share": 0.01939450576901436,
+          "wake_recall": 0.2045328911000553
+        },
+        {
+          "recording": "SC413",
+          "wake_beta_share": 0.07078709453344345,
+          "wake_recall": 0.16589386913961876
+        },
+        {
+          "recording": "SC414",
+          "wake_beta_share": 0.05194521322846413,
+          "wake_recall": 0.10108303249097472
+        },
+        {
+          "recording": "SC415",
+          "wake_beta_share": 0.034181904047727585,
+          "wake_recall": 0.09694989106753812
+        },
+        {
+          "recording": "SC416",
+          "wake_beta_share": 0.015574715100228786,
+          "wake_recall": 0.04193738924985233
+        },
+        {
+          "recording": "SC417",
+          "wake_beta_share": 0.023013755679130554,
+          "wake_recall": 0.1691906005221932
+        },
+        {
+          "recording": "SC418",
+          "wake_beta_share": 0.014939559623599052,
+          "wake_recall": 0.1616580310880829
+        },
+        {
+          "recording": "SC419",
+          "wake_beta_share": 0.08231709897518158,
+          "wake_recall": 0.4653118430273301
+        }
+      ]
+    },
+    "cnn_balanced": {
+      "spearman_rho": 0.7233082706766917,
+      "p_value": 0.00031340341734179564,
+      "people": 20,
+      "per_recording": [
+        {
+          "recording": "SC400",
+          "wake_beta_share": 0.02148541808128357,
+          "wake_recall": 0.012518778167250876
+        },
+        {
+          "recording": "SC401",
+          "wake_beta_share": 0.003538222052156925,
+          "wake_recall": 0.017780172413793104
+        },
+        {
+          "recording": "SC402",
+          "wake_beta_share": 0.012784787453711033,
+          "wake_recall": 0.009438909281594127
+        },
+        {
+          "recording": "SC403",
+          "wake_beta_share": 0.045622341334819794,
+          "wake_recall": 0.3456175298804781
+        },
+        {
+          "recording": "SC404",
+          "wake_beta_share": 0.01705486699938774,
+          "wake_recall": 0.05867014341590613
+        },
+        {
+          "recording": "SC405",
+          "wake_beta_share": 0.007187194190919399,
+          "wake_recall": 0.17006200177147918
+        },
+        {
+          "recording": "SC406",
+          "wake_beta_share": 0.05976433679461479,
+          "wake_recall": 0.4523924601256646
+        },
+        {
+          "recording": "SC407",
+          "wake_beta_share": 0.022762157022953033,
+          "wake_recall": 0.033707865168539325
+        },
+        {
+          "recording": "SC408",
+          "wake_beta_share": 0.027736397460103035,
+          "wake_recall": 0.15465994962216625
+        },
+        {
+          "recording": "SC409",
+          "wake_beta_share": 0.04356944188475609,
+          "wake_recall": 0.37722829212190917
+        },
+        {
+          "recording": "SC410",
+          "wake_beta_share": 0.008127253502607346,
+          "wake_recall": 0.01864406779661017
+        },
+        {
+          "recording": "SC411",
+          "wake_beta_share": 0.02990417554974556,
+          "wake_recall": 0.18433931484502447
+        },
+        {
+          "recording": "SC412",
+          "wake_beta_share": 0.01939450576901436,
+          "wake_recall": 0.32172470978441126
+        },
+        {
+          "recording": "SC413",
+          "wake_beta_share": 0.07078709453344345,
+          "wake_recall": 0.3189077794951056
+        },
+        {
+          "recording": "SC414",
+          "wake_beta_share": 0.05194521322846413,
+          "wake_recall": 0.2521918514698298
+        },
+        {
+          "recording": "SC415",
+          "wake_beta_share": 0.034181904047727585,
+          "wake_recall": 0.11220043572984749
+        },
+        {
+          "recording": "SC416",
+          "wake_beta_share": 0.015574715100228786,
+          "wake_recall": 0.07619610159480213
+        },
+        {
+          "recording": "SC417",
+          "wake_beta_share": 0.023013755679130554,
+          "wake_recall": 0.26109660574412535
+        },
+        {
+          "recording": "SC418",
+          "wake_beta_share": 0.014939559623599052,
+          "wake_recall": 0.1922279792746114
+        },
+        {
+          "recording": "SC419",
+          "wake_beta_share": 0.08231709897518158,
+          "wake_recall": 0.6566222845129642
+        }
+      ]
+    }
+  },
+  "boas_test_wake_beta_share_median": 0.03846476040780544,
+  "sleep_edf_wake_beta_share_median": 0.022887956351041794
+}

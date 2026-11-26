@@ -166,3 +166,16 @@ results are labelled post hoc.
   FP2-F4 signals named in section 3. This changes where the data comes from and what is stored,
   not what is analysed. The scorer files for the consensus come from the
   `dreem-learning-evaluation` repository, as in the DOD paper.
+- 26 November 2026, amendment v1.1, written before any DOD-H or HMC signal or label was opened
+  (the DOD-H records sit on the laptop as compact files; none has been read):
+  a bootstrap on the already-inspected Sleep-EDF people (`analysis/gain_uncertainty.py`) showed
+  that the q75 gain clearly improves kappa (+0.057, 95% interval 0.019 to 0.100) and the
+  sleep-time error (-61.5 min, -98.3 to -32.7), but not macro-F1 (+0.027, -0.007 to 0.058).
+  Macro-F1 alone was a poor choice for a hypothesis about amplitude, which mostly shifts the
+  wake/sleep boundary and so the totals. H1 is therefore assessed two ways, and both are
+  reported:
+  - **H1 as originally written** (macro-F1, at least 0.03, interval above 0), unchanged.
+  - **H1b, added:** v2 + q75 lowers the absolute sleep-time error against uncalibrated v2, with
+    the paired 95% interval entirely below 0, and raises kappa with the interval above 0.
+  Holm correction now runs over six tests (H1, H1b and H2 on each dataset). The rules, gains,
+  models and every other threshold are unchanged.
