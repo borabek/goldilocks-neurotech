@@ -117,7 +117,7 @@ usable estimate.
 
 | Task | Needs |
 | --- | --- |
-| Add the script that built the 64 Hz caches to the repo | Not found in the cache folders; the manifests record its settings (`resample_poly` 256→64 Hz down=4 for BOAS, 100→64 Hz up=16 down=25 for Sleep-EDF) |
+| Check the Sleep-EDF branch of `build_epoch_cache.py` | The 20 original Sleep-EDF PSG files (subjects 00–19); the BOAS branch already rebuilds sub-1 and sub-6 bit for bit (`cache_rebuild_check.json`) |
 | Download DOD-H, HMC subset, raw BOAS, extra Sleep-EDF subjects | `scripts/fetch_external_data.py` and `node acquire.mjs` on a machine that can reach those hosts |
 
 ## Re-run

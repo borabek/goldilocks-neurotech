@@ -1,0 +1,22 @@
+{
+  "script": "build_epoch_cache.py",
+  "checked": "BOAS headband, sub-1 and sub-6, rebuilt from the raw OpenNeuro ds005555 EDFs and compared array by array with the 64 Hz caches used for every CNN result",
+  "result": {
+    "sub-1": {
+      "epochs": 915,
+      "X": "identical",
+      "y": "identical",
+      "good": "identical",
+      "onset": "identical"
+    },
+    "sub-6": {
+      "epochs": 998,
+      "X": "identical",
+      "y": "identical",
+      "good": "identical",
+      "onset": "identical"
+    }
+  },
+  "environment": "requirements.txt pins (mne 1.13.2, scipy 1.18.1, numpy 2.3.5)",
+  "not_yet_checked": "Sleep-EDF branch: the 20 original Sleep-EDF PSG files (subjects 00-19) are not on the machine yet. The original external cache was built with MNE 1.12.1, so float16 rounding could differ; check before relying on it."
+}
