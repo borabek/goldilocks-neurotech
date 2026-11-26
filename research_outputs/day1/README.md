@@ -12,7 +12,7 @@ DOD-H and HMC should ask (see `PREREGISTRATION.md`).
 | `pytest` | 25 tests pass |
 | `verify_claims.py` | 102 figures checked, none unsupported; 12 stale hashes, now rebuilt |
 | CNN environment | `requirements.txt` plus `requirements_live.txt` install and import fine (jax 0.12.0.1) |
-| CNN epoch caches | Not in the repo (about 723 MB). The script that builds the 64 Hz caches isn't in the repo either |
+| CNN epoch caches | Not in the repo (812 MB on the laptop). Staged from the laptop for A1, A2 and A6 |
 
 ## What we found
 
@@ -41,14 +41,40 @@ A label-free gain set once per dataset gets most of this back without using labe
 gets Sleep-EDF to kappa 0.681 and 110.7 min. The q75 rule gets 0.636 and 174.4 min, with no real
 cost on BOAS. Every rule tried is in the results file.
 
-## Still to do today, and what it needs
+## With the epoch caches (run after `prereg-v1` was tagged)
+
+**The shipped CNN result reproduces exactly.** Re-running `cnn_external.py` on the caches gives
+predictions identical to `results/cnn/cnn_external_predictions.json` (macro-F1 0.18777).
+
+**A1 and A2 do nothing to the CNN.** That is what the pre-registration predicted from the
+instance-normalisation argument. Across the plain, balanced, square-root-balanced and augmented
+CNNs, none of the four normalisation windows and none of the four input scales moves macro-F1 by
+more than 0.001. The plain CNN stays at macro-F1 0.188, wake F1 0.211 and an 803-minute
+sleep-time error in every variant. Normalisation and amplitude are ruled out as causes of the
+CNN collapse.
+
+**A6 finds no preprocessing bug.** Both caches have 1920 samples per epoch and 30-second onset
+spacing. Sleep-EDF N2 shows a normal spindle peak at 13.75 Hz. The script flags the 8–16 Hz
+peak for N1, N2 and N3, but the N1 and N3 flags are artefacts: those spectra fall steadily across
+the band, so the "peak" lands on its edge (8.0 or 15.75 Hz). The real difference is in wake:
+
+| Wake, relative power | Delta | Theta | Alpha | Sigma | Beta |
+| --- | --- | --- | --- | --- | --- |
+| BOAS headband | 0.813 | 0.048 | 0.045 | 0.022 | 0.071 |
+| Sleep-EDF Fpz-Cz | 0.843 | 0.079 | 0.025 | 0.013 | 0.038 |
+
+Headband wake carries about twice the beta share of Sleep-EDF wake. That fits forehead muscle
+activity on a dry headband, which a PSG Fpz-Cz derivation picks up much less. A CNN that learned
+"wake = high-frequency power" would then read quiet PSG wake as sleep, and that's what it does.
+This is a hypothesis for day 2, not a result.
+
+## Still open
 
 | Task | Needs |
 | --- | --- |
-| A6 spectral check (`analysis/a6_spectral_check.py`) | The 64 Hz epoch caches from the laptop |
-| A1 and A2 for the CNN (`analysis/ablation_shift.py --boas-cache ... --ext-cache ...`) | The same caches |
-| Add the cache-building script to the repo | The laptop copy |
-| Download DOD-H, HMC subset, raw BOAS, extra Sleep-EDF subjects | A machine with access to those hosts |
+| Test the beta explanation: per-recording wake beta share against CNN wake recall, and a band-limited input check | Day 2, caches already staged |
+| Add the script that built the 64 Hz caches to the repo | Not found in the cache folders; the manifests record its settings (`resample_poly` 256→64 Hz down=4 for BOAS, 100→64 Hz up=16 down=25 for Sleep-EDF) |
+| Download DOD-H, HMC subset, raw BOAS, extra Sleep-EDF subjects | `scripts/fetch_external_data.py` and `node acquire.mjs` on a machine that can reach those hosts |
 
 ## Re-run
 

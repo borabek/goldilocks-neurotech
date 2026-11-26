@@ -721,5 +721,718 @@
       }
     }
   },
-  "cnn": "not run: needs --boas-cache and --ext-cache (the 64 Hz epoch caches)"
+  "cnn": {
+    "cnn": {
+      "A1_whole_recording": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.2693911856439642,
+          "kappa": 0.08625671563614042,
+          "macro_f1": 0.18777486921217695,
+          "tst_error_minutes": 803.2,
+          "signed_tst_error_minutes": 803.2,
+          "coverage": 1.0,
+          "wake_f1": 0.21078800611310733
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5137232696559424,
+          "kappa": 0.1890654611707922,
+          "macro_f1": 0.2811182609355911,
+          "tst_error_minutes": 55.725,
+          "signed_tst_error_minutes": 55.725,
+          "coverage": 1.0,
+          "wake_f1": 0.2649321270083715
+        }
+      },
+      "A1_v2_night_window": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.26944512069377613,
+          "kappa": 0.08631385809341896,
+          "macro_f1": 0.18780851858255693,
+          "tst_error_minutes": 803.15,
+          "signed_tst_error_minutes": 803.15,
+          "coverage": 1.0,
+          "wake_f1": 0.21086672032016943
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5137719077882382,
+          "kappa": 0.18912843859212541,
+          "macro_f1": 0.2811461760565403,
+          "tst_error_minutes": 55.725,
+          "signed_tst_error_minutes": 55.725,
+          "coverage": 1.0,
+          "wake_f1": 0.26497382758538784
+        }
+      },
+      "A1_boas_population": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.26952381521348057,
+          "kappa": 0.08641608916101903,
+          "macro_f1": 0.18889080728309215,
+          "tst_error_minutes": 803.175,
+          "signed_tst_error_minutes": 803.175,
+          "coverage": 1.0,
+          "wake_f1": 0.2110069935198054
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5138100503180337,
+          "kappa": 0.188981922063793,
+          "macro_f1": 0.28225617685229754,
+          "tst_error_minutes": 55.875,
+          "signed_tst_error_minutes": 55.875,
+          "coverage": 1.0,
+          "wake_f1": 0.26483382559450824
+        }
+      },
+      "A1_oracle_reference": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.26937204240644397,
+          "kappa": 0.08624080508087813,
+          "macro_f1": 0.18768136629691407,
+          "tst_error_minutes": 803.2,
+          "signed_tst_error_minutes": 803.2,
+          "coverage": 1.0,
+          "wake_f1": 0.21083083582737255
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5136142779612933,
+          "kappa": 0.1887912936453268,
+          "macro_f1": 0.2809675468974282,
+          "tst_error_minutes": 55.75,
+          "signed_tst_error_minutes": 55.75,
+          "coverage": 1.0,
+          "wake_f1": 0.26500966036574614
+        }
+      },
+      "A2_scale_0.5": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.26939058818337314,
+          "kappa": 0.08625323678531918,
+          "macro_f1": 0.18765518889322114,
+          "tst_error_minutes": 803.175,
+          "signed_tst_error_minutes": 803.175,
+          "coverage": 1.0,
+          "wake_f1": 0.2108204033143813
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5136757411388322,
+          "kappa": 0.1889664618659379,
+          "macro_f1": 0.2809854939378934,
+          "tst_error_minutes": 55.725,
+          "signed_tst_error_minutes": 55.725,
+          "coverage": 1.0,
+          "wake_f1": 0.2649321270083715
+        }
+      },
+      "A2_scale_0.75": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.26940921015730235,
+          "kappa": 0.08627983039968892,
+          "macro_f1": 0.1877836625517321,
+          "tst_error_minutes": 803.175,
+          "signed_tst_error_minutes": 803.175,
+          "coverage": 1.0,
+          "wake_f1": 0.2108204033143813
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5137232696559424,
+          "kappa": 0.1890654611707922,
+          "macro_f1": 0.2811182609355911,
+          "tst_error_minutes": 55.725,
+          "signed_tst_error_minutes": 55.725,
+          "coverage": 1.0,
+          "wake_f1": 0.2649321270083715
+        }
+      },
+      "A2_scale_1.5": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.2693911856439642,
+          "kappa": 0.08625671563614042,
+          "macro_f1": 0.18777486921217695,
+          "tst_error_minutes": 803.2,
+          "signed_tst_error_minutes": 803.2,
+          "coverage": 1.0,
+          "wake_f1": 0.21078800611310733
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5137232696559424,
+          "kappa": 0.1890654611707922,
+          "macro_f1": 0.2811182609355911,
+          "tst_error_minutes": 55.725,
+          "signed_tst_error_minutes": 55.725,
+          "coverage": 1.0,
+          "wake_f1": 0.2649321270083715
+        }
+      },
+      "A2_scale_2.0": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.2694105944332406,
+          "kappa": 0.08628851472288064,
+          "macro_f1": 0.18777117317064257,
+          "tst_error_minutes": 803.15,
+          "signed_tst_error_minutes": 803.15,
+          "coverage": 1.0,
+          "wake_f1": 0.2108905264961421
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.513803371462955,
+          "kappa": 0.1893241595261111,
+          "macro_f1": 0.2813332755453562,
+          "tst_error_minutes": 55.65,
+          "signed_tst_error_minutes": 55.65,
+          "coverage": 1.0,
+          "wake_f1": 0.26605871700286415
+        }
+      }
+    },
+    "cnn_balanced": {
+      "A1_whole_recording": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.3275930208430686,
+          "kappa": 0.1810305915779231,
+          "macro_f1": 0.30657207420309696,
+          "tst_error_minutes": 716.7,
+          "signed_tst_error_minutes": 716.7,
+          "coverage": 1.0,
+          "wake_f1": 0.2962967098893503
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5495214695726924,
+          "kappa": 0.36964195830234575,
+          "macro_f1": 0.443948051268913,
+          "tst_error_minutes": 36.5,
+          "signed_tst_error_minutes": 33.25,
+          "coverage": 1.0,
+          "wake_f1": 0.2602923512852028
+        }
+      },
+      "A1_v2_night_window": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.327613078570545,
+          "kappa": 0.18106766506073052,
+          "macro_f1": 0.3066318626589322,
+          "tst_error_minutes": 716.725,
+          "signed_tst_error_minutes": 716.725,
+          "coverage": 1.0,
+          "wake_f1": 0.2962484309545813
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5496024412326114,
+          "kappa": 0.369748096121821,
+          "macro_f1": 0.44403082514459,
+          "tst_error_minutes": 36.5,
+          "signed_tst_error_minutes": 33.25,
+          "coverage": 1.0,
+          "wake_f1": 0.2602923512852028
+        }
+      },
+      "A1_boas_population": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.32687026795785284,
+          "kappa": 0.18022571934005108,
+          "macro_f1": 0.30574414717751325,
+          "tst_error_minutes": 716.95,
+          "signed_tst_error_minutes": 716.95,
+          "coverage": 1.0,
+          "wake_f1": 0.2958337050636156
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5479273682345571,
+          "kappa": 0.3672019967382384,
+          "macro_f1": 0.44253326378614377,
+          "tst_error_minutes": 36.7,
+          "signed_tst_error_minutes": 33.25,
+          "coverage": 1.0,
+          "wake_f1": 0.2596666634804184
+        }
+      },
+      "A1_oracle_reference": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.32755690837667484,
+          "kappa": 0.18102904319524912,
+          "macro_f1": 0.30659628298544095,
+          "tst_error_minutes": 716.775,
+          "signed_tst_error_minutes": 716.775,
+          "coverage": 1.0,
+          "wake_f1": 0.2962177031585619
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5494933911117151,
+          "kappa": 0.3696149807010081,
+          "macro_f1": 0.44398439498516196,
+          "tst_error_minutes": 36.475,
+          "signed_tst_error_minutes": 33.275,
+          "coverage": 1.0,
+          "wake_f1": 0.26030019934673154
+        }
+      },
+      "A2_scale_0.5": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.3275930208430686,
+          "kappa": 0.18102969618783382,
+          "macro_f1": 0.30657253752398494,
+          "tst_error_minutes": 716.7,
+          "signed_tst_error_minutes": 716.7,
+          "coverage": 1.0,
+          "wake_f1": 0.2962967098893503
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5495214695726924,
+          "kappa": 0.36964195830234575,
+          "macro_f1": 0.443948051268913,
+          "tst_error_minutes": 36.5,
+          "signed_tst_error_minutes": 33.25,
+          "coverage": 1.0,
+          "wake_f1": 0.2602923512852028
+        }
+      },
+      "A2_scale_0.75": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.3275930208430686,
+          "kappa": 0.18102969618783382,
+          "macro_f1": 0.30657253752398494,
+          "tst_error_minutes": 716.7,
+          "signed_tst_error_minutes": 716.7,
+          "coverage": 1.0,
+          "wake_f1": 0.2962967098893503
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5495214695726924,
+          "kappa": 0.36964195830234575,
+          "macro_f1": 0.443948051268913,
+          "tst_error_minutes": 36.5,
+          "signed_tst_error_minutes": 33.25,
+          "coverage": 1.0,
+          "wake_f1": 0.2602923512852028
+        }
+      },
+      "A2_scale_1.5": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.32759188341499423,
+          "kappa": 0.1810403020680959,
+          "macro_f1": 0.3065707118197361,
+          "tst_error_minutes": 716.7,
+          "signed_tst_error_minutes": 716.7,
+          "coverage": 1.0,
+          "wake_f1": 0.2962756405935063
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5495214695726924,
+          "kappa": 0.36964195830234575,
+          "macro_f1": 0.443948051268913,
+          "tst_error_minutes": 36.5,
+          "signed_tst_error_minutes": 33.25,
+          "coverage": 1.0,
+          "wake_f1": 0.2602923512852028
+        }
+      },
+      "A2_scale_2.0": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.32762755633448726,
+          "kappa": 0.18115555628296384,
+          "macro_f1": 0.30662239823789206,
+          "tst_error_minutes": 716.65,
+          "signed_tst_error_minutes": 716.65,
+          "coverage": 1.0,
+          "wake_f1": 0.29623182206368526
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5495216119282016,
+          "kappa": 0.36970944426524716,
+          "macro_f1": 0.4438675410170127,
+          "tst_error_minutes": 36.5,
+          "signed_tst_error_minutes": 33.25,
+          "coverage": 1.0,
+          "wake_f1": 0.2599641400642118
+        }
+      }
+    },
+    "cnn_sqrtbalanced": {
+      "A1_whole_recording": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.2580708118782934,
+          "kappa": 0.11422655402233921,
+          "macro_f1": 0.2459235891244253,
+          "tst_error_minutes": 853.9,
+          "signed_tst_error_minutes": 853.9,
+          "coverage": 1.0,
+          "wake_f1": 0.13451049395593995
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.56683522427282,
+          "kappa": 0.3126874547098342,
+          "macro_f1": 0.3844550051395103,
+          "tst_error_minutes": 64.85,
+          "signed_tst_error_minutes": 64.85,
+          "coverage": 1.0,
+          "wake_f1": 0.1991354638163744
+        }
+      },
+      "A1_v2_night_window": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.2580713685037294,
+          "kappa": 0.11422339801717282,
+          "macro_f1": 0.24593603521391202,
+          "tst_error_minutes": 853.9,
+          "signed_tst_error_minutes": 853.9,
+          "coverage": 1.0,
+          "wake_f1": 0.13451450101912193
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.56683522427282,
+          "kappa": 0.3126874547098342,
+          "macro_f1": 0.3844550051395103,
+          "tst_error_minutes": 64.85,
+          "signed_tst_error_minutes": 64.85,
+          "coverage": 1.0,
+          "wake_f1": 0.1991354638163744
+        }
+      },
+      "A1_boas_population": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.25782666793393827,
+          "kappa": 0.11384654347271769,
+          "macro_f1": 0.24591974557298277,
+          "tst_error_minutes": 853.925,
+          "signed_tst_error_minutes": 853.925,
+          "coverage": 1.0,
+          "wake_f1": 0.1343930121549855
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5662414651943188,
+          "kappa": 0.3115480800743985,
+          "macro_f1": 0.3840160852510843,
+          "tst_error_minutes": 64.85,
+          "signed_tst_error_minutes": 64.85,
+          "coverage": 1.0,
+          "wake_f1": 0.19810219764571443
+        }
+      },
+      "A1_oracle_reference": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.2580705785162099,
+          "kappa": 0.11422828291906262,
+          "macro_f1": 0.24597792783633943,
+          "tst_error_minutes": 853.9,
+          "signed_tst_error_minutes": 853.9,
+          "coverage": 1.0,
+          "wake_f1": 0.13451586242201302
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.566887091492737,
+          "kappa": 0.3127606102907707,
+          "macro_f1": 0.3846227462493732,
+          "tst_error_minutes": 64.825,
+          "signed_tst_error_minutes": 64.825,
+          "coverage": 1.0,
+          "wake_f1": 0.1996765503180698
+        }
+      },
+      "A2_scale_0.5": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.2580897441009363,
+          "kappa": 0.11424852212914202,
+          "macro_f1": 0.24593908331235803,
+          "tst_error_minutes": 853.9,
+          "signed_tst_error_minutes": 853.9,
+          "coverage": 1.0,
+          "wake_f1": 0.13456192331790473
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.56683522427282,
+          "kappa": 0.31268361072207684,
+          "macro_f1": 0.38445398829552885,
+          "tst_error_minutes": 64.875,
+          "signed_tst_error_minutes": 64.875,
+          "coverage": 1.0,
+          "wake_f1": 0.19922721683882688
+        }
+      },
+      "A2_scale_0.75": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.2580897441009363,
+          "kappa": 0.11423603681109122,
+          "macro_f1": 0.24594567908208384,
+          "tst_error_minutes": 853.875,
+          "signed_tst_error_minutes": 853.875,
+          "coverage": 1.0,
+          "wake_f1": 0.13455689128635542
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.56683522427282,
+          "kappa": 0.3126874547098342,
+          "macro_f1": 0.3844550051395103,
+          "tst_error_minutes": 64.85,
+          "signed_tst_error_minutes": 64.85,
+          "coverage": 1.0,
+          "wake_f1": 0.1991354638163744
+        }
+      },
+      "A2_scale_1.5": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.2580708118782934,
+          "kappa": 0.11422966071823411,
+          "macro_f1": 0.2459207714584688,
+          "tst_error_minutes": 853.9,
+          "signed_tst_error_minutes": 853.9,
+          "coverage": 1.0,
+          "wake_f1": 0.13451049395593995
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.56683522427282,
+          "kappa": 0.3126874547098342,
+          "macro_f1": 0.3844550051395103,
+          "tst_error_minutes": 64.85,
+          "signed_tst_error_minutes": 64.85,
+          "coverage": 1.0,
+          "wake_f1": 0.1991354638163744
+        }
+      },
+      "A2_scale_2.0": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.2580722988751074,
+          "kappa": 0.1142441078826085,
+          "macro_f1": 0.24590628440525236,
+          "tst_error_minutes": 853.9,
+          "signed_tst_error_minutes": 853.9,
+          "coverage": 1.0,
+          "wake_f1": 0.13452813946969167
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.566879404512707,
+          "kappa": 0.3127623147847321,
+          "macro_f1": 0.384572180452284,
+          "tst_error_minutes": 64.825,
+          "signed_tst_error_minutes": 64.825,
+          "coverage": 1.0,
+          "wake_f1": 0.19978516205228497
+        }
+      }
+    },
+    "cnn_augmented": {
+      "A1_whole_recording": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.2407863035244188,
+          "kappa": 0.07480898568210925,
+          "macro_f1": 0.18734588200659344,
+          "tst_error_minutes": 855.7,
+          "signed_tst_error_minutes": 855.7,
+          "coverage": 1.0,
+          "wake_f1": 0.1356765625944412
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5252547237928402,
+          "kappa": 0.21204028986905527,
+          "macro_f1": 0.29481508932984524,
+          "tst_error_minutes": 63.75,
+          "signed_tst_error_minutes": 63.75,
+          "coverage": 1.0,
+          "wake_f1": 0.22060974004836656
+        }
+      },
+      "A1_v2_night_window": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.2408057663504211,
+          "kappa": 0.07483544266899904,
+          "macro_f1": 0.18740146955399875,
+          "tst_error_minutes": 855.7,
+          "signed_tst_error_minutes": 855.7,
+          "coverage": 1.0,
+          "wake_f1": 0.1356765625944412
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5252952096227996,
+          "kappa": 0.21212821655903938,
+          "macro_f1": 0.29485779524029304,
+          "tst_error_minutes": 63.75,
+          "signed_tst_error_minutes": 63.75,
+          "coverage": 1.0,
+          "wake_f1": 0.22060974004836656
+        }
+      },
+      "A1_boas_population": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.240179295015702,
+          "kappa": 0.07444269402705321,
+          "macro_f1": 0.18649080993901151,
+          "tst_error_minutes": 856.45,
+          "signed_tst_error_minutes": 856.45,
+          "coverage": 1.0,
+          "wake_f1": 0.13468398022692485
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5245581180462253,
+          "kappa": 0.21109297601226246,
+          "macro_f1": 0.2937828082342928,
+          "tst_error_minutes": 64.0,
+          "signed_tst_error_minutes": 64.0,
+          "coverage": 1.0,
+          "wake_f1": 0.2198410057445644
+        }
+      },
+      "A1_oracle_reference": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.24084275717078682,
+          "kappa": 0.0748527893481515,
+          "macro_f1": 0.18743535745665788,
+          "tst_error_minutes": 855.65,
+          "signed_tst_error_minutes": 855.65,
+          "coverage": 1.0,
+          "wake_f1": 0.13575706674871352
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5252952096227996,
+          "kappa": 0.21214224447554,
+          "macro_f1": 0.29485195438261974,
+          "tst_error_minutes": 63.75,
+          "signed_tst_error_minutes": 63.75,
+          "coverage": 1.0,
+          "wake_f1": 0.22060974004836656
+        }
+      },
+      "A2_scale_0.5": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.240823857720991,
+          "kappa": 0.07484853212224965,
+          "macro_f1": 0.18736944602439717,
+          "tst_error_minutes": 855.675,
+          "signed_tst_error_minutes": 855.675,
+          "coverage": 1.0,
+          "wake_f1": 0.1357229966379991
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5253086031031851,
+          "kappa": 0.212190924521,
+          "macro_f1": 0.2948613713133863,
+          "tst_error_minutes": 63.75,
+          "signed_tst_error_minutes": 63.75,
+          "coverage": 1.0,
+          "wake_f1": 0.22060974004836656
+        }
+      },
+      "A2_scale_0.75": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.2407863035244188,
+          "kappa": 0.07480898568210925,
+          "macro_f1": 0.18734588200659344,
+          "tst_error_minutes": 855.7,
+          "signed_tst_error_minutes": 855.7,
+          "coverage": 1.0,
+          "wake_f1": 0.1356765625944412
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5252547237928402,
+          "kappa": 0.21204028986905527,
+          "macro_f1": 0.29481508932984524,
+          "tst_error_minutes": 63.75,
+          "signed_tst_error_minutes": 63.75,
+          "coverage": 1.0,
+          "wake_f1": 0.22060974004836656
+        }
+      },
+      "A2_scale_1.5": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.2407863035244188,
+          "kappa": 0.07480898568210925,
+          "macro_f1": 0.18734588200659344,
+          "tst_error_minutes": 855.7,
+          "signed_tst_error_minutes": 855.7,
+          "coverage": 1.0,
+          "wake_f1": 0.1356765625944412
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5252547237928402,
+          "kappa": 0.21204028986905527,
+          "macro_f1": 0.29481508932984524,
+          "tst_error_minutes": 63.75,
+          "signed_tst_error_minutes": 63.75,
+          "coverage": 1.0,
+          "wake_f1": 0.22060974004836656
+        }
+      },
+      "A2_scale_2.0": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.24067853324583854,
+          "kappa": 0.07474748092116328,
+          "macro_f1": 0.18727998138893168,
+          "tst_error_minutes": 855.85,
+          "signed_tst_error_minutes": 855.85,
+          "coverage": 1.0,
+          "wake_f1": 0.13540543670277377
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5252082983097563,
+          "kappa": 0.21202214680474923,
+          "macro_f1": 0.29474885249806043,
+          "tst_error_minutes": 63.775,
+          "signed_tst_error_minutes": 63.775,
+          "coverage": 1.0,
+          "wake_f1": 0.22029485062443963
+        }
+      }
+    }
+  }
 }

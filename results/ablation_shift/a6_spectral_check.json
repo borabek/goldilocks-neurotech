@@ -1,0 +1,151 @@
+{
+  "boas_test": {
+    "checks": {
+      "samples_per_epoch": [
+        1920
+      ],
+      "onset_spacing_s": [
+        30.0
+      ]
+    },
+    "stages": {
+      "W": {
+        "epochs": 3017,
+        "median_abs_scaled_amplitude": 0.8399496376514435,
+        "peak_8_16_hz": 9.5,
+        "band_share": {
+          "delta": 0.8130714893341064,
+          "theta": 0.048262618482112885,
+          "alpha": 0.04529166221618652,
+          "sigma": 0.021624185144901276,
+          "beta": 0.07092900574207306
+        }
+      },
+      "N1": {
+        "epochs": 720,
+        "median_abs_scaled_amplitude": 0.5751645565032959,
+        "peak_8_16_hz": 10.75,
+        "band_share": {
+          "delta": 0.778392493724823,
+          "theta": 0.06549922376871109,
+          "alpha": 0.04697132483124733,
+          "sigma": 0.03054479882121086,
+          "beta": 0.07789797335863113
+        }
+      },
+      "N2": {
+        "epochs": 10502,
+        "median_abs_scaled_amplitude": 0.6729050874710083,
+        "peak_8_16_hz": 10.75,
+        "band_share": {
+          "delta": 0.8352364301681519,
+          "theta": 0.060759127140045166,
+          "alpha": 0.040477730333805084,
+          "sigma": 0.02743498608469963,
+          "beta": 0.03582193702459335
+        }
+      },
+      "N3": {
+        "epochs": 569,
+        "median_abs_scaled_amplitude": 1.318398118019104,
+        "peak_8_16_hz": 15.75,
+        "band_share": {
+          "delta": 0.9268423914909363,
+          "theta": 0.03311502933502197,
+          "alpha": 0.014379331842064857,
+          "sigma": 0.017665525898337364,
+          "beta": 0.007866725325584412
+        }
+      },
+      "REM": {
+        "epochs": 2892,
+        "median_abs_scaled_amplitude": 0.512229859828949,
+        "peak_8_16_hz": 8.0,
+        "band_share": {
+          "delta": 0.8071438074111938,
+          "theta": 0.08366823196411133,
+          "alpha": 0.039015766233205795,
+          "sigma": 0.02253478765487671,
+          "beta": 0.04732147604227066
+        }
+      }
+    }
+  },
+  "sleep_edf": {
+    "checks": {
+      "samples_per_epoch": [
+        1920
+      ],
+      "onset_spacing_s": [
+        30.0
+      ]
+    },
+    "stages": {
+      "W": {
+        "epochs": 37410,
+        "median_abs_scaled_amplitude": 0.773368626832962,
+        "peak_8_16_hz": 8.0,
+        "band_share": {
+          "delta": 0.8432304263114929,
+          "theta": 0.07948355376720428,
+          "alpha": 0.02487349882721901,
+          "sigma": 0.013475533574819565,
+          "beta": 0.0384676456451416
+        }
+      },
+      "N1": {
+        "epochs": 1240,
+        "median_abs_scaled_amplitude": 0.39458510279655457,
+        "peak_8_16_hz": 8.0,
+        "band_share": {
+          "delta": 0.7251667976379395,
+          "theta": 0.12595857679843903,
+          "alpha": 0.062307752668857574,
+          "sigma": 0.025676334276795387,
+          "beta": 0.06038065254688263
+        }
+      },
+      "N2": {
+        "epochs": 9200,
+        "median_abs_scaled_amplitude": 0.5333404541015625,
+        "peak_8_16_hz": 13.75,
+        "band_share": {
+          "delta": 0.7952086925506592,
+          "theta": 0.10805772989988327,
+          "alpha": 0.034967098385095596,
+          "sigma": 0.04542553424835205,
+          "beta": 0.016218319535255432
+        }
+      },
+      "N3": {
+        "epochs": 2981,
+        "median_abs_scaled_amplitude": 1.0636614561080933,
+        "peak_8_16_hz": 8.0,
+        "band_share": {
+          "delta": 0.9292006492614746,
+          "theta": 0.047786928713321686,
+          "alpha": 0.011639468371868134,
+          "sigma": 0.008458761498332024,
+          "beta": 0.0028907512314617634
+        }
+      },
+      "REM": {
+        "epochs": 3756,
+        "median_abs_scaled_amplitude": 0.375052347779274,
+        "peak_8_16_hz": 8.0,
+        "band_share": {
+          "delta": 0.7611632943153381,
+          "theta": 0.1483776718378067,
+          "alpha": 0.04209539294242859,
+          "sigma": 0.017040275037288666,
+          "beta": 0.031078578904271126
+        }
+      }
+    }
+  },
+  "flags": [
+    "N1: 8-16 Hz peak at 10.75 Hz on BOAS vs 8.0 Hz on Sleep-EDF",
+    "N2: 8-16 Hz peak at 10.75 Hz on BOAS vs 13.75 Hz on Sleep-EDF",
+    "N3: 8-16 Hz peak at 15.75 Hz on BOAS vs 8.0 Hz on Sleep-EDF"
+  ]
+}
