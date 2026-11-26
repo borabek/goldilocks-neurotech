@@ -54,7 +54,10 @@ def main():
     tmp.mkdir(exist_ok=True)
 
     with RemoteZip(URL) as z:
-        members = sorted(n for n in z.namelist() if n.endswith('.h5'))
+        # The zip was made on a Mac, so every record has a '._' AppleDouble twin (metadata, not
+        # HDF5) and there may be a __MACOSX/ folder. Skip both.
+        members = sorted(n for n in z.namelist() if n.endswith('.h5')
+                         and not Path(n).name.startswith('._') and '__MACOSX' not in n)
         print(f'{len(members)} records in the zip', flush=True)
         for i, member in enumerate(members, 1):
             if member in done:
