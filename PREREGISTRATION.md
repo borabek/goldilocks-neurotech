@@ -159,4 +159,10 @@ Those 20 were already looked at, so this stays exploratory however well it does.
 Any change to this plan after the tag gets logged here with its date and reason, and the affected
 results are labelled post hoc.
 
-- None yet.
+- 26 November 2026, before any DOD-H file was opened: Dreem's S3 bucket for DOD-H no longer
+  exists. DOD-H is now on Zenodo (record 15900394, DOI 10.5281/zenodo.15900394, v1 of July 2025)
+  as one 21.9 GB zip, too big for the laptop's free space. `scripts/fetch_dodh_compact.py` reads
+  the zip one record at a time, hashes each .h5, and keeps only the hypnogram and the FP1-F3 and
+  FP2-F4 signals named in section 3. This changes where the data comes from and what is stored,
+  not what is analysed. The scorer files for the consensus come from the
+  `dreem-learning-evaluation` repository, as in the DOD paper.

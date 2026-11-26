@@ -9,3 +9,5 @@ __pycache__/
 data/external_dodh/raw/
 data/external_hmc/raw/
 data/external_sleepedf_dev/raw/
+data/external_dodh/compact/*.npz
+data/external_dodh/compact/_tmp/

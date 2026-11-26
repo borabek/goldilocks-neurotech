@@ -1,16 +1,16 @@
 """Download the datasets the pre-registered tests need, and hash every file on arrival.
 
-Run this on a machine that can reach PhysioNet and AWS S3. It only downloads and hashes.
+Run this on a machine that can reach PhysioNet. It only downloads and hashes.
 It never reads a signal or a label, so running it doesn't break the pre-registration.
 
   python scripts/fetch_external_data.py hmc          # 25 HMC recordings, about 2.5 GB
-  python scripts/fetch_external_data.py dodh         # DOD-H from Dreem's public S3 bucket
+  python scripts/fetch_external_data.py dodh         # moved: see scripts/fetch_dodh_compact.py
   python scripts/fetch_external_data.py sleepedf-dev # Sleep-EDF SC subjects 20 and up, first night
   python scripts/fetch_external_data.py all
 
 Raw BOAS headband files come from the existing script:  node acquire.mjs
 
-Needs: pip install boto3 (for dodh only). Everything else is the standard library.
+Everything here is the standard library.
 Each dataset gets a manifest (file, bytes, sha256, url, downloaded_unix) next to its files.
 Already-downloaded files with a matching size are skipped, so it's safe to re-run.
 """
@@ -74,23 +74,9 @@ def hmc():
 
 
 def dodh():
-    import boto3
-    from botocore import UNSIGNED
-    from botocore.client import Config
-    client = boto3.client('s3', config=Config(signature_version=UNSIGNED))
-    folder = ROOT / 'data/external_dodh/raw'
-    folder.mkdir(parents=True, exist_ok=True)
-    rows = []
-    for obj in client.list_objects(Bucket='dreem-dod-h')['Contents']:
-        key = obj['Key']
-        dest = folder / key
-        dest.parent.mkdir(parents=True, exist_ok=True)
-        if not dest.exists() or dest.stat().st_size != obj['Size']:
-            print('downloading', key, flush=True)
-            client.download_file(Bucket='dreem-dod-h', Key=key, Filename=str(dest))
-        rows.append({'file': key, 'bytes': dest.stat().st_size, 'sha256': sha256(dest),
-                     'url': f's3://dreem-dod-h/{key}', 'downloaded_unix': time.time()})
-    write_manifest(folder, rows)
+    """DOD-H left Dreem's S3 bucket (it now returns NoSuchBucket) and moved to Zenodo as a
+    21.9 GB zip. Use scripts/fetch_dodh_compact.py, which streams it one record at a time."""
+    raise SystemExit('DOD-H moved to Zenodo: run  python scripts/fetch_dodh_compact.py  instead')
 
 
 def sleepedf_dev():
