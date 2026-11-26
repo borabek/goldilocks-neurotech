@@ -1,0 +1,16 @@
+{
+  "note": "SHA-256 of every frozen model and evaluation file named in PREREGISTRATION.md, taken before DOD-H or HMC were downloaded",
+  "files": {
+    "results/v2/frozen_model.joblib": "121837c16b4ff3a045421355048b538c53158119b2afd52dcbd32a641021cb0b",
+    "results/cnn/cnn_weights.json": "2624b77654749b1f648c31415629c61f93d5aaf3267b98f40a340d4907568642",
+    "results/cnn_balanced/cnn_weights.json": "913f981d60ee7935f05e3226e5bab1976ff736507c7d34d4ceeb700c5c49223e",
+    "results/cnn_sqrtbalanced/cnn_weights.json": "14cb19ef13e77cd30d8e70306ab0630a73366c0ed69ca8ffdcfc5e937b5941fb",
+    "results/cnn_augmented/cnn_weights.json": "00e6770859698cf325b2f6d1a1e4ecb20f47d64e5b98f030a42c17c771e6df2f",
+    "results/cnn_context/context_head_weights.json": "3aab45fcda15b3d3cc0b936d477ac920663ae3dda7ebc3759dc72a3e8d707b6e",
+    "results/cnn_context_sqrtbalanced/context_head_weights.json": "2178f305e05530b1ef86a739f72a695ff98fe03b6da03bca01b103625229233b",
+    "results/cnn_context_balanced/context_head_weights.json": "cedcf26288ad61c65260f2a18f263ed5aace2022c8b8d5130cbeb3d02b4fad27",
+    "analysis/ablation_shift.py": "47269dbaf4a625419387105fa6b8a956e498d9495a8c63dc0ca5c4e0ffd22347",
+    "yasa_evaluate.py": "b0a2ce51820340bbeb985d07495119483c7843795eaf69ab7ba352b79539bac4",
+    "data/external_hmc/selection.json": "acdd39ec534bc73cfa3fa5e10e353ffcb71bd31fac6ee6992b7a7d531c43b752"
+  }
+}

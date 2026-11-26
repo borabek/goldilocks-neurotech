@@ -1,0 +1,134 @@
+{
+  "dataset": "Haaglanden Medisch Centrum sleep staging database 1.1",
+  "doi": "10.13026/t79q-fr32",
+  "license": "CC BY 4.0",
+  "rule": "25 of the 151 recordings (SN001-SN154 without SN014, SN064, SN135), drawn with numpy.random.default_rng(20261126).choice(ids, 25, replace=False) from the public file listing only; no signal or label opened before prereg-v1",
+  "seed": 20261126,
+  "records": [
+    {
+      "subject": "SN004",
+      "psg": "SN004.edf",
+      "hypnogram": "SN004_sleepscoring.edf"
+    },
+    {
+      "subject": "SN010",
+      "psg": "SN010.edf",
+      "hypnogram": "SN010_sleepscoring.edf"
+    },
+    {
+      "subject": "SN025",
+      "psg": "SN025.edf",
+      "hypnogram": "SN025_sleepscoring.edf"
+    },
+    {
+      "subject": "SN029",
+      "psg": "SN029.edf",
+      "hypnogram": "SN029_sleepscoring.edf"
+    },
+    {
+      "subject": "SN032",
+      "psg": "SN032.edf",
+      "hypnogram": "SN032_sleepscoring.edf"
+    },
+    {
+      "subject": "SN044",
+      "psg": "SN044.edf",
+      "hypnogram": "SN044_sleepscoring.edf"
+    },
+    {
+      "subject": "SN053",
+      "psg": "SN053.edf",
+      "hypnogram": "SN053_sleepscoring.edf"
+    },
+    {
+      "subject": "SN054",
+      "psg": "SN054.edf",
+      "hypnogram": "SN054_sleepscoring.edf"
+    },
+    {
+      "subject": "SN061",
+      "psg": "SN061.edf",
+      "hypnogram": "SN061_sleepscoring.edf"
+    },
+    {
+      "subject": "SN062",
+      "psg": "SN062.edf",
+      "hypnogram": "SN062_sleepscoring.edf"
+    },
+    {
+      "subject": "SN063",
+      "psg": "SN063.edf",
+      "hypnogram": "SN063_sleepscoring.edf"
+    },
+    {
+      "subject": "SN068",
+      "psg": "SN068.edf",
+      "hypnogram": "SN068_sleepscoring.edf"
+    },
+    {
+      "subject": "SN069",
+      "psg": "SN069.edf",
+      "hypnogram": "SN069_sleepscoring.edf"
+    },
+    {
+      "subject": "SN070",
+      "psg": "SN070.edf",
+      "hypnogram": "SN070_sleepscoring.edf"
+    },
+    {
+      "subject": "SN082",
+      "psg": "SN082.edf",
+      "hypnogram": "SN082_sleepscoring.edf"
+    },
+    {
+      "subject": "SN085",
+      "psg": "SN085.edf",
+      "hypnogram": "SN085_sleepscoring.edf"
+    },
+    {
+      "subject": "SN097",
+      "psg": "SN097.edf",
+      "hypnogram": "SN097_sleepscoring.edf"
+    },
+    {
+      "subject": "SN104",
+      "psg": "SN104.edf",
+      "hypnogram": "SN104_sleepscoring.edf"
+    },
+    {
+      "subject": "SN108",
+      "psg": "SN108.edf",
+      "hypnogram": "SN108_sleepscoring.edf"
+    },
+    {
+      "subject": "SN116",
+      "psg": "SN116.edf",
+      "hypnogram": "SN116_sleepscoring.edf"
+    },
+    {
+      "subject": "SN117",
+      "psg": "SN117.edf",
+      "hypnogram": "SN117_sleepscoring.edf"
+    },
+    {
+      "subject": "SN125",
+      "psg": "SN125.edf",
+      "hypnogram": "SN125_sleepscoring.edf"
+    },
+    {
+      "subject": "SN142",
+      "psg": "SN142.edf",
+      "hypnogram": "SN142_sleepscoring.edf"
+    },
+    {
+      "subject": "SN145",
+      "psg": "SN145.edf",
+      "hypnogram": "SN145_sleepscoring.edf"
+    },
+    {
+      "subject": "SN148",
+      "psg": "SN148.edf",
+      "hypnogram": "SN148_sleepscoring.edf"
+    }
+  ]
+}
