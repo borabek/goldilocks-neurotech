@@ -1,0 +1,725 @@
+{
+  "status": "EXPLORATORY: Sleep-EDF people were inspected at the v2 evaluation",
+  "refitted_anything": false,
+  "v2_scale": {
+    "sleep_edf": {
+      "0.5": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.36907232973649706,
+          "kappa": 0.2127576817070564,
+          "macro_f1": 0.2380166313892788,
+          "tst_error_minutes": 697.075,
+          "signed_tst_error_minutes": 697.075,
+          "coverage": 1.0,
+          "wake_f1": 0.3360652446268134
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.5500617262203809,
+          "kappa": 0.27156686853970907,
+          "macro_f1": 0.28987746475684817,
+          "tst_error_minutes": 65.525,
+          "signed_tst_error_minutes": 65.525,
+          "coverage": 1.0,
+          "wake_f1": 0.3047306455010458
+        }
+      },
+      "0.75": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.6076003252013041,
+          "kappa": 0.42995272124641265,
+          "macro_f1": 0.3933448195290501,
+          "tst_error_minutes": 403.65,
+          "signed_tst_error_minutes": 403.65,
+          "coverage": 1.0,
+          "wake_f1": 0.6625481961956337
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.6373797805406995,
+          "kappa": 0.4295907607997919,
+          "macro_f1": 0.41922784007816605,
+          "tst_error_minutes": 50.5,
+          "signed_tst_error_minutes": 50.4,
+          "coverage": 1.0,
+          "wake_f1": 0.49445506314914783
+        }
+      },
+      "1.0": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.7371560058612674,
+          "kappa": 0.5792895188872503,
+          "macro_f1": 0.47821820447271346,
+          "tst_error_minutes": 235.875,
+          "signed_tst_error_minutes": 235.875,
+          "coverage": 1.0,
+          "wake_f1": 0.8019741643922226
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.6871628651632614,
+          "kappa": 0.5145340465936796,
+          "macro_f1": 0.4877022570471946,
+          "tst_error_minutes": 36.75,
+          "signed_tst_error_minutes": 35.65,
+          "coverage": 1.0,
+          "wake_f1": 0.6517536997781965
+        }
+      },
+      "1.5": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.8115066995718916,
+          "kappa": 0.6617490590842581,
+          "macro_f1": 0.5149680550158405,
+          "tst_error_minutes": 131.525,
+          "signed_tst_error_minutes": 93.525,
+          "coverage": 1.0,
+          "wake_f1": 0.8943733230701338
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.6956695078871834,
+          "kappa": 0.5369358590757967,
+          "macro_f1": 0.5056851099523552,
+          "tst_error_minutes": 33.775,
+          "signed_tst_error_minutes": -6.875,
+          "coverage": 1.0,
+          "wake_f1": 0.7357185092356154
+        }
+      },
+      "2.0": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.8479557771352038,
+          "kappa": 0.6735421445515868,
+          "macro_f1": 0.5003868542139438,
+          "tst_error_minutes": 110.375,
+          "signed_tst_error_minutes": -44.475,
+          "coverage": 1.0,
+          "wake_f1": 0.9334926566938719
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.6597805420772634,
+          "kappa": 0.4985230932053114,
+          "macro_f1": 0.459342447164206,
+          "tst_error_minutes": 83.975,
+          "signed_tst_error_minutes": -75.775,
+          "coverage": 1.0,
+          "wake_f1": 0.6731393962579546
+        }
+      }
+    },
+    "boas_test": {
+      "0.5": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.741546756617208,
+          "kappa": 0.5649908630009317,
+          "macro_f1": 0.4657053711928093,
+          "tst_error_minutes": 25.15,
+          "signed_tst_error_minutes": 20.35,
+          "coverage": 1.0,
+          "wake_f1": 0.6295496577572187
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.7426119408059834,
+          "kappa": 0.556867400213152,
+          "macro_f1": 0.4644515635744068,
+          "tst_error_minutes": 21.975,
+          "signed_tst_error_minutes": 17.175,
+          "coverage": 1.0,
+          "wake_f1": 0.6173564918023352
+        }
+      },
+      "0.75": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.799623730120028,
+          "kappa": 0.6546065154622098,
+          "macro_f1": 0.5455974337848193,
+          "tst_error_minutes": 28.25,
+          "signed_tst_error_minutes": -11.4,
+          "coverage": 1.0,
+          "wake_f1": 0.7383180932790548
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.8004549263439582,
+          "kappa": 0.6499021460972126,
+          "macro_f1": 0.5452559451374986,
+          "tst_error_minutes": 26.225,
+          "signed_tst_error_minutes": -13.425,
+          "coverage": 1.0,
+          "wake_f1": 0.7325444901796325
+        }
+      },
+      "1.0": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.8015156190699255,
+          "kappa": 0.6612737502932162,
+          "macro_f1": 0.5612071122498967,
+          "tst_error_minutes": 31.8,
+          "signed_tst_error_minutes": -25.25,
+          "coverage": 1.0,
+          "wake_f1": 0.7666440572353195
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.7993762417054056,
+          "kappa": 0.6517758165993037,
+          "macro_f1": 0.5587162123373337,
+          "tst_error_minutes": 31.225,
+          "signed_tst_error_minutes": -25.825,
+          "coverage": 1.0,
+          "wake_f1": 0.7531864519723992
+        }
+      },
+      "1.5": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.6822223375917544,
+          "kappa": 0.4712195642605611,
+          "macro_f1": 0.4345606070653196,
+          "tst_error_minutes": 61.725,
+          "signed_tst_error_minutes": -61.525,
+          "coverage": 1.0,
+          "wake_f1": 0.6726637323164814
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.6767349185123314,
+          "kappa": 0.4537091715450149,
+          "macro_f1": 0.43021285664336756,
+          "tst_error_minutes": 61.725,
+          "signed_tst_error_minutes": -61.525,
+          "coverage": 1.0,
+          "wake_f1": 0.6509249802067207
+        }
+      },
+      "2.0": {
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.5122656714338658,
+          "kappa": 0.2813606966101232,
+          "macro_f1": 0.2837660568429237,
+          "tst_error_minutes": 139.9,
+          "signed_tst_error_minutes": -139.9,
+          "coverage": 1.0,
+          "wake_f1": 0.48748453339184633
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.50462759346196,
+          "kappa": 0.265058525597064,
+          "macro_f1": 0.2779937555031567,
+          "tst_error_minutes": 139.9,
+          "signed_tst_error_minutes": -139.9,
+          "coverage": 1.0,
+          "wake_f1": 0.45862302669301086
+        }
+      }
+    }
+  },
+  "v2_gain_calibration": {
+    "sleep_edf": {
+      "per_recording_q50": {
+        "gain_median": 1.0214665652792,
+        "gain_range": [
+          0.6026387789495188,
+          1.6515086370112362
+        ],
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.7645639999584927,
+          "kappa": 0.6134998458757307,
+          "macro_f1": 0.48934313695023235,
+          "tst_error_minutes": 198.8,
+          "signed_tst_error_minutes": 184.0,
+          "coverage": 1.0,
+          "wake_f1": 0.8434928355474339
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.6887311447912622,
+          "kappa": 0.5194166177400569,
+          "macro_f1": 0.4921063369537907,
+          "tst_error_minutes": 37.575,
+          "signed_tst_error_minutes": 22.175,
+          "coverage": 1.0,
+          "wake_f1": 0.709210127358599
+        }
+      },
+      "dataset_q50": {
+        "gain_median": 1.021311318583079,
+        "gain_range": [
+          1.021311318583079,
+          1.021311318583079
+        ],
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.7434900434532604,
+          "kappa": 0.5868619864309054,
+          "macro_f1": 0.482309434060027,
+          "tst_error_minutes": 226.65,
+          "signed_tst_error_minutes": 226.65,
+          "coverage": 1.0,
+          "wake_f1": 0.8092660827046911
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.6903839915454161,
+          "kappa": 0.5211812018061839,
+          "macro_f1": 0.49255748527115806,
+          "tst_error_minutes": 35.225,
+          "signed_tst_error_minutes": 34.025,
+          "coverage": 1.0,
+          "wake_f1": 0.6674853198229005
+        }
+      },
+      "per_recording_q75": {
+        "gain_median": 1.198288302098033,
+        "gain_range": [
+          0.7153933193612064,
+          1.9677994422634086
+        ],
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.7917570265234042,
+          "kappa": 0.6432290576902276,
+          "macro_f1": 0.4979736976570698,
+          "tst_error_minutes": 159.875,
+          "signed_tst_error_minutes": 141.875,
+          "coverage": 1.0,
+          "wake_f1": 0.8746727894438259
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.6983629302904208,
+          "kappa": 0.535923321187014,
+          "macro_f1": 0.5019648664514618,
+          "tst_error_minutes": 31.575,
+          "signed_tst_error_minutes": 12.725,
+          "coverage": 1.0,
+          "wake_f1": 0.7642716630105431
+        }
+      },
+      "dataset_q75": {
+        "gain_median": 1.1982427501395538,
+        "gain_range": [
+          1.1982427501395538,
+          1.1982427501395538
+        ],
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.7807105184013902,
+          "kappa": 0.6363223449587141,
+          "macro_f1": 0.5053179324131947,
+          "tst_error_minutes": 174.425,
+          "signed_tst_error_minutes": 173.075,
+          "coverage": 1.0,
+          "wake_f1": 0.8507476677722533
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.7108305749124342,
+          "kappa": 0.5526434649688097,
+          "macro_f1": 0.5149088728904065,
+          "tst_error_minutes": 26.875,
+          "signed_tst_error_minutes": 22.825,
+          "coverage": 1.0,
+          "wake_f1": 0.7436388249491324
+        }
+      },
+      "per_recording_q90": {
+        "gain_median": 1.700496505005161,
+        "gain_range": [
+          1.032880000117712,
+          2.739703473787885
+        ],
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.8437168342825068,
+          "kappa": 0.6920930310904949,
+          "macro_f1": 0.5254268991786872,
+          "tst_error_minutes": 97.525,
+          "signed_tst_error_minutes": 18.775,
+          "coverage": 1.0,
+          "wake_f1": 0.9311677285153952
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.6868276016320843,
+          "kappa": 0.5313159792296379,
+          "macro_f1": 0.5019570739287829,
+          "tst_error_minutes": 49.025,
+          "signed_tst_error_minutes": -32.675,
+          "coverage": 1.0,
+          "wake_f1": 0.7319489253005749
+        }
+      },
+      "dataset_q90": {
+        "gain_median": 1.7004950807581392,
+        "gain_range": [
+          1.7004950807581392,
+          1.7004950807581392
+        ],
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.8352300026992273,
+          "kappa": 0.6811215351463319,
+          "macro_f1": 0.517523495060686,
+          "tst_error_minutes": 110.7,
+          "signed_tst_error_minutes": 35.35,
+          "coverage": 1.0,
+          "wake_f1": 0.9222263946422047
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.6933500584487386,
+          "kappa": 0.5382194493351589,
+          "macro_f1": 0.49734016401393816,
+          "tst_error_minutes": 47.525,
+          "signed_tst_error_minutes": -30.875,
+          "coverage": 1.0,
+          "wake_f1": 0.7291324363361854
+        }
+      }
+    },
+    "boas_test": {
+      "per_recording_q50": {
+        "gain_median": 1.0263003913232938,
+        "gain_range": [
+          0.6341655177495995,
+          1.2773979083808833
+        ],
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.8038492540487588,
+          "kappa": 0.6592228926869563,
+          "macro_f1": 0.551967826925444,
+          "tst_error_minutes": 30.275,
+          "signed_tst_error_minutes": -23.025,
+          "coverage": 1.0,
+          "wake_f1": 0.765853778022029
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.8020772374061199,
+          "kappa": 0.6498492321031759,
+          "macro_f1": 0.550149394596815,
+          "tst_error_minutes": 29.25,
+          "signed_tst_error_minutes": -24.05,
+          "coverage": 1.0,
+          "wake_f1": 0.7542895167096229
+        }
+      },
+      "dataset_q50": {
+        "gain_median": 1.0261227238821475,
+        "gain_range": [
+          1.0261227238821475,
+          1.0261227238821475
+        ],
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.7969949557966094,
+          "kappa": 0.6537369772123858,
+          "macro_f1": 0.5606644032051394,
+          "tst_error_minutes": 31.3,
+          "signed_tst_error_minutes": -25.6,
+          "coverage": 1.0,
+          "wake_f1": 0.7721371953521223
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.7944140690663162,
+          "kappa": 0.6434413964204607,
+          "macro_f1": 0.5578570998731819,
+          "tst_error_minutes": 30.875,
+          "signed_tst_error_minutes": -26.025,
+          "coverage": 1.0,
+          "wake_f1": 0.7573575858871697
+        }
+      },
+      "per_recording_q75": {
+        "gain_median": 0.9753153517329651,
+        "gain_range": [
+          0.41166785453798854,
+          1.279631641054034
+        ],
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.7932663306249099,
+          "kappa": 0.6475808124536316,
+          "macro_f1": 0.557241856556297,
+          "tst_error_minutes": 28.775,
+          "signed_tst_error_minutes": -17.225,
+          "coverage": 1.0,
+          "wake_f1": 0.7518895561408618
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.7932961603719164,
+          "kappa": 0.641288830263023,
+          "macro_f1": 0.5570242575807155,
+          "tst_error_minutes": 26.925,
+          "signed_tst_error_minutes": -19.075,
+          "coverage": 1.0,
+          "wake_f1": 0.746770951301842
+        }
+      },
+      "dataset_q75": {
+        "gain_median": 0.975311795539379,
+        "gain_range": [
+          0.975311795539379,
+          0.975311795539379
+        ],
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.8026063443755053,
+          "kappa": 0.6636158153835258,
+          "macro_f1": 0.5679905894670816,
+          "tst_error_minutes": 31.975,
+          "signed_tst_error_minutes": -24.675,
+          "coverage": 1.0,
+          "wake_f1": 0.7686845813319221
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.8009249311376241,
+          "kappa": 0.655078385445502,
+          "macro_f1": 0.5660837194438246,
+          "tst_error_minutes": 31.2,
+          "signed_tst_error_minutes": -25.45,
+          "coverage": 1.0,
+          "wake_f1": 0.7578126158948183
+        }
+      },
+      "per_recording_q90": {
+        "gain_median": 1.0502328872604798,
+        "gain_range": [
+          0.06775439699585026,
+          1.663977110421094
+        ],
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.7363896980970417,
+          "kappa": 0.5571549018260982,
+          "macro_f1": 0.5019109407035535,
+          "tst_error_minutes": 45.975,
+          "signed_tst_error_minutes": -15.325,
+          "coverage": 1.0,
+          "wake_f1": 0.6829135131109809
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.7350805066897708,
+          "kappa": 0.5449021301978183,
+          "macro_f1": 0.5013991693250894,
+          "tst_error_minutes": 43.8,
+          "signed_tst_error_minutes": -17.5,
+          "coverage": 1.0,
+          "wake_f1": 0.6763102007011214
+        }
+      },
+      "dataset_q90": {
+        "gain_median": 1.0500228360338708,
+        "gain_range": [
+          1.0500228360338708,
+          1.0500228360338708
+        ],
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.7933030141679985,
+          "kappa": 0.6480600329789958,
+          "macro_f1": 0.5557066271523462,
+          "tst_error_minutes": 31.725,
+          "signed_tst_error_minutes": -26.825,
+          "coverage": 1.0,
+          "wake_f1": 0.7750443209496138
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.7902089811249355,
+          "kappa": 0.6368998582156942,
+          "macro_f1": 0.5526413834106357,
+          "tst_error_minutes": 31.475,
+          "signed_tst_error_minutes": -27.075,
+          "coverage": 1.0,
+          "wake_f1": 0.7592978442026788
+        }
+      }
+    },
+    "boas_probability_validation": {
+      "per_recording_q50": {
+        "gain_median": 1.1158922238985123,
+        "gain_range": [
+          0.5287839611394117,
+          2.1369847449662673
+        ],
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.7311768196991407,
+          "kappa": 0.4924803487783526,
+          "macro_f1": 0.4561713861487712,
+          "tst_error_minutes": 34.6,
+          "signed_tst_error_minutes": -3.7,
+          "coverage": 1.0,
+          "wake_f1": 0.6786422948637402
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.7281625398093313,
+          "kappa": 0.4817114563971162,
+          "macro_f1": 0.45362308242414356,
+          "tst_error_minutes": 34.6,
+          "signed_tst_error_minutes": -3.7,
+          "coverage": 1.0,
+          "wake_f1": 0.6659007762406018
+        }
+      },
+      "dataset_q50": {
+        "gain_median": 1.1149275709018303,
+        "gain_range": [
+          1.1149275709018303,
+          1.1149275709018303
+        ],
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.7749900814093869,
+          "kappa": 0.5636937533449037,
+          "macro_f1": 0.5063895223293735,
+          "tst_error_minutes": 23.875,
+          "signed_tst_error_minutes": 2.575,
+          "coverage": 1.0,
+          "wake_f1": 0.7190706777199075
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.7725883642201808,
+          "kappa": 0.5559920358638668,
+          "macro_f1": 0.5037013730246761,
+          "tst_error_minutes": 23.875,
+          "signed_tst_error_minutes": 2.575,
+          "coverage": 1.0,
+          "wake_f1": 0.7056299311964203
+        }
+      },
+      "per_recording_q75": {
+        "gain_median": 1.1327002240461503,
+        "gain_range": [
+          0.41493043723542006,
+          2.1688847072514803
+        ],
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.7241457720521585,
+          "kappa": 0.4820266975011493,
+          "macro_f1": 0.4546058528952745,
+          "tst_error_minutes": 35.25,
+          "signed_tst_error_minutes": -6.55,
+          "coverage": 1.0,
+          "wake_f1": 0.6636082234378896
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.7211252365374687,
+          "kappa": 0.47169998266451596,
+          "macro_f1": 0.45207757282990607,
+          "tst_error_minutes": 35.25,
+          "signed_tst_error_minutes": -6.55,
+          "coverage": 1.0,
+          "wake_f1": 0.6509668231110473
+        }
+      },
+      "dataset_q75": {
+        "gain_median": 1.1327002051812045,
+        "gain_range": [
+          1.1327002051812045,
+          1.1327002051812045
+        ],
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.7721117471896418,
+          "kappa": 0.5605157570699381,
+          "macro_f1": 0.50737181022275,
+          "tst_error_minutes": 25.325,
+          "signed_tst_error_minutes": 0.725,
+          "coverage": 1.0,
+          "wake_f1": 0.7161587657188074
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.7695678077336019,
+          "kappa": 0.5527673447238456,
+          "macro_f1": 0.5046557113736688,
+          "tst_error_minutes": 25.325,
+          "signed_tst_error_minutes": 0.725,
+          "coverage": 1.0,
+          "wake_f1": 0.702578271473402
+        }
+      },
+      "per_recording_q90": {
+        "gain_median": 1.337433237424024,
+        "gain_range": [
+          0.3852698933254646,
+          2.381718224458311
+        ],
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.6693379187779758,
+          "kappa": 0.44308076359769355,
+          "macro_f1": 0.43205086916778496,
+          "tst_error_minutes": 69.15,
+          "signed_tst_error_minutes": -48.7,
+          "coverage": 1.0,
+          "wake_f1": 0.6068477319527524
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.6648304551708948,
+          "kappa": 0.4346651331953516,
+          "macro_f1": 0.4288483021964346,
+          "tst_error_minutes": 69.15,
+          "signed_tst_error_minutes": -48.7,
+          "coverage": 1.0,
+          "wake_f1": 0.590834897096001
+        }
+      },
+      "dataset_q90": {
+        "gain_median": 1.3371029421486509,
+        "gain_range": [
+          1.3371029421486509,
+          1.3371029421486509
+        ],
+        "primary_complete_recording": {
+          "people": 20,
+          "accuracy": 0.7305725471854175,
+          "kappa": 0.5109593131335005,
+          "macro_f1": 0.4644490039742246,
+          "tst_error_minutes": 49.2,
+          "signed_tst_error_minutes": -32.0,
+          "coverage": 1.0,
+          "wake_f1": 0.66795137676713
+        },
+        "secondary_reference_window": {
+          "people": 20,
+          "accuracy": 0.7266866796625743,
+          "kappa": 0.5032696782194377,
+          "macro_f1": 0.4618297993559596,
+          "tst_error_minutes": 49.2,
+          "signed_tst_error_minutes": -32.0,
+          "coverage": 1.0,
+          "wake_f1": 0.6548553536758045
+        }
+      }
+    }
+  },
+  "cnn": "not run: needs --boas-cache and --ext-cache (the 64 Hz epoch caches)"
+}

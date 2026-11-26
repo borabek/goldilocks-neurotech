@@ -1,0 +1,6 @@
+model,wake_recall_inside_night_window,wake_recall_outside_night_window
+v2,0.547,0.77
+cnn,0.197,0.122
+ensemble_of_7,0.164,0.088
+cnn_balanced,0.224,0.199
+yasa,0.753,0.879

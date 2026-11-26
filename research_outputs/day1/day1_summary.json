@@ -1,0 +1,71 @@
+{
+  "status": "EXPLORATORY: Sleep-EDF people were inspected at the v2 evaluation",
+  "boas_test_hours_median": 7.655,
+  "boas_test_wake_share_median": 0.14250000000000002,
+  "sleep_edf_hours_median": 22.97,
+  "sleep_edf_wake_share_median": 0.6964999999999999,
+  "share_of_epochs_predicted_N2_by_reference_stage": {
+    "v2": {
+      "W": 0.15,
+      "N1": 0.418,
+      "N2": 0.959,
+      "N3": 0.736,
+      "REM": 0.314
+    },
+    "cnn": {
+      "W": 0.674,
+      "N1": 0.626,
+      "N2": 0.953,
+      "N3": 0.846,
+      "REM": 0.773
+    },
+    "ensemble_of_7": {
+      "W": 0.605,
+      "N1": 0.689,
+      "N2": 0.97,
+      "N3": 0.642,
+      "REM": 0.833
+    },
+    "cnn_balanced": {
+      "W": 0.153,
+      "N1": 0.255,
+      "N2": 0.67,
+      "N3": 0.123,
+      "REM": 0.42
+    },
+    "yasa": {
+      "W": 0.061,
+      "N1": 0.178,
+      "N2": 0.699,
+      "N3": 0.056,
+      "REM": 0.113
+    }
+  },
+  "boas_test_wake_recall": {
+    "v2": 0.858,
+    "cnn": 0.868,
+    "ensemble_of_7": 0.84
+  },
+  "wake_recall_inside_vs_outside_night_window": {
+    "v2": {
+      "inside": 0.547,
+      "outside": 0.77
+    },
+    "cnn": {
+      "inside": 0.197,
+      "outside": 0.122
+    },
+    "ensemble_of_7": {
+      "inside": 0.164,
+      "outside": 0.088
+    },
+    "cnn_balanced": {
+      "inside": 0.224,
+      "outside": 0.199
+    },
+    "yasa": {
+      "inside": 0.753,
+      "outside": 0.879
+    }
+  }
+}
