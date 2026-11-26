@@ -4,3 +4,8 @@ __pycache__/
 *.py[cod]
 .DS_Store
 .env
+
+# raw external datasets, downloaded by scripts/fetch_external_data.py
+data/external_dodh/raw/
+data/external_hmc/raw/
+data/external_sleepedf_dev/raw/
