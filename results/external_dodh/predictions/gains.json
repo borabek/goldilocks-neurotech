@@ -1,0 +1,8 @@
+{
+  "gains": {
+    "q75": 4.056229196623353,
+    "q90": 4.634381816289044
+  },
+  "reference": "median over BOAS fitting nights of the per-night percentile of epoch log-SD",
+  "from_signals_only": true
+}

@@ -179,3 +179,14 @@ results are labelled post hoc.
     the paired 95% interval entirely below 0, and raises kappa with the interval above 0.
   Holm correction now runs over six tests (H1, H1b and H2 on each dataset). The rules, gains,
   models and every other threshold are unchanged.
+- 27 November 2026, before scoring (no model output compared with any label yet):
+  - The DOD-H reference is built exactly as the DOD evaluation repository builds it: each scorer
+    hypnogram is trimmed to the span all five scored, and for three records to the lights-off /
+    lights-on epochs that repository lists (under older record IDs; the three records are the ones
+    whose distributed signals are shorter by exactly those amounts). Ranking and consensus are then
+    computed on the trimmed hypnograms.
+  - Observed from the signals alone: DOD-H carries about half the 16-30 Hz power share of BOAS
+    (median 0.0075 against 0.0151 over whole recordings; HMC 0.0152, Sleep-EDF 0.0199). Day 1
+    found that the CNN leans on 16-30 Hz power to call wake, so a low wake recall on DOD-H would
+    partly reflect this and is not, on its own, evidence about device morphology. H2 is scored as
+    written; this note goes next to its result.

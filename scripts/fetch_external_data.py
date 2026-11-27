@@ -6,6 +6,7 @@ It never reads a signal or a label, so running it doesn't break the pre-registra
   python scripts/fetch_external_data.py hmc          # 25 HMC recordings, about 2.5 GB
   python scripts/fetch_external_data.py dodh         # moved: see scripts/fetch_dodh_compact.py
   python scripts/fetch_external_data.py sleepedf-dev # Sleep-EDF SC subjects 20 and up, first night
+  python scripts/fetch_external_data.py sleepedf-eval # the 20 original Sleep-EDF evaluation recordings
   python scripts/fetch_external_data.py all
 
 Raw BOAS headband files come from the existing script:  node acquire.mjs
@@ -109,7 +110,35 @@ def sleepedf_dev():
     write_manifest(folder, rows)
 
 
-JOBS = {'hmc': hmc, 'dodh': dodh, 'sleepedf-dev': sleepedf_dev}
+def sleepedf_eval():
+    """The 20 original Sleep-EDF evaluation recordings (subjects 00-19, first night), into
+    data/external_sleepedf/ where v2_evaluate.py and build_epoch_cache.py expect them. Each file
+    is checked against the SHA-256 values recorded in data/external_sleepedf/SHA256SUMS.txt."""
+    folder = ROOT / 'data/external_sleepedf'
+    sel = json.loads((folder / 'selection.json').read_text())['records']
+    expected = {}
+    for line in (folder / 'SHA256SUMS.txt').read_text().splitlines():
+        digest, _, name = line.partition(' ')
+        expected[Path(name.strip().lstrip('*')).name] = digest
+    rows = []
+    for rec in sel:
+        for name in [rec['psg'], rec['hypnogram']]:
+            dest = folder / name
+            url = f'{PHYSIONET}/sleep-edfx/1.0.0/sleep-cassette/{name}'
+            if not dest.exists() or sha256(dest) != expected.get(name):
+                print('downloading', name, flush=True)
+                fetch(url, dest)
+            got = sha256(dest)
+            if name in expected and got != expected[name]:
+                raise RuntimeError(f'checksum mismatch: {name}')
+            rows.append({'file': name, 'bytes': dest.stat().st_size, 'sha256': got, 'url': url,
+                         'matches_recorded_sha256': got == expected.get(name)})
+    (folder / 'download_manifest.json').write_text(json.dumps(rows, indent=2))
+    print(f'{folder}: {len(rows)} files, all matching recorded hashes: '
+          f'{all(r["matches_recorded_sha256"] for r in rows)}')
+
+
+JOBS = {'hmc': hmc, 'dodh': dodh, 'sleepedf-dev': sleepedf_dev, 'sleepedf-eval': sleepedf_eval}
 
 if __name__ == '__main__':
     which = sys.argv[1] if len(sys.argv) > 1 else 'all'
