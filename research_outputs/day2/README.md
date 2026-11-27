@@ -195,11 +195,144 @@ supported for `cnn_lowpass16` on any of them. Kappa, the secondary measure, bare
 `cnn_hfdrop` gains 0.013 [0.002, 0.024] on Sleep-EDF, 0.010 on DOD-H and 0.004 on HMC (the last
 two with intervals that include zero); `cnn_lowpass16` changes kappa by less than 0.01 everywhere.
 
-What this means. Making the network cope with missing beta power during training lifts wake
-recall by 5 to 7 points on every external dataset at a cost of 0.004 kappa on BOAS. That fits
+What this means, on this seed alone (the replicate seeds in the next section weaken it a lot).
+Making the network cope with missing beta power during training lifts wake recall by 5 to 7 points
+on every external dataset at a cost of 0.004 kappa on BOAS. That fits
 the idea that the plain CNN uses 16–30 Hz power as a wake cue, and that this cue is weak on the
 other recorders. Cutting beta out entirely does not help: the network then has no beta cue to
 lose, but it also has nothing that replaces it. The effect is real but small. On Sleep-EDF the
 CNN still recognises fewer than one wake epoch in five, so beta reliance is one part of the
 collapse, not the whole of it; the 23-hour recordings and the gain mismatch measured earlier
 are still the larger problems.
+
+## Prereg-v2.1: checks added after the prereg-v2 result
+
+Written into `PREREGISTRATION.md` (addendum prereg-v2.1) before any of these was run. The replicate
+seeds go against the prereg-v2 sentence that ruled out other seeds, and are logged there as a
+deviation. They don't change the prereg-v2 verdicts above. They change how those verdicts should
+be read.
+
+### Replicate seeds (`results/prereg_v2_1/seeds.json`)
+
+All three recipes (`cnn`, `cnn_lowpass16`, `cnn_hfdrop`) were retrained with seeds 20261109 and
+20261110, everything else unchanged, and scored with the prereg-v2 code.
+
+Mean wake recall:
+
+| Seed | Model | BOAS kappa | Sleep-EDF | DOD-H | HMC |
+| --- | --- | --- | --- | --- | --- |
+| 20261108 (original) | cnn | 0.728 | 0.130 | 0.503 | 0.638 |
+| | cnn_lowpass16 | 0.726 | 0.126 | 0.478 | 0.607 |
+| | cnn_hfdrop | 0.724 | 0.178 | 0.555 | 0.709 |
+| 20261109 | cnn | 0.722 | 0.304 | 0.578 | 0.762 |
+| | cnn_lowpass16 | 0.714 | 0.169 | 0.470 | 0.556 |
+| | cnn_hfdrop | 0.720 | 0.287 | 0.549 | 0.655 |
+| 20261110 | cnn | 0.724 | 0.315 | 0.479 | 0.611 |
+| | cnn_lowpass16 | 0.708 | 0.375 | 0.463 | 0.511 |
+| | cnn_hfdrop | 0.715 | 0.355 | 0.515 | 0.538 |
+
+Change in wake recall for `cnn_hfdrop` against the plain CNN of the same seed [paired 95% CI]:
+
+| Seed | Sleep-EDF | DOD-H | HMC |
+| --- | --- | --- | --- |
+| 20261108 | +0.049 [0.027, 0.073] | +0.052 [0.016, 0.090] | +0.071 [0.034, 0.107] |
+| 20261109 | −0.017 [−0.039, 0.006] | −0.029 [−0.061, 0.001] | −0.107 [−0.153, −0.067] |
+| 20261110 | +0.040 [0.019, 0.063] | +0.036 [0.003, 0.065] | −0.073 [−0.125, −0.027] |
+| Pooled over seeds | +0.024 [0.007, 0.043] | +0.019 [−0.008, 0.046] | −0.036 [−0.066, −0.009] |
+
+**By the rule fixed in advance, the `cnn_hfdrop` effect is not robust:** four of the nine
+matched-seed changes are at or below zero. Pooled over seeds, it helps a little on Sleep-EDF,
+does nothing measurable on DOD-H and hurts on HMC. `cnn_lowpass16` is worse: pooled changes of
+−0.026, −0.049 and −0.112.
+
+The larger lesson is about the plain CNN itself. Its wake recall on Sleep-EDF is 0.13, 0.30 and
+0.32 across three seeds with the same data and recipe, and on HMC 0.64, 0.76 and 0.61. BOAS kappa
+moves by only 0.006 across the same seeds. The seed chosen for the frozen model happens to sit at
+the bottom of that range on Sleep-EDF. So a single-seed difference of 5 to 7 points in external
+wake recall is inside what the seed alone does, and the prereg-v2 result was most likely that.
+Every external CNN number in this repository comes from one seed and carries this uncertainty.
+The conclusions that depend only on the direction and size of the collapse (wake recall far below
+the headband's 0.87 on every PSG dataset, on every seed) still hold. A claim that hinges on a
+difference of a few points between two single-seed CNNs does not.
+
+What survives of the 16-30 Hz story is what the band occlusion below shows on the frozen model: the
+CNN does use beta power as a wake cue. Training it to do without that cue does not reliably help it
+on other devices.
+
+### Multiple testing (`results/prereg_v2_1/holm.json`)
+
+The prereg-v2 verdicts used uncorrected intervals. With two-sided bootstrap p-values and a Holm
+correction across the six wake tests, all three `cnn_hfdrop` results stay significant (Holm-adjusted
+p = 0.0012 on Sleep-EDF, 0.0192 on DOD-H, 0.0020 on HMC). None of the `cnn_lowpass16` tests
+comes close (adjusted p = 1.0 for all three). This corrects for the number of tests, not for
+seed-to-seed variation. The replicate seeds above show that the latter is the bigger problem.
+
+### Band occlusion on the frozen CNN (`results/prereg_v2_1/band_occlusion.json`)
+
+One band at a time was removed from the input at test time, and the change in wake probability
+on reference-wake epochs was measured. The prediction was that the three 16-30 Hz bands together
+would matter more on BOAS than on any external dataset. **It failed.** The summed drop in wake
+probability is 0.048 on BOAS, against 0.059 on Sleep-EDF, 0.066 on DOD-H and 0.088 on HMC.
+
+| Band (Hz) | BOAS | Sleep-EDF | DOD-H | HMC |
+| --- | --- | --- | --- | --- |
+| 0.5-4 | +0.081 | +0.668 | +0.387 | +0.266 |
+| 4-8 | −0.001 | +0.057 | −0.013 | +0.036 |
+| 8-12 | −0.062 | −0.018 | −0.066 | −0.063 |
+| 12-16 | −0.016 | −0.019 | −0.031 | −0.040 |
+| 16-20 | −0.035 | −0.027 | −0.043 | −0.055 |
+| 20-25 | −0.013 | −0.019 | −0.017 | −0.026 |
+| 25-30 | −0.000 | −0.013 | −0.006 | −0.007 |
+
+*Change in mean wake probability on reference-wake epochs when the band is removed.*
+
+So the CNN treats 16-30 Hz power as wake evidence on every dataset, not only on the headband. What
+the external datasets lack is the power, not the reliance. DOD-H carries about half the 16-30 Hz
+share of BOAS (section 8 of the pre-registration). It does not fit the narrower story that beta
+is a headband-specific cue. And because the replicate seeds above show that training without beta
+doesn't reliably help, the reliance is real but removing it is not a fix.
+
+All occlusion numbers come from the frozen model (seed 20261108) only.
+
+The 0.5-4 Hz row looks dramatic: removing it lifts Sleep-EDF wake recall from 0.13 to 0.98. A
+check added after the first run (labelled post hoc in the file) shows the effect isn't specific to
+wake. Removing 0.5-4 Hz also raises the wake probability of reference-sleep epochs, by 0.50 to 0.61
+on every dataset, and kappa falls by 0.68 on BOAS, 0.27 on DOD-H and 0.34 on HMC. Low-frequency
+power is the network's general sleep signal; take it away and everything looks like wake. The
+16-30 Hz bands are the opposite case. Removing them lowers wake probability on wake epochs about
+two to four times as much as on sleep epochs (16-20 Hz on BOAS: −0.035 against −0.015; on HMC: −0.055 against −0.015), which is what a
+specific wake cue looks like.
+
+### A length rule for the detector (`results/prereg_v2_1/length_rule.json`)
+
+T was fixed from lengths outside the test sets: the longest BOAS fitting night is 9.2 h and the
+shortest Sleep-EDF development recording 19.5 h, so T = 14.4 h. Every test recording falls clearly
+on one side: BOAS 7.0-8.8 h, DOD-H 5.2-9.9 h, HMC 3.9-10.3 h, Sleep-EDF 21.4-23.5 h. So the rule
+applies the detector to all 20 Sleep-EDF recordings and to none of the others. Each dataset gets
+the better of the two columns in the earlier tables: v2's Sleep-EDF error falls from 236 to 158 min,
+and YASA's from 110 to 41 min. The night-only datasets stay exactly as they were without the
+detector (for example HMC v2 48.8 min, where always applying the detector gives 75.2). The rule is
+crude, and its result here was predictable once T was fixed. It is worth stating because it makes
+the detector safe to ship in front of any recording, but it is not evidence about anything new.
+
+### Error analysis (`results/prereg_v2_1/error_analysis.json`)
+
+**Why H1 failed on HMC.** H1 compares v2 with and without q75 gain calibration. On DOD-H, where
+the estimated gain is 4.06, calibration helps where it should: wake F1 0.17 → 0.40, N3 0.09 → 0.52,
+N2 0.66 → 0.71. On HMC the gain is only 1.38, and calibration pushes the signal past the BOAS
+level. Predicted wake rises from 22% to 42% of epochs against a reference of 13%. REM takes most of
+the damage: the share of reference REM called wake goes from 11% to 43%, and REM F1 falls from 0.43
+to 0.11. REM is low-amplitude, mixed-frequency EEG, the stage closest to wake, so it is the first
+to cross the line when amplitudes are scaled up. Gain calibration helps a device that is far off,
+and harms one that was nearly right.
+
+**Where the plain CNN goes wrong.** On Sleep-EDF 67% of reference wake is called N2. On DOD-H
+the figure is 37% and on HMC 14%. N3 is under-called everywhere outside BOAS: the CNN finds 7-22% of
+reference N3 on the external sets, and its predicted N3 share is 1-3% against a reference share of
+5-21%. That fits A5, where BOAS has 3.6% N3 against 14-21% elsewhere.
+
+**Calibration.** Expected calibration error of the plain CNN is 0.053 on BOAS, 0.134 on DOD-H,
+0.187 on HMC and 0.419 on Sleep-EDF. On Sleep-EDF its mean top probability is 0.69 while it is right
+on 27% of epochs. `cnn_hfdrop` barely changes this (0.046, 0.134, 0.190, 0.396). So its
+probabilities can't be trusted to flag the epochs it gets wrong on a new device, which agrees with
+the claim-gating result.

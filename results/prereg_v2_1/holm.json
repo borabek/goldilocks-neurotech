@@ -1,0 +1,61 @@
+{
+  "addendum": "PREREGISTRATION.md, prereg-v2.1 item 2",
+  "resamples": 10000,
+  "seed": 20261126,
+  "tests": [
+    {
+      "model": "cnn_lowpass16",
+      "dataset": "sleep_edf",
+      "mean_change": -0.0040399520622239745,
+      "p_two_sided": 0.733,
+      "uncorrected_verdict": "not supported",
+      "p_holm": 1.0,
+      "holm_significant_0.05": false
+    },
+    {
+      "model": "cnn_lowpass16",
+      "dataset": "dodh",
+      "mean_change": -0.02517944982736803,
+      "p_two_sided": 0.3442,
+      "uncorrected_verdict": "not supported",
+      "p_holm": 1.0,
+      "holm_significant_0.05": false
+    },
+    {
+      "model": "cnn_lowpass16",
+      "dataset": "hmc",
+      "mean_change": -0.03114055118932142,
+      "p_two_sided": 0.3376,
+      "uncorrected_verdict": "not supported",
+      "p_holm": 1.0,
+      "holm_significant_0.05": false
+    },
+    {
+      "model": "cnn_hfdrop",
+      "dataset": "sleep_edf",
+      "mean_change": 0.04857017251397662,
+      "p_two_sided": 0.0002,
+      "uncorrected_verdict": "supported",
+      "p_holm": 0.0012000000000000001,
+      "holm_significant_0.05": true
+    },
+    {
+      "model": "cnn_hfdrop",
+      "dataset": "dodh",
+      "mean_change": 0.05170706929800071,
+      "p_two_sided": 0.0048,
+      "uncorrected_verdict": "supported",
+      "p_holm": 0.0192,
+      "holm_significant_0.05": true
+    },
+    {
+      "model": "cnn_hfdrop",
+      "dataset": "hmc",
+      "mean_change": 0.07093826925179747,
+      "p_two_sided": 0.0004,
+      "uncorrected_verdict": "supported",
+      "p_holm": 0.002,
+      "holm_significant_0.05": true
+    }
+  ]
+}

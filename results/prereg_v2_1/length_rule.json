@@ -1,0 +1,256 @@
+{
+  "addendum": "PREREGISTRATION.md, prereg-v2.1 item 4",
+  "rule": {
+    "longest_boas_fitting_night_h": 9.233333333333333,
+    "shortest_sleepedf_dev_recording_h": 19.516666666666666,
+    "T_hours": 14.375,
+    "W_epochs": 61,
+    "G_epochs": 60
+  },
+  "datasets": {
+    "boas": {
+      "recordings": 20,
+      "detector_applied_to": 0,
+      "length_h_range": [
+        6.95,
+        8.791666666666666
+      ],
+      "models": {
+        "v2": {
+          "no_detector": {
+            "kappa": 0.6612737502932162,
+            "macro_f1": 0.5612071122498967,
+            "tst_error_minutes": 31.8
+          },
+          "detector_always": {
+            "kappa": 0.6181648480208338,
+            "macro_f1": 0.5370803154305442,
+            "tst_error_minutes": 48.35
+          },
+          "length_rule": {
+            "kappa": 0.6612737502932162,
+            "macro_f1": 0.5612071122498967,
+            "tst_error_minutes": 31.8
+          }
+        },
+        "cnn": {
+          "no_detector": {
+            "kappa": 0.7281509100617163,
+            "macro_f1": 0.5947537801507974,
+            "tst_error_minutes": 16.525
+          },
+          "detector_always": {
+            "kappa": 0.6845777366494883,
+            "macro_f1": 0.5720959850108283,
+            "tst_error_minutes": 38.75
+          },
+          "length_rule": {
+            "kappa": 0.7281509100617163,
+            "macro_f1": 0.5947537801507974,
+            "tst_error_minutes": 16.525
+          }
+        },
+        "yasa": {
+          "no_detector": {
+            "kappa": 0.5315947610386906,
+            "macro_f1": 0.5176499154758252,
+            "tst_error_minutes": 57.6
+          },
+          "detector_always": {
+            "kappa": 0.4840011553452377,
+            "macro_f1": 0.4875721944595039,
+            "tst_error_minutes": 77.675
+          },
+          "length_rule": {
+            "kappa": 0.5315947610386906,
+            "macro_f1": 0.5176499154758252,
+            "tst_error_minutes": 57.6
+          }
+        }
+      }
+    },
+    "sleep_edf": {
+      "recordings": 20,
+      "detector_applied_to": 20,
+      "length_h_range": [
+        21.416666666666668,
+        23.5
+      ],
+      "models": {
+        "v2": {
+          "no_detector": {
+            "kappa": 0.5792895188872503,
+            "macro_f1": 0.47821820447271346,
+            "tst_error_minutes": 235.875
+          },
+          "detector_always": {
+            "kappa": 0.6248652304613981,
+            "macro_f1": 0.49372283025570524,
+            "tst_error_minutes": 158.1
+          },
+          "length_rule": {
+            "kappa": 0.6248652304613981,
+            "macro_f1": 0.49372283025570524,
+            "tst_error_minutes": 158.1
+          }
+        },
+        "cnn": {
+          "no_detector": {
+            "kappa": 0.08625671563614042,
+            "macro_f1": 0.18777486921217695,
+            "tst_error_minutes": 803.2
+          },
+          "detector_always": {
+            "kappa": 0.1029322641000389,
+            "macro_f1": 0.19742864469694715,
+            "tst_error_minutes": 768.825
+          },
+          "length_rule": {
+            "kappa": 0.1029322641000389,
+            "macro_f1": 0.19742864469694715,
+            "tst_error_minutes": 768.825
+          }
+        },
+        "yasa": {
+          "no_detector": {
+            "kappa": 0.6750477312984856,
+            "macro_f1": 0.6242104050562207,
+            "tst_error_minutes": 110.35
+          },
+          "detector_always": {
+            "kappa": 0.7851752044719383,
+            "macro_f1": 0.6808299768877186,
+            "tst_error_minutes": 41.125
+          },
+          "length_rule": {
+            "kappa": 0.7851752044719383,
+            "macro_f1": 0.6808299768877186,
+            "tst_error_minutes": 41.125
+          }
+        }
+      }
+    },
+    "dodh": {
+      "recordings": 25,
+      "detector_applied_to": 0,
+      "length_h_range": [
+        5.166666666666667,
+        9.933333333333334
+      ],
+      "models": {
+        "v2": {
+          "no_detector": {
+            "kappa": 0.11114896126670881,
+            "macro_f1": 0.2145792992743801,
+            "tst_error_minutes": 57.48
+          },
+          "detector_always": {
+            "kappa": 0.12336193107398984,
+            "macro_f1": 0.21764992785063753,
+            "tst_error_minutes": 59.14
+          },
+          "length_rule": {
+            "kappa": 0.11114896126670881,
+            "macro_f1": 0.2145792992743801,
+            "tst_error_minutes": 57.48
+          }
+        },
+        "cnn": {
+          "no_detector": {
+            "kappa": 0.29676640868923126,
+            "macro_f1": 0.3634972181408752,
+            "tst_error_minutes": 26.82
+          },
+          "detector_always": {
+            "kappa": 0.3023702692761336,
+            "macro_f1": 0.36125600753022397,
+            "tst_error_minutes": 37.78
+          },
+          "length_rule": {
+            "kappa": 0.29676640868923126,
+            "macro_f1": 0.3634972181408752,
+            "tst_error_minutes": 26.82
+          }
+        },
+        "yasa": {
+          "no_detector": {
+            "kappa": 0.6550339676511832,
+            "macro_f1": 0.6537751957402427,
+            "tst_error_minutes": 23.42
+          },
+          "detector_always": {
+            "kappa": 0.637800110615674,
+            "macro_f1": 0.634478206868402,
+            "tst_error_minutes": 36.48
+          },
+          "length_rule": {
+            "kappa": 0.6550339676511832,
+            "macro_f1": 0.6537751957402427,
+            "tst_error_minutes": 23.42
+          }
+        }
+      }
+    },
+    "hmc": {
+      "recordings": 25,
+      "detector_applied_to": 0,
+      "length_h_range": [
+        3.9166666666666665,
+        10.333333333333334
+      ],
+      "models": {
+        "v2": {
+          "no_detector": {
+            "kappa": 0.3306131468016862,
+            "macro_f1": 0.3871003074372061,
+            "tst_error_minutes": 48.8
+          },
+          "detector_always": {
+            "kappa": 0.30831415543442053,
+            "macro_f1": 0.36919640325445924,
+            "tst_error_minutes": 75.2
+          },
+          "length_rule": {
+            "kappa": 0.3306131468016862,
+            "macro_f1": 0.3871003074372061,
+            "tst_error_minutes": 48.8
+          }
+        },
+        "cnn": {
+          "no_detector": {
+            "kappa": 0.37162083762699794,
+            "macro_f1": 0.4208616461581809,
+            "tst_error_minutes": 21.68
+          },
+          "detector_always": {
+            "kappa": 0.3645341113177026,
+            "macro_f1": 0.41454595292518276,
+            "tst_error_minutes": 41.26
+          },
+          "length_rule": {
+            "kappa": 0.37162083762699794,
+            "macro_f1": 0.4208616461581809,
+            "tst_error_minutes": 21.68
+          }
+        },
+        "yasa": {
+          "no_detector": {
+            "kappa": 0.6141544852834934,
+            "macro_f1": 0.6287043531168667,
+            "tst_error_minutes": 37.12
+          },
+          "detector_always": {
+            "kappa": 0.5830638225767462,
+            "macro_f1": 0.6054767764589486,
+            "tst_error_minutes": 55.26
+          },
+          "length_rule": {
+            "kappa": 0.6141544852834934,
+            "macro_f1": 0.6287043531168667,
+            "tst_error_minutes": 37.12
+          }
+        }
+      }
+    }
+  }
+}
