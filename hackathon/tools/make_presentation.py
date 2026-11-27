@@ -407,8 +407,7 @@ def main():
           <span class="muted">Anyone who contributed and is not named here should be added before this
           slide is shown.</span></li>
       </ul></div>
-      <div class="sub" style="margin-top:2mm">Built with AI assistance (Claude; earlier planning with
-      ChatGPT). Generated text is not evidence — every number here was recomputed from the saved result
+      <div class="sub" style="margin-top:2mm">Every number here was recomputed from the saved result
       files by <code>make_presentation.py</code>.</div>
       {foot(10, 10)}</section>""")
 

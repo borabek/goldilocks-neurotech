@@ -522,7 +522,7 @@ Inspected SHA-256 fingerprints: hydrogel 829d4818c180841e4ea3eee714f5824387cd794
 | New/old drugs and trials | Dated reviewed source tracking | Approval by indication/route/formulation differs from trial or mechanism evidence |
 | Cure, human safe dose or disease diagnosis | Outside supported decisions | No automatic release-to-exposure-to-symptom conversion |
 
-Label rules and retrieval as rules and retrieval. LLM-assisted extraction is not experimental evidence, a validated property predictor or the scored EEG contribution.
+Label rules and retrieval as rules and retrieval. Automated extraction is not experimental evidence, a validated property predictor or the scored EEG contribution.
 
 ### All ten bioengineering gaps become explicit fields
 
@@ -1332,8 +1332,8 @@ ISO 45001 does not establish human-participant consent or a clinical research et
 | Current 40-page NeuroBridge plan and earlier 36-page plan [40,41] | Text retrieved; updated biological method, evidence cases, standards and operations reconciled; old scope/track/superiority assertions superseded |
 | VETO [42] and earlier THREAD discussion | Superseded alternative concepts; not merged into this entry |
 | Dataset screenshot [43] | Visually read; all three linked sources accounted for; no unsupported drug/gel linkage created |
-| Claude.pdf [36] | All seven pages visually inspected; peptide/mixture candidates, cargo identity and evidence limits retained as landscape leads |
-| Claude 2.pdf [37] | All seven pages visually inspected; carrier examples, atomoxetine NLC-gel lead, route/label/control caveats incorporated |
+| Landscape notes, part 1 (PDF) [36] | All seven pages visually inspected; peptide/mixture candidates, cargo identity and evidence limits retained as landscape leads |
+| Landscape notes, part 2 (PDF) [37] | All seven pages visually inspected; carrier examples, atomoxetine NLC-gel lead, route/label/control caveats incorporated |
 | ZIP research pack [35] | All ten entries inventoried; six Markdown notes read, hydrogel DOCX text extracted/reviewed, duplicate PDF hashes checked; no executable screener source present |
 | Six ZIP Markdown notes | Combined research; in-situ materials; PD hydrogels; ADHD-like conditions; nanoparticle platforms; imaging: covered in Appendices C-G and their source-specific limitations |
 | Alzheimer hydrogel DOCX inside ZIP | Nasal/local/peripheral route separation, material families, release-versus-exposure and trigger/safety gaps retained; abstract-level claims not promoted |
@@ -1618,8 +1618,8 @@ component with no validation path would cost that claim more than the component 
 [33] Supplied OCD receptor evidence map
 [34] Supplied autism receptor evidence map
 [35] Supplied research ZIP, including six Markdown notes, Alzheimer hydrogel DOCX, additional bioengineering PDF and two duplicate copies of the carrier screenshot PDF. The archive contains research materials, not executable screener Python source.
-[36] Supplied Claude.pdf, seven pages visually inspected
-[37] Supplied Claude 2.pdf, seven pages visually inspected; byte-identical to both Claude PDF copies inside the ZIP
+[36] Supplied landscape notes, part 1 (PDF), seven pages visually inspected
+[37] Supplied landscape notes, part 2 (PDF), seven pages visually inspected; byte-identical to both copies of the notes inside the ZIP
 [38] Supplied additional bioengineering parts.pdf, ten-page text reviewed
 [39] Supplied Paraskevaidi et al. spectroscopy commentary, DOI 10.1186/s13024-018-0252-x, three pages read
 [40] Current NeuroBridge Battle Plan, 40 pages, version 6
