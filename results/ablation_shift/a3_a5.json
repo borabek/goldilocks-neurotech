@@ -1,0 +1,224 @@
+{
+  "status": "EXPLORATORY: Sleep-EDF people were inspected at the v2 evaluation; descriptive only",
+  "A3_recording_length": {
+    "v2": {
+      "whole_recording": {
+        "people": 20,
+        "accuracy": 0.7371560058612674,
+        "kappa": 0.5792895188872503,
+        "macro_f1": 0.47821820447271346,
+        "tst_error_minutes": 235.875,
+        "signed_tst_error_minutes": 235.875,
+        "coverage": 1.0,
+        "wake_f1": 0.8019741643922226
+      },
+      "label_free_v2_night_window": {
+        "people": 20,
+        "accuracy": 0.6869481112612709,
+        "kappa": 0.5326520788832869,
+        "macro_f1": 0.47131926590218515,
+        "tst_error_minutes": 235.875,
+        "signed_tst_error_minutes": 235.875,
+        "coverage": 1.0,
+        "wake_f1": 0.7674794715395812
+      },
+      "oracle_reference_window": {
+        "people": 20,
+        "accuracy": 0.6871628651632614,
+        "kappa": 0.5145340465936796,
+        "macro_f1": 0.4877022570471946,
+        "tst_error_minutes": 36.75,
+        "signed_tst_error_minutes": 35.65,
+        "coverage": 1.0,
+        "wake_f1": 0.6517536997781965
+      }
+    },
+    "cnn": {
+      "whole_recording": {
+        "people": 20,
+        "accuracy": 0.2693911856439642,
+        "kappa": 0.08625671563614042,
+        "macro_f1": 0.18777486921217695,
+        "tst_error_minutes": 803.2,
+        "signed_tst_error_minutes": 803.2,
+        "coverage": 1.0,
+        "wake_f1": 0.21078800611310733
+      },
+      "label_free_v2_night_window": {
+        "people": 20,
+        "accuracy": 0.3351571419325001,
+        "kappa": 0.1204441717554006,
+        "macro_f1": 0.21627780436893929,
+        "tst_error_minutes": 551.175,
+        "signed_tst_error_minutes": 551.175,
+        "coverage": 1.0,
+        "wake_f1": 0.24123076150128187
+      },
+      "oracle_reference_window": {
+        "people": 20,
+        "accuracy": 0.5137232696559424,
+        "kappa": 0.1890654611707922,
+        "macro_f1": 0.2811182609355911,
+        "tst_error_minutes": 55.725,
+        "signed_tst_error_minutes": 55.725,
+        "coverage": 1.0,
+        "wake_f1": 0.2649321270083715
+      }
+    },
+    "ensemble_of_7": {
+      "whole_recording": {
+        "people": 20,
+        "accuracy": 0.25847836947989883,
+        "kappa": 0.09803269795531099,
+        "macro_f1": 0.21742162381381092,
+        "tst_error_minutes": 842.625,
+        "signed_tst_error_minutes": 842.625,
+        "coverage": 1.0,
+        "wake_f1": 0.15847062589071786
+      },
+      "label_free_v2_night_window": {
+        "people": 20,
+        "accuracy": 0.33245398128176096,
+        "kappa": 0.13624003165024326,
+        "macro_f1": 0.24473659177072574,
+        "tst_error_minutes": 580.825,
+        "signed_tst_error_minutes": 580.825,
+        "coverage": 1.0,
+        "wake_f1": 0.18733002332181994
+      },
+      "oracle_reference_window": {
+        "people": 20,
+        "accuracy": 0.5439799876932783,
+        "kappa": 0.23998802333821495,
+        "macro_f1": 0.3227142310320811,
+        "tst_error_minutes": 65.475,
+        "signed_tst_error_minutes": 65.475,
+        "coverage": 1.0,
+        "wake_f1": 0.2301599621937142
+      }
+    },
+    "yasa": {
+      "whole_recording": {
+        "people": 20,
+        "accuracy": 0.8215771236422776,
+        "kappa": 0.6750477312984856,
+        "macro_f1": 0.6242104050562207,
+        "tst_error_minutes": 110.35,
+        "signed_tst_error_minutes": 101.6,
+        "coverage": 1.0,
+        "wake_f1": 0.9094912978727896
+      },
+      "label_free_v2_night_window": {
+        "people": 20,
+        "accuracy": 0.78610236538268,
+        "kappa": 0.6543091371770176,
+        "macro_f1": 0.6226993235214036,
+        "tst_error_minutes": 100.5,
+        "signed_tst_error_minutes": 85.1,
+        "coverage": 1.0,
+        "wake_f1": 0.8684113502848818
+      },
+      "oracle_reference_window": {
+        "people": 20,
+        "accuracy": 0.7288059062775567,
+        "kappa": 0.6283743437146236,
+        "macro_f1": 0.6345973849489244,
+        "tst_error_minutes": 23.125,
+        "signed_tst_error_minutes": -3.225,
+        "coverage": 1.0,
+        "wake_f1": 0.7337937995965662
+      }
+    }
+  },
+  "A5_labelling_scheme": {
+    "stage_prevalence": {
+      "boas_test (AASM)": {
+        "W": 0.17,
+        "N1": 0.04,
+        "N2": 0.593,
+        "N3": 0.036,
+        "REM": 0.161
+      },
+      "sleep_edf (R&K, 3+4 -> N3)": {
+        "W": 0.685,
+        "N1": 0.023,
+        "N2": 0.169,
+        "N3": 0.055,
+        "REM": 0.069
+      },
+      "dodh (AASM)": {
+        "W": 0.125,
+        "N1": 0.059,
+        "N2": 0.486,
+        "N3": 0.14,
+        "REM": 0.19
+      },
+      "hmc (AASM)": {
+        "W": 0.128,
+        "N1": 0.123,
+        "N2": 0.372,
+        "N3": 0.205,
+        "REM": 0.171
+      }
+    },
+    "sleep_edf_n3": {
+      "v2": {
+        "n3_f1_person_mean": 0.2883314363562096,
+        "reference_n3_predicted_as": {
+          "abstain": 0.0,
+          "W": 0.0,
+          "N1": 0.0,
+          "N2": 0.736,
+          "N3": 0.263,
+          "REM": 0.001
+        }
+      },
+      "cnn": {
+        "n3_f1_person_mean": 0.19318135927317245,
+        "reference_n3_predicted_as": {
+          "abstain": 0.0,
+          "W": 0.003,
+          "N1": 0.0,
+          "N2": 0.846,
+          "N3": 0.148,
+          "REM": 0.003
+        }
+      },
+      "ensemble_of_7": {
+        "n3_f1_person_mean": 0.328739325330175,
+        "reference_n3_predicted_as": {
+          "abstain": 0.0,
+          "W": 0.0,
+          "N1": 0.0,
+          "N2": 0.642,
+          "N3": 0.357,
+          "REM": 0.001
+        }
+      },
+      "yasa": {
+        "n3_f1_person_mean": 0.6626061472372738,
+        "reference_n3_predicted_as": {
+          "abstain": 0.0,
+          "W": 0.007,
+          "N1": 0.003,
+          "N2": 0.056,
+          "N3": 0.934,
+          "REM": 0.001
+        }
+      }
+    },
+    "boas_test_n3": {
+      "v2": {
+        "n3_f1_person_mean": 0.25205496433956737,
+        "reference_n3_predicted_as": {
+          "abstain": 0.0,
+          "W": 0.003,
+          "N1": 0.0,
+          "N2": 0.406,
+          "N3": 0.591,
+          "REM": 0.0
+        }
+      }
+    }
+  }
+}

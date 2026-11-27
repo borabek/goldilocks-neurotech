@@ -1,0 +1,109 @@
+{
+  "preregistration": "PREREGISTRATION.md, tag prereg-v1, amendment v1.1",
+  "resamples": 10000,
+  "seed": 20261126,
+  "verdicts": {
+    "dodh": {
+      "people": 25,
+      "H1_macro_f1": {
+        "mean_change": 0.16091258915421186,
+        "ci95": [
+          0.11928853886422565,
+          0.201868321699822
+        ],
+        "verdict": "supported",
+        "bootstrap_p": 0.0,
+        "holm_adjusted_p": 0.0
+      },
+      "H1b_tst_and_kappa": {
+        "abs_tst_error_change_min": -11.28,
+        "tst_ci95": [
+          -19.060499999999998,
+          -2.28
+        ],
+        "kappa_change": 0.20668355000081948,
+        "kappa_ci95": [
+          0.14546027229078023,
+          0.2727838586845217
+        ],
+        "verdict": "supported",
+        "bootstrap_p": 0.0099,
+        "holm_adjusted_p": 0.0495
+      },
+      "H2_cnn_wake": {
+        "cnn_wake_recall": 0.5034222355645851,
+        "cnn_ci95": [
+          0.4199892215715871,
+          0.586452795623441
+        ],
+        "v2_wake_recall": 0.14238976103017975,
+        "v2_ci95": [
+          0.06919136647547286,
+          0.23001008240677467
+        ],
+        "verdict": "mixed",
+        "bootstrap_p": 1.0,
+        "holm_adjusted_p": 1.0
+      },
+      "secondary_family_gap_macro_f1": {
+        "mean": -0.14891791886649516,
+        "ci95": [
+          -0.19462960091393672,
+          -0.11033412408887838
+        ],
+        "verdict": "mixed"
+      }
+    },
+    "hmc": {
+      "people": 25,
+      "H1_macro_f1": {
+        "mean_change": -0.08780927170846088,
+        "ci95": [
+          -0.12672801631661634,
+          -0.048692123665112844
+        ],
+        "verdict": "contradicted",
+        "bootstrap_p": 1.0,
+        "holm_adjusted_p": 1.0
+      },
+      "H1b_tst_and_kappa": {
+        "abs_tst_error_change_min": 81.68,
+        "tst_ci95": [
+          49.819,
+          117.48
+        ],
+        "kappa_change": -0.08781358441696657,
+        "kappa_ci95": [
+          -0.1347946475623833,
+          -0.043675902640237164
+        ],
+        "verdict": "contradicted",
+        "bootstrap_p": 1.0,
+        "holm_adjusted_p": 1.0
+      },
+      "H2_cnn_wake": {
+        "cnn_wake_recall": 0.637705535710701,
+        "cnn_ci95": [
+          0.5607063500500318,
+          0.7103850208074138
+        ],
+        "v2_wake_recall": 0.7598296883922073,
+        "v2_ci95": [
+          0.6774350828683146,
+          0.8374267813881543
+        ],
+        "verdict": "mixed",
+        "bootstrap_p": 0.9999,
+        "holm_adjusted_p": 1.0
+      },
+      "secondary_family_gap_macro_f1": {
+        "mean": -0.03376133872097485,
+        "ci95": [
+          -0.07531171496373316,
+          0.005287125344146689
+        ],
+        "verdict": "closes"
+      }
+    }
+  }
+}

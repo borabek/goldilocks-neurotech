@@ -1,0 +1,6160 @@
+{
+  "status": "CONFIRMATORY for the pre-registered tests; every other number is descriptive",
+  "preregistration": "PREREGISTRATION.md, tag prereg-v1, amendment v1.1",
+  "gains": {
+    "gains": {
+      "q75": 1.376619506973495,
+      "q90": 1.6572199949631772
+    },
+    "reference": "median over BOAS fitting nights of the per-night percentile of epoch log-SD",
+    "from_signals_only": true
+  },
+  "summary": {
+    "v2": {
+      "primary_complete_recording": {
+        "people": 25,
+        "accuracy": 0.5345555023385501,
+        "kappa": 0.3306131468016862,
+        "macro_f1": 0.3871003074372061,
+        "tst_error_minutes": 48.8,
+        "signed_tst_error_minutes": -41.68,
+        "coverage": 1.0,
+        "wake_f1": 0.5823677423687021,
+        "wake_recall": 0.7598296883922073
+      },
+      "secondary_reference_window": {
+        "people": 25,
+        "accuracy": 0.5345109960387343,
+        "kappa": 0.3305601854314794,
+        "macro_f1": 0.38708245678082676,
+        "tst_error_minutes": 48.8,
+        "signed_tst_error_minutes": -41.68,
+        "coverage": 1.0,
+        "wake_f1": 0.5822784890868055,
+        "wake_recall": 0.7597355557257653
+      },
+      "secondary_lights_off_to_on": {
+        "people": 25,
+        "accuracy": 0.5337695170332701,
+        "kappa": 0.32880792458267194,
+        "macro_f1": 0.38629008976232987,
+        "tst_error_minutes": 48.76,
+        "signed_tst_error_minutes": -41.8,
+        "coverage": 1.0,
+        "wake_f1": 0.5780407442927846,
+        "wake_recall": 0.7651313376773006
+      }
+    },
+    "v2_gain_q75": {
+      "primary_complete_recording": {
+        "people": 25,
+        "accuracy": 0.44941116233302836,
+        "kappa": 0.24279956238471964,
+        "macro_f1": 0.2992910357287452,
+        "tst_error_minutes": 130.48,
+        "signed_tst_error_minutes": -130.48,
+        "coverage": 1.0,
+        "wake_f1": 0.46328803143862624,
+        "wake_recall": 0.9139314863087926
+      },
+      "secondary_reference_window": {
+        "people": 25,
+        "accuracy": 0.4493623910921913,
+        "kappa": 0.24277825877029893,
+        "macro_f1": 0.2992762957970304,
+        "tst_error_minutes": 130.48,
+        "signed_tst_error_minutes": -130.48,
+        "coverage": 1.0,
+        "wake_f1": 0.4632143317800522,
+        "wake_recall": 0.9139238532672366
+      },
+      "secondary_lights_off_to_on": {
+        "people": 25,
+        "accuracy": 0.44807850310261843,
+        "kappa": 0.24085616233667254,
+        "macro_f1": 0.29724833882841833,
+        "tst_error_minutes": 130.48,
+        "signed_tst_error_minutes": -130.48,
+        "coverage": 1.0,
+        "wake_f1": 0.45307454693699206,
+        "wake_recall": 0.9109856579243769
+      }
+    },
+    "v2_gain_q90": {
+      "primary_complete_recording": {
+        "people": 25,
+        "accuracy": 0.3961178949606108,
+        "kappa": 0.20551662143770913,
+        "macro_f1": 0.25913058038780074,
+        "tst_error_minutes": 188.54,
+        "signed_tst_error_minutes": -188.54,
+        "coverage": 1.0,
+        "wake_f1": 0.3737405297373815,
+        "wake_recall": 0.9656628691429893
+      },
+      "secondary_reference_window": {
+        "people": 25,
+        "accuracy": 0.3960642090331847,
+        "kappa": 0.20549729189332056,
+        "macro_f1": 0.2591138432383058,
+        "tst_error_minutes": 188.54,
+        "signed_tst_error_minutes": -188.54,
+        "coverage": 1.0,
+        "wake_f1": 0.37365684398990645,
+        "wake_recall": 0.965649486740848
+      },
+      "secondary_lights_off_to_on": {
+        "people": 25,
+        "accuracy": 0.3946664169771945,
+        "kappa": 0.20398678462551548,
+        "macro_f1": 0.2577806125169832,
+        "tst_error_minutes": 188.54,
+        "signed_tst_error_minutes": -188.54,
+        "coverage": 1.0,
+        "wake_f1": 0.3669906903832937,
+        "wake_recall": 0.9647726295569204
+      }
+    },
+    "yasa": {
+      "primary_complete_recording": {
+        "people": 25,
+        "accuracy": 0.7148274031686529,
+        "kappa": 0.6141544852834934,
+        "macro_f1": 0.6287043531168667,
+        "tst_error_minutes": 37.12,
+        "signed_tst_error_minutes": -36.72,
+        "coverage": 1.0,
+        "wake_f1": 0.6316748592731087,
+        "wake_recall": 0.929240457163643
+      },
+      "secondary_reference_window": {
+        "people": 25,
+        "accuracy": 0.7148032420892882,
+        "kappa": 0.6141282005642895,
+        "macro_f1": 0.6286957981598696,
+        "tst_error_minutes": 37.12,
+        "signed_tst_error_minutes": -36.72,
+        "coverage": 1.0,
+        "wake_f1": 0.6316320844881238,
+        "wake_recall": 0.9292159256691741
+      },
+      "secondary_lights_off_to_on": {
+        "people": 25,
+        "accuracy": 0.7142086742958604,
+        "kappa": 0.6130524166465035,
+        "macro_f1": 0.626735813942269,
+        "tst_error_minutes": 37.14,
+        "signed_tst_error_minutes": -36.74,
+        "coverage": 1.0,
+        "wake_f1": 0.6217402642720774,
+        "wake_recall": 0.9273804037274423
+      }
+    },
+    "cnn": {
+      "primary_complete_recording": {
+        "people": 25,
+        "accuracy": 0.5586462393119308,
+        "kappa": 0.37162083762699794,
+        "macro_f1": 0.4208616461581809,
+        "tst_error_minutes": 21.68,
+        "signed_tst_error_minutes": -5.72,
+        "coverage": 1.0,
+        "wake_f1": 0.6053372479729751,
+        "wake_recall": 0.637705535710701
+      },
+      "secondary_reference_window": {
+        "people": 25,
+        "accuracy": 0.5586098350834979,
+        "kappa": 0.3715701206398426,
+        "macro_f1": 0.4208474478436608,
+        "tst_error_minutes": 21.68,
+        "signed_tst_error_minutes": -5.72,
+        "coverage": 1.0,
+        "wake_f1": 0.6052662564003746,
+        "wake_recall": 0.6376199652454616
+      },
+      "secondary_lights_off_to_on": {
+        "people": 25,
+        "accuracy": 0.5581501290179959,
+        "kappa": 0.37017779013409524,
+        "macro_f1": 0.4189089819114644,
+        "tst_error_minutes": 21.62,
+        "signed_tst_error_minutes": -5.98,
+        "coverage": 1.0,
+        "wake_f1": 0.5950735808201639,
+        "wake_recall": 0.6348388804345714
+      }
+    },
+    "cnn_balanced": {
+      "primary_complete_recording": {
+        "people": 25,
+        "accuracy": 0.571270295734206,
+        "kappa": 0.42978498411889815,
+        "macro_f1": 0.515469453399684,
+        "tst_error_minutes": 28.24,
+        "signed_tst_error_minutes": -1.6,
+        "coverage": 1.0,
+        "wake_f1": 0.5243815737302923,
+        "wake_recall": 0.536873393922091
+      },
+      "secondary_reference_window": {
+        "people": 25,
+        "accuracy": 0.571234407421782,
+        "kappa": 0.42974019739448005,
+        "macro_f1": 0.515447176606188,
+        "tst_error_minutes": 28.24,
+        "signed_tst_error_minutes": -1.6,
+        "coverage": 1.0,
+        "wake_f1": 0.5242701897628125,
+        "wake_recall": 0.5367414583575504
+      },
+      "secondary_lights_off_to_on": {
+        "people": 25,
+        "accuracy": 0.5710108925894292,
+        "kappa": 0.429028535153749,
+        "macro_f1": 0.5135957680363912,
+        "tst_error_minutes": 28.1,
+        "signed_tst_error_minutes": -1.94,
+        "coverage": 1.0,
+        "wake_f1": 0.5141435360286275,
+        "wake_recall": 0.5287321456318823
+      }
+    },
+    "cnn_sqrtbalanced": {
+      "primary_complete_recording": {
+        "people": 25,
+        "accuracy": 0.56801802990682,
+        "kappa": 0.39829686060159675,
+        "macro_f1": 0.4673220563058607,
+        "tst_error_minutes": 24.34,
+        "signed_tst_error_minutes": 13.1,
+        "coverage": 1.0,
+        "wake_f1": 0.5459644292676766,
+        "wake_recall": 0.4976797254955919
+      },
+      "secondary_reference_window": {
+        "people": 25,
+        "accuracy": 0.5679792297590162,
+        "kappa": 0.3982441996013457,
+        "macro_f1": 0.46729673757177004,
+        "tst_error_minutes": 24.34,
+        "signed_tst_error_minutes": 13.1,
+        "coverage": 1.0,
+        "wake_f1": 0.5458378355972233,
+        "wake_recall": 0.4975364489792785
+      },
+      "secondary_lights_off_to_on": {
+        "people": 25,
+        "accuracy": 0.5678338338204575,
+        "kappa": 0.3973695247554076,
+        "macro_f1": 0.46519066133953574,
+        "tst_error_minutes": 24.12,
+        "signed_tst_error_minutes": 12.72,
+        "coverage": 1.0,
+        "wake_f1": 0.5341818572417326,
+        "wake_recall": 0.48881545358210504
+      }
+    },
+    "cnn_augmented": {
+      "primary_complete_recording": {
+        "people": 25,
+        "accuracy": 0.5593170873686588,
+        "kappa": 0.37450962955876577,
+        "macro_f1": 0.42046955317920237,
+        "tst_error_minutes": 22.76,
+        "signed_tst_error_minutes": 0.08,
+        "coverage": 1.0,
+        "wake_f1": 0.6044838069805772,
+        "wake_recall": 0.6002960808662322
+      },
+      "secondary_reference_window": {
+        "people": 25,
+        "accuracy": 0.5592788108654032,
+        "kappa": 0.3744567098221122,
+        "macro_f1": 0.4204527591795512,
+        "tst_error_minutes": 22.76,
+        "signed_tst_error_minutes": 0.08,
+        "coverage": 1.0,
+        "wake_f1": 0.6043998369823216,
+        "wake_recall": 0.6001942810681868
+      },
+      "secondary_lights_off_to_on": {
+        "people": 25,
+        "accuracy": 0.5587136142256734,
+        "kappa": 0.372888765254105,
+        "macro_f1": 0.41786660040503937,
+        "tst_error_minutes": 22.66,
+        "signed_tst_error_minutes": -0.14,
+        "coverage": 1.0,
+        "wake_f1": 0.5911463096717864,
+        "wake_recall": 0.5898148687816528
+      }
+    },
+    "cnn_context": {
+      "primary_complete_recording": {
+        "people": 25,
+        "accuracy": 0.5683961071290878,
+        "kappa": 0.3780163673445402,
+        "macro_f1": 0.45375734983844196,
+        "tst_error_minutes": 24.38,
+        "signed_tst_error_minutes": 4.86,
+        "coverage": 1.0,
+        "wake_f1": 0.562168675429552,
+        "wake_recall": 0.5447077488569563
+      },
+      "secondary_reference_window": {
+        "people": 25,
+        "accuracy": 0.5683589578064686,
+        "kappa": 0.37796277375874365,
+        "macro_f1": 0.4537390984267613,
+        "tst_error_minutes": 24.38,
+        "signed_tst_error_minutes": 4.86,
+        "coverage": 1.0,
+        "wake_f1": 0.5620774183711488,
+        "wake_recall": 0.5445962063868919
+      },
+      "secondary_lights_off_to_on": {
+        "people": 25,
+        "accuracy": 0.5679499353312938,
+        "kappa": 0.3765911328591595,
+        "macro_f1": 0.4511795328035029,
+        "tst_error_minutes": 24.26,
+        "signed_tst_error_minutes": 4.58,
+        "coverage": 1.0,
+        "wake_f1": 0.5488266141790445,
+        "wake_recall": 0.538925197974686
+      }
+    },
+    "cnn_context_sqrtbalanced": {
+      "primary_complete_recording": {
+        "people": 25,
+        "accuracy": 0.5674065905547954,
+        "kappa": 0.3804512759693913,
+        "macro_f1": 0.444453648872382,
+        "tst_error_minutes": 22.94,
+        "signed_tst_error_minutes": 0.9,
+        "coverage": 1.0,
+        "wake_f1": 0.5883498848037834,
+        "wake_recall": 0.5895169480681609
+      },
+      "secondary_reference_window": {
+        "people": 25,
+        "accuracy": 0.5673691144676964,
+        "kappa": 0.3803976471098834,
+        "macro_f1": 0.44443603350003086,
+        "tst_error_minutes": 22.94,
+        "signed_tst_error_minutes": 0.9,
+        "coverage": 1.0,
+        "wake_f1": 0.5882618079420275,
+        "wake_recall": 0.5894108949191421
+      },
+      "secondary_lights_off_to_on": {
+        "people": 25,
+        "accuracy": 0.5670255734737407,
+        "kappa": 0.37915638800217183,
+        "macro_f1": 0.4422119227543271,
+        "tst_error_minutes": 22.8,
+        "signed_tst_error_minutes": 0.6,
+        "coverage": 1.0,
+        "wake_f1": 0.5767589921778093,
+        "wake_recall": 0.5846470291456624
+      }
+    },
+    "cnn_context_balanced": {
+      "primary_complete_recording": {
+        "people": 25,
+        "accuracy": 0.5486293193986733,
+        "kappa": 0.34543334453767827,
+        "macro_f1": 0.41068837760416094,
+        "tst_error_minutes": 28.9,
+        "signed_tst_error_minutes": 7.98,
+        "coverage": 1.0,
+        "wake_f1": 0.5480380090129967,
+        "wake_recall": 0.5148925582080877
+      },
+      "secondary_reference_window": {
+        "people": 25,
+        "accuracy": 0.5485868240021196,
+        "kappa": 0.3453676522295618,
+        "macro_f1": 0.4106613937469823,
+        "tst_error_minutes": 28.9,
+        "signed_tst_error_minutes": 7.98,
+        "coverage": 1.0,
+        "wake_f1": 0.5479030897271034,
+        "wake_recall": 0.514744065091107
+      },
+      "secondary_lights_off_to_on": {
+        "people": 25,
+        "accuracy": 0.5484102937485744,
+        "kappa": 0.3443112211030261,
+        "macro_f1": 0.40891598971492565,
+        "tst_error_minutes": 28.72,
+        "signed_tst_error_minutes": 7.6,
+        "coverage": 1.0,
+        "wake_f1": 0.5384670566124499,
+        "wake_recall": 0.5127201995735069
+      }
+    },
+    "ensemble_of_7": {
+      "primary_complete_recording": {
+        "people": 25,
+        "accuracy": 0.5887243529747695,
+        "kappa": 0.41387823157434595,
+        "macro_f1": 0.46931351728432036,
+        "tst_error_minutes": 24.16,
+        "signed_tst_error_minutes": 1.28,
+        "coverage": 1.0,
+        "wake_f1": 0.6220311460895233,
+        "wake_recall": 0.6098396409172446
+      },
+      "secondary_reference_window": {
+        "people": 25,
+        "accuracy": 0.5886890728355574,
+        "kappa": 0.4138291211738214,
+        "macro_f1": 0.46929925187997534,
+        "tst_error_minutes": 24.16,
+        "signed_tst_error_minutes": 1.28,
+        "coverage": 1.0,
+        "wake_f1": 0.6219598190677982,
+        "wake_recall": 0.6097492502510665
+      },
+      "secondary_lights_off_to_on": {
+        "people": 25,
+        "accuracy": 0.5883838435496407,
+        "kappa": 0.4127093402430613,
+        "macro_f1": 0.46736949289648244,
+        "tst_error_minutes": 24.02,
+        "signed_tst_error_minutes": 0.98,
+        "coverage": 1.0,
+        "wake_f1": 0.6118378889060909,
+        "wake_recall": 0.6062956543596861
+      }
+    }
+  },
+  "per_person": {
+    "v2": {
+      "SN004": {
+        "accuracy": 0.734251968503937,
+        "kappa": 0.5418432159159045,
+        "macro_f1": 0.5238396809678945,
+        "per_stage_f1": [
+          0.6493506493506493,
+          0.42857142857142855,
+          0.8302788844621514,
+          0.0,
+          0.710997442455243
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 468.0,
+        "model_tst_minutes": 471.0,
+        "tst_error_minutes": 3.0,
+        "signed_tst_error_minutes": 3.0,
+        "available_epochs": 1016,
+        "wake_recall": 0.625
+      },
+      "SN010": {
+        "accuracy": 0.7586580086580087,
+        "kappa": 0.6632598030403563,
+        "macro_f1": 0.6756491168605863,
+        "per_stage_f1": [
+          0.8995633187772926,
+          0.16883116883116883,
+          0.7807228915662651,
+          0.7051282051282052,
+          0.824
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 342.5,
+        "model_tst_minutes": 352.5,
+        "tst_error_minutes": 10.0,
+        "signed_tst_error_minutes": 10.0,
+        "available_epochs": 924,
+        "wake_recall": 0.8619246861924686
+      },
+      "SN025": {
+        "accuracy": 0.5040404040404041,
+        "kappa": 0.2605545422600024,
+        "macro_f1": 0.28467097731623514,
+        "per_stage_f1": [
+          0.6507592190889371,
+          0.13761467889908258,
+          0.6349809885931559,
+          0.0,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 399.0,
+        "model_tst_minutes": 360.5,
+        "tst_error_minutes": 38.5,
+        "signed_tst_error_minutes": -38.5,
+        "available_epochs": 990,
+        "wake_recall": 0.78125
+      },
+      "SN029": {
+        "accuracy": 0.5362776025236593,
+        "kappa": 0.32528017400873266,
+        "macro_f1": 0.35677578825530964,
+        "per_stage_f1": [
+          0.375,
+          0.07547169811320754,
+          0.6545454545454545,
+          0.0,
+          0.6788617886178862
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 446.0,
+        "model_tst_minutes": 465.0,
+        "tst_error_minutes": 19.0,
+        "signed_tst_error_minutes": 19.0,
+        "available_epochs": 951,
+        "wake_recall": 0.2542372881355932
+      },
+      "SN032": {
+        "accuracy": 0.11026936026936027,
+        "kappa": -0.01795442164517902,
+        "macro_f1": 0.07831614305997607,
+        "per_stage_f1": [
+          0.16638655462184873,
+          0.01048951048951049,
+          0.07834101382488479,
+          0.0,
+          0.13636363636363635
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 527.5,
+        "model_tst_minutes": 65.5,
+        "tst_error_minutes": 462.0,
+        "signed_tst_error_minutes": -462.0,
+        "available_epochs": 1188,
+        "wake_recall": 0.7443609022556391
+      },
+      "SN044": {
+        "accuracy": 0.5149330587023687,
+        "kappa": 0.24124515555319603,
+        "macro_f1": 0.4316314016753841,
+        "per_stage_f1": [
+          0.7818181818181819,
+          0.36065573770491804,
+          0.6371826371826372,
+          0.008130081300813009,
+          0.37037037037037035
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 458.0,
+        "model_tst_minutes": 458.0,
+        "tst_error_minutes": 0.0,
+        "signed_tst_error_minutes": 0.0,
+        "available_epochs": 971,
+        "wake_recall": 0.7818181818181819
+      },
+      "SN053": {
+        "accuracy": 0.6606382978723404,
+        "kappa": 0.5376326842777226,
+        "macro_f1": 0.5230572124841887,
+        "per_stage_f1": [
+          0.8346883468834688,
+          0.2545454545454545,
+          0.7156626506024096,
+          0.0,
+          0.8103896103896104
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 388.5,
+        "model_tst_minutes": 367.0,
+        "tst_error_minutes": 21.5,
+        "signed_tst_error_minutes": -21.5,
+        "available_epochs": 940,
+        "wake_recall": 0.9447852760736196
+      },
+      "SN054": {
+        "accuracy": 0.5261044176706827,
+        "kappa": 0.3395670839982917,
+        "macro_f1": 0.3850681141083223,
+        "per_stage_f1": [
+          0.4369747899159664,
+          0.08,
+          0.631163708086785,
+          0.0,
+          0.7772020725388601
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 235.0,
+        "model_tst_minutes": 203.5,
+        "tst_error_minutes": 31.5,
+        "signed_tst_error_minutes": -31.5,
+        "available_epochs": 498,
+        "wake_recall": 0.9285714285714286
+      },
+      "SN061": {
+        "accuracy": 0.5580046403712297,
+        "kappa": 0.45834714587528635,
+        "macro_f1": 0.5314876478925525,
+        "per_stage_f1": [
+          0.8373702422145328,
+          0.4675324675324675,
+          0.4548611111111111,
+          0.0,
+          0.8976744186046511
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 356.0,
+        "model_tst_minutes": 361.5,
+        "tst_error_minutes": 5.5,
+        "signed_tst_error_minutes": 5.5,
+        "available_epochs": 862,
+        "wake_recall": 0.8066666666666666
+      },
+      "SN062": {
+        "accuracy": 0.44042553191489364,
+        "kappa": 0.24381366041660302,
+        "macro_f1": 0.4005798933316891,
+        "per_stage_f1": [
+          0.4,
+          0.25,
+          0.4785276073619632,
+          0.0,
+          0.8743718592964824
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 232.5,
+        "model_tst_minutes": 232.5,
+        "tst_error_minutes": 0.0,
+        "signed_tst_error_minutes": 0.0,
+        "available_epochs": 470,
+        "wake_recall": 0.4
+      },
+      "SN063": {
+        "accuracy": 0.5838709677419355,
+        "kappa": 0.4171371728092086,
+        "macro_f1": 0.4565576686453701,
+        "per_stage_f1": [
+          0.759170653907496,
+          0.07441860465116279,
+          0.6605351170568562,
+          0.5538461538461539,
+          0.23481781376518218
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 495.5,
+        "model_tst_minutes": 431.0,
+        "tst_error_minutes": 64.5,
+        "signed_tst_error_minutes": -64.5,
+        "available_epochs": 1240,
+        "wake_recall": 0.9558232931726908
+      },
+      "SN068": {
+        "accuracy": 0.5707491082045184,
+        "kappa": 0.4017808586268591,
+        "macro_f1": 0.4988985678090918,
+        "per_stage_f1": [
+          0.6774193548387096,
+          0.3333333333333333,
+          0.6571767497034401,
+          0.07547169811320754,
+          0.7510917030567685
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 359.0,
+        "model_tst_minutes": 358.0,
+        "tst_error_minutes": 1.0,
+        "signed_tst_error_minutes": -1.0,
+        "available_epochs": 841,
+        "wake_recall": 0.6829268292682927
+      },
+      "SN069": {
+        "accuracy": 0.5115332428765265,
+        "kappa": 0.2248338324446717,
+        "macro_f1": 0.27938561551788343,
+        "per_stage_f1": [
+          0.5220588235294118,
+          0.19047619047619047,
+          0.684393063583815,
+          0.0,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 331.5,
+        "model_tst_minutes": 269.5,
+        "tst_error_minutes": 62.0,
+        "signed_tst_error_minutes": -62.0,
+        "available_epochs": 737,
+        "wake_recall": 0.9594594594594594
+      },
+      "SN070": {
+        "accuracy": 0.33035714285714285,
+        "kappa": 0.0894583120050586,
+        "macro_f1": 0.1772621827844894,
+        "per_stage_f1": [
+          0.22,
+          0.07407407407407407,
+          0.5459940652818991,
+          0.0,
+          0.046242774566473986
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 318.5,
+        "model_tst_minutes": 203.5,
+        "tst_error_minutes": 115.0,
+        "signed_tst_error_minutes": -115.0,
+        "available_epochs": 672,
+        "wake_recall": 0.9428571428571428
+      },
+      "SN082": {
+        "accuracy": 0.6657718120805369,
+        "kappa": 0.45416106375403487,
+        "macro_f1": 0.4548009684561409,
+        "per_stage_f1": [
+          0.5405405405405406,
+          0.06896551724137931,
+          0.7342342342342343,
+          0.022857142857142857,
+          0.9074074074074074
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 354.0,
+        "model_tst_minutes": 354.0,
+        "tst_error_minutes": 0.0,
+        "signed_tst_error_minutes": 0.0,
+        "available_epochs": 745,
+        "wake_recall": 0.5405405405405406
+      },
+      "SN085": {
+        "accuracy": 0.5914512922465208,
+        "kappa": 0.366917776757005,
+        "macro_f1": 0.41654113080542,
+        "per_stage_f1": [
+          0.6974063400576369,
+          0.3515625,
+          0.7040552200172563,
+          0.26356589147286824,
+          0.06611570247933884
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 428.5,
+        "model_tst_minutes": 404.0,
+        "tst_error_minutes": 24.5,
+        "signed_tst_error_minutes": -24.5,
+        "available_epochs": 1006,
+        "wake_recall": 0.8120805369127517
+      },
+      "SN097": {
+        "accuracy": 0.6066666666666667,
+        "kappa": 0.4125432481420571,
+        "macro_f1": 0.43103425251833094,
+        "per_stage_f1": [
+          0.5681818181818182,
+          0.10909090909090909,
+          0.6897918731417245,
+          0.050955414012738856,
+          0.737151248164464
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 502.0,
+        "model_tst_minutes": 504.0,
+        "tst_error_minutes": 2.0,
+        "signed_tst_error_minutes": 2.0,
+        "available_epochs": 1050,
+        "wake_recall": 0.5434782608695652
+      },
+      "SN104": {
+        "accuracy": 0.576961271102284,
+        "kappa": 0.33321416691795236,
+        "macro_f1": 0.44781888789803703,
+        "per_stage_f1": [
+          0.5803921568627451,
+          0.16037735849056603,
+          0.6715092816787732,
+          0.0,
+          0.8268156424581006
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 415.0,
+        "model_tst_minutes": 464.5,
+        "tst_error_minutes": 49.5,
+        "signed_tst_error_minutes": 49.5,
+        "available_epochs": 1007,
+        "wake_recall": 0.4180790960451977
+      },
+      "SN108": {
+        "accuracy": 0.5022675736961452,
+        "kappa": 0.17522861323943828,
+        "macro_f1": 0.2801363776591789,
+        "per_stage_f1": [
+          0.550561797752809,
+          0.1782178217821782,
+          0.6719022687609075,
+          0.0,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 416.0,
+        "model_tst_minutes": 377.0,
+        "tst_error_minutes": 39.0,
+        "signed_tst_error_minutes": -39.0,
+        "available_epochs": 882,
+        "wake_recall": 0.98
+      },
+      "SN116": {
+        "accuracy": 0.3224592220828105,
+        "kappa": 0.03496832782106629,
+        "macro_f1": 0.16259630219417698,
+        "per_stage_f1": [
+          0.45648604269293924,
+          0.0,
+          0.3564954682779456,
+          0.0,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 276.0,
+        "model_tst_minutes": 216.5,
+        "tst_error_minutes": 59.5,
+        "signed_tst_error_minutes": -59.5,
+        "available_epochs": 797,
+        "wake_recall": 0.5673469387755102
+      },
+      "SN117": {
+        "accuracy": 0.5795006570302234,
+        "kappa": 0.40330397879024005,
+        "macro_f1": 0.4963182800150621,
+        "per_stage_f1": [
+          0.8288973384030418,
+          0.3711340206185567,
+          0.6486486486486487,
+          0.0,
+          0.6329113924050633
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 319.5,
+        "model_tst_minutes": 310.0,
+        "tst_error_minutes": 9.5,
+        "signed_tst_error_minutes": -9.5,
+        "available_epochs": 761,
+        "wake_recall": 0.8934426229508197
+      },
+      "SN125": {
+        "accuracy": 0.46256239600665555,
+        "kappa": 0.2767507190652897,
+        "macro_f1": 0.2498275350493287,
+        "per_stage_f1": [
+          0.09954751131221719,
+          0.0,
+          0.5,
+          0.6495901639344263,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 595.5,
+        "model_tst_minutes": 496.0,
+        "tst_error_minutes": 99.5,
+        "signed_tst_error_minutes": -99.5,
+        "available_epochs": 1202,
+        "wake_recall": 1.0
+      },
+      "SN142": {
+        "accuracy": 0.4669603524229075,
+        "kappa": 0.23991373033291996,
+        "macro_f1": 0.2644401614732376,
+        "per_stage_f1": [
+          0.6415094339622641,
+          0.13157894736842105,
+          0.5491124260355029,
+          0.0,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 350.0,
+        "model_tst_minutes": 266.5,
+        "tst_error_minutes": 83.5,
+        "signed_tst_error_minutes": -83.5,
+        "available_epochs": 908,
+        "wake_recall": 0.8990384615384616
+      },
+      "SN145": {
+        "accuracy": 0.7133757961783439,
+        "kappa": 0.5523494525547445,
+        "macro_f1": 0.48732552447006006,
+        "per_stage_f1": [
+          0.9430051813471503,
+          0.3050847457627119,
+          0.7630057803468208,
+          0.0,
+          0.425531914893617
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 296.5,
+        "model_tst_minutes": 295.5,
+        "tst_error_minutes": 1.0,
+        "signed_tst_error_minutes": -1.0,
+        "available_epochs": 785,
+        "wake_recall": 0.9479166666666666
+      },
+      "SN148": {
+        "accuracy": 0.535796766743649,
+        "kappa": 0.2891783730806925,
+        "macro_f1": 0.3834882546822051,
+        "per_stage_f1": [
+          0.4421052631578947,
+          0.14814814814814814,
+          0.6266531027466938,
+          0.7005347593582888,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 418.5,
+        "model_tst_minutes": 400.0,
+        "tst_error_minutes": 18.5,
+        "signed_tst_error_minutes": -18.5,
+        "available_epochs": 866,
+        "wake_recall": 0.7241379310344828
+      }
+    },
+    "v2_gain_q75": {
+      "SN004": {
+        "accuracy": 0.5994094488188977,
+        "kappa": 0.2663400925076602,
+        "macro_f1": 0.3614452214452214,
+        "per_stage_f1": [
+          0.676923076923077,
+          0.38571428571428573,
+          0.7445887445887446,
+          0.0,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 468.0,
+        "model_tst_minutes": 450.5,
+        "tst_error_minutes": 17.5,
+        "signed_tst_error_minutes": -17.5,
+        "available_epochs": 1016,
+        "wake_recall": 0.825
+      },
+      "SN010": {
+        "accuracy": 0.6515151515151515,
+        "kappa": 0.5124713655088335,
+        "macro_f1": 0.4787793896040645,
+        "per_stage_f1": [
+          0.752442996742671,
+          0.11594202898550725,
+          0.7516425755584757,
+          0.7738693467336684,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 342.5,
+        "model_tst_minutes": 274.5,
+        "tst_error_minutes": 68.0,
+        "signed_tst_error_minutes": -68.0,
+        "available_epochs": 924,
+        "wake_recall": 0.9665271966527197
+      },
+      "SN025": {
+        "accuracy": 0.5626262626262626,
+        "kappa": 0.3708307464697569,
+        "macro_f1": 0.39846994213775716,
+        "per_stage_f1": [
+          0.6349809885931559,
+          0.052083333333333336,
+          0.6737064413938754,
+          0.631578947368421,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 399.0,
+        "model_tst_minutes": 328.0,
+        "tst_error_minutes": 71.0,
+        "signed_tst_error_minutes": -71.0,
+        "available_epochs": 990,
+        "wake_recall": 0.8697916666666666
+      },
+      "SN029": {
+        "accuracy": 0.508937960042061,
+        "kappa": 0.29168959297234964,
+        "macro_f1": 0.4134740728856534,
+        "per_stage_f1": [
+          0.5269461077844312,
+          0.19642857142857142,
+          0.6174242424242424,
+          0.3462897526501767,
+          0.38028169014084506
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 446.0,
+        "model_tst_minutes": 421.5,
+        "tst_error_minutes": 24.5,
+        "signed_tst_error_minutes": -24.5,
+        "available_epochs": 951,
+        "wake_recall": 0.7457627118644068
+      },
+      "SN032": {
+        "accuracy": 0.09090909090909091,
+        "kappa": -0.028016790684519455,
+        "macro_f1": 0.03947934495509773,
+        "per_stage_f1": [
+          0.1600633914421553,
+          0.0,
+          0.037333333333333336,
+          0.0,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 527.5,
+        "model_tst_minutes": 29.5,
+        "tst_error_minutes": 498.0,
+        "signed_tst_error_minutes": -498.0,
+        "available_epochs": 1188,
+        "wake_recall": 0.7593984962406015
+      },
+      "SN044": {
+        "accuracy": 0.5128733264675592,
+        "kappa": 0.2357969104619665,
+        "macro_f1": 0.40228953229943576,
+        "per_stage_f1": [
+          0.7751937984496124,
+          0.24761904761904763,
+          0.6339869281045751,
+          0.2746478873239437,
+          0.08
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 458.0,
+        "model_tst_minutes": 448.5,
+        "tst_error_minutes": 9.5,
+        "signed_tst_error_minutes": -9.5,
+        "available_epochs": 971,
+        "wake_recall": 0.9090909090909091
+      },
+      "SN053": {
+        "accuracy": 0.5031914893617021,
+        "kappa": 0.32766957206286185,
+        "macro_f1": 0.32517298220912333,
+        "per_stage_f1": [
+          0.5704225352112676,
+          0.23529411764705882,
+          0.6966019417475728,
+          0.08121827411167512,
+          0.042328042328042326
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 388.5,
+        "model_tst_minutes": 267.5,
+        "tst_error_minutes": 121.0,
+        "signed_tst_error_minutes": -121.0,
+        "available_epochs": 940,
+        "wake_recall": 0.9938650306748467
+      },
+      "SN054": {
+        "accuracy": 0.4497991967871486,
+        "kappa": 0.2716305734524044,
+        "macro_f1": 0.31105732755566834,
+        "per_stage_f1": [
+          0.2814070351758794,
+          0.0,
+          0.6258503401360545,
+          0.45685279187817257,
+          0.19117647058823528
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 235.0,
+        "model_tst_minutes": 163.5,
+        "tst_error_minutes": 71.5,
+        "signed_tst_error_minutes": -71.5,
+        "available_epochs": 498,
+        "wake_recall": 1.0
+      },
+      "SN061": {
+        "accuracy": 0.54292343387471,
+        "kappa": 0.4387223226650889,
+        "macro_f1": 0.5539376284487454,
+        "per_stage_f1": [
+          0.8466257668711656,
+          0.4788732394366197,
+          0.4536741214057508,
+          0.3128834355828221,
+          0.6776315789473685
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 356.0,
+        "model_tst_minutes": 343.0,
+        "tst_error_minutes": 13.0,
+        "signed_tst_error_minutes": -13.0,
+        "available_epochs": 862,
+        "wake_recall": 0.92
+      },
+      "SN062": {
+        "accuracy": 0.46595744680851064,
+        "kappa": 0.23631655607703517,
+        "macro_f1": 0.31101796995870645,
+        "per_stage_f1": [
+          0.3125,
+          0.0,
+          0.51440329218107,
+          0.49517684887459806,
+          0.23300970873786409
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 232.5,
+        "model_tst_minutes": 221.5,
+        "tst_error_minutes": 11.0,
+        "signed_tst_error_minutes": -11.0,
+        "available_epochs": 470,
+        "wake_recall": 1.0
+      },
+      "SN063": {
+        "accuracy": 0.3346774193548387,
+        "kappa": 0.1496676389104773,
+        "macro_f1": 0.24527527117362316,
+        "per_stage_f1": [
+          0.3918174665617624,
+          0.0,
+          0.4259567387687188,
+          0.40860215053763443,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 495.5,
+        "model_tst_minutes": 109.0,
+        "tst_error_minutes": 386.5,
+        "signed_tst_error_minutes": -386.5,
+        "available_epochs": 1240,
+        "wake_recall": 1.0
+      },
+      "SN068": {
+        "accuracy": 0.47919143876337694,
+        "kappa": 0.315982106547377,
+        "macro_f1": 0.38520529807710147,
+        "per_stage_f1": [
+          0.44935543278084716,
+          0.0625,
+          0.6050156739811913,
+          0.45454545454545453,
+          0.3546099290780142
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 359.0,
+        "model_tst_minutes": 210.5,
+        "tst_error_minutes": 148.5,
+        "signed_tst_error_minutes": -148.5,
+        "available_epochs": 841,
+        "wake_recall": 0.991869918699187
+      },
+      "SN069": {
+        "accuracy": 0.10312075983717775,
+        "kappa": -0.07033833322713945,
+        "macro_f1": 0.0439956934058965,
+        "per_stage_f1": [
+          0.2117310443490701,
+          0.0,
+          0.008247422680412371,
+          0.0,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 331.5,
+        "model_tst_minutes": 56.0,
+        "tst_error_minutes": 275.5,
+        "signed_tst_error_minutes": -275.5,
+        "available_epochs": 737,
+        "wake_recall": 1.0
+      },
+      "SN070": {
+        "accuracy": 0.19196428571428573,
+        "kappa": 0.09090320217846792,
+        "macro_f1": 0.12854605816642958,
+        "per_stage_f1": [
+          0.11844331641285956,
+          0.0,
+          0.46842105263157896,
+          0.055865921787709494,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 318.5,
+        "model_tst_minutes": 58.0,
+        "tst_error_minutes": 260.5,
+        "signed_tst_error_minutes": -260.5,
+        "available_epochs": 672,
+        "wake_recall": 1.0
+      },
+      "SN082": {
+        "accuracy": 0.4671140939597315,
+        "kappa": 0.1384975226688182,
+        "macro_f1": 0.26980692660205846,
+        "per_stage_f1": [
+          0.25,
+          0.0,
+          0.5904139433551199,
+          0.5086206896551724,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 354.0,
+        "model_tst_minutes": 319.0,
+        "tst_error_minutes": 35.0,
+        "signed_tst_error_minutes": -35.0,
+        "available_epochs": 745,
+        "wake_recall": 0.4864864864864865
+      },
+      "SN085": {
+        "accuracy": 0.43240556660039764,
+        "kappa": 0.2222088323505318,
+        "macro_f1": 0.31464934642869763,
+        "per_stage_f1": [
+          0.44376899696048633,
+          0.04975124378109453,
+          0.5521191294387171,
+          0.5276073619631901,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 428.5,
+        "model_tst_minutes": 248.5,
+        "tst_error_minutes": 180.0,
+        "signed_tst_error_minutes": -180.0,
+        "available_epochs": 1006,
+        "wake_recall": 0.9798657718120806
+      },
+      "SN097": {
+        "accuracy": 0.659047619047619,
+        "kappa": 0.5073129748780734,
+        "macro_f1": 0.5250582813564633,
+        "per_stage_f1": [
+          0.39344262295081966,
+          0.16666666666666666,
+          0.7485265225933202,
+          0.5073170731707317,
+          0.8093385214007782
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 502.0,
+        "model_tst_minutes": 456.5,
+        "tst_error_minutes": 45.5,
+        "signed_tst_error_minutes": -45.5,
+        "available_epochs": 1050,
+        "wake_recall": 0.782608695652174
+      },
+      "SN104": {
+        "accuracy": 0.5422045680238332,
+        "kappa": 0.2857683543933768,
+        "macro_f1": 0.288305075584948,
+        "per_stage_f1": [
+          0.6952141057934509,
+          0.07179487179487179,
+          0.6745164003364171,
+          0.0,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 415.0,
+        "model_tst_minutes": 393.5,
+        "tst_error_minutes": 21.5,
+        "signed_tst_error_minutes": -21.5,
+        "available_epochs": 1007,
+        "wake_recall": 0.7796610169491526
+      },
+      "SN108": {
+        "accuracy": 0.4954648526077097,
+        "kappa": 0.1782654573775846,
+        "macro_f1": 0.27349885635465226,
+        "per_stage_f1": [
+          0.5,
+          0.19607843137254902,
+          0.6714158504007124,
+          0.0,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 416.0,
+        "model_tst_minutes": 366.0,
+        "tst_error_minutes": 50.0,
+        "signed_tst_error_minutes": -50.0,
+        "available_epochs": 882,
+        "wake_recall": 1.0
+      },
+      "SN116": {
+        "accuracy": 0.3299874529485571,
+        "kappa": 0.03357963241338291,
+        "macro_f1": 0.1276106934001671,
+        "per_stage_f1": [
+          0.4801587301587302,
+          0.0,
+          0.15789473684210525,
+          0.0,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 276.0,
+        "model_tst_minutes": 17.0,
+        "tst_error_minutes": 259.0,
+        "signed_tst_error_minutes": -259.0,
+        "available_epochs": 797,
+        "wake_recall": 0.9877551020408163
+      },
+      "SN117": {
+        "accuracy": 0.4480946123521682,
+        "kappa": 0.2356386298794939,
+        "macro_f1": 0.24571411186340902,
+        "per_stage_f1": [
+          0.5590361445783133,
+          0.05333333333333334,
+          0.6057298772169167,
+          0.010471204188481676,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 319.5,
+        "model_tst_minutes": 234.0,
+        "tst_error_minutes": 85.5,
+        "signed_tst_error_minutes": -85.5,
+        "available_epochs": 761,
+        "wake_recall": 0.9508196721311475
+      },
+      "SN125": {
+        "accuracy": 0.4683860232945091,
+        "kappa": 0.27965764704558327,
+        "macro_f1": 0.2540605313664364,
+        "per_stage_f1": [
+          0.06547619047619048,
+          0.0,
+          0.4958217270194986,
+          0.7090047393364929,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 595.5,
+        "model_tst_minutes": 438.5,
+        "tst_error_minutes": 157.0,
+        "signed_tst_error_minutes": -157.0,
+        "available_epochs": 1202,
+        "wake_recall": 1.0
+      },
+      "SN142": {
+        "accuracy": 0.2709251101321586,
+        "kappa": 0.04947476450189203,
+        "macro_f1": 0.12855861576539585,
+        "per_stage_f1": [
+          0.3862581244196843,
+          0.0,
+          0.17142857142857143,
+          0.0851063829787234,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 350.0,
+        "model_tst_minutes": 19.5,
+        "tst_error_minutes": 330.5,
+        "signed_tst_error_minutes": -330.5,
+        "available_epochs": 908,
+        "wake_recall": 1.0
+      },
+      "SN145": {
+        "accuracy": 0.664968152866242,
+        "kappa": 0.4648014019297273,
+        "macro_f1": 0.3632192955722931,
+        "per_stage_f1": [
+          0.9029126213592233,
+          0.18,
+          0.7331838565022422,
+          0.0,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 296.5,
+        "model_tst_minutes": 282.5,
+        "tst_error_minutes": 14.0,
+        "signed_tst_error_minutes": -14.0,
+        "available_epochs": 785,
+        "wake_recall": 0.96875
+      },
+      "SN148": {
+        "accuracy": 0.45958429561200925,
+        "kappa": 0.26511828627690615,
+        "macro_f1": 0.29364842660158474,
+        "per_stage_f1": [
+          0.19708029197080293,
+          0.0,
+          0.5919165580182529,
+          0.6792452830188679,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 418.5,
+        "model_tst_minutes": 310.5,
+        "tst_error_minutes": 108.0,
+        "signed_tst_error_minutes": -108.0,
+        "available_epochs": 866,
+        "wake_recall": 0.9310344827586207
+      }
+    },
+    "v2_gain_q90": {
+      "SN004": {
+        "accuracy": 0.5905511811023622,
+        "kappa": 0.26328688088826135,
+        "macro_f1": 0.3386001955034213,
+        "per_stage_f1": [
+          0.6133333333333333,
+          0.3333333333333333,
+          0.7463343108504399,
+          0.0,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 468.0,
+        "model_tst_minutes": 435.5,
+        "tst_error_minutes": 32.5,
+        "signed_tst_error_minutes": -32.5,
+        "available_epochs": 1016,
+        "wake_recall": 0.8625
+      },
+      "SN010": {
+        "accuracy": 0.5541125541125541,
+        "kappa": 0.3965647330344858,
+        "macro_f1": 0.3931248828803448,
+        "per_stage_f1": [
+          0.6199740596627756,
+          0.0,
+          0.6678260869565218,
+          0.6778242677824268,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 342.5,
+        "model_tst_minutes": 196.0,
+        "tst_error_minutes": 146.5,
+        "signed_tst_error_minutes": -146.5,
+        "available_epochs": 924,
+        "wake_recall": 1.0
+      },
+      "SN025": {
+        "accuracy": 0.4909090909090909,
+        "kappa": 0.3118751732517263,
+        "macro_f1": 0.36834035921576846,
+        "per_stage_f1": [
+          0.506056527590848,
+          0.012345679012345678,
+          0.5679347826086957,
+          0.7553648068669528,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 399.0,
+        "model_tst_minutes": 219.5,
+        "tst_error_minutes": 179.5,
+        "signed_tst_error_minutes": -179.5,
+        "available_epochs": 990,
+        "wake_recall": 0.9791666666666666
+      },
+      "SN029": {
+        "accuracy": 0.49737118822292326,
+        "kappa": 0.3116251037306699,
+        "macro_f1": 0.3397320207820618,
+        "per_stage_f1": [
+          0.3411371237458194,
+          0.07547169811320754,
+          0.6666666666666666,
+          0.6153846153846154,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 446.0,
+        "model_tst_minutes": 355.5,
+        "tst_error_minutes": 90.5,
+        "signed_tst_error_minutes": -90.5,
+        "available_epochs": 951,
+        "wake_recall": 0.864406779661017
+      },
+      "SN032": {
+        "accuracy": 0.0867003367003367,
+        "kappa": -0.02891544722196504,
+        "macro_f1": 0.03692072638379605,
+        "per_stage_f1": [
+          0.157429718875502,
+          0.0,
+          0.02717391304347826,
+          0.0,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 527.5,
+        "model_tst_minutes": 38.0,
+        "tst_error_minutes": 489.5,
+        "signed_tst_error_minutes": -489.5,
+        "available_epochs": 1188,
+        "wake_recall": 0.7368421052631579
+      },
+      "SN044": {
+        "accuracy": 0.49948506694129763,
+        "kappa": 0.22732981087094972,
+        "macro_f1": 0.35600747372625247,
+        "per_stage_f1": [
+          0.6380368098159509,
+          0.18,
+          0.6286672254819782,
+          0.3333333333333333,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 458.0,
+        "model_tst_minutes": 431.5,
+        "tst_error_minutes": 26.5,
+        "signed_tst_error_minutes": -26.5,
+        "available_epochs": 971,
+        "wake_recall": 0.9454545454545454
+      },
+      "SN053": {
+        "accuracy": 0.4797872340425532,
+        "kappa": 0.3149321132092344,
+        "macro_f1": 0.3288074556935472,
+        "per_stage_f1": [
+          0.49165402124430957,
+          0.08421052631578947,
+          0.6829268292682927,
+          0.38524590163934425,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 388.5,
+        "model_tst_minutes": 222.0,
+        "tst_error_minutes": 166.5,
+        "signed_tst_error_minutes": -166.5,
+        "available_epochs": 940,
+        "wake_recall": 0.9938650306748467
+      },
+      "SN054": {
+        "accuracy": 0.46586345381526106,
+        "kappa": 0.3079647682036172,
+        "macro_f1": 0.3301063863074564,
+        "per_stage_f1": [
+          0.25,
+          0.0,
+          0.6567164179104478,
+          0.5660377358490566,
+          0.17777777777777778
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 235.0,
+        "model_tst_minutes": 151.0,
+        "tst_error_minutes": 84.0,
+        "signed_tst_error_minutes": -84.0,
+        "available_epochs": 498,
+        "wake_recall": 1.0
+      },
+      "SN061": {
+        "accuracy": 0.4733178654292343,
+        "kappa": 0.3517422791754735,
+        "macro_f1": 0.42500235819880006,
+        "per_stage_f1": [
+          0.7760416666666666,
+          0.4,
+          0.4195583596214511,
+          0.5294117647058824,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 356.0,
+        "model_tst_minutes": 314.0,
+        "tst_error_minutes": 42.0,
+        "signed_tst_error_minutes": -42.0,
+        "available_epochs": 862,
+        "wake_recall": 0.9933333333333333
+      },
+      "SN062": {
+        "accuracy": 0.4148936170212766,
+        "kappa": 0.20511921674261868,
+        "macro_f1": 0.24320890134879636,
+        "per_stage_f1": [
+          0.09900990099009901,
+          0.0,
+          0.4892086330935252,
+          0.5236593059936908,
+          0.10416666666666667
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 232.5,
+        "model_tst_minutes": 187.0,
+        "tst_error_minutes": 45.5,
+        "signed_tst_error_minutes": -45.5,
+        "available_epochs": 470,
+        "wake_recall": 1.0
+      },
+      "SN063": {
+        "accuracy": 0.25161290322580643,
+        "kappa": 0.05922980326496441,
+        "macro_f1": 0.15588268242980768,
+        "per_stage_f1": [
+          0.3549536707056308,
+          0.0,
+          0.17012448132780084,
+          0.2543352601156069,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 495.5,
+        "model_tst_minutes": 43.0,
+        "tst_error_minutes": 452.5,
+        "signed_tst_error_minutes": -452.5,
+        "available_epochs": 1240,
+        "wake_recall": 1.0
+      },
+      "SN068": {
+        "accuracy": 0.4423305588585018,
+        "kappa": 0.30160261915175035,
+        "macro_f1": 0.3306888555060332,
+        "per_stage_f1": [
+          0.3655274888558692,
+          0.0,
+          0.4890829694323144,
+          0.7988338192419825,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 359.0,
+        "model_tst_minutes": 145.5,
+        "tst_error_minutes": 213.5,
+        "signed_tst_error_minutes": -213.5,
+        "available_epochs": 841,
+        "wake_recall": 1.0
+      },
+      "SN069": {
+        "accuracy": 0.10040705563093623,
+        "kappa": 0.0,
+        "macro_f1": 0.03649815043156597,
+        "per_stage_f1": [
+          0.18249075215782984,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 331.5,
+        "model_tst_minutes": 0.0,
+        "tst_error_minutes": 331.5,
+        "signed_tst_error_minutes": -331.5,
+        "available_epochs": 737,
+        "wake_recall": 1.0
+      },
+      "SN070": {
+        "accuracy": 0.07142857142857142,
+        "kappa": 0.011781008514659685,
+        "macro_f1": 0.038408321971418476,
+        "per_stage_f1": [
+          0.10144927536231885,
+          0.0,
+          0.09059233449477352,
+          0.0,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 318.5,
+        "model_tst_minutes": 8.5,
+        "tst_error_minutes": 310.0,
+        "signed_tst_error_minutes": -310.0,
+        "available_epochs": 672,
+        "wake_recall": 1.0
+      },
+      "SN082": {
+        "accuracy": 0.512751677852349,
+        "kappa": 0.29171751986548566,
+        "macro_f1": 0.3806829023172768,
+        "per_stage_f1": [
+          0.3017241379310345,
+          0.19047619047619047,
+          0.5729303547963206,
+          0.8382838283828383,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 354.0,
+        "model_tst_minutes": 275.0,
+        "tst_error_minutes": 79.0,
+        "signed_tst_error_minutes": -79.0,
+        "available_epochs": 745,
+        "wake_recall": 0.9459459459459459
+      },
+      "SN085": {
+        "accuracy": 0.33101391650099404,
+        "kappa": 0.158969453795605,
+        "macro_f1": 0.2671613555848066,
+        "per_stage_f1": [
+          0.3254237288135593,
+          0.0,
+          0.432348367029549,
+          0.5780346820809249,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 428.5,
+        "model_tst_minutes": 135.0,
+        "tst_error_minutes": 293.5,
+        "signed_tst_error_minutes": -293.5,
+        "available_epochs": 1006,
+        "wake_recall": 0.9664429530201343
+      },
+      "SN097": {
+        "accuracy": 0.4561904761904762,
+        "kappa": 0.259787399533316,
+        "macro_f1": 0.3508754182229755,
+        "per_stage_f1": [
+          0.21674876847290642,
+          0.08484848484848485,
+          0.6484375,
+          0.6866952789699571,
+          0.11764705882352941
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 502.0,
+        "model_tst_minutes": 345.0,
+        "tst_error_minutes": 157.0,
+        "signed_tst_error_minutes": -157.0,
+        "available_epochs": 1050,
+        "wake_recall": 0.9565217391304348
+      },
+      "SN104": {
+        "accuracy": 0.42502482621648463,
+        "kappa": 0.19224039400677473,
+        "macro_f1": 0.21228624270877788,
+        "per_stage_f1": [
+          0.49577464788732395,
+          0.0,
+          0.5656565656565656,
+          0.0,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 415.0,
+        "model_tst_minutes": 237.0,
+        "tst_error_minutes": 178.0,
+        "signed_tst_error_minutes": -178.0,
+        "available_epochs": 1007,
+        "wake_recall": 0.9943502824858758
+      },
+      "SN108": {
+        "accuracy": 0.427437641723356,
+        "kappa": 0.10877538402434705,
+        "macro_f1": 0.2088781145733344,
+        "per_stage_f1": [
+          0.36900369003690037,
+          0.06521739130434782,
+          0.6101694915254238,
+          0.0,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 416.0,
+        "model_tst_minutes": 330.5,
+        "tst_error_minutes": 85.5,
+        "signed_tst_error_minutes": -85.5,
+        "available_epochs": 882,
+        "wake_recall": 1.0
+      },
+      "SN116": {
+        "accuracy": 0.3161856963613551,
+        "kappa": 0.017329336575985566,
+        "macro_f1": 0.1431529909176323,
+        "per_stage_f1": [
+          0.4536290322580645,
+          0.0,
+          0.0,
+          0.2621359223300971,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 276.0,
+        "model_tst_minutes": 25.0,
+        "tst_error_minutes": 251.0,
+        "signed_tst_error_minutes": -251.0,
+        "available_epochs": 797,
+        "wake_recall": 0.9183673469387755
+      },
+      "SN117": {
+        "accuracy": 0.38501971090670173,
+        "kappa": 0.1815624741472024,
+        "macro_f1": 0.2114660779449788,
+        "per_stage_f1": [
+          0.45864661654135336,
+          0.0,
+          0.5374592833876222,
+          0.061224489795918366,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 319.5,
+        "model_tst_minutes": 175.5,
+        "tst_error_minutes": 144.0,
+        "signed_tst_error_minutes": -144.0,
+        "available_epochs": 761,
+        "wake_recall": 1.0
+      },
+      "SN125": {
+        "accuracy": 0.4084858569051581,
+        "kappa": 0.2347787935496003,
+        "macro_f1": 0.2303733126224335,
+        "per_stage_f1": [
+          0.03767123287671233,
+          0.0,
+          0.37636761487964987,
+          0.7378277153558053,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 595.5,
+        "model_tst_minutes": 314.5,
+        "tst_error_minutes": 281.0,
+        "signed_tst_error_minutes": -281.0,
+        "available_epochs": 1202,
+        "wake_recall": 1.0
+      },
+      "SN142": {
+        "accuracy": 0.24008810572687225,
+        "kappa": 0.014719758444989739,
+        "macro_f1": 0.09627867136194918,
+        "per_stage_f1": [
+          0.37613019891500904,
+          0.0,
+          0.0,
+          0.10526315789473684,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 350.0,
+        "model_tst_minutes": 5.0,
+        "tst_error_minutes": 345.0,
+        "signed_tst_error_minutes": -345.0,
+        "available_epochs": 908,
+        "wake_recall": 1.0
+      },
+      "SN145": {
+        "accuracy": 0.597452229299363,
+        "kappa": 0.3932812366242311,
+        "macro_f1": 0.38046902442105435,
+        "per_stage_f1": [
+          0.6885245901639344,
+          0.0,
+          0.6953020134228188,
+          0.5185185185185185,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 296.5,
+        "model_tst_minutes": 214.0,
+        "tst_error_minutes": 82.5,
+        "signed_tst_error_minutes": -82.5,
+        "available_epochs": 785,
+        "wake_recall": 0.984375
+      },
+      "SN148": {
+        "accuracy": 0.384526558891455,
+        "kappa": 0.2506157225587433,
+        "macro_f1": 0.27531162864072883,
+        "per_stage_f1": [
+          0.12314225053078556,
+          0.0,
+          0.519298245614035,
+          0.7341176470588235,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 418.5,
+        "model_tst_minutes": 212.0,
+        "tst_error_minutes": 206.5,
+        "signed_tst_error_minutes": -206.5,
+        "available_epochs": 866,
+        "wake_recall": 1.0
+      }
+    },
+    "yasa": {
+      "SN004": {
+        "accuracy": 0.577755905511811,
+        "kappa": 0.3898521469627273,
+        "macro_f1": 0.4732195209142935,
+        "per_stage_f1": [
+          0.5608856088560885,
+          0.3282442748091603,
+          0.7048008171603677,
+          0.2631578947368421,
+          0.509009009009009
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 468.0,
+        "model_tst_minutes": 412.5,
+        "tst_error_minutes": 55.5,
+        "signed_tst_error_minutes": -55.5,
+        "available_epochs": 1016,
+        "wake_recall": 0.95
+      },
+      "SN010": {
+        "accuracy": 0.814935064935065,
+        "kappa": 0.7541115247189473,
+        "macro_f1": 0.7588212740523537,
+        "per_stage_f1": [
+          0.9397089397089398,
+          0.32298136645962733,
+          0.8011869436201781,
+          0.8211382113821138,
+          0.9090909090909091
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 342.5,
+        "model_tst_minutes": 341.0,
+        "tst_error_minutes": 1.5,
+        "signed_tst_error_minutes": -1.5,
+        "available_epochs": 924,
+        "wake_recall": 0.9456066945606695
+      },
+      "SN025": {
+        "accuracy": 0.6878787878787879,
+        "kappa": 0.5747215761618314,
+        "macro_f1": 0.6523003812648157,
+        "per_stage_f1": [
+          0.6524822695035462,
+          0.18181818181818182,
+          0.7350835322195705,
+          0.8656716417910447,
+          0.8264462809917356
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 399.0,
+        "model_tst_minutes": 379.5,
+        "tst_error_minutes": 19.5,
+        "signed_tst_error_minutes": -19.5,
+        "available_epochs": 990,
+        "wake_recall": 0.71875
+      },
+      "SN029": {
+        "accuracy": 0.6519453207150369,
+        "kappa": 0.5294605660267362,
+        "macro_f1": 0.5953384974607879,
+        "per_stage_f1": [
+          0.5487804878048781,
+          0.3384615384615385,
+          0.7214377406931964,
+          0.7566137566137566,
+          0.6113989637305699
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 446.0,
+        "model_tst_minutes": 423.0,
+        "tst_error_minutes": 23.0,
+        "signed_tst_error_minutes": -23.0,
+        "available_epochs": 951,
+        "wake_recall": 0.7627118644067796
+      },
+      "SN032": {
+        "accuracy": 0.234006734006734,
+        "kappa": 0.07045210861062223,
+        "macro_f1": 0.17966383976749384,
+        "per_stage_f1": [
+          0.3333333333333333,
+          0.01015228426395939,
+          0.35578144853875476,
+          0.0,
+          0.1990521327014218
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 527.5,
+        "model_tst_minutes": 318.5,
+        "tst_error_minutes": 209.0,
+        "signed_tst_error_minutes": -209.0,
+        "available_epochs": 1188,
+        "wake_recall": 0.8571428571428571
+      },
+      "SN044": {
+        "accuracy": 0.8444902162718847,
+        "kappa": 0.7870190275455643,
+        "macro_f1": 0.7694894798527889,
+        "per_stage_f1": [
+          0.7142857142857143,
+          0.4473684210526316,
+          0.8756476683937824,
+          0.9478079331941545,
+          0.8623376623376623
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 458.0,
+        "model_tst_minutes": 436.0,
+        "tst_error_minutes": 22.0,
+        "signed_tst_error_minutes": -22.0,
+        "available_epochs": 971,
+        "wake_recall": 1.0
+      },
+      "SN053": {
+        "accuracy": 0.776595744680851,
+        "kappa": 0.7047522326803681,
+        "macro_f1": 0.7132649802207351,
+        "per_stage_f1": [
+          0.7761904761904762,
+          0.366412213740458,
+          0.8302425106990015,
+          0.7098976109215017,
+          0.8835820895522388
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 388.5,
+        "model_tst_minutes": 341.5,
+        "tst_error_minutes": 47.0,
+        "signed_tst_error_minutes": -47.0,
+        "available_epochs": 940,
+        "wake_recall": 1.0
+      },
+      "SN054": {
+        "accuracy": 0.7329317269076305,
+        "kappa": 0.6450463292943691,
+        "macro_f1": 0.5827832482682862,
+        "per_stage_f1": [
+          0.3835616438356164,
+          0.10526315789473684,
+          0.830945558739255,
+          0.9014084507042254,
+          0.6927374301675978
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 235.0,
+        "model_tst_minutes": 190.0,
+        "tst_error_minutes": 45.0,
+        "signed_tst_error_minutes": -45.0,
+        "available_epochs": 498,
+        "wake_recall": 1.0
+      },
+      "SN061": {
+        "accuracy": 0.7412993039443155,
+        "kappa": 0.6715713577884468,
+        "macro_f1": 0.6963410524027465,
+        "per_stage_f1": [
+          0.8461538461538461,
+          0.38235294117647056,
+          0.631578947368421,
+          0.7595505617977528,
+          0.8620689655172413
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 356.0,
+        "model_tst_minutes": 337.0,
+        "tst_error_minutes": 19.0,
+        "signed_tst_error_minutes": -19.0,
+        "available_epochs": 862,
+        "wake_recall": 0.9533333333333334
+      },
+      "SN062": {
+        "accuracy": 0.6361702127659574,
+        "kappa": 0.48353639728562614,
+        "macro_f1": 0.44289432916849175,
+        "per_stage_f1": [
+          0.17857142857142858,
+          0.0,
+          0.56957928802589,
+          0.7651715039577837,
+          0.7011494252873564
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 232.5,
+        "model_tst_minutes": 209.5,
+        "tst_error_minutes": 23.0,
+        "signed_tst_error_minutes": -23.0,
+        "available_epochs": 470,
+        "wake_recall": 1.0
+      },
+      "SN063": {
+        "accuracy": 0.7403225806451613,
+        "kappa": 0.6563680944213175,
+        "macro_f1": 0.675453629618948,
+        "per_stage_f1": [
+          0.8630393996247655,
+          0.19166666666666668,
+          0.7776606954689147,
+          0.7308970099667774,
+          0.8140043763676149
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 495.5,
+        "model_tst_minutes": 478.0,
+        "tst_error_minutes": 17.5,
+        "signed_tst_error_minutes": -17.5,
+        "available_epochs": 1240,
+        "wake_recall": 0.9236947791164659
+      },
+      "SN068": {
+        "accuracy": 0.7907253269916765,
+        "kappa": 0.7276960238718544,
+        "macro_f1": 0.7514382697693863,
+        "per_stage_f1": [
+          0.749185667752443,
+          0.42105263157894735,
+          0.8098591549295775,
+          0.906801007556675,
+          0.8702928870292888
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 359.0,
+        "model_tst_minutes": 328.5,
+        "tst_error_minutes": 30.5,
+        "signed_tst_error_minutes": -30.5,
+        "available_epochs": 841,
+        "wake_recall": 0.9349593495934959
+      },
+      "SN069": {
+        "accuracy": 0.8290366350067843,
+        "kappa": 0.7512229622207816,
+        "macro_f1": 0.6901778159462866,
+        "per_stage_f1": [
+          0.6733668341708543,
+          0.17391304347826086,
+          0.9034965034965035,
+          0.9371069182389937,
+          0.7630057803468208
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 331.5,
+        "model_tst_minutes": 306.0,
+        "tst_error_minutes": 25.5,
+        "signed_tst_error_minutes": -25.5,
+        "available_epochs": 737,
+        "wake_recall": 0.9054054054054054
+      },
+      "SN070": {
+        "accuracy": 0.6354166666666666,
+        "kappa": 0.5145467894452848,
+        "macro_f1": 0.5237089894321741,
+        "per_stage_f1": [
+          0.3106796116504854,
+          0.1702127659574468,
+          0.70703125,
+          0.5962264150943396,
+          0.8343949044585988
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 318.5,
+        "model_tst_minutes": 250.5,
+        "tst_error_minutes": 68.0,
+        "signed_tst_error_minutes": -68.0,
+        "available_epochs": 672,
+        "wake_recall": 0.9142857142857143
+      },
+      "SN082": {
+        "accuracy": 0.825503355704698,
+        "kappa": 0.7517907712810261,
+        "macro_f1": 0.6457955319393942,
+        "per_stage_f1": [
+          0.5142857142857142,
+          0.06666666666666667,
+          0.8531684698608965,
+          0.896551724137931,
+          0.8983050847457628
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 354.0,
+        "model_tst_minutes": 321.0,
+        "tst_error_minutes": 33.0,
+        "signed_tst_error_minutes": -33.0,
+        "available_epochs": 745,
+        "wake_recall": 0.972972972972973
+      },
+      "SN085": {
+        "accuracy": 0.7236580516898609,
+        "kappa": 0.6147070088088855,
+        "macro_f1": 0.6893032586604528,
+        "per_stage_f1": [
+          0.7624309392265194,
+          0.5393939393939394,
+          0.8004385964912281,
+          0.7835051546391752,
+          0.5607476635514018
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 428.5,
+        "model_tst_minutes": 396.5,
+        "tst_error_minutes": 32.0,
+        "signed_tst_error_minutes": -32.0,
+        "available_epochs": 1006,
+        "wake_recall": 0.9261744966442953
+      },
+      "SN097": {
+        "accuracy": 0.7685714285714286,
+        "kappa": 0.6775465481746594,
+        "macro_f1": 0.7048335945773448,
+        "per_stage_f1": [
+          0.624113475177305,
+          0.3983739837398374,
+          0.8265765765765766,
+          0.8275862068965517,
+          0.8475177304964538
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 502.0,
+        "model_tst_minutes": 477.5,
+        "tst_error_minutes": 24.5,
+        "signed_tst_error_minutes": -24.5,
+        "available_epochs": 1050,
+        "wake_recall": 0.9565217391304348
+      },
+      "SN104": {
+        "accuracy": 0.7080436941410129,
+        "kappa": 0.5995130166588885,
+        "macro_f1": 0.6443849570945439,
+        "per_stage_f1": [
+          0.7511520737327189,
+          0.3114754098360656,
+          0.8200455580865603,
+          0.7368421052631579,
+          0.6024096385542169
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 415.0,
+        "model_tst_minutes": 375.0,
+        "tst_error_minutes": 40.0,
+        "signed_tst_error_minutes": -40.0,
+        "available_epochs": 1007,
+        "wake_recall": 0.9209039548022598
+      },
+      "SN108": {
+        "accuracy": 0.6598639455782312,
+        "kappa": 0.515202594380674,
+        "macro_f1": 0.5483695901010265,
+        "per_stage_f1": [
+          0.4803921568627451,
+          0.08928571428571429,
+          0.7476635514018691,
+          0.5893416927899686,
+          0.8351648351648352
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 416.0,
+        "model_tst_minutes": 364.0,
+        "tst_error_minutes": 52.0,
+        "signed_tst_error_minutes": -52.0,
+        "available_epochs": 882,
+        "wake_recall": 0.98
+      },
+      "SN116": {
+        "accuracy": 0.6787954830614805,
+        "kappa": 0.5630566673733759,
+        "macro_f1": 0.636111518721828,
+        "per_stage_f1": [
+          0.7628865979381443,
+          0.32167832167832167,
+          0.672,
+          0.673992673992674,
+          0.75
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 276.0,
+        "model_tst_minutes": 230.0,
+        "tst_error_minutes": 46.0,
+        "signed_tst_error_minutes": -46.0,
+        "available_epochs": 797,
+        "wake_recall": 0.9061224489795918
+      },
+      "SN117": {
+        "accuracy": 0.7674113009198423,
+        "kappa": 0.6941207194113906,
+        "macro_f1": 0.7345034121141079,
+        "per_stage_f1": [
+          0.8398576512455516,
+          0.47706422018348627,
+          0.7601476014760148,
+          0.7627627627627628,
+          0.8326848249027238
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 319.5,
+        "model_tst_minutes": 301.0,
+        "tst_error_minutes": 18.5,
+        "signed_tst_error_minutes": -18.5,
+        "available_epochs": 761,
+        "wake_recall": 0.9672131147540983
+      },
+      "SN125": {
+        "accuracy": 0.6214642262895175,
+        "kappa": 0.4697216501642485,
+        "macro_f1": 0.5031612701314916,
+        "per_stage_f1": [
+          0.2702702702702703,
+          0.24,
+          0.4520547945205479,
+          0.6916256157635468,
+          0.8618556701030928
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 595.5,
+        "model_tst_minutes": 569.5,
+        "tst_error_minutes": 26.0,
+        "signed_tst_error_minutes": -26.0,
+        "available_epochs": 1202,
+        "wake_recall": 0.9090909090909091
+      },
+      "SN142": {
+        "accuracy": 0.8171806167400881,
+        "kappa": 0.7583681740067202,
+        "macro_f1": 0.7510439062568042,
+        "per_stage_f1": [
+          0.8571428571428571,
+          0.36363636363636365,
+          0.8333333333333334,
+          0.8672086720867209,
+          0.8338983050847457
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 350.0,
+        "model_tst_minutes": 355.0,
+        "tst_error_minutes": 5.0,
+        "signed_tst_error_minutes": 5.0,
+        "available_epochs": 908,
+        "wake_recall": 0.8365384615384616
+      },
+      "SN145": {
+        "accuracy": 0.7949044585987262,
+        "kappa": 0.7112645327253329,
+        "macro_f1": 0.7064679416791058,
+        "per_stage_f1": [
+          0.9313725490196079,
+          0.43356643356643354,
+          0.8289085545722714,
+          0.5747126436781609,
+          0.7637795275590551
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 296.5,
+        "model_tst_minutes": 284.5,
+        "tst_error_minutes": 12.0,
+        "signed_tst_error_minutes": -12.0,
+        "available_epochs": 785,
+        "wake_recall": 0.9895833333333334
+      },
+      "SN148": {
+        "accuracy": 0.8117782909930716,
+        "kappa": 0.7382133120676546,
+        "macro_f1": 0.6487385385059772,
+        "per_stage_f1": [
+          0.46774193548387094,
+          0.17543859649122806,
+          0.8398791540785498,
+          0.8675213675213675,
+          0.8931116389548693
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 418.5,
+        "model_tst_minutes": 385.5,
+        "tst_error_minutes": 33.0,
+        "signed_tst_error_minutes": -33.0,
+        "available_epochs": 866,
+        "wake_recall": 1.0
+      }
+    },
+    "cnn": {
+      "SN004": {
+        "accuracy": 0.6328740157480315,
+        "kappa": 0.42335093351998665,
+        "macro_f1": 0.4301585798683922,
+        "per_stage_f1": [
+          0.5347593582887701,
+          0.25757575757575757,
+          0.7497621313035204,
+          0.0,
+          0.6086956521739131
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 468.0,
+        "model_tst_minutes": 454.5,
+        "tst_error_minutes": 13.5,
+        "signed_tst_error_minutes": -13.5,
+        "available_epochs": 1016,
+        "wake_recall": 0.625
+      },
+      "SN010": {
+        "accuracy": 0.7142857142857143,
+        "kappa": 0.5974121996303142,
+        "macro_f1": 0.5536178952996014,
+        "per_stage_f1": [
+          0.8859649122807017,
+          0.17218543046357615,
+          0.7432590855803048,
+          0.09433962264150944,
+          0.8723404255319149
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 342.5,
+        "model_tst_minutes": 353.5,
+        "tst_error_minutes": 11.0,
+        "signed_tst_error_minutes": 11.0,
+        "available_epochs": 924,
+        "wake_recall": 0.8451882845188284
+      },
+      "SN025": {
+        "accuracy": 0.5424242424242425,
+        "kappa": 0.3585982897670634,
+        "macro_f1": 0.43265464000542025,
+        "per_stage_f1": [
+          0.6190476190476191,
+          0.25,
+          0.6203904555314533,
+          0.0,
+          0.6738351254480287
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 399.0,
+        "model_tst_minutes": 381.0,
+        "tst_error_minutes": 18.0,
+        "signed_tst_error_minutes": -18.0,
+        "available_epochs": 990,
+        "wake_recall": 0.6770833333333334
+      },
+      "SN029": {
+        "accuracy": 0.6151419558359621,
+        "kappa": 0.452752228668459,
+        "macro_f1": 0.4814064842095003,
+        "per_stage_f1": [
+          0.5565217391304348,
+          0.1111111111111111,
+          0.6994535519125683,
+          0.26666666666666666,
+          0.7732793522267206
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 446.0,
+        "model_tst_minutes": 447.5,
+        "tst_error_minutes": 1.5,
+        "signed_tst_error_minutes": 1.5,
+        "available_epochs": 951,
+        "wake_recall": 0.5423728813559322
+      },
+      "SN032": {
+        "accuracy": 0.26851851851851855,
+        "kappa": 0.09126422798936318,
+        "macro_f1": 0.21009608249062853,
+        "per_stage_f1": [
+          0.21656050955414013,
+          0.04975124378109453,
+          0.438489646772229,
+          0.0,
+          0.345679012345679
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 527.5,
+        "model_tst_minutes": 346.5,
+        "tst_error_minutes": 181.0,
+        "signed_tst_error_minutes": -181.0,
+        "available_epochs": 1188,
+        "wake_recall": 0.5112781954887218
+      },
+      "SN044": {
+        "accuracy": 0.5653964984552008,
+        "kappa": 0.3396878293406902,
+        "macro_f1": 0.42448022551963904,
+        "per_stage_f1": [
+          0.5979381443298969,
+          0.12371134020618557,
+          0.6787003610108303,
+          0.04,
+          0.6820512820512821
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 458.0,
+        "model_tst_minutes": 464.5,
+        "tst_error_minutes": 6.5,
+        "signed_tst_error_minutes": 6.5,
+        "available_epochs": 971,
+        "wake_recall": 0.5272727272727272
+      },
+      "SN053": {
+        "accuracy": 0.601063829787234,
+        "kappa": 0.44819100574820603,
+        "macro_f1": 0.44371901580475714,
+        "per_stage_f1": [
+          0.7009646302250804,
+          0.10101010101010101,
+          0.6930022573363431,
+          0.0,
+          0.7236180904522613
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 388.5,
+        "model_tst_minutes": 396.0,
+        "tst_error_minutes": 7.5,
+        "signed_tst_error_minutes": 7.5,
+        "available_epochs": 940,
+        "wake_recall": 0.6687116564417178
+      },
+      "SN054": {
+        "accuracy": 0.5281124497991968,
+        "kappa": 0.3346031385035251,
+        "macro_f1": 0.4011895993880473,
+        "per_stage_f1": [
+          0.4358974358974359,
+          0.1875,
+          0.6056910569105691,
+          0.0,
+          0.7768595041322314
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 235.0,
+        "model_tst_minutes": 224.0,
+        "tst_error_minutes": 11.0,
+        "signed_tst_error_minutes": -11.0,
+        "available_epochs": 498,
+        "wake_recall": 0.6071428571428571
+      },
+      "SN061": {
+        "accuracy": 0.4872389791183295,
+        "kappa": 0.37042343123889787,
+        "macro_f1": 0.42021856090442755,
+        "per_stage_f1": [
+          0.7420494699646644,
+          0.0761904761904762,
+          0.43452380952380953,
+          0.0,
+          0.8483290488431876
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 356.0,
+        "model_tst_minutes": 364.5,
+        "tst_error_minutes": 8.5,
+        "signed_tst_error_minutes": 8.5,
+        "available_epochs": 862,
+        "wake_recall": 0.7
+      },
+      "SN062": {
+        "accuracy": 0.43829787234042555,
+        "kappa": 0.2425370856480068,
+        "macro_f1": 0.39531568228105907,
+        "per_stage_f1": [
+          0.625,
+          0.0,
+          0.47657841140529533,
+          0.0,
+          0.875
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 232.5,
+        "model_tst_minutes": 229.5,
+        "tst_error_minutes": 3.0,
+        "signed_tst_error_minutes": -3.0,
+        "available_epochs": 470,
+        "wake_recall": 1.0
+      },
+      "SN063": {
+        "accuracy": 0.6112903225806452,
+        "kappa": 0.45656216102191916,
+        "macro_f1": 0.4681028491342822,
+        "per_stage_f1": [
+          0.7424892703862661,
+          0.19402985074626866,
+          0.6890192791282481,
+          0.0,
+          0.714975845410628
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 495.5,
+        "model_tst_minutes": 511.5,
+        "tst_error_minutes": 16.0,
+        "signed_tst_error_minutes": 16.0,
+        "available_epochs": 1240,
+        "wake_recall": 0.6947791164658634
+      },
+      "SN068": {
+        "accuracy": 0.5505350772889417,
+        "kappa": 0.3882635928915744,
+        "macro_f1": 0.46188208870280806,
+        "per_stage_f1": [
+          0.6341463414634146,
+          0.14634146341463414,
+          0.6492829204693612,
+          0.2564102564102564,
+          0.623229461756374
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 359.0,
+        "model_tst_minutes": 379.5,
+        "tst_error_minutes": 20.5,
+        "signed_tst_error_minutes": 20.5,
+        "available_epochs": 841,
+        "wake_recall": 0.5284552845528455
+      },
+      "SN069": {
+        "accuracy": 0.6350067842605156,
+        "kappa": 0.35924849793314306,
+        "macro_f1": 0.4570182662645264,
+        "per_stage_f1": [
+          0.7432432432432432,
+          0.1917808219178082,
+          0.7638603696098563,
+          0.0,
+          0.5862068965517241
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 331.5,
+        "model_tst_minutes": 331.5,
+        "tst_error_minutes": 0.0,
+        "signed_tst_error_minutes": 0.0,
+        "available_epochs": 737,
+        "wake_recall": 0.7432432432432432
+      },
+      "SN070": {
+        "accuracy": 0.5669642857142857,
+        "kappa": 0.31634736400503427,
+        "macro_f1": 0.41743925224168593,
+        "per_stage_f1": [
+          0.5423728813559322,
+          0.1935483870967742,
+          0.6600985221674877,
+          0.0,
+          0.6911764705882353
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 318.5,
+        "model_tst_minutes": 324.0,
+        "tst_error_minutes": 5.5,
+        "signed_tst_error_minutes": 5.5,
+        "available_epochs": 672,
+        "wake_recall": 0.45714285714285713
+      },
+      "SN082": {
+        "accuracy": 0.6697986577181209,
+        "kappa": 0.4624504305793462,
+        "macro_f1": 0.4702313065082645,
+        "per_stage_f1": [
+          0.7,
+          0.0,
+          0.7559591373439274,
+          0.0989010989010989,
+          0.7962962962962963
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 354.0,
+        "model_tst_minutes": 351.0,
+        "tst_error_minutes": 3.0,
+        "signed_tst_error_minutes": -3.0,
+        "available_epochs": 745,
+        "wake_recall": 0.7567567567567568
+      },
+      "SN085": {
+        "accuracy": 0.5536779324055666,
+        "kappa": 0.3643117601775503,
+        "macro_f1": 0.4056747745860287,
+        "per_stage_f1": [
+          0.6793893129770993,
+          0.17194570135746606,
+          0.699497487437186,
+          0.0,
+          0.47754137115839246
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 428.5,
+        "model_tst_minutes": 446.5,
+        "tst_error_minutes": 18.0,
+        "signed_tst_error_minutes": 18.0,
+        "available_epochs": 1006,
+        "wake_recall": 0.5973154362416108
+      },
+      "SN097": {
+        "accuracy": 0.6152380952380953,
+        "kappa": 0.43306884564958525,
+        "macro_f1": 0.5017878989678429,
+        "per_stage_f1": [
+          0.5714285714285714,
+          0.08695652173913043,
+          0.6761133603238867,
+          0.47,
+          0.7044410413476263
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 502.0,
+        "model_tst_minutes": 499.0,
+        "tst_error_minutes": 3.0,
+        "signed_tst_error_minutes": -3.0,
+        "available_epochs": 1050,
+        "wake_recall": 0.6086956521739131
+      },
+      "SN104": {
+        "accuracy": 0.6017874875868917,
+        "kappa": 0.42213397444153467,
+        "macro_f1": 0.44377852895598197,
+        "per_stage_f1": [
+          0.6638830897703549,
+          0.17117117117117117,
+          0.7361111111111112,
+          0.0,
+          0.6477272727272727
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 415.0,
+        "model_tst_minutes": 352.5,
+        "tst_error_minutes": 62.5,
+        "signed_tst_error_minutes": -62.5,
+        "available_epochs": 1007,
+        "wake_recall": 0.8983050847457628
+      },
+      "SN108": {
+        "accuracy": 0.5487528344671202,
+        "kappa": 0.3301197645927316,
+        "macro_f1": 0.4137945141170947,
+        "per_stage_f1": [
+          0.45161290322580644,
+          0.14285714285714285,
+          0.6673596673596673,
+          0.0,
+          0.8071428571428572
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 416.0,
+        "model_tst_minutes": 373.0,
+        "tst_error_minutes": 43.0,
+        "signed_tst_error_minutes": -43.0,
+        "available_epochs": 882,
+        "wake_recall": 0.84
+      },
+      "SN116": {
+        "accuracy": 0.5219573400250941,
+        "kappa": 0.3583879883027097,
+        "macro_f1": 0.40733133053089077,
+        "per_stage_f1": [
+          0.7289719626168224,
+          0.25757575757575757,
+          0.5925925925925926,
+          0.0,
+          0.45751633986928103
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 276.0,
+        "model_tst_minutes": 307.0,
+        "tst_error_minutes": 31.0,
+        "signed_tst_error_minutes": 31.0,
+        "available_epochs": 797,
+        "wake_recall": 0.636734693877551
+      },
+      "SN117": {
+        "accuracy": 0.5755584756898817,
+        "kappa": 0.41227793319465367,
+        "macro_f1": 0.46145147790846225,
+        "per_stage_f1": [
+          0.8,
+          0.14285714285714285,
+          0.6542553191489362,
+          0.0,
+          0.7101449275362319
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 319.5,
+        "model_tst_minutes": 331.5,
+        "tst_error_minutes": 12.0,
+        "signed_tst_error_minutes": 12.0,
+        "available_epochs": 761,
+        "wake_recall": 0.7213114754098361
+      },
+      "SN125": {
+        "accuracy": 0.3302828618968386,
+        "kappa": 0.11302653192924828,
+        "macro_f1": 0.18325919211554864,
+        "per_stage_f1": [
+          0.14285714285714285,
+          0.0,
+          0.36507936507936506,
+          0.40048543689320387,
+          0.007874015748031496
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 595.5,
+        "model_tst_minutes": 599.5,
+        "tst_error_minutes": 4.0,
+        "signed_tst_error_minutes": 4.0,
+        "available_epochs": 1202,
+        "wake_recall": 0.09090909090909091
+      },
+      "SN142": {
+        "accuracy": 0.5187224669603524,
+        "kappa": 0.31944773175542396,
+        "macro_f1": 0.36275267072736517,
+        "per_stage_f1": [
+          0.5573770491803278,
+          0.0975609756097561,
+          0.6445396145610278,
+          0.0,
+          0.5142857142857142
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 350.0,
+        "model_tst_minutes": 405.5,
+        "tst_error_minutes": 55.5,
+        "signed_tst_error_minutes": 55.5,
+        "available_epochs": 908,
+        "wake_recall": 0.40865384615384615
+      },
+      "SN145": {
+        "accuracy": 0.686624203821656,
+        "kappa": 0.5513879306139233,
+        "macro_f1": 0.4822014444110092,
+        "per_stage_f1": [
+          0.8905852417302799,
+          0.1651376146788991,
+          0.743988684582744,
+          0.0,
+          0.6112956810631229
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 296.5,
+        "model_tst_minutes": 292.0,
+        "tst_error_minutes": 4.5,
+        "signed_tst_error_minutes": -4.5,
+        "available_epochs": 785,
+        "wake_recall": 0.9114583333333334
+      },
+      "SN148": {
+        "accuracy": 0.5866050808314087,
+        "kappa": 0.34466606353205786,
+        "macro_f1": 0.39197879301125854,
+        "per_stage_f1": [
+          0.37037037037037035,
+          0.08695652173913043,
+          0.685546875,
+          0.13100436681222707,
+          0.6860158311345647
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 418.5,
+        "model_tst_minutes": 420.5,
+        "tst_error_minutes": 2.0,
+        "signed_tst_error_minutes": 2.0,
+        "available_epochs": 866,
+        "wake_recall": 0.3448275862068966
+      }
+    },
+    "cnn_balanced": {
+      "SN004": {
+        "accuracy": 0.39665354330708663,
+        "kappa": 0.22225996263698933,
+        "macro_f1": 0.3312982203170116,
+        "per_stage_f1": [
+          0.4134078212290503,
+          0.30303030303030304,
+          0.3526170798898072,
+          0.03076923076923077,
+          0.5566666666666666
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 468.0,
+        "model_tst_minutes": 458.5,
+        "tst_error_minutes": 9.5,
+        "signed_tst_error_minutes": -9.5,
+        "available_epochs": 1016,
+        "wake_recall": 0.4625
+      },
+      "SN010": {
+        "accuracy": 0.7261904761904762,
+        "kappa": 0.6429997113723861,
+        "macro_f1": 0.7145950492970246,
+        "per_stage_f1": [
+          0.7696078431372549,
+          0.40752351097178685,
+          0.8256880733944955,
+          0.9313725490196079,
+          0.6387832699619772
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 342.5,
+        "model_tst_minutes": 377.5,
+        "tst_error_minutes": 35.0,
+        "signed_tst_error_minutes": 35.0,
+        "available_epochs": 924,
+        "wake_recall": 0.6569037656903766
+      },
+      "SN025": {
+        "accuracy": 0.5191919191919192,
+        "kappa": 0.3929189334728094,
+        "macro_f1": 0.5436045509331053,
+        "per_stage_f1": [
+          0.5831202046035806,
+          0.3991683991683992,
+          0.5008077544426495,
+          0.7368421052631579,
+          0.49808429118773945
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 399.0,
+        "model_tst_minutes": 395.5,
+        "tst_error_minutes": 3.5,
+        "signed_tst_error_minutes": -3.5,
+        "available_epochs": 990,
+        "wake_recall": 0.59375
+      },
+      "SN029": {
+        "accuracy": 0.7087276550998949,
+        "kappa": 0.6071045048592343,
+        "macro_f1": 0.6309083465309713,
+        "per_stage_f1": [
+          0.47761194029850745,
+          0.3905325443786982,
+          0.7707736389684814,
+          0.8085106382978723,
+          0.7071129707112971
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 446.0,
+        "model_tst_minutes": 438.0,
+        "tst_error_minutes": 8.0,
+        "signed_tst_error_minutes": -8.0,
+        "available_epochs": 951,
+        "wake_recall": 0.5423728813559322
+      },
+      "SN032": {
+        "accuracy": 0.26346801346801346,
+        "kappa": 0.07179626843348319,
+        "macro_f1": 0.21903371970251345,
+        "per_stage_f1": [
+          0.2225,
+          0.25921219822109276,
+          0.33519553072625696,
+          0.0,
+          0.2782608695652174
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 527.5,
+        "model_tst_minutes": 260.5,
+        "tst_error_minutes": 267.0,
+        "signed_tst_error_minutes": -267.0,
+        "available_epochs": 1188,
+        "wake_recall": 0.6691729323308271
+      },
+      "SN044": {
+        "accuracy": 0.7456230690010298,
+        "kappa": 0.6510390825402415,
+        "macro_f1": 0.669437662170182,
+        "per_stage_f1": [
+          0.5,
+          0.4636363636363636,
+          0.7989756722151088,
+          0.8775055679287305,
+          0.7070707070707071
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 458.0,
+        "model_tst_minutes": 465.0,
+        "tst_error_minutes": 7.0,
+        "signed_tst_error_minutes": 7.0,
+        "available_epochs": 971,
+        "wake_recall": 0.43636363636363634
+      },
+      "SN053": {
+        "accuracy": 0.6872340425531915,
+        "kappa": 0.5965040866444546,
+        "macro_f1": 0.6560343756479725,
+        "per_stage_f1": [
+          0.5955882352941176,
+          0.4357976653696498,
+          0.7732919254658385,
+          0.7784431137724551,
+          0.6970509383378016
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 388.5,
+        "model_tst_minutes": 415.5,
+        "tst_error_minutes": 27.0,
+        "signed_tst_error_minutes": 27.0,
+        "available_epochs": 940,
+        "wake_recall": 0.49693251533742333
+      },
+      "SN054": {
+        "accuracy": 0.4959839357429719,
+        "kappa": 0.34524140026295524,
+        "macro_f1": 0.45192903960501907,
+        "per_stage_f1": [
+          0.4155844155844156,
+          0.15517241379310345,
+          0.45962732919254656,
+          0.7355371900826446,
+          0.49372384937238495
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 235.0,
+        "model_tst_minutes": 224.5,
+        "tst_error_minutes": 10.5,
+        "signed_tst_error_minutes": -10.5,
+        "available_epochs": 498,
+        "wake_recall": 0.5714285714285714
+      },
+      "SN061": {
+        "accuracy": 0.5893271461716937,
+        "kappa": 0.4951650340556969,
+        "macro_f1": 0.5925100190668415,
+        "per_stage_f1": [
+          0.6666666666666666,
+          0.43986254295532645,
+          0.48498845265588914,
+          0.5677083333333334,
+          0.8033240997229917
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 356.0,
+        "model_tst_minutes": 378.5,
+        "tst_error_minutes": 22.5,
+        "signed_tst_error_minutes": 22.5,
+        "available_epochs": 862,
+        "wake_recall": 0.5666666666666667
+      },
+      "SN062": {
+        "accuracy": 0.6404255319148936,
+        "kappa": 0.4909149174811729,
+        "macro_f1": 0.5109665879499644,
+        "per_stage_f1": [
+          0.3333333333333333,
+          0.12121212121212122,
+          0.5882352941176471,
+          0.6532951289398281,
+          0.8587570621468926
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 232.5,
+        "model_tst_minutes": 225.5,
+        "tst_error_minutes": 7.0,
+        "signed_tst_error_minutes": -7.0,
+        "available_epochs": 470,
+        "wake_recall": 0.8
+      },
+      "SN063": {
+        "accuracy": 0.5314516129032258,
+        "kappa": 0.3909739986372912,
+        "macro_f1": 0.515278040089256,
+        "per_stage_f1": [
+          0.5523385300668151,
+          0.41042345276872966,
+          0.6128266033254157,
+          0.43010752688172044,
+          0.570694087403599
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 495.5,
+        "model_tst_minutes": 520.0,
+        "tst_error_minutes": 24.5,
+        "signed_tst_error_minutes": 24.5,
+        "available_epochs": 1240,
+        "wake_recall": 0.4979919678714859
+      },
+      "SN068": {
+        "accuracy": 0.6278240190249703,
+        "kappa": 0.5325537620087724,
+        "macro_f1": 0.5912377345117263,
+        "per_stage_f1": [
+          0.4069767441860465,
+          0.45864661654135336,
+          0.5882352941176471,
+          0.8878048780487805,
+          0.6145251396648045
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 359.0,
+        "model_tst_minutes": 396.0,
+        "tst_error_minutes": 37.0,
+        "signed_tst_error_minutes": 37.0,
+        "available_epochs": 841,
+        "wake_recall": 0.2845528455284553
+      },
+      "SN069": {
+        "accuracy": 0.5739484396200815,
+        "kappa": 0.3274413954650872,
+        "macro_f1": 0.4393235199447121,
+        "per_stage_f1": [
+          0.6290322580645161,
+          0.391304347826087,
+          0.7367205542725174,
+          0.0,
+          0.43956043956043955
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 331.5,
+        "model_tst_minutes": 343.5,
+        "tst_error_minutes": 12.0,
+        "signed_tst_error_minutes": 12.0,
+        "available_epochs": 737,
+        "wake_recall": 0.527027027027027
+      },
+      "SN070": {
+        "accuracy": 0.6264880952380952,
+        "kappa": 0.46688412049723604,
+        "macro_f1": 0.5299921987119016,
+        "per_stage_f1": [
+          0.4642857142857143,
+          0.24390243902439024,
+          0.7247278382581649,
+          0.5432098765432098,
+          0.6738351254480287
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 318.5,
+        "model_tst_minutes": 325.5,
+        "tst_error_minutes": 7.0,
+        "signed_tst_error_minutes": 7.0,
+        "available_epochs": 672,
+        "wake_recall": 0.37142857142857144
+      },
+      "SN082": {
+        "accuracy": 0.7704697986577181,
+        "kappa": 0.672883997647959,
+        "macro_f1": 0.6419063644339588,
+        "per_stage_f1": [
+          0.6,
+          0.13861386138613863,
+          0.8473053892215568,
+          0.8643533123028391,
+          0.7592592592592593
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 354.0,
+        "model_tst_minutes": 351.0,
+        "tst_error_minutes": 3.0,
+        "signed_tst_error_minutes": -3.0,
+        "available_epochs": 745,
+        "wake_recall": 0.6486486486486487
+      },
+      "SN085": {
+        "accuracy": 0.46123260437375746,
+        "kappa": 0.31906996725553416,
+        "macro_f1": 0.4881153858385695,
+        "per_stage_f1": [
+          0.6339622641509434,
+          0.4329004329004329,
+          0.45871559633027525,
+          0.5617977528089888,
+          0.35320088300220753
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 428.5,
+        "model_tst_minutes": 445.0,
+        "tst_error_minutes": 16.5,
+        "signed_tst_error_minutes": 16.5,
+        "available_epochs": 1006,
+        "wake_recall": 0.5637583892617449
+      },
+      "SN097": {
+        "accuracy": 0.6552380952380953,
+        "kappa": 0.5315579119388031,
+        "macro_f1": 0.6360320163460479,
+        "per_stage_f1": [
+          0.5961538461538461,
+          0.38636363636363635,
+          0.6684350132625995,
+          0.8550185873605948,
+          0.6741889985895627
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 502.0,
+        "model_tst_minutes": 496.0,
+        "tst_error_minutes": 6.0,
+        "signed_tst_error_minutes": -6.0,
+        "available_epochs": 1050,
+        "wake_recall": 0.6739130434782609
+      },
+      "SN104": {
+        "accuracy": 0.5004965243296922,
+        "kappa": 0.3245260876812802,
+        "macro_f1": 0.4200531496850159,
+        "per_stage_f1": [
+          0.6308068459657702,
+          0.3779816513761468,
+          0.6104725415070242,
+          0.20408163265306123,
+          0.27692307692307694
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 415.0,
+        "model_tst_minutes": 387.5,
+        "tst_error_minutes": 27.5,
+        "signed_tst_error_minutes": -27.5,
+        "available_epochs": 1007,
+        "wake_recall": 0.7288135593220338
+      },
+      "SN108": {
+        "accuracy": 0.36507936507936506,
+        "kappa": 0.1930703906890726,
+        "macro_f1": 0.3953427405808811,
+        "per_stage_f1": [
+          0.3950617283950617,
+          0.17,
+          0.3413897280966767,
+          0.41134751773049644,
+          0.6589147286821705
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 416.0,
+        "model_tst_minutes": 385.0,
+        "tst_error_minutes": 31.0,
+        "signed_tst_error_minutes": -31.0,
+        "available_epochs": 882,
+        "wake_recall": 0.64
+      },
+      "SN116": {
+        "accuracy": 0.5219573400250941,
+        "kappa": 0.3849199999189771,
+        "macro_f1": 0.5030392023208086,
+        "per_stage_f1": [
+          0.6733668341708543,
+          0.40606060606060607,
+          0.5610200364298725,
+          0.2621359223300971,
+          0.6126126126126126
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 276.0,
+        "model_tst_minutes": 322.0,
+        "tst_error_minutes": 46.0,
+        "signed_tst_error_minutes": 46.0,
+        "available_epochs": 797,
+        "wake_recall": 0.5469387755102041
+      },
+      "SN117": {
+        "accuracy": 0.5584756898817346,
+        "kappa": 0.41331253011495306,
+        "macro_f1": 0.5172300125236007,
+        "per_stage_f1": [
+          0.7156862745098039,
+          0.313953488372093,
+          0.6215384615384615,
+          0.23963133640552994,
+          0.6953405017921147
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 319.5,
+        "model_tst_minutes": 339.5,
+        "tst_error_minutes": 20.0,
+        "signed_tst_error_minutes": 20.0,
+        "available_epochs": 761,
+        "wake_recall": 0.5983606557377049
+      },
+      "SN125": {
+        "accuracy": 0.5207986688851913,
+        "kappa": 0.25485924860841447,
+        "macro_f1": 0.3186076116400906,
+        "per_stage_f1": [
+          0.14285714285714285,
+          0.0,
+          0.44582814445828145,
+          0.6418527708850289,
+          0.3625
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 595.5,
+        "model_tst_minutes": 599.5,
+        "tst_error_minutes": 4.0,
+        "signed_tst_error_minutes": 4.0,
+        "available_epochs": 1202,
+        "wake_recall": 0.09090909090909091
+      },
+      "SN142": {
+        "accuracy": 0.501101321585903,
+        "kappa": 0.35124546347833907,
+        "macro_f1": 0.44516130357509665,
+        "per_stage_f1": [
+          0.5333333333333333,
+          0.2867132867132867,
+          0.6372413793103449,
+          0.25,
+          0.5185185185185185
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 350.0,
+        "model_tst_minutes": 408.0,
+        "tst_error_minutes": 58.0,
+        "signed_tst_error_minutes": 58.0,
+        "available_epochs": 908,
+        "wake_recall": 0.38461538461538464
+      },
+      "SN145": {
+        "accuracy": 0.5299363057324841,
+        "kappa": 0.4043075189299683,
+        "macro_f1": 0.5010433974680144,
+        "per_stage_f1": [
+          0.7808988764044944,
+          0.3575418994413408,
+          0.499001996007984,
+          0.3287671232876712,
+          0.5390070921985816
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 296.5,
+        "model_tst_minutes": 310.5,
+        "tst_error_minutes": 14.0,
+        "signed_tst_error_minutes": 14.0,
+        "available_epochs": 785,
+        "wake_recall": 0.7239583333333334
+      },
+      "SN148": {
+        "accuracy": 0.7644341801385681,
+        "kappa": 0.6610743083413431,
+        "macro_f1": 0.6240560861018126,
+        "per_stage_f1": [
+          0.37735849056603776,
+          0.3125,
+          0.8290816326530612,
+          0.8043478260869565,
+          0.7969924812030075
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 418.5,
+        "model_tst_minutes": 421.0,
+        "tst_error_minutes": 2.5,
+        "signed_tst_error_minutes": 2.5,
+        "available_epochs": 866,
+        "wake_recall": 0.3448275862068966
+      }
+    },
+    "cnn_sqrtbalanced": {
+      "SN004": {
+        "accuracy": 0.6269685039370079,
+        "kappa": 0.4485938616501344,
+        "macro_f1": 0.4650105930116,
+        "per_stage_f1": [
+          0.5205479452054794,
+          0.40304182509505704,
+          0.6994764397905759,
+          0.0,
+          0.7019867549668874
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 468.0,
+        "model_tst_minutes": 475.0,
+        "tst_error_minutes": 7.0,
+        "signed_tst_error_minutes": 7.0,
+        "available_epochs": 1016,
+        "wake_recall": 0.475
+      },
+      "SN010": {
+        "accuracy": 0.7142857142857143,
+        "kappa": 0.6124967633402011,
+        "macro_f1": 0.6720204891144308,
+        "per_stage_f1": [
+          0.7764127764127764,
+          0.30042918454935624,
+          0.7917205692108668,
+          0.7682926829268293,
+          0.7232472324723247
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 342.5,
+        "model_tst_minutes": 378.0,
+        "tst_error_minutes": 35.5,
+        "signed_tst_error_minutes": 35.5,
+        "available_epochs": 924,
+        "wake_recall": 0.6610878661087866
+      },
+      "SN025": {
+        "accuracy": 0.5191919191919192,
+        "kappa": 0.3456999250229096,
+        "macro_f1": 0.44776814615785854,
+        "per_stage_f1": [
+          0.6216216216216216,
+          0.35260115606936415,
+          0.5791962174940898,
+          0.013888888888888888,
+          0.6715328467153284
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 399.0,
+        "model_tst_minutes": 406.0,
+        "tst_error_minutes": 7.0,
+        "signed_tst_error_minutes": 7.0,
+        "available_epochs": 990,
+        "wake_recall": 0.5989583333333334
+      },
+      "SN029": {
+        "accuracy": 0.6792849631966351,
+        "kappa": 0.5497026272198168,
+        "macro_f1": 0.5737203158996793,
+        "per_stage_f1": [
+          0.4444444444444444,
+          0.3076923076923077,
+          0.7447306791569087,
+          0.5818181818181818,
+          0.7899159663865546
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 446.0,
+        "model_tst_minutes": 455.5,
+        "tst_error_minutes": 9.5,
+        "signed_tst_error_minutes": 9.5,
+        "available_epochs": 951,
+        "wake_recall": 0.3728813559322034
+      },
+      "SN032": {
+        "accuracy": 0.3047138047138047,
+        "kappa": 0.09422969353150434,
+        "macro_f1": 0.2286156490775419,
+        "per_stage_f1": [
+          0.27251732101616627,
+          0.1248097412480974,
+          0.44421272158498437,
+          0.0,
+          0.30153846153846153
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 527.5,
+        "model_tst_minutes": 444.0,
+        "tst_error_minutes": 83.5,
+        "signed_tst_error_minutes": -83.5,
+        "available_epochs": 1188,
+        "wake_recall": 0.44360902255639095
+      },
+      "SN044": {
+        "accuracy": 0.6426364572605562,
+        "kappa": 0.4735861113237644,
+        "macro_f1": 0.552282071084875,
+        "per_stage_f1": [
+          0.5274725274725275,
+          0.3466666666666667,
+          0.7203140333660452,
+          0.37748344370860926,
+          0.7894736842105263
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 458.0,
+        "model_tst_minutes": 467.5,
+        "tst_error_minutes": 9.5,
+        "signed_tst_error_minutes": 9.5,
+        "available_epochs": 971,
+        "wake_recall": 0.43636363636363634
+      },
+      "SN053": {
+        "accuracy": 0.5882978723404255,
+        "kappa": 0.4390465425757475,
+        "macro_f1": 0.4941126633936171,
+        "per_stage_f1": [
+          0.5612648221343873,
+          0.4245810055865922,
+          0.6782810685249709,
+          0.06153846153846154,
+          0.7448979591836735
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 388.5,
+        "model_tst_minutes": 425.0,
+        "tst_error_minutes": 36.5,
+        "signed_tst_error_minutes": 36.5,
+        "available_epochs": 940,
+        "wake_recall": 0.43558282208588955
+      },
+      "SN054": {
+        "accuracy": 0.45582329317269077,
+        "kappa": 0.2334240257195277,
+        "macro_f1": 0.3481566757267017,
+        "per_stage_f1": [
+          0.4444444444444444,
+          0.08695652173913043,
+          0.5189873417721519,
+          0.03870967741935484,
+          0.651685393258427
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 235.0,
+        "model_tst_minutes": 236.0,
+        "tst_error_minutes": 1.0,
+        "signed_tst_error_minutes": 1.0,
+        "available_epochs": 498,
+        "wake_recall": 0.42857142857142855
+      },
+      "SN061": {
+        "accuracy": 0.4953596287703016,
+        "kappa": 0.38641161165747573,
+        "macro_f1": 0.47222174738066885,
+        "per_stage_f1": [
+          0.68,
+          0.36633663366336633,
+          0.44810543657331137,
+          0.0,
+          0.8666666666666667
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 356.0,
+        "model_tst_minutes": 381.0,
+        "tst_error_minutes": 25.0,
+        "signed_tst_error_minutes": 25.0,
+        "available_epochs": 862,
+        "wake_recall": 0.5666666666666667
+      },
+      "SN062": {
+        "accuracy": 0.474468085106383,
+        "kappa": 0.2843095550746886,
+        "macro_f1": 0.46980511807197833,
+        "per_stage_f1": [
+          0.6666666666666666,
+          0.18181818181818182,
+          0.4860215053763441,
+          0.15019762845849802,
+          0.864321608040201
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 232.5,
+        "model_tst_minutes": 231.5,
+        "tst_error_minutes": 1.0,
+        "signed_tst_error_minutes": -1.0,
+        "available_epochs": 470,
+        "wake_recall": 0.8
+      },
+      "SN063": {
+        "accuracy": 0.582258064516129,
+        "kappa": 0.4255316104290089,
+        "macro_f1": 0.4587227933527678,
+        "per_stage_f1": [
+          0.5268817204301075,
+          0.32460732984293195,
+          0.6985815602836879,
+          0.014285714285714285,
+          0.7292576419213974
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 495.5,
+        "model_tst_minutes": 558.5,
+        "tst_error_minutes": 63.0,
+        "signed_tst_error_minutes": 63.0,
+        "available_epochs": 1240,
+        "wake_recall": 0.39357429718875503
+      },
+      "SN068": {
+        "accuracy": 0.5695600475624257,
+        "kappa": 0.42766959810803606,
+        "macro_f1": 0.5142828852843091,
+        "per_stage_f1": [
+          0.4186046511627907,
+          0.3333333333333333,
+          0.6501457725947521,
+          0.5594405594405595,
+          0.6098901098901099
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 359.0,
+        "model_tst_minutes": 396.0,
+        "tst_error_minutes": 37.0,
+        "signed_tst_error_minutes": 37.0,
+        "available_epochs": 841,
+        "wake_recall": 0.2926829268292683
+      },
+      "SN069": {
+        "accuracy": 0.6648575305291723,
+        "kappa": 0.43106589783257543,
+        "macro_f1": 0.5417039657280627,
+        "per_stage_f1": [
+          0.7368421052631579,
+          0.42105263157894735,
+          0.7863974495217854,
+          0.0,
+          0.7642276422764228
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 331.5,
+        "model_tst_minutes": 339.0,
+        "tst_error_minutes": 7.5,
+        "signed_tst_error_minutes": 7.5,
+        "available_epochs": 737,
+        "wake_recall": 0.6621621621621622
+      },
+      "SN070": {
+        "accuracy": 0.5744047619047619,
+        "kappa": 0.3427490783741084,
+        "macro_f1": 0.41877931001695873,
+        "per_stage_f1": [
+          0.3829787234042553,
+          0.25925925925925924,
+          0.6701434159061278,
+          0.06818181818181818,
+          0.7133333333333334
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 318.5,
+        "model_tst_minutes": 330.0,
+        "tst_error_minutes": 11.5,
+        "signed_tst_error_minutes": 11.5,
+        "available_epochs": 672,
+        "wake_recall": 0.2571428571428571
+      },
+      "SN082": {
+        "accuracy": 0.7664429530201342,
+        "kappa": 0.6461078138564775,
+        "macro_f1": 0.6404055918378052,
+        "per_stage_f1": [
+          0.704225352112676,
+          0.2,
+          0.8266666666666667,
+          0.6666666666666666,
+          0.8044692737430168
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 354.0,
+        "model_tst_minutes": 355.5,
+        "tst_error_minutes": 1.5,
+        "signed_tst_error_minutes": 1.5,
+        "available_epochs": 745,
+        "wake_recall": 0.6756756756756757
+      },
+      "SN085": {
+        "accuracy": 0.46222664015904574,
+        "kappa": 0.272723142340185,
+        "macro_f1": 0.3635094233423276,
+        "per_stage_f1": [
+          0.4682926829268293,
+          0.2911392405063291,
+          0.6309662398137369,
+          0.05263157894736842,
+          0.3745173745173745
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 428.5,
+        "model_tst_minutes": 475.0,
+        "tst_error_minutes": 46.5,
+        "signed_tst_error_minutes": 46.5,
+        "available_epochs": 1006,
+        "wake_recall": 0.3221476510067114
+      },
+      "SN097": {
+        "accuracy": 0.660952380952381,
+        "kappa": 0.5176892437475726,
+        "macro_f1": 0.6002362073477995,
+        "per_stage_f1": [
+          0.6052631578947368,
+          0.22340425531914893,
+          0.7037037037037037,
+          0.7808764940239044,
+          0.6879334257975035
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 502.0,
+        "model_tst_minutes": 510.0,
+        "tst_error_minutes": 8.0,
+        "signed_tst_error_minutes": 8.0,
+        "available_epochs": 1050,
+        "wake_recall": 0.5
+      },
+      "SN104": {
+        "accuracy": 0.5729890764647467,
+        "kappa": 0.393590978858801,
+        "macro_f1": 0.43889787404990666,
+        "per_stage_f1": [
+          0.6682926829268293,
+          0.36950146627565983,
+          0.7074973600844773,
+          0.0,
+          0.44919786096256686
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 415.0,
+        "model_tst_minutes": 387.0,
+        "tst_error_minutes": 28.0,
+        "signed_tst_error_minutes": -28.0,
+        "available_epochs": 1007,
+        "wake_recall": 0.7740112994350282
+      },
+      "SN108": {
+        "accuracy": 0.5022675736961452,
+        "kappa": 0.2854688489013474,
+        "macro_f1": 0.4184189316296706,
+        "per_stage_f1": [
+          0.46153846153846156,
+          0.2983425414364641,
+          0.5971143174250833,
+          0.0,
+          0.7350993377483444
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 416.0,
+        "model_tst_minutes": 388.0,
+        "tst_error_minutes": 28.0,
+        "signed_tst_error_minutes": -28.0,
+        "available_epochs": 882,
+        "wake_recall": 0.72
+      },
+      "SN116": {
+        "accuracy": 0.4742785445420326,
+        "kappa": 0.3151713389250046,
+        "macro_f1": 0.3807255675035992,
+        "per_stage_f1": [
+          0.6105263157894737,
+          0.29743589743589743,
+          0.5978755690440061,
+          0.0,
+          0.39779005524861877
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 276.0,
+        "model_tst_minutes": 331.0,
+        "tst_error_minutes": 55.0,
+        "signed_tst_error_minutes": 55.0,
+        "available_epochs": 797,
+        "wake_recall": 0.47346938775510206
+      },
+      "SN117": {
+        "accuracy": 0.5413929040735874,
+        "kappa": 0.37062577460549917,
+        "macro_f1": 0.44052575330793964,
+        "per_stage_f1": [
+          0.7263681592039801,
+          0.17142857142857143,
+          0.6312925170068027,
+          0.0,
+          0.6735395189003437
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 319.5,
+        "model_tst_minutes": 341.0,
+        "tst_error_minutes": 21.5,
+        "signed_tst_error_minutes": 21.5,
+        "available_epochs": 761,
+        "wake_recall": 0.5983606557377049
+      },
+      "SN125": {
+        "accuracy": 0.45174708818635606,
+        "kappa": 0.24004919756544973,
+        "macro_f1": 0.25984069955421657,
+        "per_stage_f1": [
+          0.0,
+          0.07407407407407407,
+          0.42124212421242124,
+          0.5878594249201278,
+          0.21602787456445993
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 595.5,
+        "model_tst_minutes": 600.0,
+        "tst_error_minutes": 4.5,
+        "signed_tst_error_minutes": 4.5,
+        "available_epochs": 1202,
+        "wake_recall": 0.0
+      },
+      "SN142": {
+        "accuracy": 0.5363436123348018,
+        "kappa": 0.37198658110643446,
+        "macro_f1": 0.4240756260344142,
+        "per_stage_f1": [
+          0.5103448275862069,
+          0.3010752688172043,
+          0.6754176610978521,
+          0.0,
+          0.6335403726708074
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 350.0,
+        "model_tst_minutes": 413.0,
+        "tst_error_minutes": 63.0,
+        "signed_tst_error_minutes": 63.0,
+        "available_epochs": 908,
+        "wake_recall": 0.3557692307692308
+      },
+      "SN145": {
+        "accuracy": 0.6318471337579618,
+        "kappa": 0.4956280277547427,
+        "macro_f1": 0.4873000535499007,
+        "per_stage_f1": [
+          0.8135593220338984,
+          0.3448275862068966,
+          0.7131782945736435,
+          0.0,
+          0.564935064935065
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 296.5,
+        "model_tst_minutes": 311.5,
+        "tst_error_minutes": 15.0,
+        "signed_tst_error_minutes": 15.0,
+        "available_epochs": 785,
+        "wake_recall": 0.75
+      },
+      "SN148": {
+        "accuracy": 0.707852193995381,
+        "kappa": 0.5538636655189055,
+        "macro_f1": 0.5719132561878888,
+        "per_stage_f1": [
+          0.5,
+          0.2413793103448276,
+          0.7563395810363837,
+          0.5666666666666667,
+          0.7951807228915663
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 418.5,
+        "model_tst_minutes": 421.5,
+        "tst_error_minutes": 3.0,
+        "signed_tst_error_minutes": 3.0,
+        "available_epochs": 866,
+        "wake_recall": 0.4482758620689655
+      }
+    },
+    "cnn_augmented": {
+      "SN004": {
+        "accuracy": 0.6594488188976378,
+        "kappa": 0.4656216319748997,
+        "macro_f1": 0.4459550746748032,
+        "per_stage_f1": [
+          0.5609756097560976,
+          0.24193548387096775,
+          0.7643064985451018,
+          0.0,
+          0.662557781201849
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 468.0,
+        "model_tst_minutes": 466.0,
+        "tst_error_minutes": 2.0,
+        "signed_tst_error_minutes": -2.0,
+        "available_epochs": 1016,
+        "wake_recall": 0.575
+      },
+      "SN010": {
+        "accuracy": 0.7045454545454546,
+        "kappa": 0.5824983366269775,
+        "macro_f1": 0.5677113895881207,
+        "per_stage_f1": [
+          0.8755555555555555,
+          0.15789473684210525,
+          0.7358708189158016,
+          0.24347826086956523,
+          0.8257575757575758
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 342.5,
+        "model_tst_minutes": 356.5,
+        "tst_error_minutes": 14.0,
+        "signed_tst_error_minutes": 14.0,
+        "available_epochs": 924,
+        "wake_recall": 0.8242677824267782
+      },
+      "SN025": {
+        "accuracy": 0.5383838383838384,
+        "kappa": 0.35723875348956147,
+        "macro_f1": 0.4215550940222973,
+        "per_stage_f1": [
+          0.6292682926829268,
+          0.17592592592592593,
+          0.6204620462046204,
+          0.0,
+          0.6821192052980133
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 399.0,
+        "model_tst_minutes": 386.0,
+        "tst_error_minutes": 13.0,
+        "signed_tst_error_minutes": -13.0,
+        "available_epochs": 990,
+        "wake_recall": 0.671875
+      },
+      "SN029": {
+        "accuracy": 0.6246056782334385,
+        "kappa": 0.46714828980885226,
+        "macro_f1": 0.48544923615763586,
+        "per_stage_f1": [
+          0.543859649122807,
+          0.09259259259259259,
+          0.7101769911504425,
+          0.29818181818181816,
+          0.782435129740519
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 446.0,
+        "model_tst_minutes": 448.0,
+        "tst_error_minutes": 2.0,
+        "signed_tst_error_minutes": 2.0,
+        "available_epochs": 951,
+        "wake_recall": 0.5254237288135594
+      },
+      "SN032": {
+        "accuracy": 0.28114478114478114,
+        "kappa": 0.08873611617592381,
+        "macro_f1": 0.21077573791523233,
+        "per_stage_f1": [
+          0.22146507666098808,
+          0.059900166389351084,
+          0.44967880085653106,
+          0.0,
+          0.3228346456692913
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 527.5,
+        "model_tst_minutes": 367.0,
+        "tst_error_minutes": 160.5,
+        "signed_tst_error_minutes": -160.5,
+        "available_epochs": 1188,
+        "wake_recall": 0.48872180451127817
+      },
+      "SN044": {
+        "accuracy": 0.5736354273944387,
+        "kappa": 0.3540926553454451,
+        "macro_f1": 0.4378013585724715,
+        "per_stage_f1": [
+          0.5894736842105263,
+          0.18691588785046728,
+          0.6811594202898551,
+          0.0,
+          0.731457800511509
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 458.0,
+        "model_tst_minutes": 465.5,
+        "tst_error_minutes": 7.5,
+        "signed_tst_error_minutes": 7.5,
+        "available_epochs": 971,
+        "wake_recall": 0.509090909090909
+      },
+      "SN053": {
+        "accuracy": 0.5808510638297872,
+        "kappa": 0.4196057782416418,
+        "macro_f1": 0.44635115999992936,
+        "per_stage_f1": [
+          0.7379310344827587,
+          0.1651376146788991,
+          0.6636871508379888,
+          0.0,
+          0.665
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 388.5,
+        "model_tst_minutes": 406.5,
+        "tst_error_minutes": 18.0,
+        "signed_tst_error_minutes": 18.0,
+        "available_epochs": 940,
+        "wake_recall": 0.656441717791411
+      },
+      "SN054": {
+        "accuracy": 0.5240963855421686,
+        "kappa": 0.32068239113167785,
+        "macro_f1": 0.3837368940141112,
+        "per_stage_f1": [
+          0.5,
+          0.08,
+          0.5877551020408164,
+          0.0,
+          0.7509293680297398
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 235.0,
+        "model_tst_minutes": 233.0,
+        "tst_error_minutes": 2.0,
+        "signed_tst_error_minutes": -2.0,
+        "available_epochs": 498,
+        "wake_recall": 0.5357142857142857
+      },
+      "SN061": {
+        "accuracy": 0.49303944315545245,
+        "kappa": 0.37604415299170646,
+        "macro_f1": 0.4297884499514093,
+        "per_stage_f1": [
+          0.752851711026616,
+          0.1415929203539823,
+          0.4517133956386293,
+          0.0,
+          0.802784222737819
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 356.0,
+        "model_tst_minutes": 374.5,
+        "tst_error_minutes": 18.5,
+        "signed_tst_error_minutes": 18.5,
+        "available_epochs": 862,
+        "wake_recall": 0.66
+      },
+      "SN062": {
+        "accuracy": 0.4319148936170213,
+        "kappa": 0.23130639322270607,
+        "macro_f1": 0.410515691579175,
+        "per_stage_f1": [
+          0.7272727272727273,
+          0.0,
+          0.46963562753036436,
+          0.0,
+          0.8556701030927835
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 232.5,
+        "model_tst_minutes": 232.0,
+        "tst_error_minutes": 0.5,
+        "signed_tst_error_minutes": -0.5,
+        "available_epochs": 470,
+        "wake_recall": 0.8
+      },
+      "SN063": {
+        "accuracy": 0.6274193548387097,
+        "kappa": 0.48122135026614477,
+        "macro_f1": 0.478828436894724,
+        "per_stage_f1": [
+          0.7652173913043478,
+          0.1984126984126984,
+          0.6996587030716723,
+          0.0,
+          0.7308533916849015
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 495.5,
+        "model_tst_minutes": 514.5,
+        "tst_error_minutes": 19.0,
+        "signed_tst_error_minutes": 19.0,
+        "available_epochs": 1240,
+        "wake_recall": 0.7068273092369478
+      },
+      "SN068": {
+        "accuracy": 0.5231866825208086,
+        "kappa": 0.35315013263413497,
+        "macro_f1": 0.42980114379779516,
+        "per_stage_f1": [
+          0.538860103626943,
+          0.14035087719298245,
+          0.6322751322751323,
+          0.2616033755274262,
+          0.5759162303664922
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 359.0,
+        "model_tst_minutes": 385.5,
+        "tst_error_minutes": 26.5,
+        "signed_tst_error_minutes": 26.5,
+        "available_epochs": 841,
+        "wake_recall": 0.42276422764227645
+      },
+      "SN069": {
+        "accuracy": 0.6580732700135685,
+        "kappa": 0.40736155208449676,
+        "macro_f1": 0.5001354589777635,
+        "per_stage_f1": [
+          0.7448275862068966,
+          0.21621621621621623,
+          0.7762747138397502,
+          0.0,
+          0.7633587786259542
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 331.5,
+        "model_tst_minutes": 333.0,
+        "tst_error_minutes": 1.5,
+        "signed_tst_error_minutes": 1.5,
+        "available_epochs": 737,
+        "wake_recall": 0.7297297297297297
+      },
+      "SN070": {
+        "accuracy": 0.5431547619047619,
+        "kappa": 0.2877767881185659,
+        "macro_f1": 0.33786906806373773,
+        "per_stage_f1": [
+          0.375,
+          0.0,
+          0.6522292993630573,
+          0.0,
+          0.6621160409556314
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 318.5,
+        "model_tst_minutes": 321.5,
+        "tst_error_minutes": 3.0,
+        "signed_tst_error_minutes": 3.0,
+        "available_epochs": 672,
+        "wake_recall": 0.34285714285714286
+      },
+      "SN082": {
+        "accuracy": 0.6630872483221476,
+        "kappa": 0.45737997475443615,
+        "macro_f1": 0.49887373298136894,
+        "per_stage_f1": [
+          0.7654320987654321,
+          0.15384615384615385,
+          0.7485515643105446,
+          0.04519774011299435,
+          0.7813411078717201
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 354.0,
+        "model_tst_minutes": 350.5,
+        "tst_error_minutes": 3.5,
+        "signed_tst_error_minutes": -3.5,
+        "available_epochs": 745,
+        "wake_recall": 0.8378378378378378
+      },
+      "SN085": {
+        "accuracy": 0.5119284294234593,
+        "kappa": 0.315637724953274,
+        "macro_f1": 0.3489017397520528,
+        "per_stage_f1": [
+          0.5414847161572053,
+          0.07655502392344497,
+          0.7039337474120083,
+          0.0,
+          0.4225352112676056
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 428.5,
+        "model_tst_minutes": 463.0,
+        "tst_error_minutes": 34.5,
+        "signed_tst_error_minutes": 34.5,
+        "available_epochs": 1006,
+        "wake_recall": 0.4161073825503356
+      },
+      "SN097": {
+        "accuracy": 0.6238095238095238,
+        "kappa": 0.4461973553670452,
+        "macro_f1": 0.491430362259182,
+        "per_stage_f1": [
+          0.5454545454545454,
+          0.02564102564102564,
+          0.6920700308959835,
+          0.47761194029850745,
+          0.716374269005848
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 502.0,
+        "model_tst_minutes": 504.0,
+        "tst_error_minutes": 2.0,
+        "signed_tst_error_minutes": 2.0,
+        "available_epochs": 1050,
+        "wake_recall": 0.5217391304347826
+      },
+      "SN104": {
+        "accuracy": 0.6007944389275075,
+        "kappa": 0.4244495280450301,
+        "macro_f1": 0.4343367637253338,
+        "per_stage_f1": [
+          0.6792452830188679,
+          0.16585365853658537,
+          0.7314629258517034,
+          0.0,
+          0.5951219512195122
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 415.0,
+        "model_tst_minutes": 353.5,
+        "tst_error_minutes": 61.5,
+        "signed_tst_error_minutes": -61.5,
+        "available_epochs": 1007,
+        "wake_recall": 0.9152542372881356
+      },
+      "SN108": {
+        "accuracy": 0.562358276643991,
+        "kappa": 0.345683496791379,
+        "macro_f1": 0.4352514782265118,
+        "per_stage_f1": [
+          0.5082872928176796,
+          0.18867924528301888,
+          0.6721479958890031,
+          0.0,
+          0.8071428571428572
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 416.0,
+        "model_tst_minutes": 375.5,
+        "tst_error_minutes": 40.5,
+        "signed_tst_error_minutes": -40.5,
+        "available_epochs": 882,
+        "wake_recall": 0.92
+      },
+      "SN116": {
+        "accuracy": 0.493099121706399,
+        "kappa": 0.3379337004305648,
+        "macro_f1": 0.3557266719638831,
+        "per_stage_f1": [
+          0.6989795918367347,
+          0.1206896551724138,
+          0.621301775147929,
+          0.0,
+          0.33766233766233766
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 276.0,
+        "model_tst_minutes": 325.0,
+        "tst_error_minutes": 49.0,
+        "signed_tst_error_minutes": 49.0,
+        "available_epochs": 797,
+        "wake_recall": 0.5591836734693878
+      },
+      "SN117": {
+        "accuracy": 0.5505913272010512,
+        "kappa": 0.38032119429993216,
+        "macro_f1": 0.41664174080091926,
+        "per_stage_f1": [
+          0.7707317073170732,
+          0.02564102564102564,
+          0.650472334682861,
+          0.0,
+          0.6363636363636364
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 319.5,
+        "model_tst_minutes": 339.0,
+        "tst_error_minutes": 19.5,
+        "signed_tst_error_minutes": 19.5,
+        "available_epochs": 761,
+        "wake_recall": 0.6475409836065574
+      },
+      "SN125": {
+        "accuracy": 0.3527454242928453,
+        "kappa": 0.1362294530796827,
+        "macro_f1": 0.2013084401328579,
+        "per_stage_f1": [
+          0.13333333333333333,
+          0.0,
+          0.37398373983739835,
+          0.43838862559241704,
+          0.060836501901140684
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 595.5,
+        "model_tst_minutes": 599.0,
+        "tst_error_minutes": 3.5,
+        "signed_tst_error_minutes": 3.5,
+        "available_epochs": 1202,
+        "wake_recall": 0.09090909090909091
+      },
+      "SN142": {
+        "accuracy": 0.5297356828193832,
+        "kappa": 0.3421183018291648,
+        "macro_f1": 0.3701198910693304,
+        "per_stage_f1": [
+          0.5608108108108109,
+          0.10526315789473684,
+          0.6651884700665188,
+          0.0,
+          0.5193370165745856
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 350.0,
+        "model_tst_minutes": 410.0,
+        "tst_error_minutes": 60.0,
+        "signed_tst_error_minutes": 60.0,
+        "available_epochs": 908,
+        "wake_recall": 0.39903846153846156
+      },
+      "SN145": {
+        "accuracy": 0.7146496815286624,
+        "kappa": 0.5907661730446541,
+        "macro_f1": 0.5015100694530797,
+        "per_stage_f1": [
+          0.9109947643979057,
+          0.17475728155339806,
+          0.7787114845938375,
+          0.0,
+          0.6430868167202572
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 296.5,
+        "model_tst_minutes": 297.5,
+        "tst_error_minutes": 1.0,
+        "signed_tst_error_minutes": 1.0,
+        "available_epochs": 785,
+        "wake_recall": 0.90625
+      },
+      "SN148": {
+        "accuracy": 0.6166281755196305,
+        "kappa": 0.3935395142612459,
+        "macro_f1": 0.47136374490633426,
+        "per_stage_f1": [
+          0.43478260869565216,
+          0.3137254901960784,
+          0.6976284584980237,
+          0.17872340425531916,
+          0.7319587628865979
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 418.5,
+        "model_tst_minutes": 424.5,
+        "tst_error_minutes": 6.0,
+        "signed_tst_error_minutes": 6.0,
+        "available_epochs": 866,
+        "wake_recall": 0.3448275862068966
+      }
+    },
+    "cnn_context": {
+      "SN004": {
+        "accuracy": 0.6594488188976378,
+        "kappa": 0.43410447148516673,
+        "macro_f1": 0.44846533883835454,
+        "per_stage_f1": [
+          0.48322147651006714,
+          0.40437158469945356,
+          0.7952622673434856,
+          0.0,
+          0.5594713656387665
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 468.0,
+        "model_tst_minutes": 473.5,
+        "tst_error_minutes": 5.5,
+        "signed_tst_error_minutes": 5.5,
+        "available_epochs": 1016,
+        "wake_recall": 0.45
+      },
+      "SN010": {
+        "accuracy": 0.7261904761904762,
+        "kappa": 0.615612791202431,
+        "macro_f1": 0.6300044763160472,
+        "per_stage_f1": [
+          0.8551724137931035,
+          0.2603550295857988,
+          0.7599067599067599,
+          0.421875,
+          0.8527131782945736
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 342.5,
+        "model_tst_minutes": 364.0,
+        "tst_error_minutes": 21.5,
+        "signed_tst_error_minutes": 21.5,
+        "available_epochs": 924,
+        "wake_recall": 0.7782426778242678
+      },
+      "SN025": {
+        "accuracy": 0.598989898989899,
+        "kappa": 0.4254006172451451,
+        "macro_f1": 0.5144836381160626,
+        "per_stage_f1": [
+          0.6395663956639567,
+          0.28125,
+          0.6782077393075356,
+          0.08053691275167785,
+          0.8928571428571429
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 399.0,
+        "model_tst_minutes": 406.5,
+        "tst_error_minutes": 7.5,
+        "signed_tst_error_minutes": 7.5,
+        "available_epochs": 990,
+        "wake_recall": 0.6145833333333334
+      },
+      "SN029": {
+        "accuracy": 0.6803364879074658,
+        "kappa": 0.5495004994226642,
+        "macro_f1": 0.5765928659464882,
+        "per_stage_f1": [
+          0.5185185185185185,
+          0.27941176470588236,
+          0.7477272727272727,
+          0.5173501577287066,
+          0.8199566160520607
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 446.0,
+        "model_tst_minutes": 451.0,
+        "tst_error_minutes": 5.0,
+        "signed_tst_error_minutes": 5.0,
+        "available_epochs": 951,
+        "wake_recall": 0.4745762711864407
+      },
+      "SN032": {
+        "accuracy": 0.2558922558922559,
+        "kappa": 0.04045874133030236,
+        "macro_f1": 0.18555186133946555,
+        "per_stage_f1": [
+          0.17696160267111852,
+          0.1513353115727003,
+          0.4073226544622426,
+          0.0,
+          0.19213973799126638
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 527.5,
+        "model_tst_minutes": 361.0,
+        "tst_error_minutes": 166.5,
+        "signed_tst_error_minutes": -166.5,
+        "available_epochs": 1188,
+        "wake_recall": 0.39849624060150374
+      },
+      "SN044": {
+        "accuracy": 0.592173017507724,
+        "kappa": 0.3757005825469707,
+        "macro_f1": 0.4982775267829046,
+        "per_stage_f1": [
+          0.5581395348837209,
+          0.3125,
+          0.6813768755516328,
+          0.2246376811594203,
+          0.7147335423197492
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 458.0,
+        "model_tst_minutes": 470.0,
+        "tst_error_minutes": 12.0,
+        "signed_tst_error_minutes": 12.0,
+        "available_epochs": 971,
+        "wake_recall": 0.43636363636363634
+      },
+      "SN053": {
+        "accuracy": 0.6042553191489362,
+        "kappa": 0.45330979893094614,
+        "macro_f1": 0.5100368500855634,
+        "per_stage_f1": [
+          0.7183098591549296,
+          0.23129251700680273,
+          0.6835164835164835,
+          0.22009569377990432,
+          0.696969696969697
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 388.5,
+        "model_tst_minutes": 409.5,
+        "tst_error_minutes": 21.0,
+        "signed_tst_error_minutes": 21.0,
+        "available_epochs": 940,
+        "wake_recall": 0.6257668711656442
+      },
+      "SN054": {
+        "accuracy": 0.5240963855421686,
+        "kappa": 0.3331223902860727,
+        "macro_f1": 0.4228740609103646,
+        "per_stage_f1": [
+          0.425,
+          0.2222222222222222,
+          0.6257425742574257,
+          0.12345679012345678,
+          0.717948717948718
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 235.0,
+        "model_tst_minutes": 223.0,
+        "tst_error_minutes": 12.0,
+        "signed_tst_error_minutes": -12.0,
+        "available_epochs": 498,
+        "wake_recall": 0.6071428571428571
+      },
+      "SN061": {
+        "accuracy": 0.3839907192575406,
+        "kappa": 0.2523069233018448,
+        "macro_f1": 0.3692981047598389,
+        "per_stage_f1": [
+          0.5714285714285714,
+          0.24203821656050956,
+          0.38596491228070173,
+          0.0,
+          0.6470588235294118
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 356.0,
+        "model_tst_minutes": 383.5,
+        "tst_error_minutes": 27.5,
+        "signed_tst_error_minutes": 27.5,
+        "available_epochs": 862,
+        "wake_recall": 0.4666666666666667
+      },
+      "SN062": {
+        "accuracy": 0.4297872340425532,
+        "kappa": 0.23442998583853503,
+        "macro_f1": 0.4567664903799358,
+        "per_stage_f1": [
+          0.7142857142857143,
+          0.23529411764705882,
+          0.46938775510204084,
+          0.0,
+          0.8648648648648649
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 232.5,
+        "model_tst_minutes": 230.5,
+        "tst_error_minutes": 2.0,
+        "signed_tst_error_minutes": -2.0,
+        "available_epochs": 470,
+        "wake_recall": 1.0
+      },
+      "SN063": {
+        "accuracy": 0.5903225806451613,
+        "kappa": 0.423802362893282,
+        "macro_f1": 0.45915305840306064,
+        "per_stage_f1": [
+          0.7123287671232876,
+          0.1986754966887417,
+          0.6731707317073171,
+          0.0,
+          0.7115902964959568
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 495.5,
+        "model_tst_minutes": 525.5,
+        "tst_error_minutes": 30.0,
+        "signed_tst_error_minutes": 30.0,
+        "available_epochs": 1240,
+        "wake_recall": 0.6265060240963856
+      },
+      "SN068": {
+        "accuracy": 0.6278240190249703,
+        "kappa": 0.48717713938383256,
+        "macro_f1": 0.5833825082937742,
+        "per_stage_f1": [
+          0.59375,
+          0.4230769230769231,
+          0.6928934010152284,
+          0.4944649446494465,
+          0.7127272727272728
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 359.0,
+        "model_tst_minutes": 386.0,
+        "tst_error_minutes": 27.0,
+        "signed_tst_error_minutes": 27.0,
+        "available_epochs": 841,
+        "wake_recall": 0.4634146341463415
+      },
+      "SN069": {
+        "accuracy": 0.6200814111261872,
+        "kappa": 0.3236249455091331,
+        "macro_f1": 0.4556201107011485,
+        "per_stage_f1": [
+          0.6564885496183206,
+          0.25,
+          0.750252780586451,
+          0.0,
+          0.6213592233009708
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 331.5,
+        "model_tst_minutes": 340.0,
+        "tst_error_minutes": 8.5,
+        "signed_tst_error_minutes": 8.5,
+        "available_epochs": 737,
+        "wake_recall": 0.581081081081081
+      },
+      "SN070": {
+        "accuracy": 0.5267857142857143,
+        "kappa": 0.24893242374078717,
+        "macro_f1": 0.38715839164018595,
+        "per_stage_f1": [
+          0.3829787234042553,
+          0.32653061224489793,
+          0.645933014354067,
+          0.05714285714285714,
+          0.5232067510548524
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 318.5,
+        "model_tst_minutes": 330.0,
+        "tst_error_minutes": 11.5,
+        "signed_tst_error_minutes": 11.5,
+        "available_epochs": 672,
+        "wake_recall": 0.2571428571428571
+      },
+      "SN082": {
+        "accuracy": 0.6805369127516778,
+        "kappa": 0.48188754116467925,
+        "macro_f1": 0.5452718954886449,
+        "per_stage_f1": [
+          0.7466666666666667,
+          0.20512820512820512,
+          0.7692307692307693,
+          0.2613065326633166,
+          0.7440273037542662
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 354.0,
+        "model_tst_minutes": 353.5,
+        "tst_error_minutes": 0.5,
+        "signed_tst_error_minutes": -0.5,
+        "available_epochs": 745,
+        "wake_recall": 0.7567567567567568
+      },
+      "SN085": {
+        "accuracy": 0.5467196819085487,
+        "kappa": 0.3068851260185512,
+        "macro_f1": 0.3785668379757088,
+        "per_stage_f1": [
+          0.5775862068965517,
+          0.20077220077220076,
+          0.7040280210157618,
+          0.0,
+          0.41044776119402987
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 428.5,
+        "model_tst_minutes": 461.5,
+        "tst_error_minutes": 33.0,
+        "signed_tst_error_minutes": 33.0,
+        "available_epochs": 1006,
+        "wake_recall": 0.44966442953020136
+      },
+      "SN097": {
+        "accuracy": 0.6771428571428572,
+        "kappa": 0.518119100868049,
+        "macro_f1": 0.5614819166430953,
+        "per_stage_f1": [
+          0.4878048780487805,
+          0.21052631578947367,
+          0.734225621414914,
+          0.5833333333333334,
+          0.7915194346289752
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 502.0,
+        "model_tst_minutes": 507.0,
+        "tst_error_minutes": 5.0,
+        "signed_tst_error_minutes": 5.0,
+        "available_epochs": 1050,
+        "wake_recall": 0.43478260869565216
+      },
+      "SN104": {
+        "accuracy": 0.6196623634558094,
+        "kappa": 0.440437864070627,
+        "macro_f1": 0.47792903402469455,
+        "per_stage_f1": [
+          0.6941747572815534,
+          0.3382352941176471,
+          0.7408829174664108,
+          0.0,
+          0.6163522012578616
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 415.0,
+        "model_tst_minutes": 386.0,
+        "tst_error_minutes": 29.0,
+        "signed_tst_error_minutes": -29.0,
+        "available_epochs": 1007,
+        "wake_recall": 0.807909604519774
+      },
+      "SN108": {
+        "accuracy": 0.5668934240362812,
+        "kappa": 0.3413728729071165,
+        "macro_f1": 0.4418415577009247,
+        "per_stage_f1": [
+          0.4880952380952381,
+          0.208,
+          0.688622754491018,
+          0.0,
+          0.8244897959183674
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 416.0,
+        "model_tst_minutes": 382.0,
+        "tst_error_minutes": 34.0,
+        "signed_tst_error_minutes": -34.0,
+        "available_epochs": 882,
+        "wake_recall": 0.82
+      },
+      "SN116": {
+        "accuracy": 0.4968632371392723,
+        "kappa": 0.3276299152797324,
+        "macro_f1": 0.3947936147659522,
+        "per_stage_f1": [
+          0.6871794871794872,
+          0.30864197530864196,
+          0.5781466113416321,
+          0.0,
+          0.4
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 276.0,
+        "model_tst_minutes": 326.0,
+        "tst_error_minutes": 50.0,
+        "signed_tst_error_minutes": 50.0,
+        "available_epochs": 797,
+        "wake_recall": 0.5469387755102041
+      },
+      "SN117": {
+        "accuracy": 0.6228646517739816,
+        "kappa": 0.478701186489628,
+        "macro_f1": 0.5691027815718682,
+        "per_stage_f1": [
+          0.8165137614678899,
+          0.5037037037037037,
+          0.6798418972332015,
+          0.0,
+          0.8454545454545455
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 319.5,
+        "model_tst_minutes": 332.5,
+        "tst_error_minutes": 13.0,
+        "signed_tst_error_minutes": 13.0,
+        "available_epochs": 761,
+        "wake_recall": 0.7295081967213115
+      },
+      "SN125": {
+        "accuracy": 0.38519134775374375,
+        "kappa": 0.15799920565783943,
+        "macro_f1": 0.19444848167165033,
+        "per_stage_f1": [
+          0.0,
+          0.07272727272727272,
+          0.39182282793867124,
+          0.5076923076923077,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 595.5,
+        "model_tst_minutes": 600.0,
+        "tst_error_minutes": 4.5,
+        "signed_tst_error_minutes": 4.5,
+        "available_epochs": 1202,
+        "wake_recall": 0.0
+      },
+      "SN142": {
+        "accuracy": 0.4900881057268722,
+        "kappa": 0.26440425885584806,
+        "macro_f1": 0.35146889155393807,
+        "per_stage_f1": [
+          0.5190311418685121,
+          0.16260162601626016,
+          0.6141732283464567,
+          0.0,
+          0.46153846153846156
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 350.0,
+        "model_tst_minutes": 413.5,
+        "tst_error_minutes": 63.5,
+        "signed_tst_error_minutes": 63.5,
+        "available_epochs": 908,
+        "wake_recall": 0.3605769230769231
+      },
+      "SN145": {
+        "accuracy": 0.7044585987261146,
+        "kappa": 0.5675999088284456,
+        "macro_f1": 0.518592803994012,
+        "per_stage_f1": [
+          0.8688524590163934,
+          0.26666666666666666,
+          0.7736842105263158,
+          0.0,
+          0.6837606837606838
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 296.5,
+        "model_tst_minutes": 305.5,
+        "tst_error_minutes": 9.0,
+        "signed_tst_error_minutes": 9.0,
+        "available_epochs": 785,
+        "wake_recall": 0.828125
+      },
+      "SN148": {
+        "accuracy": 0.5993071593533488,
+        "kappa": 0.3678885303558732,
+        "macro_f1": 0.41277064805736413,
+        "per_stage_f1": [
+          0.16216216216216217,
+          0.23880597014925373,
+          0.6870681145113524,
+          0.2980392156862745,
+          0.6777777777777778
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 418.5,
+        "model_tst_minutes": 429.0,
+        "tst_error_minutes": 10.5,
+        "signed_tst_error_minutes": 10.5,
+        "available_epochs": 866,
+        "wake_recall": 0.10344827586206896
+      }
+    },
+    "cnn_context_sqrtbalanced": {
+      "SN004": {
+        "accuracy": 0.7047244094488189,
+        "kappa": 0.5209016103553156,
+        "macro_f1": 0.48816184290993136,
+        "per_stage_f1": [
+          0.5363128491620112,
+          0.3741935483870968,
+          0.8091872791519434,
+          0.0,
+          0.7211155378486056
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 468.0,
+        "model_tst_minutes": 458.5,
+        "tst_error_minutes": 9.5,
+        "signed_tst_error_minutes": -9.5,
+        "available_epochs": 1016,
+        "wake_recall": 0.6
+      },
+      "SN010": {
+        "accuracy": 0.7142857142857143,
+        "kappa": 0.5966813376497548,
+        "macro_f1": 0.6149385212378266,
+        "per_stage_f1": [
+          0.8616780045351474,
+          0.25925925925925924,
+          0.7347876004592423,
+          0.3709677419354839,
+          0.848
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 342.5,
+        "model_tst_minutes": 361.0,
+        "tst_error_minutes": 18.5,
+        "signed_tst_error_minutes": 18.5,
+        "available_epochs": 924,
+        "wake_recall": 0.7949790794979079
+      },
+      "SN025": {
+        "accuracy": 0.5828282828282828,
+        "kappa": 0.40383098410828366,
+        "macro_f1": 0.482955491873013,
+        "per_stage_f1": [
+          0.6666666666666666,
+          0.25833333333333336,
+          0.654994850669413,
+          0.0,
+          0.8347826086956521
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 399.0,
+        "model_tst_minutes": 393.0,
+        "tst_error_minutes": 6.0,
+        "signed_tst_error_minutes": -6.0,
+        "available_epochs": 990,
+        "wake_recall": 0.6875
+      },
+      "SN029": {
+        "accuracy": 0.6203995793901157,
+        "kappa": 0.45947703362691406,
+        "macro_f1": 0.4852546565019035,
+        "per_stage_f1": [
+          0.40707964601769914,
+          0.1889763779527559,
+          0.7136752136752137,
+          0.33451957295373663,
+          0.7820224719101123
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 446.0,
+        "model_tst_minutes": 448.5,
+        "tst_error_minutes": 2.5,
+        "signed_tst_error_minutes": 2.5,
+        "available_epochs": 951,
+        "wake_recall": 0.3898305084745763
+      },
+      "SN032": {
+        "accuracy": 0.26851851851851855,
+        "kappa": 0.06398426754601105,
+        "macro_f1": 0.20465185080711024,
+        "per_stage_f1": [
+          0.1610738255033557,
+          0.09763779527559055,
+          0.4442013129102845,
+          0.0,
+          0.3203463203463203
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 527.5,
+        "model_tst_minutes": 362.5,
+        "tst_error_minutes": 165.0,
+        "signed_tst_error_minutes": -165.0,
+        "available_epochs": 1188,
+        "wake_recall": 0.3609022556390977
+      },
+      "SN044": {
+        "accuracy": 0.5695159629248198,
+        "kappa": 0.3396169928898001,
+        "macro_f1": 0.4891670169280299,
+        "per_stage_f1": [
+          0.6222222222222222,
+          0.3937007874015748,
+          0.6567944250871081,
+          0.06324110671936758,
+          0.7098765432098766
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 458.0,
+        "model_tst_minutes": 468.0,
+        "tst_error_minutes": 10.0,
+        "signed_tst_error_minutes": 10.0,
+        "available_epochs": 971,
+        "wake_recall": 0.509090909090909
+      },
+      "SN053": {
+        "accuracy": 0.5595744680851064,
+        "kappa": 0.38597764552184644,
+        "macro_f1": 0.43816893308209864,
+        "per_stage_f1": [
+          0.657243816254417,
+          0.23809523809523808,
+          0.6538871139510117,
+          0.0,
+          0.6416184971098265
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 388.5,
+        "model_tst_minutes": 410.0,
+        "tst_error_minutes": 21.5,
+        "signed_tst_error_minutes": 21.5,
+        "available_epochs": 940,
+        "wake_recall": 0.5705521472392638
+      },
+      "SN054": {
+        "accuracy": 0.5341365461847389,
+        "kappa": 0.3358396854413135,
+        "macro_f1": 0.41795328801989295,
+        "per_stage_f1": [
+          0.5846153846153846,
+          0.12903225806451613,
+          0.5924453280318092,
+          0.0,
+          0.7836734693877551
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 235.0,
+        "model_tst_minutes": 230.5,
+        "tst_error_minutes": 4.5,
+        "signed_tst_error_minutes": -4.5,
+        "available_epochs": 498,
+        "wake_recall": 0.6785714285714286
+      },
+      "SN061": {
+        "accuracy": 0.44895591647331784,
+        "kappa": 0.32697428547007423,
+        "macro_f1": 0.4152034890767097,
+        "per_stage_f1": [
+          0.6850393700787402,
+          0.1897810218978102,
+          0.4166666666666667,
+          0.0,
+          0.7845303867403315
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 356.0,
+        "model_tst_minutes": 379.0,
+        "tst_error_minutes": 23.0,
+        "signed_tst_error_minutes": 23.0,
+        "available_epochs": 862,
+        "wake_recall": 0.58
+      },
+      "SN062": {
+        "accuracy": 0.43617021276595747,
+        "kappa": 0.24064138519692724,
+        "macro_f1": 0.3989897199574619,
+        "per_stage_f1": [
+          0.625,
+          0.0,
+          0.4798387096774194,
+          0.0,
+          0.8901098901098901
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 232.5,
+        "model_tst_minutes": 229.5,
+        "tst_error_minutes": 3.0,
+        "signed_tst_error_minutes": -3.0,
+        "available_epochs": 470,
+        "wake_recall": 1.0
+      },
+      "SN063": {
+        "accuracy": 0.5830645161290322,
+        "kappa": 0.41382308809935053,
+        "macro_f1": 0.4419283436435329,
+        "per_stage_f1": [
+          0.651270207852194,
+          0.16974169741697417,
+          0.6715566422167889,
+          0.0,
+          0.7170731707317073
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 495.5,
+        "model_tst_minutes": 528.0,
+        "tst_error_minutes": 32.5,
+        "signed_tst_error_minutes": 32.5,
+        "available_epochs": 1240,
+        "wake_recall": 0.5662650602409639
+      },
+      "SN068": {
+        "accuracy": 0.5707491082045184,
+        "kappa": 0.40466306511231176,
+        "macro_f1": 0.5046249359338015,
+        "per_stage_f1": [
+          0.6220095693779905,
+          0.2446043165467626,
+          0.6398046398046398,
+          0.2711864406779661,
+          0.7455197132616488
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 359.0,
+        "model_tst_minutes": 377.5,
+        "tst_error_minutes": 18.5,
+        "signed_tst_error_minutes": 18.5,
+        "available_epochs": 841,
+        "wake_recall": 0.5284552845528455
+      },
+      "SN069": {
+        "accuracy": 0.6282225237449118,
+        "kappa": 0.3443954574083332,
+        "macro_f1": 0.4621450835920863,
+        "per_stage_f1": [
+          0.7397260273972602,
+          0.2857142857142857,
+          0.7558733401430031,
+          0.0,
+          0.5294117647058824
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 331.5,
+        "model_tst_minutes": 332.5,
+        "tst_error_minutes": 1.0,
+        "signed_tst_error_minutes": 1.0,
+        "available_epochs": 737,
+        "wake_recall": 0.7297297297297297
+      },
+      "SN070": {
+        "accuracy": 0.5342261904761905,
+        "kappa": 0.2622947369897798,
+        "macro_f1": 0.3589286791505744,
+        "per_stage_f1": [
+          0.3111111111111111,
+          0.19047619047619047,
+          0.6405867970660146,
+          0.023255813953488372,
+          0.6292134831460674
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 318.5,
+        "model_tst_minutes": 331.0,
+        "tst_error_minutes": 12.5,
+        "signed_tst_error_minutes": 12.5,
+        "available_epochs": 672,
+        "wake_recall": 0.2
+      },
+      "SN082": {
+        "accuracy": 0.7060402684563758,
+        "kappa": 0.5301092394137417,
+        "macro_f1": 0.5800970712171009,
+        "per_stage_f1": [
+          0.8,
+          0.23076923076923078,
+          0.7615658362989324,
+          0.27,
+          0.838150289017341
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 354.0,
+        "model_tst_minutes": 353.5,
+        "tst_error_minutes": 0.5,
+        "signed_tst_error_minutes": -0.5,
+        "available_epochs": 745,
+        "wake_recall": 0.8108108108108109
+      },
+      "SN085": {
+        "accuracy": 0.5526838966202783,
+        "kappa": 0.3595665367502988,
+        "macro_f1": 0.40788434500671383,
+        "per_stage_f1": [
+          0.6448979591836734,
+          0.18930041152263374,
+          0.6979062811565304,
+          0.0,
+          0.5073170731707317
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 428.5,
+        "model_tst_minutes": 455.0,
+        "tst_error_minutes": 26.5,
+        "signed_tst_error_minutes": 26.5,
+        "available_epochs": 1006,
+        "wake_recall": 0.5302013422818792
+      },
+      "SN097": {
+        "accuracy": 0.6657142857142857,
+        "kappa": 0.5039143052511993,
+        "macro_f1": 0.5515874673733883,
+        "per_stage_f1": [
+          0.5609756097560976,
+          0.19428571428571428,
+          0.7195242814667988,
+          0.5073170731707317,
+          0.7758346581875993
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 502.0,
+        "model_tst_minutes": 507.0,
+        "tst_error_minutes": 5.0,
+        "signed_tst_error_minutes": 5.0,
+        "available_epochs": 1050,
+        "wake_recall": 0.5
+      },
+      "SN104": {
+        "accuracy": 0.6137040714995035,
+        "kappa": 0.4325905925944167,
+        "macro_f1": 0.43969828777238906,
+        "per_stage_f1": [
+          0.6724137931034483,
+          0.2916666666666667,
+          0.758220502901354,
+          0.0,
+          0.47619047619047616
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 415.0,
+        "model_tst_minutes": 360.0,
+        "tst_error_minutes": 55.0,
+        "signed_tst_error_minutes": -55.0,
+        "available_epochs": 1007,
+        "wake_recall": 0.8813559322033898
+      },
+      "SN108": {
+        "accuracy": 0.5770975056689343,
+        "kappa": 0.36185144666092506,
+        "macro_f1": 0.44912814242602,
+        "per_stage_f1": [
+          0.5365853658536586,
+          0.2,
+          0.6876267748478702,
+          0.0,
+          0.8214285714285714
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 416.0,
+        "model_tst_minutes": 384.0,
+        "tst_error_minutes": 32.0,
+        "signed_tst_error_minutes": -32.0,
+        "available_epochs": 882,
+        "wake_recall": 0.88
+      },
+      "SN116": {
+        "accuracy": 0.5006273525721455,
+        "kappa": 0.3324185479746694,
+        "macro_f1": 0.38335585058806976,
+        "per_stage_f1": [
+          0.684863523573201,
+          0.21739130434782608,
+          0.5941422594142259,
+          0.0,
+          0.42038216560509556
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 276.0,
+        "model_tst_minutes": 319.5,
+        "tst_error_minutes": 43.5,
+        "signed_tst_error_minutes": 43.5,
+        "available_epochs": 797,
+        "wake_recall": 0.563265306122449
+      },
+      "SN117": {
+        "accuracy": 0.5913272010512484,
+        "kappa": 0.4343427342256214,
+        "macro_f1": 0.5071214812380512,
+        "per_stage_f1": [
+          0.8053097345132744,
+          0.3,
+          0.6525198938992043,
+          0.0,
+          0.7777777777777778
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 319.5,
+        "model_tst_minutes": 328.5,
+        "tst_error_minutes": 9.0,
+        "signed_tst_error_minutes": 9.0,
+        "available_epochs": 761,
+        "wake_recall": 0.7459016393442623
+      },
+      "SN125": {
+        "accuracy": 0.36023294509151416,
+        "kappa": 0.14708509421078875,
+        "macro_f1": 0.19356955054683586,
+        "per_stage_f1": [
+          0.0,
+          0.03571428571428571,
+          0.38562091503267976,
+          0.42755344418052255,
+          0.11895910780669144
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 595.5,
+        "model_tst_minutes": 600.0,
+        "tst_error_minutes": 4.5,
+        "signed_tst_error_minutes": 4.5,
+        "available_epochs": 1202,
+        "wake_recall": 0.0
+      },
+      "SN142": {
+        "accuracy": 0.526431718061674,
+        "kappa": 0.32140939119069667,
+        "macro_f1": 0.39521889711721225,
+        "per_stage_f1": [
+          0.5190311418685121,
+          0.1308411214953271,
+          0.6222222222222222,
+          0.0,
+          0.704
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 350.0,
+        "model_tst_minutes": 413.5,
+        "tst_error_minutes": 63.5,
+        "signed_tst_error_minutes": 63.5,
+        "available_epochs": 908,
+        "wake_recall": 0.3605769230769231
+      },
+      "SN145": {
+        "accuracy": 0.7273885350318471,
+        "kappa": 0.6028276571347511,
+        "macro_f1": 0.5315543123599337,
+        "per_stage_f1": [
+          0.8952879581151832,
+          0.2748091603053435,
+          0.789261744966443,
+          0.0,
+          0.6984126984126984
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 296.5,
+        "model_tst_minutes": 297.5,
+        "tst_error_minutes": 1.0,
+        "signed_tst_error_minutes": 1.0,
+        "available_epochs": 785,
+        "wake_recall": 0.890625
+      },
+      "SN148": {
+        "accuracy": 0.6085450346420324,
+        "kappa": 0.38606477841165754,
+        "macro_f1": 0.46905396344986316,
+        "per_stage_f1": [
+          0.4583333333333333,
+          0.24242424242424243,
+          0.6958250497017893,
+          0.2601626016260163,
+          0.6885245901639344
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 418.5,
+        "model_tst_minutes": 423.5,
+        "tst_error_minutes": 5.0,
+        "signed_tst_error_minutes": 5.0,
+        "available_epochs": 866,
+        "wake_recall": 0.3793103448275862
+      }
+    },
+    "cnn_context_balanced": {
+      "SN004": {
+        "accuracy": 0.7332677165354331,
+        "kappa": 0.5515086754539709,
+        "macro_f1": 0.5018859017680886,
+        "per_stage_f1": [
+          0.5955056179775281,
+          0.32061068702290074,
+          0.8244147157190636,
+          0.0,
+          0.7688984881209503
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 468.0,
+        "model_tst_minutes": 459.0,
+        "tst_error_minutes": 9.0,
+        "signed_tst_error_minutes": -9.0,
+        "available_epochs": 1016,
+        "wake_recall": 0.6625
+      },
+      "SN010": {
+        "accuracy": 0.645021645021645,
+        "kappa": 0.49151040897681975,
+        "macro_f1": 0.5265617374726,
+        "per_stage_f1": [
+          0.7941176470588235,
+          0.23170731707317074,
+          0.6902465166130761,
+          0.21238938053097345,
+          0.7043478260869566
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 342.5,
+        "model_tst_minutes": 377.5,
+        "tst_error_minutes": 35.0,
+        "signed_tst_error_minutes": 35.0,
+        "available_epochs": 924,
+        "wake_recall": 0.6778242677824268
+      },
+      "SN025": {
+        "accuracy": 0.5909090909090909,
+        "kappa": 0.40468413144313065,
+        "macro_f1": 0.46603401652552173,
+        "per_stage_f1": [
+          0.6684491978609626,
+          0.14883720930232558,
+          0.6862170087976539,
+          0.0,
+          0.8266666666666667
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 399.0,
+        "model_tst_minutes": 404.0,
+        "tst_error_minutes": 5.0,
+        "signed_tst_error_minutes": 5.0,
+        "available_epochs": 990,
+        "wake_recall": 0.6510416666666666
+      },
+      "SN029": {
+        "accuracy": 0.6361724500525763,
+        "kappa": 0.47975025178781205,
+        "macro_f1": 0.48708360552227914,
+        "per_stage_f1": [
+          0.39080459770114945,
+          0.15384615384615385,
+          0.7133479212253829,
+          0.375,
+          0.8024193548387096
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 446.0,
+        "model_tst_minutes": 461.5,
+        "tst_error_minutes": 15.5,
+        "signed_tst_error_minutes": 15.5,
+        "available_epochs": 951,
+        "wake_recall": 0.288135593220339
+      },
+      "SN032": {
+        "accuracy": 0.25841750841750843,
+        "kappa": 0.05112939416604334,
+        "macro_f1": 0.1870202531815265,
+        "per_stage_f1": [
+          0.14715719063545152,
+          0.11410459587955626,
+          0.43383947939262474,
+          0.0,
+          0.24
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 527.5,
+        "model_tst_minutes": 361.5,
+        "tst_error_minutes": 166.0,
+        "signed_tst_error_minutes": -166.0,
+        "available_epochs": 1188,
+        "wake_recall": 0.3308270676691729
+      },
+      "SN044": {
+        "accuracy": 0.5602471678681772,
+        "kappa": 0.3142972910395925,
+        "macro_f1": 0.4110328362346568,
+        "per_stage_f1": [
+          0.425,
+          0.16822429906542055,
+          0.6582064297800339,
+          0.0321285140562249,
+          0.7716049382716049
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 458.0,
+        "model_tst_minutes": 473.0,
+        "tst_error_minutes": 15.0,
+        "signed_tst_error_minutes": 15.0,
+        "available_epochs": 971,
+        "wake_recall": 0.3090909090909091
+      },
+      "SN053": {
+        "accuracy": 0.5574468085106383,
+        "kappa": 0.37793897744265226,
+        "macro_f1": 0.4114858457879448,
+        "per_stage_f1": [
+          0.622568093385214,
+          0.0847457627118644,
+          0.6549586776859504,
+          0.0,
+          0.6951566951566952
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 388.5,
+        "model_tst_minutes": 423.0,
+        "tst_error_minutes": 34.5,
+        "signed_tst_error_minutes": 34.5,
+        "available_epochs": 940,
+        "wake_recall": 0.49079754601226994
+      },
+      "SN054": {
+        "accuracy": 0.4919678714859438,
+        "kappa": 0.2804002535853195,
+        "macro_f1": 0.377653877146222,
+        "per_stage_f1": [
+          0.3287671232876712,
+          0.25,
+          0.5764705882352941,
+          0.0,
+          0.7330316742081447
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 235.0,
+        "model_tst_minutes": 226.5,
+        "tst_error_minutes": 8.5,
+        "signed_tst_error_minutes": -8.5,
+        "available_epochs": 498,
+        "wake_recall": 0.42857142857142855
+      },
+      "SN061": {
+        "accuracy": 0.4176334106728538,
+        "kappa": 0.2870316822449924,
+        "macro_f1": 0.3614775608737529,
+        "per_stage_f1": [
+          0.6075949367088608,
+          0.03333333333333333,
+          0.3988919667590028,
+          0.0,
+          0.7675675675675676
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 356.0,
+        "model_tst_minutes": 387.5,
+        "tst_error_minutes": 31.5,
+        "signed_tst_error_minutes": 31.5,
+        "available_epochs": 862,
+        "wake_recall": 0.48
+      },
+      "SN062": {
+        "accuracy": 0.4531914893617021,
+        "kappa": 0.2593160370127362,
+        "macro_f1": 0.42441127968077746,
+        "per_stage_f1": [
+          0.7142857142857143,
+          0.0,
+          0.4959677419354839,
+          0.02531645569620253,
+          0.8864864864864865
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 232.5,
+        "model_tst_minutes": 230.5,
+        "tst_error_minutes": 2.0,
+        "signed_tst_error_minutes": -2.0,
+        "available_epochs": 470,
+        "wake_recall": 1.0
+      },
+      "SN063": {
+        "accuracy": 0.5661290322580645,
+        "kappa": 0.3820582742982481,
+        "macro_f1": 0.4179505373559443,
+        "per_stage_f1": [
+          0.6086956521739131,
+          0.13008130081300814,
+          0.6563944530046225,
+          0.0,
+          0.6945812807881774
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 495.5,
+        "model_tst_minutes": 549.0,
+        "tst_error_minutes": 53.5,
+        "signed_tst_error_minutes": 53.5,
+        "available_epochs": 1240,
+        "wake_recall": 0.4779116465863454
+      },
+      "SN068": {
+        "accuracy": 0.5683709869203329,
+        "kappa": 0.4029254955036006,
+        "macro_f1": 0.48600117722385094,
+        "per_stage_f1": [
+          0.48936170212765956,
+          0.21212121212121213,
+          0.6592039800995025,
+          0.38735177865612647,
+          0.6819672131147541
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 359.0,
+        "model_tst_minutes": 388.0,
+        "tst_error_minutes": 29.0,
+        "signed_tst_error_minutes": 29.0,
+        "available_epochs": 841,
+        "wake_recall": 0.37398373983739835
+      },
+      "SN069": {
+        "accuracy": 0.5943012211668928,
+        "kappa": 0.24901766331666852,
+        "macro_f1": 0.39747509033654227,
+        "per_stage_f1": [
+          0.6771653543307087,
+          0.2894736842105263,
+          0.7244401168451802,
+          0.0,
+          0.2962962962962963
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 331.5,
+        "model_tst_minutes": 342.0,
+        "tst_error_minutes": 10.5,
+        "signed_tst_error_minutes": 10.5,
+        "available_epochs": 737,
+        "wake_recall": 0.581081081081081
+      },
+      "SN070": {
+        "accuracy": 0.48214285714285715,
+        "kappa": 0.16329991627847074,
+        "macro_f1": 0.317417540585736,
+        "per_stage_f1": [
+          0.391304347826087,
+          0.1951219512195122,
+          0.6192660550458715,
+          0.0,
+          0.3813953488372093
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 318.5,
+        "model_tst_minutes": 330.5,
+        "tst_error_minutes": 12.0,
+        "signed_tst_error_minutes": 12.0,
+        "available_epochs": 672,
+        "wake_recall": 0.2571428571428571
+      },
+      "SN082": {
+        "accuracy": 0.6604026845637584,
+        "kappa": 0.4386100248103483,
+        "macro_f1": 0.5077098803097825,
+        "per_stage_f1": [
+          0.8732394366197183,
+          0.08,
+          0.7350993377483444,
+          0.0670391061452514,
+          0.7831715210355987
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 354.0,
+        "model_tst_minutes": 355.5,
+        "tst_error_minutes": 1.5,
+        "signed_tst_error_minutes": 1.5,
+        "available_epochs": 745,
+        "wake_recall": 0.8378378378378378
+      },
+      "SN085": {
+        "accuracy": 0.5248508946322068,
+        "kappa": 0.32777700114630803,
+        "macro_f1": 0.38208546463761184,
+        "per_stage_f1": [
+          0.5974025974025974,
+          0.18181818181818182,
+          0.6912065439672802,
+          0.0,
+          0.44
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 428.5,
+        "model_tst_minutes": 462.0,
+        "tst_error_minutes": 33.5,
+        "signed_tst_error_minutes": 33.5,
+        "available_epochs": 1006,
+        "wake_recall": 0.46308724832214765
+      },
+      "SN097": {
+        "accuracy": 0.6676190476190477,
+        "kappa": 0.49991266041824745,
+        "macro_f1": 0.5221231387048499,
+        "per_stage_f1": [
+          0.4788732394366197,
+          0.12048192771084337,
+          0.7222222222222222,
+          0.48514851485148514,
+          0.8038897893030794
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 502.0,
+        "model_tst_minutes": 512.5,
+        "tst_error_minutes": 10.5,
+        "signed_tst_error_minutes": 10.5,
+        "available_epochs": 1050,
+        "wake_recall": 0.3695652173913043
+      },
+      "SN104": {
+        "accuracy": 0.5968222442899702,
+        "kappa": 0.40431651322010487,
+        "macro_f1": 0.4223314838025779,
+        "per_stage_f1": [
+          0.6591422121896162,
+          0.27983539094650206,
+          0.7402473834443387,
+          0.0,
+          0.43243243243243246
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 415.0,
+        "model_tst_minutes": 370.5,
+        "tst_error_minutes": 44.5,
+        "signed_tst_error_minutes": -44.5,
+        "available_epochs": 1007,
+        "wake_recall": 0.8248587570621468
+      },
+      "SN108": {
+        "accuracy": 0.5691609977324263,
+        "kappa": 0.3414754910051163,
+        "macro_f1": 0.4256273123561902,
+        "per_stage_f1": [
+          0.5030674846625767,
+          0.11214953271028037,
+          0.6884920634920635,
+          0.0,
+          0.8244274809160306
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 416.0,
+        "model_tst_minutes": 384.5,
+        "tst_error_minutes": 31.5,
+        "signed_tst_error_minutes": -31.5,
+        "available_epochs": 882,
+        "wake_recall": 0.82
+      },
+      "SN116": {
+        "accuracy": 0.4604767879548306,
+        "kappa": 0.2808278108172765,
+        "macro_f1": 0.34792355347487824,
+        "per_stage_f1": [
+          0.5777777777777777,
+          0.2153846153846154,
+          0.575197889182058,
+          0.0,
+          0.3712574850299401
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 276.0,
+        "model_tst_minutes": 341.0,
+        "tst_error_minutes": 65.0,
+        "signed_tst_error_minutes": 65.0,
+        "available_epochs": 797,
+        "wake_recall": 0.42448979591836733
+      },
+      "SN117": {
+        "accuracy": 0.5729303547963206,
+        "kappa": 0.40070028350577913,
+        "macro_f1": 0.49153742915351123,
+        "per_stage_f1": [
+          0.7536231884057971,
+          0.2736842105263158,
+          0.6303797468354431,
+          0.0,
+          0.8
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 319.5,
+        "model_tst_minutes": 338.0,
+        "tst_error_minutes": 18.5,
+        "signed_tst_error_minutes": 18.5,
+        "available_epochs": 761,
+        "wake_recall": 0.639344262295082
+      },
+      "SN125": {
+        "accuracy": 0.36772046589018303,
+        "kappa": 0.14896312720090932,
+        "macro_f1": 0.1717307461432259,
+        "per_stage_f1": [
+          0.0,
+          0.0,
+          0.3841166936790924,
+          0.47453703703703703,
+          0.0
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 595.5,
+        "model_tst_minutes": 601.0,
+        "tst_error_minutes": 5.5,
+        "signed_tst_error_minutes": 5.5,
+        "available_epochs": 1202,
+        "wake_recall": 0.0
+      },
+      "SN142": {
+        "accuracy": 0.46145374449339205,
+        "kappa": 0.21408797728704831,
+        "macro_f1": 0.2986882760903626,
+        "per_stage_f1": [
+          0.43795620437956206,
+          0.06896551724137931,
+          0.5952153110047846,
+          0.0,
+          0.391304347826087
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 350.0,
+        "model_tst_minutes": 421.0,
+        "tst_error_minutes": 71.0,
+        "signed_tst_error_minutes": 71.0,
+        "available_epochs": 908,
+        "wake_recall": 0.28846153846153844
+      },
+      "SN145": {
+        "accuracy": 0.7121019108280254,
+        "kappa": 0.5795861977444909,
+        "macro_f1": 0.5108014161959626,
+        "per_stage_f1": [
+          0.9090909090909091,
+          0.22608695652173913,
+          0.7669773635153129,
+          0.0,
+          0.6518518518518519
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 296.5,
+        "model_tst_minutes": 301.5,
+        "tst_error_minutes": 5.0,
+        "signed_tst_error_minutes": 5.0,
+        "available_epochs": 785,
+        "wake_recall": 0.8854166666666666
+      },
+      "SN148": {
+        "accuracy": 0.5669745958429562,
+        "kappa": 0.30470807373627073,
+        "macro_f1": 0.41315947953962756,
+        "per_stage_f1": [
+          0.45,
+          0.18181818181818182,
+          0.6685499058380414,
+          0.1630901287553648,
+          0.6023391812865497
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 418.5,
+        "model_tst_minutes": 427.5,
+        "tst_error_minutes": 9.0,
+        "signed_tst_error_minutes": 9.0,
+        "available_epochs": 866,
+        "wake_recall": 0.3103448275862069
+      }
+    },
+    "ensemble_of_7": {
+      "SN004": {
+        "accuracy": 0.7362204724409449,
+        "kappa": 0.580970320372542,
+        "macro_f1": 0.5311306413598895,
+        "per_stage_f1": [
+          0.5975609756097561,
+          0.4588235294117647,
+          0.8247232472324724,
+          0.0,
+          0.7745454545454545
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 468.0,
+        "model_tst_minutes": 466.0,
+        "tst_error_minutes": 2.0,
+        "signed_tst_error_minutes": -2.0,
+        "available_epochs": 1016,
+        "wake_recall": 0.6125
+      },
+      "SN010": {
+        "accuracy": 0.7445887445887446,
+        "kappa": 0.6424811087046696,
+        "macro_f1": 0.6582916452361316,
+        "per_stage_f1": [
+          0.8819599109131403,
+          0.25766871165644173,
+          0.7600950118764845,
+          0.5037037037037037,
+          0.888030888030888
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 342.5,
+        "model_tst_minutes": 357.0,
+        "tst_error_minutes": 14.5,
+        "signed_tst_error_minutes": 14.5,
+        "available_epochs": 924,
+        "wake_recall": 0.8284518828451883
+      },
+      "SN025": {
+        "accuracy": 0.5878787878787879,
+        "kappa": 0.4156368360594548,
+        "macro_f1": 0.48788741656629525,
+        "per_stage_f1": [
+          0.6649484536082474,
+          0.29959514170040485,
+          0.660377358490566,
+          0.0,
+          0.8145161290322581
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 399.0,
+        "model_tst_minutes": 397.0,
+        "tst_error_minutes": 2.0,
+        "signed_tst_error_minutes": -2.0,
+        "available_epochs": 990,
+        "wake_recall": 0.671875
+      },
+      "SN029": {
+        "accuracy": 0.668769716088328,
+        "kappa": 0.5304719496311204,
+        "macro_f1": 0.543521462678154,
+        "per_stage_f1": [
+          0.5098039215686274,
+          0.18803418803418803,
+          0.7426636568848759,
+          0.47058823529411764,
+          0.8065173116089613
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 446.0,
+        "model_tst_minutes": 454.0,
+        "tst_error_minutes": 8.0,
+        "signed_tst_error_minutes": 8.0,
+        "available_epochs": 951,
+        "wake_recall": 0.4406779661016949
+      },
+      "SN032": {
+        "accuracy": 0.2558922558922559,
+        "kappa": 0.060075269731454495,
+        "macro_f1": 0.18844432580909212,
+        "per_stage_f1": [
+          0.17034700315457413,
+          0.05619834710743802,
+          0.44493392070484583,
+          0.0,
+          0.27074235807860264
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 527.5,
+        "model_tst_minutes": 343.5,
+        "tst_error_minutes": 184.0,
+        "signed_tst_error_minutes": -184.0,
+        "available_epochs": 1188,
+        "wake_recall": 0.40601503759398494
+      },
+      "SN044": {
+        "accuracy": 0.6148300720906282,
+        "kappa": 0.4160018396985725,
+        "macro_f1": 0.5165359364058544,
+        "per_stage_f1": [
+          0.6521739130434783,
+          0.3103448275862069,
+          0.6986425339366515,
+          0.12260536398467432,
+          0.7989130434782609
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 458.0,
+        "model_tst_minutes": 467.0,
+        "tst_error_minutes": 9.0,
+        "signed_tst_error_minutes": 9.0,
+        "available_epochs": 971,
+        "wake_recall": 0.5454545454545454
+      },
+      "SN053": {
+        "accuracy": 0.5968085106382979,
+        "kappa": 0.4416460048835992,
+        "macro_f1": 0.4780432302420211,
+        "per_stage_f1": [
+          0.7007299270072993,
+          0.2835820895522388,
+          0.6805708013172338,
+          0.0,
+          0.7253333333333334
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 388.5,
+        "model_tst_minutes": 414.5,
+        "tst_error_minutes": 26.0,
+        "signed_tst_error_minutes": 26.0,
+        "available_epochs": 940,
+        "wake_recall": 0.588957055214724
+      },
+      "SN054": {
+        "accuracy": 0.5220883534136547,
+        "kappa": 0.323605111026143,
+        "macro_f1": 0.400946843974377,
+        "per_stage_f1": [
+          0.5277777777777778,
+          0.11764705882352941,
+          0.5875251509054326,
+          0.0,
+          0.7717842323651453
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 235.0,
+        "model_tst_minutes": 227.0,
+        "tst_error_minutes": 8.0,
+        "signed_tst_error_minutes": -8.0,
+        "available_epochs": 498,
+        "wake_recall": 0.6785714285714286
+      },
+      "SN061": {
+        "accuracy": 0.4953596287703016,
+        "kappa": 0.38169574028483844,
+        "macro_f1": 0.4467207454942252,
+        "per_stage_f1": [
+          0.7490636704119851,
+          0.183206106870229,
+          0.44274809160305345,
+          0.0,
+          0.8585858585858586
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 356.0,
+        "model_tst_minutes": 372.5,
+        "tst_error_minutes": 16.5,
+        "signed_tst_error_minutes": 16.5,
+        "available_epochs": 862,
+        "wake_recall": 0.6666666666666666
+      },
+      "SN062": {
+        "accuracy": 0.451063829787234,
+        "kappa": 0.25955326502448606,
+        "macro_f1": 0.42019776982958135,
+        "per_stage_f1": [
+          0.7142857142857143,
+          0.0,
+          0.4897959183673469,
+          0.0,
+          0.8969072164948454
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 232.5,
+        "model_tst_minutes": 230.5,
+        "tst_error_minutes": 2.0,
+        "signed_tst_error_minutes": -2.0,
+        "available_epochs": 470,
+        "wake_recall": 1.0
+      },
+      "SN063": {
+        "accuracy": 0.6209677419354839,
+        "kappa": 0.46828359060026103,
+        "macro_f1": 0.4872238740708454,
+        "per_stage_f1": [
+          0.7053364269141531,
+          0.23529411764705882,
+          0.6935086277732129,
+          0.0,
+          0.801980198019802
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 495.5,
+        "model_tst_minutes": 529.0,
+        "tst_error_minutes": 33.5,
+        "signed_tst_error_minutes": 33.5,
+        "available_epochs": 1240,
+        "wake_recall": 0.6104417670682731
+      },
+      "SN068": {
+        "accuracy": 0.6076099881093936,
+        "kappa": 0.4664998096907763,
+        "macro_f1": 0.5427140071561324,
+        "per_stage_f1": [
+          0.61,
+          0.2733812949640288,
+          0.6888297872340425,
+          0.46037735849056605,
+          0.6809815950920245
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 359.0,
+        "model_tst_minutes": 382.0,
+        "tst_error_minutes": 23.0,
+        "signed_tst_error_minutes": 23.0,
+        "available_epochs": 841,
+        "wake_recall": 0.4959349593495935
+      },
+      "SN069": {
+        "accuracy": 0.6390773405698779,
+        "kappa": 0.3599192887484206,
+        "macro_f1": 0.4972445282198775,
+        "per_stage_f1": [
+          0.7647058823529411,
+          0.3448275862068966,
+          0.7553299492385787,
+          0.0,
+          0.6213592233009708
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 331.5,
+        "model_tst_minutes": 337.5,
+        "tst_error_minutes": 6.0,
+        "signed_tst_error_minutes": 6.0,
+        "available_epochs": 737,
+        "wake_recall": 0.7027027027027027
+      },
+      "SN070": {
+        "accuracy": 0.5669642857142857,
+        "kappa": 0.3185011709601874,
+        "macro_f1": 0.4355862897871431,
+        "per_stage_f1": [
+          0.5098039215686274,
+          0.3181818181818182,
+          0.6633785450061652,
+          0.0,
+          0.6865671641791045
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 318.5,
+        "model_tst_minutes": 328.0,
+        "tst_error_minutes": 9.5,
+        "signed_tst_error_minutes": 9.5,
+        "available_epochs": 672,
+        "wake_recall": 0.37142857142857144
+      },
+      "SN082": {
+        "accuracy": 0.7194630872483222,
+        "kappa": 0.5501506672406371,
+        "macro_f1": 0.6051786718609586,
+        "per_stage_f1": [
+          0.8611111111111112,
+          0.3076923076923077,
+          0.7744982290436836,
+          0.21649484536082475,
+          0.8660968660968661
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 354.0,
+        "model_tst_minutes": 355.0,
+        "tst_error_minutes": 1.0,
+        "signed_tst_error_minutes": 1.0,
+        "available_epochs": 745,
+        "wake_recall": 0.8378378378378378
+      },
+      "SN085": {
+        "accuracy": 0.558648111332008,
+        "kappa": 0.3740405596110806,
+        "macro_f1": 0.41310545121648296,
+        "per_stage_f1": [
+          0.6495726495726496,
+          0.22594142259414227,
+          0.7215447154471545,
+          0.0,
+          0.46846846846846846
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 428.5,
+        "model_tst_minutes": 460.5,
+        "tst_error_minutes": 32.0,
+        "signed_tst_error_minutes": 32.0,
+        "available_epochs": 1006,
+        "wake_recall": 0.5100671140939598
+      },
+      "SN097": {
+        "accuracy": 0.6828571428571428,
+        "kappa": 0.5328850775719376,
+        "macro_f1": 0.5744343294328024,
+        "per_stage_f1": [
+          0.5853658536585366,
+          0.16568047337278108,
+          0.733739837398374,
+          0.6090909090909091,
+          0.7782945736434108
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 502.0,
+        "model_tst_minutes": 507.0,
+        "tst_error_minutes": 5.0,
+        "signed_tst_error_minutes": 5.0,
+        "available_epochs": 1050,
+        "wake_recall": 0.5217391304347826
+      },
+      "SN104": {
+        "accuracy": 0.6385302879841113,
+        "kappa": 0.4756753818557373,
+        "macro_f1": 0.49486436481347507,
+        "per_stage_f1": [
+          0.7017543859649122,
+          0.33201581027667987,
+          0.7621890547263681,
+          0.0,
+          0.6783625730994152
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 415.0,
+        "model_tst_minutes": 364.0,
+        "tst_error_minutes": 51.0,
+        "signed_tst_error_minutes": -51.0,
+        "available_epochs": 1007,
+        "wake_recall": 0.903954802259887
+      },
+      "SN108": {
+        "accuracy": 0.5816326530612245,
+        "kappa": 0.3711248173997729,
+        "macro_f1": 0.4633429872898308,
+        "per_stage_f1": [
+          0.5287356321839081,
+          0.2413793103448276,
+          0.6883910386965377,
+          0.0,
+          0.8582089552238806
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 416.0,
+        "model_tst_minutes": 379.0,
+        "tst_error_minutes": 37.0,
+        "signed_tst_error_minutes": -37.0,
+        "available_epochs": 882,
+        "wake_recall": 0.92
+      },
+      "SN116": {
+        "accuracy": 0.5181932245922208,
+        "kappa": 0.3565526724105307,
+        "macro_f1": 0.4030265540250027,
+        "per_stage_f1": [
+          0.7427184466019418,
+          0.2537313432835821,
+          0.5892351274787535,
+          0.0,
+          0.4294478527607362
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 276.0,
+        "model_tst_minutes": 315.0,
+        "tst_error_minutes": 39.0,
+        "signed_tst_error_minutes": 39.0,
+        "available_epochs": 797,
+        "wake_recall": 0.6244897959183674
+      },
+      "SN117": {
+        "accuracy": 0.5978975032851511,
+        "kappa": 0.4450405019911393,
+        "macro_f1": 0.5173066576330629,
+        "per_stage_f1": [
+          0.780952380952381,
+          0.3619047619047619,
+          0.6675567423230975,
+          0.0,
+          0.7761194029850746
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 319.5,
+        "model_tst_minutes": 336.5,
+        "tst_error_minutes": 17.0,
+        "signed_tst_error_minutes": 17.0,
+        "available_epochs": 761,
+        "wake_recall": 0.6721311475409836
+      },
+      "SN125": {
+        "accuracy": 0.39933444259567386,
+        "kappa": 0.17872710101012024,
+        "macro_f1": 0.19035189068781871,
+        "per_stage_f1": [
+          0.0,
+          0.0,
+          0.39391377852916315,
+          0.5420353982300885,
+          0.015810276679841896
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 595.5,
+        "model_tst_minutes": 600.5,
+        "tst_error_minutes": 5.0,
+        "signed_tst_error_minutes": 5.0,
+        "available_epochs": 1202,
+        "wake_recall": 0.0
+      },
+      "SN142": {
+        "accuracy": 0.5473568281938326,
+        "kappa": 0.357770503990831,
+        "macro_f1": 0.4019711103241287,
+        "per_stage_f1": [
+          0.5448275862068965,
+          0.14736842105263157,
+          0.6554973821989529,
+          0.0,
+          0.6621621621621622
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 350.0,
+        "model_tst_minutes": 413.0,
+        "tst_error_minutes": 63.0,
+        "signed_tst_error_minutes": 63.0,
+        "available_epochs": 908,
+        "wake_recall": 0.3798076923076923
+      },
+      "SN145": {
+        "accuracy": 0.7286624203821656,
+        "kappa": 0.6109521150355997,
+        "macro_f1": 0.5414653369923879,
+        "per_stage_f1": [
+          0.9210526315789473,
+          0.3333333333333333,
+          0.7793296089385475,
+          0.0,
+          0.6736111111111112
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 296.5,
+        "model_tst_minutes": 298.5,
+        "tst_error_minutes": 2.0,
+        "signed_tst_error_minutes": 2.0,
+        "available_epochs": 785,
+        "wake_recall": 0.9114583333333334
+      },
+      "SN148": {
+        "accuracy": 0.6374133949191686,
+        "kappa": 0.4286950858247369,
+        "macro_f1": 0.4933018610024387,
+        "per_stage_f1": [
+          0.47619047619047616,
+          0.2692307692307692,
+          0.710261569416499,
+          0.25203252032520324,
+          0.7587939698492462
+        ],
+        "coverage": 1.0,
+        "reference_tst_minutes": 418.5,
+        "model_tst_minutes": 426.5,
+        "tst_error_minutes": 8.0,
+        "signed_tst_error_minutes": 8.0,
+        "available_epochs": 866,
+        "wake_recall": 0.3448275862068966
+      }
+    }
+  }
+}

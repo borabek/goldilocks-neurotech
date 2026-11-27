@@ -1,0 +1,571 @@
+{
+  "status": "EXPLORATORY: gating cut-off chosen in this analysis",
+  "cohorts": {
+    "boas_test": {
+      "v2": {
+        "aurc": 0.05679942480674452,
+        "oracle_aurc": 0.020852953822969884,
+        "epochs": 17700,
+        "risk_at_50pct_coverage": 0.03231638418079097,
+        "risk_at_80pct_coverage": 0.11560734463276834,
+        "risk_at_100pct_coverage": 0.19711864406779656
+      },
+      "cnn": {
+        "aurc": 0.03845748541702213,
+        "oracle_aurc": 0.01318574678601326,
+        "epochs": 17700,
+        "risk_at_50pct_coverage": 0.020000000000000018,
+        "risk_at_80pct_coverage": 0.07274011299435024,
+        "risk_at_100pct_coverage": 0.15790960451977398
+      },
+      "v2_recording_gate": {
+        "recordings": 20,
+        "withheld": 6,
+        "large_errors_total": 4,
+        "large_errors_blocked": 1,
+        "good_claims_withheld": 4,
+        "mean_abs_error_kept_min": 34.57142857142857,
+        "mean_abs_error_all_min": 31.8,
+        "per_recording": [
+          {
+            "recording": "sub-1",
+            "label_free_gain_q75": 0.6100519284085426,
+            "abs_tst_error_min": 31.0
+          },
+          {
+            "recording": "sub-6",
+            "label_free_gain_q75": 0.9161916976698301,
+            "abs_tst_error_min": 32.5
+          },
+          {
+            "recording": "sub-7",
+            "label_free_gain_q75": 0.45876278464479137,
+            "abs_tst_error_min": 4.0
+          },
+          {
+            "recording": "sub-9",
+            "label_free_gain_q75": 0.8190139991258133,
+            "abs_tst_error_min": 65.5
+          },
+          {
+            "recording": "sub-19",
+            "label_free_gain_q75": 0.5657030777891157,
+            "abs_tst_error_min": 26.0
+          },
+          {
+            "recording": "sub-20",
+            "label_free_gain_q75": 0.4395258803606415,
+            "abs_tst_error_min": 4.5
+          },
+          {
+            "recording": "sub-30",
+            "label_free_gain_q75": 0.5321523174828104,
+            "abs_tst_error_min": 5.5
+          },
+          {
+            "recording": "sub-34",
+            "label_free_gain_q75": 0.41166785453798854,
+            "abs_tst_error_min": 81.0
+          },
+          {
+            "recording": "sub-37",
+            "label_free_gain_q75": 1.2727048244337547,
+            "abs_tst_error_min": 8.0
+          },
+          {
+            "recording": "sub-49",
+            "label_free_gain_q75": 0.8477926656469676,
+            "abs_tst_error_min": 1.5
+          },
+          {
+            "recording": "sub-50",
+            "label_free_gain_q75": 1.0026994358070982,
+            "abs_tst_error_min": 48.0
+          },
+          {
+            "recording": "sub-52",
+            "label_free_gain_q75": 1.0825981244580438,
+            "abs_tst_error_min": 9.0
+          },
+          {
+            "recording": "sub-63",
+            "label_free_gain_q75": 1.256155909862098,
+            "abs_tst_error_min": 22.5
+          },
+          {
+            "recording": "sub-70",
+            "label_free_gain_q75": 1.043475036378482,
+            "abs_tst_error_min": 15.0
+          },
+          {
+            "recording": "sub-87",
+            "label_free_gain_q75": 0.9779491337570108,
+            "abs_tst_error_min": 4.0
+          },
+          {
+            "recording": "sub-88",
+            "label_free_gain_q75": 1.16333002304284,
+            "abs_tst_error_min": 17.0
+          },
+          {
+            "recording": "sub-101",
+            "label_free_gain_q75": 1.0823983645839665,
+            "abs_tst_error_min": 3.5
+          },
+          {
+            "recording": "sub-102",
+            "label_free_gain_q75": 1.255782500212453,
+            "abs_tst_error_min": 149.5
+          },
+          {
+            "recording": "sub-118",
+            "label_free_gain_q75": 0.9726815697089196,
+            "abs_tst_error_min": 8.5
+          },
+          {
+            "recording": "sub-122",
+            "label_free_gain_q75": 1.279631641054034,
+            "abs_tst_error_min": 99.5
+          }
+        ]
+      }
+    },
+    "sleep_edf": {
+      "v2": {
+        "aurc": 0.10011786271721315,
+        "oracle_aurc": 0.03852935778638893,
+        "epochs": 54587,
+        "risk_at_50pct_coverage": 0.08013043637562745,
+        "risk_at_80pct_coverage": 0.19123405619547051,
+        "risk_at_100pct_coverage": 0.2644219319618224
+      },
+      "cnn": {
+        "aurc": 0.639604659817888,
+        "oracle_aurc": 0.3767863764786652,
+        "epochs": 54587,
+        "risk_at_50pct_coverage": 0.6825193273000403,
+        "risk_at_80pct_coverage": 0.7270145870068012,
+        "risk_at_100pct_coverage": 0.7302288090571015
+      },
+      "v2_recording_gate": {
+        "recordings": 20,
+        "withheld": 4,
+        "large_errors_total": 12,
+        "large_errors_blocked": 4,
+        "good_claims_withheld": 0,
+        "mean_abs_error_kept_min": 140.5625,
+        "mean_abs_error_all_min": 235.875,
+        "per_recording": [
+          {
+            "recording": "SC400",
+            "label_free_gain_q75": 1.2087365882247432,
+            "abs_tst_error_min": 29.5
+          },
+          {
+            "recording": "SC401",
+            "label_free_gain_q75": 1.0623621792435436,
+            "abs_tst_error_min": 910.0
+          },
+          {
+            "recording": "SC402",
+            "label_free_gain_q75": 1.8736223807964065,
+            "abs_tst_error_min": 870.5
+          },
+          {
+            "recording": "SC403",
+            "label_free_gain_q75": 1.9677994422634086,
+            "abs_tst_error_min": 344.0
+          },
+          {
+            "recording": "SC404",
+            "label_free_gain_q75": 1.034410640221629,
+            "abs_tst_error_min": 32.0
+          },
+          {
+            "recording": "SC405",
+            "label_free_gain_q75": 0.7153933193612064,
+            "abs_tst_error_min": 277.0
+          },
+          {
+            "recording": "SC406",
+            "label_free_gain_q75": 0.7265964114346803,
+            "abs_tst_error_min": 1.5
+          },
+          {
+            "recording": "SC407",
+            "label_free_gain_q75": 1.6422171645029073,
+            "abs_tst_error_min": 446.0
+          },
+          {
+            "recording": "SC408",
+            "label_free_gain_q75": 1.1878400159713227,
+            "abs_tst_error_min": 83.5
+          },
+          {
+            "recording": "SC409",
+            "label_free_gain_q75": 1.0609705202805322,
+            "abs_tst_error_min": 48.5
+          },
+          {
+            "recording": "SC410",
+            "label_free_gain_q75": 1.5716634947402177,
+            "abs_tst_error_min": 808.0
+          },
+          {
+            "recording": "SC411",
+            "label_free_gain_q75": 1.0709645024441168,
+            "abs_tst_error_min": 124.0
+          },
+          {
+            "recording": "SC412",
+            "label_free_gain_q75": 1.2473840438742243,
+            "abs_tst_error_min": 228.0
+          },
+          {
+            "recording": "SC413",
+            "label_free_gain_q75": 1.123891759216102,
+            "abs_tst_error_min": 8.5
+          },
+          {
+            "recording": "SC414",
+            "label_free_gain_q75": 1.1732200294957131,
+            "abs_tst_error_min": 21.5
+          },
+          {
+            "recording": "SC415",
+            "label_free_gain_q75": 1.4119165734406594,
+            "abs_tst_error_min": 243.5
+          },
+          {
+            "recording": "SC416",
+            "label_free_gain_q75": 0.9517641659468916,
+            "abs_tst_error_min": 60.5
+          },
+          {
+            "recording": "SC417",
+            "label_free_gain_q75": 1.337073135598713,
+            "abs_tst_error_min": 52.5
+          },
+          {
+            "recording": "SC418",
+            "label_free_gain_q75": 1.2322042114117613,
+            "abs_tst_error_min": 108.0
+          },
+          {
+            "recording": "SC419",
+            "label_free_gain_q75": 1.4515978691681677,
+            "abs_tst_error_min": 20.5
+          }
+        ]
+      }
+    },
+    "dodh": {
+      "v2": {
+        "aurc": 0.2701658274354471,
+        "oracle_aurc": 0.1478396660413711,
+        "epochs": 24663,
+        "risk_at_50pct_coverage": 0.2878923039493958,
+        "risk_at_80pct_coverage": 0.44186517992904206,
+        "risk_at_100pct_coverage": 0.4918298666017922
+      },
+      "cnn": {
+        "aurc": 0.2684837638242495,
+        "oracle_aurc": 0.10079708382150053,
+        "epochs": 24663,
+        "risk_at_50pct_coverage": 0.2751601654367043,
+        "risk_at_80pct_coverage": 0.3652812975164724,
+        "risk_at_100pct_coverage": 0.41393990998661967
+      },
+      "v2_recording_gate": {
+        "recordings": 25,
+        "withheld": 24,
+        "large_errors_total": 8,
+        "large_errors_blocked": 7,
+        "good_claims_withheld": 7,
+        "mean_abs_error_kept_min": 86.0,
+        "mean_abs_error_all_min": 57.48,
+        "per_recording": [
+          {
+            "recording": "095d6e40-5f19-55b6-a0ec-6e0ad3793da0",
+            "label_free_gain_q75": 2.657848310357697,
+            "abs_tst_error_min": 34.0
+          },
+          {
+            "recording": "0d79f4b1-e74f-5e87-8e42-f9dd7112ada5",
+            "label_free_gain_q75": 2.695980399574961,
+            "abs_tst_error_min": 94.5
+          },
+          {
+            "recording": "119f9726-eb4c-5a0e-a7bb-9e15256149a1",
+            "label_free_gain_q75": 5.330420906537641,
+            "abs_tst_error_min": 31.0
+          },
+          {
+            "recording": "14c012bd-65b0-56f5-bc74-2dffcea69837",
+            "label_free_gain_q75": 1.1394692044776316,
+            "abs_tst_error_min": 86.0
+          },
+          {
+            "recording": "18ede714-aba3-5ad8-bb1a-18fc9b1c4192",
+            "label_free_gain_q75": 2.1622011357062565,
+            "abs_tst_error_min": 66.0
+          },
+          {
+            "recording": "1da3544e-dc5c-5795-adc3-f5068959211f",
+            "label_free_gain_q75": 3.103024826044572,
+            "abs_tst_error_min": 59.0
+          },
+          {
+            "recording": "1fa6c401-d819-50f5-8146-a0bb9e2b2516",
+            "label_free_gain_q75": 2.5044433683901364,
+            "abs_tst_error_min": 158.5
+          },
+          {
+            "recording": "25a6b2b0-4d09-561b-82c6-f09bb271d3be",
+            "label_free_gain_q75": 4.056229196623353,
+            "abs_tst_error_min": 24.0
+          },
+          {
+            "recording": "37d0da97-9ae8-5413-b889-4e843ff35488",
+            "label_free_gain_q75": 4.9017473400587095,
+            "abs_tst_error_min": 90.0
+          },
+          {
+            "recording": "3e842aa8-bcd9-521e-93a2-72124233fe2c",
+            "label_free_gain_q75": 2.2070083208842863,
+            "abs_tst_error_min": 41.5
+          },
+          {
+            "recording": "5bf0f969-304c-581e-949c-50c108f62846",
+            "label_free_gain_q75": 5.684459829666894,
+            "abs_tst_error_min": 34.0
+          },
+          {
+            "recording": "64959ac4-53b5-5868-a845-c7476e9fdf7b",
+            "label_free_gain_q75": 2.370478765839182,
+            "abs_tst_error_min": 32.5
+          },
+          {
+            "recording": "67fa8e29-6f4d-530e-9422-bbc3aca86ed0",
+            "label_free_gain_q75": 5.275980905008917,
+            "abs_tst_error_min": 19.0
+          },
+          {
+            "recording": "769df255-2284-50b3-8917-2155c759fbbd",
+            "label_free_gain_q75": 3.554797675967446,
+            "abs_tst_error_min": 27.0
+          },
+          {
+            "recording": "7ab8ff5f-a77f-567d-9882-f8bee0c3c9bf",
+            "label_free_gain_q75": 4.846993666643866,
+            "abs_tst_error_min": 27.0
+          },
+          {
+            "recording": "7d778801-88e7-5086-ad1d-70f31a371876",
+            "label_free_gain_q75": 2.9596403246890977,
+            "abs_tst_error_min": 28.5
+          },
+          {
+            "recording": "844f68ba-265e-53e6-bf47-6c85d1804a7b",
+            "label_free_gain_q75": 8.308440287173557,
+            "abs_tst_error_min": 45.5
+          },
+          {
+            "recording": "a25b2296-343b-53f6-8792-ada2669d466e",
+            "label_free_gain_q75": 4.394615573644232,
+            "abs_tst_error_min": 55.0
+          },
+          {
+            "recording": "a30245e3-4a71-565f-9636-92e7d2e825fc",
+            "label_free_gain_q75": 4.090874979971044,
+            "abs_tst_error_min": 25.5
+          },
+          {
+            "recording": "a4568951-bf87-5bbc-bc4f-28e93c360be6",
+            "label_free_gain_q75": 3.795829013404083,
+            "abs_tst_error_min": 27.5
+          },
+          {
+            "recording": "aa160c78-6da3-5e05-8fc9-d6c13e9f97e0",
+            "label_free_gain_q75": 2.291560281381537,
+            "abs_tst_error_min": 86.5
+          },
+          {
+            "recording": "b5d5785d-87ee-5078-b9b9-aac6abd4d8de",
+            "label_free_gain_q75": 5.1145955102481615,
+            "abs_tst_error_min": 79.5
+          },
+          {
+            "recording": "bb474ab0-c2ce-573b-8acd-ef86b0fa26a2",
+            "label_free_gain_q75": 6.702047056797903,
+            "abs_tst_error_min": 42.0
+          },
+          {
+            "recording": "d3cadb78-cb8c-5a6e-885c-392e457c68b1",
+            "label_free_gain_q75": 4.748672678170072,
+            "abs_tst_error_min": 37.5
+          },
+          {
+            "recording": "f2a69bdc-ed51-5e3f-b102-6b3f7d392be0",
+            "label_free_gain_q75": 4.190911743592665,
+            "abs_tst_error_min": 185.5
+          }
+        ]
+      }
+    },
+    "hmc": {
+      "v2": {
+        "aurc": 0.42697296924203987,
+        "oracle_aurc": 0.13094443450256726,
+        "epochs": 22309,
+        "risk_at_50pct_coverage": 0.3921463152232383,
+        "risk_at_80pct_coverage": 0.43127696531629967,
+        "risk_at_100pct_coverage": 0.4659106190326774
+      },
+      "cnn": {
+        "aurc": 0.40309995032949186,
+        "oracle_aurc": 0.11832536356215748,
+        "epochs": 22309,
+        "risk_at_50pct_coverage": 0.396360050206204,
+        "risk_at_80pct_coverage": 0.40824788479856555,
+        "risk_at_100pct_coverage": 0.4451566632300865
+      },
+      "v2_recording_gate": {
+        "recordings": 25,
+        "withheld": 9,
+        "large_errors_total": 6,
+        "large_errors_blocked": 2,
+        "good_claims_withheld": 4,
+        "mean_abs_error_kept_min": 32.5625,
+        "mean_abs_error_all_min": 48.8,
+        "per_recording": [
+          {
+            "recording": "SN004",
+            "label_free_gain_q75": 2.6170021813862805,
+            "abs_tst_error_min": 3.0
+          },
+          {
+            "recording": "SN010",
+            "label_free_gain_q75": 1.376619506973495,
+            "abs_tst_error_min": 10.0
+          },
+          {
+            "recording": "SN025",
+            "label_free_gain_q75": 1.7650312607793666,
+            "abs_tst_error_min": 38.5
+          },
+          {
+            "recording": "SN029",
+            "label_free_gain_q75": 1.4574543841085978,
+            "abs_tst_error_min": 19.0
+          },
+          {
+            "recording": "SN032",
+            "label_free_gain_q75": 0.10110136024366391,
+            "abs_tst_error_min": 462.0
+          },
+          {
+            "recording": "SN044",
+            "label_free_gain_q75": 1.472438304011636,
+            "abs_tst_error_min": 0.0
+          },
+          {
+            "recording": "SN053",
+            "label_free_gain_q75": 1.098037456643515,
+            "abs_tst_error_min": 21.5
+          },
+          {
+            "recording": "SN054",
+            "label_free_gain_q75": 0.9587501707252899,
+            "abs_tst_error_min": 31.5
+          },
+          {
+            "recording": "SN061",
+            "label_free_gain_q75": 1.6657287706128066,
+            "abs_tst_error_min": 5.5
+          },
+          {
+            "recording": "SN062",
+            "label_free_gain_q75": 1.4145942852939872,
+            "abs_tst_error_min": 0.0
+          },
+          {
+            "recording": "SN063",
+            "label_free_gain_q75": 0.7435895481700702,
+            "abs_tst_error_min": 64.5
+          },
+          {
+            "recording": "SN068",
+            "label_free_gain_q75": 1.3057383861753726,
+            "abs_tst_error_min": 1.0
+          },
+          {
+            "recording": "SN069",
+            "label_free_gain_q75": 1.351090309807158,
+            "abs_tst_error_min": 62.0
+          },
+          {
+            "recording": "SN070",
+            "label_free_gain_q75": 0.8337075427582126,
+            "abs_tst_error_min": 115.0
+          },
+          {
+            "recording": "SN082",
+            "label_free_gain_q75": 1.5184915743436247,
+            "abs_tst_error_min": 0.0
+          },
+          {
+            "recording": "SN085",
+            "label_free_gain_q75": 1.0598184299342612,
+            "abs_tst_error_min": 24.5
+          },
+          {
+            "recording": "SN097",
+            "label_free_gain_q75": 1.784180961847767,
+            "abs_tst_error_min": 2.0
+          },
+          {
+            "recording": "SN104",
+            "label_free_gain_q75": 1.739725995195518,
+            "abs_tst_error_min": 49.5
+          },
+          {
+            "recording": "SN108",
+            "label_free_gain_q75": 2.0389534795897317,
+            "abs_tst_error_min": 39.0
+          },
+          {
+            "recording": "SN116",
+            "label_free_gain_q75": 1.3188191281222814,
+            "abs_tst_error_min": 59.5
+          },
+          {
+            "recording": "SN117",
+            "label_free_gain_q75": 1.4629863803879088,
+            "abs_tst_error_min": 9.5
+          },
+          {
+            "recording": "SN125",
+            "label_free_gain_q75": 0.5554856185095751,
+            "abs_tst_error_min": 99.5
+          },
+          {
+            "recording": "SN142",
+            "label_free_gain_q75": 1.3572905823423294,
+            "abs_tst_error_min": 83.5
+          },
+          {
+            "recording": "SN145",
+            "label_free_gain_q75": 1.4368438405612374,
+            "abs_tst_error_min": 1.0
+          },
+          {
+            "recording": "SN148",
+            "label_free_gain_q75": 0.8027493672647534,
+            "abs_tst_error_min": 18.5
+          }
+        ]
+      }
+    }
+  }
+}
