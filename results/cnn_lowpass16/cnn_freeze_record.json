@@ -1,0 +1,137 @@
+{
+  "frozen_unix": 1795776316.1706765,
+  "weights_sha256": "3b0a1ed2d02d173dd0cf74c54fb5ceae28cc229e54c4fd1f53140b45c82c7274",
+  "selected_pass": 9,
+  "passes_run": 10,
+  "selection_candidates": [
+    {
+      "sequence_weight": 0.0,
+      "mean_person_kappa": 0.5599823330179075
+    },
+    {
+      "sequence_weight": 0.5,
+      "mean_person_kappa": 0.7295015764217281
+    },
+    {
+      "sequence_weight": 1.0,
+      "mean_person_kappa": 0.630041739597904
+    }
+  ],
+  "selected_sequence_weight": 0.5,
+  "temperature": 1.5079617400537138,
+  "history": [
+    {
+      "pass": 1,
+      "train_loss": 0.9429998731445652,
+      "selection_mean_person_kappa_unsmoothed": 0.35252181094094065,
+      "seconds": 62.2
+    },
+    {
+      "pass": 2,
+      "train_loss": 0.7959924218107443,
+      "selection_mean_person_kappa_unsmoothed": 0.4351230318684784,
+      "seconds": 61.4
+    },
+    {
+      "pass": 3,
+      "train_loss": 0.7296921587799975,
+      "selection_mean_person_kappa_unsmoothed": 0.4459500867713639,
+      "seconds": 60.6
+    },
+    {
+      "pass": 4,
+      "train_loss": 0.687705506694959,
+      "selection_mean_person_kappa_unsmoothed": 0.47109820085448656,
+      "seconds": 61.1
+    },
+    {
+      "pass": 5,
+      "train_loss": 0.6543378483774511,
+      "selection_mean_person_kappa_unsmoothed": 0.5210747917375257,
+      "seconds": 62.8
+    },
+    {
+      "pass": 6,
+      "train_loss": 0.6268900820605928,
+      "selection_mean_person_kappa_unsmoothed": 0.5361588916610122,
+      "seconds": 63.8
+    },
+    {
+      "pass": 7,
+      "train_loss": 0.6036478933950219,
+      "selection_mean_person_kappa_unsmoothed": 0.5413168709341789,
+      "seconds": 61.6
+    },
+    {
+      "pass": 8,
+      "train_loss": 0.5836004101839222,
+      "selection_mean_person_kappa_unsmoothed": 0.5451771788190757,
+      "seconds": 62.8
+    },
+    {
+      "pass": 9,
+      "train_loss": 0.5650879780497986,
+      "selection_mean_person_kappa_unsmoothed": 0.5599823330179075,
+      "seconds": 62.0
+    },
+    {
+      "pass": 10,
+      "train_loss": 0.5503305130108179,
+      "selection_mean_person_kappa_unsmoothed": 0.5534385958298307,
+      "seconds": 61.0
+    }
+  ],
+  "seed": 20261108,
+  "learning_rate": 0.0003,
+  "batch": 128,
+  "architecture": [
+    [
+      1,
+      16,
+      15,
+      4
+    ],
+    [
+      16,
+      32,
+      9,
+      1
+    ],
+    [
+      32,
+      64,
+      9,
+      1
+    ],
+    [
+      64,
+      64,
+      5,
+      1
+    ]
+  ],
+  "pool_after": {
+    "0": 2,
+    "1": 2,
+    "2": 2
+  },
+  "input_hz": 64,
+  "samples_per_epoch": 1920,
+  "clip": 20.0,
+  "test_labels_read_before_freeze": false,
+  "class_weighted_loss": false,
+  "selection_metric": "kappa",
+  "class_weight_scheme": null,
+  "person_normalised_sample_weights": false,
+  "class_weights": null,
+  "augmentation": null,
+  "input_filter": "FFT low-pass at 16 Hz, training and evaluation",
+  "two_channel_input": false,
+  "training_class_counts": [
+    17954,
+    4036,
+    66408,
+    4698,
+    16340
+  ]
+}

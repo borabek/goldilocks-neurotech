@@ -158,3 +158,48 @@ throws away real sleep before or after a long awakening:
 
 So it belongs in front of long recordings only. A rule like "apply when the recording is longer
 than about 14 hours" is the obvious next step; it hasn't been tested.
+
+## Prereg-v2: does the CNN lean on 16–30 Hz power? (`results/prereg_v2/prereg_v2_results.json`)
+
+The addendum at the end of `PREREGISTRATION.md` was written and committed before either model
+was trained. Both are the frozen CNN architecture, seed 20261108, 10 passes over the BOAS
+training nights, nothing else changed:
+
+- `cnn_lowpass16`: every FFT bin above 16 Hz is set to zero, in training and in evaluation.
+- `cnn_hfdrop`: during training only, the 16–30 Hz bins of each epoch are zeroed with
+  probability 0.5. Evaluation inputs are untouched.
+
+Each was evaluated once. A caveat on blindness: DOD-H and HMC had already been scored for the
+frozen models, so I knew the plain CNN's wake recall there when I wrote the predictions. The
+predictions were fixed before training, but this is not a blind test in the way the first
+external test was.
+
+BOAS test set (20 people), kappa:
+
+| Model | Kappa | Drop vs cnn | Prediction (drop ≤ 0.03) |
+| --- | --- | --- | --- |
+| cnn | 0.728 | – | – |
+| cnn_lowpass16 | 0.726 | 0.003 | holds |
+| cnn_hfdrop | 0.724 | 0.004 | holds |
+
+Wake recall, change against the plain CNN, paired person-level bootstrap (10,000 resamples):
+
+| Dataset | cnn | cnn_lowpass16 | change [95% CI] | cnn_hfdrop | change [95% CI] |
+| --- | --- | --- | --- | --- | --- |
+| Sleep-EDF | 0.130 | 0.126 | −0.004 [−0.028, 0.019] | 0.178 | +0.049 [0.027, 0.073] |
+| DOD-H | 0.503 | 0.478 | −0.025 [−0.079, 0.025] | 0.555 | +0.052 [0.015, 0.090] |
+| HMC | 0.638 | 0.607 | −0.031 [−0.097, 0.035] | 0.709 | +0.071 [0.034, 0.108] |
+
+The pre-registered wake prediction is supported for `cnn_hfdrop` on all three datasets and not
+supported for `cnn_lowpass16` on any of them. Kappa, the secondary measure, barely moves:
+`cnn_hfdrop` gains 0.013 [0.002, 0.024] on Sleep-EDF, 0.010 on DOD-H and 0.004 on HMC (the last
+two with intervals that include zero); `cnn_lowpass16` changes kappa by less than 0.01 everywhere.
+
+What this means. Making the network cope with missing beta power during training lifts wake
+recall by 5 to 7 points on every external dataset at a cost of 0.004 kappa on BOAS. That fits
+the idea that the plain CNN uses 16–30 Hz power as a wake cue, and that this cue is weak on the
+other recorders. Cutting beta out entirely does not help: the network then has no beta cue to
+lose, but it also has nothing that replaces it. The effect is real but small. On Sleep-EDF the
+CNN still recognises fewer than one wake epoch in five, so beta reliance is one part of the
+collapse, not the whole of it; the 23-hour recordings and the gain mismatch measured earlier
+are still the larger problems.

@@ -57,6 +57,8 @@ AUGMENT = False         # --augment:    amplitude scaling and additive noise dur
 TWOCHANNEL = False      # --twochannel: both headband channels as one input, no channel averaging
 SQRTBALANCED = False    # --sqrtbalanced: inverse square-root class weights, a gentler balance
 PERSONWEIGHT = False    # --personweight: every fitting person contributes equally, not every epoch
+LOWPASS16 = False       # --lowpass16: every epoch low-passed at 16 Hz, in training and evaluation (prereg-v2)
+HFDROP = False          # --hfdrop:    16-30 Hz zeroed in half the training epochs, evaluation untouched (prereg-v2)
 ARCH = [(1, 16, 15, 4), (16, 32, 9, 1), (32, 64, 9, 1), (64, 64, 5, 1)]   # in, out, kernel, stride
 POOL_AFTER = {0: 2, 1: 2, 2: 2}                                            # max-pool factor by layer
 
@@ -71,9 +73,18 @@ def robust_scale(x, good):
     return med, np.maximum(mad, 1e-3)
 
 
+def lowpass16(x):
+    """Zero every FFT bin above 16 Hz (prereg-v2, model A)."""
+    spec = np.fft.rfft(x, axis=-1)
+    spec[..., np.fft.rfftfreq(x.shape[-1], 1 / FS) > 16] = 0
+    return np.fft.irfft(spec, n=x.shape[-1], axis=-1).astype('float32')
+
+
 def load_night(cache, sub):
     z = np.load(Path(cache) / f'{sub}.npz')
     x = z['X'].astype('float32')                     # (n, 2, 1920) microvolts
+    if LOWPASS16:
+        x = lowpass16(x)
     good, y, onset = z['good'].astype(bool), z['y'].astype('int8'), z['onset'].astype(float)
     med, mad = robust_scale(x, good)
     x = np.clip((x - med) / mad, -CLIP, CLIP)
@@ -138,6 +149,16 @@ def augment(key, x):
     scale = jax.random.uniform(k1, (x.shape[0], 1, 1), minval=0.8, maxval=1.25)
     noise = jax.random.normal(k2, x.shape) * 0.05
     return jnp.clip(x * scale + noise, -CLIP, CLIP)
+
+
+def hf_drop(key, x):
+    """Zero the 16-30 Hz FFT bins of each epoch with probability 0.5 (prereg-v2, model B)."""
+    freq = jnp.fft.rfftfreq(x.shape[-1], 1 / FS)
+    band = (freq >= 16) & (freq <= 30)
+    drop = jax.random.bernoulli(key, 0.5, (x.shape[0], 1, 1))
+    spec = jnp.fft.rfft(x, axis=-1)
+    spec = jnp.where(drop & band, 0, spec)
+    return jnp.fft.irfft(spec, n=x.shape[-1], axis=-1)
 
 
 def loss_fn(params, x, y, sw=None):
@@ -248,6 +269,8 @@ def main(cache, passes):
     def train_step(params, opt_state, x, y, swb, key):
         if AUGMENT:
             x = augment(key, x)
+        if HFDROP:
+            x = hf_drop(jax.random.fold_in(key, 1), x)
         loss, grads = jax.value_and_grad(loss_fn)(params, x, y, swb)
         updates, opt_state = tx.update(grads, opt_state, params)
         return optax.apply_updates(params, updates), opt_state, loss
@@ -305,6 +328,8 @@ def main(cache, passes):
              'person_normalised_sample_weights': bool(PERSONWEIGHT),
              'class_weights': (class_w.tolist() if class_w is not None else None),
              'augmentation': ('amplitude scale 0.8-1.25 and Gaussian noise 0.05' if AUGMENT else None),
+             'input_filter': ('FFT low-pass at 16 Hz, training and evaluation' if LOWPASS16 else
+                              '16-30 Hz zeroed in half the training epochs' if HFDROP else None),
              'two_channel_input': bool(TWOCHANNEL),
              'training_class_counts': counts.tolist()}
     freeze = {'frozen_unix': time.time(), 'weights_sha256': weight_sha, 'selected_pass': best['pass'],
@@ -384,5 +409,9 @@ if __name__ == '__main__':
         SQRTBALANCED = True; name = 'cnn_sqrtbalanced'
     if '--personweight' in sys.argv:
         PERSONWEIGHT = True; name = 'cnn_personweight'
+    if '--lowpass16' in sys.argv:
+        LOWPASS16 = True; name = 'cnn_lowpass16'
+    if '--hfdrop' in sys.argv:
+        HFDROP = True; name = 'cnn_hfdrop'
     OUT = ROOT / 'results' / name
     main(args[0], int(args[1]) if len(args) > 1 else 10)
