@@ -55,7 +55,7 @@ def boas_night(boas_root, sub):
             'good': np.array(good), 'onset': human.onset.to_numpy()}
 
 
-def sleepedf_night(folder, sub, frozen):
+def sleepedf_night(folder, sub, frozen, channel='EEG Fpz-Cz'):
     import mne
     psg = sorted(Path(folder).glob(f'{sub}*-PSG.edf'))[0]
     raw = mne.io.read_raw_edf(psg, preload=False, verbose='ERROR')
@@ -64,7 +64,7 @@ def sleepedf_night(folder, sub, frozen):
     starts = np.rint(onset * 100).astype(int)
     xs = []
     for i in range(0, len(starts), 32):
-        ep = np.stack([raw.get_data(picks=['EEG Fpz-Cz'], start=int(a), stop=int(a + 3000)) * 1e6
+        ep = np.stack([raw.get_data(picks=[channel], start=int(a), stop=int(a + 3000)) * 1e6
                        for a in starts[i:i + 32]])
         xs.append(resample_poly(np.nan_to_num(ep), up=16, down=25, axis=-1))
     X = np.concatenate(xs)

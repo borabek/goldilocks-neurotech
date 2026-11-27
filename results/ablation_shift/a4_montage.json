@@ -1,0 +1,237 @@
+{
+  "status": "EXPLORATORY: Sleep-EDF people were inspected at the v2 evaluation",
+  "sleep_edf_cache_rebuild_check": {
+    "SC400": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC401": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC402": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC403": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC404": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC405": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC406": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC407": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC408": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC409": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC410": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC411": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC412": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC413": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC414": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC415": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC416": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC417": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC418": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    },
+    "SC419": {
+      "X": true,
+      "y": true,
+      "good": true,
+      "onset": true
+    }
+  },
+  "results": {
+    "v2 Fpz-Cz": {
+      "people": 20,
+      "accuracy": 0.7371560058612674,
+      "kappa": 0.5792895188872503,
+      "macro_f1": 0.47821820447271346,
+      "tst_error_minutes": 235.875,
+      "signed_tst_error_minutes": 235.875,
+      "coverage": 1.0,
+      "wake_recall": 0.7473179877665544
+    },
+    "v2 Pz-Oz": {
+      "people": 20,
+      "accuracy": 0.5520933327766255,
+      "kappa": 0.3563485227496351,
+      "macro_f1": 0.3110563288964928,
+      "tst_error_minutes": 423.8,
+      "signed_tst_error_minutes": 423.8,
+      "coverage": 1.0,
+      "wake_recall": 0.5331616171510432
+    },
+    "v2 Fpz-Cz + Pz-Oz": {
+      "people": 20,
+      "accuracy": 0.78824030628903,
+      "kappa": 0.6217991339998499,
+      "macro_f1": 0.47036557851735433,
+      "tst_error_minutes": 143.45,
+      "signed_tst_error_minutes": 143.45,
+      "coverage": 1.0,
+      "wake_recall": 0.840800909621702
+    },
+    "cnn Fpz-Cz": {
+      "people": 20,
+      "accuracy": 0.2693911856439642,
+      "kappa": 0.08625671563614042,
+      "macro_f1": 0.18777486921217695,
+      "tst_error_minutes": 803.2,
+      "signed_tst_error_minutes": 803.2,
+      "coverage": 1.0,
+      "wake_recall": 0.1297286234570373
+    },
+    "cnn Pz-Oz": {
+      "people": 20,
+      "accuracy": 0.4329903604236665,
+      "kappa": 0.20722353690936393,
+      "macro_f1": 0.23365478860227556,
+      "tst_error_minutes": 568.85,
+      "signed_tst_error_minutes": 568.85,
+      "coverage": 1.0,
+      "wake_recall": 0.37199750866622877
+    },
+    "cnn Fpz-Cz + Pz-Oz": {
+      "people": 20,
+      "accuracy": 0.3457606926749762,
+      "kappa": 0.13832671386623566,
+      "macro_f1": 0.20747702451459027,
+      "tst_error_minutes": 702.6,
+      "signed_tst_error_minutes": 702.6,
+      "coverage": 1.0,
+      "wake_recall": 0.23835627018303746
+    },
+    "cnn_balanced Fpz-Cz": {
+      "people": 20,
+      "accuracy": 0.3275930208430686,
+      "kappa": 0.1810305915779231,
+      "macro_f1": 0.30657207420309696,
+      "tst_error_minutes": 716.7,
+      "signed_tst_error_minutes": 716.7,
+      "coverage": 1.0,
+      "wake_recall": 0.20131136161080562
+    },
+    "cnn_balanced Pz-Oz": {
+      "people": 20,
+      "accuracy": 0.45533356958489496,
+      "kappa": 0.26728430130537506,
+      "macro_f1": 0.4022618055297702,
+      "tst_error_minutes": 537.075,
+      "signed_tst_error_minutes": 537.075,
+      "coverage": 1.0,
+      "wake_recall": 0.39061959944115027
+    },
+    "cnn_balanced Fpz-Cz + Pz-Oz": {
+      "people": 20,
+      "accuracy": 0.45697014590127016,
+      "kappa": 0.2912430554776339,
+      "macro_f1": 0.4053657288270968,
+      "tst_error_minutes": 573.9,
+      "signed_tst_error_minutes": 573.9,
+      "coverage": 1.0,
+      "wake_recall": 0.36093634180582407
+    },
+    "cnn_twochannel [Fpz-Cz, Fpz-Cz]": {
+      "people": 20,
+      "accuracy": 0.3309005843768006,
+      "kappa": 0.11481807415063763,
+      "macro_f1": 0.22375668506699822,
+      "tst_error_minutes": 698.275,
+      "signed_tst_error_minutes": 698.275,
+      "coverage": 1.0,
+      "wake_recall": 0.22579535791236807
+    },
+    "cnn_twochannel [Fpz-Cz, Pz-Oz]": {
+      "people": 20,
+      "accuracy": 0.3243249183949918,
+      "kappa": 0.07140296531224885,
+      "macro_f1": 0.1766328686643078,
+      "tst_error_minutes": 612.625,
+      "signed_tst_error_minutes": 612.625,
+      "coverage": 1.0,
+      "wake_recall": 0.2870247835311994
+    }
+  }
+}

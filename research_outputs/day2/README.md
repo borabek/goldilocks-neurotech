@@ -98,6 +98,63 @@ reference N3 to N2). On Sleep-EDF v2 sends 74% of N3 to N2 and the CNN 85%,
 while YASA finds 93% of it. So the N3 deficit is a property of the training labels, not
 of R&K scoring on Sleep-EDF.
 
-## A4, channel and montage
+## A4, channel and montage (`results/ablation_shift/a4_montage.json`)
 
-Pending: needs the 20 original Sleep-EDF PSG files, being downloaded.
+Run on the 20 original Sleep-EDF recordings, downloaded today and checked against the recorded
+PhysioNet hashes (40 of 40 match). Before anything else, the Sleep-EDF branch of
+`build_epoch_cache.py` rebuilt all 20 of the 64 Hz caches behind every Sleep-EDF CNN result
+**bit for bit**, which closes the open check from day 1.
+
+| Model and input | Kappa | Macro-F1 | Wake recall | Sleep-time error (min) |
+| --- | --- | --- | --- | --- |
+| v2 Fpz-Cz | 0.579 | 0.478 | 0.747 | 235.9 |
+| v2 Pz-Oz | 0.356 | 0.311 | 0.533 | 423.8 |
+| v2 Fpz-Cz + Pz-Oz | 0.622 | 0.470 | 0.841 | 143.4 |
+| cnn Fpz-Cz | 0.086 | 0.188 | 0.130 | 803.2 |
+| cnn Pz-Oz | 0.207 | 0.234 | 0.372 | 568.9 |
+| cnn Fpz-Cz + Pz-Oz | 0.138 | 0.207 | 0.238 | 702.6 |
+| cnn_balanced Fpz-Cz | 0.181 | 0.307 | 0.201 | 716.7 |
+| cnn_balanced Pz-Oz | 0.267 | 0.402 | 0.391 | 537.1 |
+| cnn_balanced Fpz-Cz + Pz-Oz | 0.291 | 0.405 | 0.361 | 573.9 |
+| cnn_twochannel [Fpz-Cz, Fpz-Cz] | 0.115 | 0.224 | 0.226 | 698.3 |
+| cnn_twochannel [Fpz-Cz, Pz-Oz] | 0.071 | 0.177 | 0.287 | 612.6 |
+
+The montage matters, but it doesn't explain the CNN collapse. Pz-Oz, which sees more occipital
+alpha in wake, lifts the plain CNN's wake recall from 0.13 to 0.37, still far from the 0.87 it
+gets on the headband. For v2 the two derivations together beat either alone (kappa 0.622,
+sleep-time error 143 min). The two-channel CNN does no better with a real second channel than
+with Fpz-Cz copied twice.
+
+## The 236-minute error: a sleep-window detector (`results/sleep_window/sleep_window_detector.json`)
+
+Pre-registered in section 7 as exploratory. The detector smooths the model's own sleep/wake calls
+over W epochs, merges sleep runs separated by at most G epochs, keeps the longest run and calls
+everything outside it wake. No labels. W and G were chosen on the 56 development recordings
+(subjects 20 and up) only: W = 61 epochs (30 min), G = 60 epochs (30 min), which cut
+the development error from 176.4 to 90.6 min. Then it was applied once to the
+20 evaluation people:
+
+| Model | Kappa without → with | Sleep-time error without → with (min) |
+| --- | --- | --- |
+| v2 | 0.579 → 0.625 | 235.9 → 158.1 |
+| cnn | 0.086 → 0.103 | 803.2 → 768.8 |
+| yasa | 0.675 → 0.785 | 110.3 → 41.1 |
+
+It removes a third of v2's error (236 to 158 min) and two thirds of YASA's (110 to 41 min, kappa
+0.675 to 0.785). It can't help the CNN, which calls almost everything sleep, so its "longest run"
+is most of the recording.
+
+On the night-only datasets the same frozen detector makes things slightly worse, because it
+throws away real sleep before or after a long awakening:
+
+| Dataset and model | Sleep-time error without → with (min) |
+| --- | --- |
+| DOD-H v2 | 57.5 → 59.1 |
+| DOD-H cnn | 26.8 → 37.8 |
+| DOD-H yasa | 23.4 → 36.5 |
+| HMC v2 | 48.8 → 75.2 |
+| HMC cnn | 21.7 → 41.3 |
+| HMC yasa | 37.1 → 55.3 |
+
+So it belongs in front of long recordings only. A rule like "apply when the recording is longer
+than about 14 hours" is the obvious next step; it hasn't been tested.
