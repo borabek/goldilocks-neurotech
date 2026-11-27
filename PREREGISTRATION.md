@@ -190,3 +190,34 @@ results are labelled post hoc.
     found that the CNN leans on 16-30 Hz power to call wake, so a low wake recall on DOD-H would
     partly reflect this and is not, on its own, evidence about device morphology. H2 is scored as
     written; this note goes next to its result.
+
+## Addendum prereg-v2: two CNNs that can't lean on 16-30 Hz
+
+Written 27 November 2026, before either model was trained. DOD-H and HMC were already scored for
+the frozen models (section 8), so for these two models the test is pre-specified but not blind:
+every number below is labelled accordingly. The original plan here, a CNN retrained with
+recording-independent normalisation, is dropped: A1 showed normalisation has no effect on this
+architecture.
+
+**Why.** Day 1 found that the CNN's wake decision leans on broadband 16-30 Hz power, which
+headband wake carries and PSG wake mostly doesn't. If that is a real mechanism, a CNN denied that
+band should recognise wake on other devices better, at a small cost on the headband.
+
+**The two models.** Same architecture, data, split, seed (20261108), 10 passes, selection and
+calibration people and smoother as `results/cnn/`. Only the input changes:
+
+- **A, `cnn_lowpass16`:** every epoch is low-passed at 16 Hz (FFT bins above 16 Hz set to zero)
+  before the shipped robust scaling, in training and at every evaluation.
+- **B, `cnn_hfdrop`:** during training only, each epoch has its 16-30 Hz bins zeroed with
+  probability 0.5. Evaluation inputs are untouched.
+
+No other variant, setting or seed will be tried.
+
+**Predictions, against the original plain CNN:**
+
+1. BOAS test (20 people): kappa drops by no more than 0.03.
+2. Wake recall rises on Sleep-EDF, DOD-H and HMC. Supported on a dataset if the person-level
+   paired 95% bootstrap interval of the change is entirely above 0.
+3. Secondary: kappa on Sleep-EDF, DOD-H and HMC, reported with intervals, no threshold.
+
+If the predictions fail, the 16-30 Hz explanation is reported as not supported by this test.
