@@ -23,6 +23,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / 'src'))
 sys.path.insert(0, str(ROOT / 'analysis'))
 from ablation_shift import percentile_log_sd  # noqa: E402
 from cnn_challenger import night_probabilities, rebuild_free, robust_scale, CLIP  # noqa: E402

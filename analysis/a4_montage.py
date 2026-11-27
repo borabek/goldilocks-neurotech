@@ -22,6 +22,7 @@ from scipy.signal import resample_poly
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / 'src'))
 sys.path.insert(0, str(ROOT / 'analysis'))
 import cnn_challenger as cc  # noqa: E402
 from build_epoch_cache import sleepedf_night  # noqa: E402

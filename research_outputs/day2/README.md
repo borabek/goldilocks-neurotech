@@ -108,7 +108,7 @@ of R&K scoring on Sleep-EDF.
 
 Run on the 20 original Sleep-EDF recordings, downloaded today and checked against the recorded
 PhysioNet hashes (40 of 40 match). Before anything else, the Sleep-EDF branch of
-`build_epoch_cache.py` rebuilt all 20 of the 64 Hz caches behind every Sleep-EDF CNN result
+`src/build_epoch_cache.py` rebuilt all 20 of the 64 Hz caches behind every Sleep-EDF CNN result
 **bit for bit**, which closes the open check from day 1.
 
 | Model and input | Kappa | Macro-F1 | Wake recall | Sleep-time error (min) |

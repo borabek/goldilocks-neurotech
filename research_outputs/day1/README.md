@@ -8,9 +8,9 @@ DOD-H and HMC should ask (see `PREREGISTRATION.md`).
 
 | Check | Result |
 | --- | --- |
-| `reproduce_v2.py` on a clean clone | 7 tests pass; kappa 0.6612737502932162 and sleep-time error 31.8 min, as published |
+| `src/reproduce_v2.py` on a clean clone | 7 tests pass; kappa 0.6612737502932162 and sleep-time error 31.8 min, as published |
 | `pytest` | 25 tests pass |
-| `verify_claims.py` | 102 figures checked, none unsupported; 12 stale hashes, now rebuilt |
+| `scripts/verify_claims.py` | 102 figures checked, none unsupported; 12 stale hashes, now rebuilt |
 | CNN environment | `requirements.txt` plus `requirements_live.txt` install and import fine (jax 0.12.0.1) |
 | CNN epoch caches | Not in the repo (812 MB on the laptop). Staged from the laptop for A1, A2 and A6 |
 
@@ -43,7 +43,7 @@ cost on BOAS. Every rule tried is in the results file.
 
 ## With the epoch caches (run after `prereg-v1` was tagged)
 
-**The shipped CNN result reproduces exactly.** Re-running `cnn_external.py` on the caches gives
+**The shipped CNN result reproduces exactly.** Re-running `src/cnn_external.py` on the caches gives
 predictions identical to `results/cnn/cnn_external_predictions.json` (macro-F1 0.18777).
 
 **A1 and A2 do nothing to the CNN.** That is what the pre-registration predicted from the
@@ -117,8 +117,8 @@ usable estimate.
 
 | Task | Needs |
 | --- | --- |
-| Check the Sleep-EDF branch of `build_epoch_cache.py` | The 20 original Sleep-EDF PSG files (subjects 00–19); the BOAS branch already rebuilds sub-1 and sub-6 bit for bit (`cache_rebuild_check.json`) |
-| Download DOD-H, HMC subset, raw BOAS, extra Sleep-EDF subjects | `scripts/fetch_external_data.py` and `node acquire.mjs` on a machine that can reach those hosts |
+| Check the Sleep-EDF branch of `src/build_epoch_cache.py` | The 20 original Sleep-EDF PSG files (subjects 00–19); the BOAS branch already rebuilds sub-1 and sub-6 bit for bit (`cache_rebuild_check.json`) |
+| Download DOD-H, HMC subset, raw BOAS, extra Sleep-EDF subjects | `scripts/fetch_external_data.py` and `node scripts/acquire.mjs` on a machine that can reach those hosts |
 
 ## Re-run
 

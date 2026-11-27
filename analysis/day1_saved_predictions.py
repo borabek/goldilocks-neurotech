@@ -21,6 +21,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / 'src'))
 from yasa_evaluate import windows  # noqa: E402  same window definition as every other result
 
 OUT = ROOT / 'research_outputs' / 'day1'

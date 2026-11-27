@@ -17,6 +17,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / 'src'))
 sys.path.insert(0, str(ROOT / 'analysis'))
 from sleep_window_detector import CACHE as DEV_CACHE, detector  # noqa: E402
 from yasa_evaluate import score, summarize, windows  # noqa: E402

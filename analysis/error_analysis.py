@@ -21,6 +21,7 @@ from sklearn.metrics import f1_score
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / 'src'))
 STAGES = ['W', 'N1', 'N2', 'N3', 'REM']
 PROBS = Path('/tmp/goldilocks_probs')
 DATASETS = ['boas', 'sleep_edf', 'dodh', 'hmc']

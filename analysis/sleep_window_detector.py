@@ -27,6 +27,7 @@ from scipy.signal import resample_poly
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / 'src'))
 sys.path.insert(0, str(ROOT / 'analysis'))
 from ablation_shift import v2_predict  # noqa: E402
 from pipeline import epoch_features  # noqa: E402

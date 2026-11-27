@@ -26,6 +26,7 @@ from scipy.stats import spearmanr
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / 'src'))
 from cnn_challenger import night_probabilities, robust_scale, CLIP, N_CLASS  # noqa: E402
 from cnn_external import rebuild_params  # noqa: E402
 from yasa_evaluate import score, summarize, windows  # noqa: E402

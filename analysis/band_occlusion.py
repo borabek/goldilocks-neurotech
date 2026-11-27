@@ -25,6 +25,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / 'src'))
 sys.path.insert(0, str(ROOT / 'analysis'))
 import cnn_challenger as cc  # noqa: E402
 from cnn_challenger import FS, CLIP, night_probabilities, rebuild_free, robust_scale  # noqa: E402

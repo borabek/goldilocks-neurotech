@@ -18,6 +18,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / 'src'))
 from yasa_evaluate import score, summarize, windows  # noqa: E402
 
 STAGES = ['W', 'N1', 'N2', 'N3', 'REM']

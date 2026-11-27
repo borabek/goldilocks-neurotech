@@ -9,7 +9,7 @@ It never reads a signal or a label, so running it doesn't break the pre-registra
   python scripts/fetch_external_data.py sleepedf-eval # the 20 original Sleep-EDF evaluation recordings
   python scripts/fetch_external_data.py all
 
-Raw BOAS headband files come from the existing script:  node acquire.mjs
+Raw BOAS headband files come from the existing script:  node scripts/acquire.mjs
 
 Everything here is the standard library.
 Each dataset gets a manifest (file, bytes, sha256, url, downloaded_unix) next to its files.
