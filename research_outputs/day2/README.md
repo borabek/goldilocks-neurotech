@@ -34,6 +34,12 @@ The pre-registered thresholds sit either side of these values, so H2 is mixed on
 DOD-H the reading is complicated by the band-limited signal noted before scoring
 (`PREREGISTRATION.md`, deviations).
 
+A later check (prereg-v2.1, replicate seeds) shows the plain CNN's external wake recall depends on
+the training seed: 0.48 to 0.58 on DOD-H and 0.61 to 0.76 on HMC across three seeds. On DOD-H
+every seed lands in the mixed band. On HMC one of the three seeds (0.762) would cross the 0.70
+line that contradicts H2. The verdict above is for the frozen model, as pre-registered, but on HMC
+it is not stable across seeds.
+
 **Neither family is close to the off-the-shelf baseline or to people.**
 
 | Primary window, whole recording | DOD-H kappa | HMC kappa |
