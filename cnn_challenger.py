@@ -413,5 +413,8 @@ if __name__ == '__main__':
         LOWPASS16 = True; name = 'cnn_lowpass16'
     if '--hfdrop' in sys.argv:
         HFDROP = True; name = 'cnn_hfdrop'
+    for a in sys.argv[1:]:
+        if a.startswith('--seed='):          # robustness replicates: same recipe, another seed
+            SEED = int(a.split('=', 1)[1]); name = f'{name}_seed{SEED}'
     OUT = ROOT / 'results' / name
     main(args[0], int(args[1]) if len(args) > 1 else 10)

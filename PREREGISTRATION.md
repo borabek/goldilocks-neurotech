@@ -190,6 +190,8 @@ results are labelled post hoc.
     found that the CNN leans on 16-30 Hz power to call wake, so a low wake recall on DOD-H would
     partly reflect this and is not, on its own, evidence about device morphology. H2 is scored as
     written; this note goes next to its result.
+- 27 November 2026, after the prereg-v2 result: replicate seeds were added despite the prereg-v2
+  sentence ruling them out. See addendum prereg-v2.1; the prereg-v2 verdicts are unchanged by it.
 
 ## Addendum prereg-v2: two CNNs that can't lean on 16-30 Hz
 
@@ -221,3 +223,43 @@ No other variant, setting or seed will be tried.
 3. Secondary: kappa on Sleep-EDF, DOD-H and HMC, reported with intervals, no threshold.
 
 If the predictions fail, the 16-30 Hz explanation is reported as not supported by this test.
+
+## Addendum prereg-v2.1: checks added after the prereg-v2 result
+
+Written 27 November 2026, after the prereg-v2 result was known and before any of the checks
+below was run. The prereg-v2 addendum says no other seed would be tried. The replicate seeds
+below go against that sentence, so they are recorded here as a deviation: they were added because
+a single-seed result invites the question of luck, and they are reported as a post-result
+robustness check. They cannot change the prereg-v2 verdicts above, which stand as written. They
+can only strengthen or weaken how those verdicts are read.
+
+**1. Replicate seeds.** `cnn`, `cnn_lowpass16` and `cnn_hfdrop` are each retrained with seeds
+20261109 and 20261110, with everything else as in prereg-v2. For each seed, the wake recall change
+is computed against the plain CNN of the same seed and against the frozen plain CNN, with the
+prereg-v2 evaluation code unchanged. The `cnn_hfdrop` effect is called robust only if the
+matched-seed mean change is above 0 for all three seeds on all three external datasets. If any
+one is at or below 0, the write-up says the effect depends on the seed.
+
+**2. Multiple testing.** The six prereg-v2 wake tests (two models, three datasets) get two-sided
+bootstrap p-values (twice the smaller tail of the 10,000 resampled mean changes) and a Holm
+correction across the six. The prereg-v2 verdicts were based on uncorrected intervals; the
+corrected result is reported next to them.
+
+**3. Band occlusion on the frozen plain CNN.** At test time only, one band at a time is removed
+from the input (FFT bins zeroed): 0.5-4, 4-8, 8-12, 12-16, 16-20, 20-25, 25-30 Hz. For each band
+and dataset (BOAS test, Sleep-EDF evaluation, DOD-H, HMC) the change in wake recall and in mean
+wake probability on reference-wake epochs is reported, per person and averaged. Prediction: the
+summed drop in wake probability from the three 16-30 Hz bands is larger on BOAS than on each of
+the three external datasets. Descriptive otherwise.
+
+**4. A length rule for the sleep-window detector.** The frozen detector (W = 61, G = 60) is applied
+only to recordings longer than T hours. T is fixed from recording lengths outside the test sets:
+the midpoint between the longest BOAS fitting night and the shortest Sleep-EDF development
+recording. It is then applied once to every test set. DOD-H and HMC have been seen, so this is
+not a blind test of the rule on them.
+
+**5. Error analysis and calibration.** Row-normalised confusion matrices for v2, YASA, the plain
+CNN and `cnn_hfdrop` on each dataset, and per-stage F1 for v2 on HMC against DOD-H, to locate
+where H1 failed on HMC. For the CNN models, whose probabilities are saved or can be recomputed,
+expected calibration error (ECE, 10 equal-width bins on the top probability) on each dataset.
+Descriptive, no thresholds.
