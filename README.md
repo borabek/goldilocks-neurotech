@@ -1,5 +1,7 @@
 # Goldilocks: forehead-EEG sleep staging, tested on devices it never saw
 
+[![checks](https://github.com/borabek/goldilocks-neurotech/actions/workflows/checks.yml/badge.svg)](https://github.com/borabek/goldilocks-neurotech/actions/workflows/checks.yml)
+
 Bora Bayrakci, University of Essex.
 
 This started as a project at the Oxford NeuroTech Hackathon (7-8 November 2026) and is now an
@@ -18,27 +20,30 @@ off-the-shelf baseline. DOD-H's five human scorers give a ceiling.
 
 ## What came out
 
-- On the headband both families do well (BOAS test kappa 0.661 for v2, 0.728 for the CNN). On
-  other recorders neither comes close to YASA (kappa 0.655 on DOD-H, 0.614 on HMC) or to the human
-  scorers (0.690 to 0.789 on DOD-H).
-- A label-free gain calibration, fixed in advance, helps v2 where the amplitude mismatch is large
-  (DOD-H, estimated gain 4.06) and hurts it where the mismatch is small (HMC, 1.38). On HMC it
-  pushes REM over the wake line.
-- The CNN's wake recognition collapses on PSG recordings: 0.87 wake recall on the headband against
-  0.13 on Sleep-EDF for the frozen model. Band occlusion shows it uses 16-30 Hz power as a wake
-  cue on every dataset.
-- Retraining the CNN without that cue looked like a fix on one seed. Across three seeds it isn't.
-  The plain CNN's own Sleep-EDF wake recall ranges from 0.10 to 0.31 with the seed alone, so
-  single-seed comparisons between CNN variants of a few points carry no weight.
-- A label-free sleep-window detector, applied only to recordings longer than 14.4 hours, cuts
-  YASA's sleep-time error on Sleep-EDF from 110 to 41 min and v2's from 236 to 158 min, and leaves
-  night recordings untouched.
+- Picking a model by its headband score doesn't pick the one that travels. Across 19 models trained
+  on the headband, the rank correlation between headband kappa and kappa on a new dataset was
+  between -0.27 and 0.27, and none of the 95% intervals excluded zero. The weakest frozen CNN on
+  the headband was the best headband model on DOD-H and HMC.
+- YASA, which never saw the headband, beat the best headband model on all three new datasets
+  (kappa 0.655 on DOD-H and 0.614 on HMC; the human scorers on DOD-H range from 0.690 to 0.789).
+- A label-free gain correction, fixed in advance, helps v2 where the amplitude mismatch is large
+  (DOD-H, estimated gain 4.06) and hurts it where the mismatch is small (HMC, 1.38), where it
+  pushes REM over into wake.
+- The CNNs lose wake on PSG recordings (0.87 wake recall on the headband, 0.13 on Sleep-EDF for the
+  frozen model) and use 16-30 Hz power as a wake cue on every dataset.
+- Retraining without that cue looked like a fix on one seed and wasn't one. Five seeds of the same
+  plain CNN agree on the headband (kappa 0.719 to 0.727) and disagree off it: Sleep-EDF wake recall
+  runs from 0.10 to 0.37. Single-seed comparisons of a few points between CNN variants mean little.
+- A label-free sleep-window detector, used only on recordings longer than 14.4 hours, cuts YASA's
+  sleep-time error on Sleep-EDF from 110 to 41 min and v2's from 236 to 158 min, and leaves night
+  recordings alone.
 
 The preprint is [`paper/main.pdf`](paper/main.pdf). The full write-ups, with every number traced to a
 result file, are in
 [`research_outputs/day1/`](research_outputs/day1/README.md) (exploratory checks) and
 [`research_outputs/day2/`](research_outputs/day2/README.md) (the pre-registered test and the
-checks that followed it).
+checks that followed it) and [`research_outputs/day3/`](research_outputs/day3/README.md) (the paper's
+benchmark, the ranking test and the follow-up checks).
 
 ## Layout
 

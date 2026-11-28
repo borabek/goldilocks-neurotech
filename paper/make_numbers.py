@@ -48,6 +48,19 @@ def main():
 
     for ds in ['dodh', 'hmc']:
         put(f'gain@{ds}@q75', load(f'results/external_{ds}/metrics.json')['gains']['gains']['q75'], 2)
+    rx = load('results/paper/ranking_extended.json')
+    put('rankx@all@models', len(rx['models']), 0)
+    for ds, r in rx['ranking'].items():
+        put(f'rankx@{ds}@tau', r['kendall_tau_kappa'], 2)
+        put(f'rankx@{ds}@tau_lo', r['tau_ci95'][0], 2)
+        put(f'rankx@{ds}@tau_hi', r['tau_ci95'][1], 2)
+        put(f'rankx@{ds}@bestrank', r['boas_best_rank_here'], 0)
+        put(f'rankx@{ds}@yasadiff', r['yasa_minus_best_headband_kappa']['mean_difference'], 3)
+        put(f'rankx@{ds}@yasadiff_lo', r['yasa_minus_best_headband_kappa']['ci95'][0], 3)
+        put(f'rankx@{ds}@yasadiff_hi', r['yasa_minus_best_headband_kappa']['ci95'][1], 3)
+    for k, v in rx['five_seeds']['ranges'].items():
+        put(f'seeds@{k}@min', v['min'], 3 if k == 'boas_kappa' else 2)
+        put(f'seeds@{k}@max', v['max'], 3 if k == 'boas_kappa' else 2)
     bb = load('results/paper/bitbrain_attempt.json')
     put('bb@w@v2', bb['chosen_w_v2'], 1)
     for mask in ['all_scored', 'vendor_covered']:

@@ -1,0 +1,148 @@
+{
+  "status": "EXPLORATORY: addendum of 28 November 2026, written before this ran",
+  "models": [
+    "v2",
+    "cnn",
+    "cnn_balanced",
+    "cnn_sqrtbalanced",
+    "cnn_augmented",
+    "cnn_context",
+    "cnn_context_balanced",
+    "cnn_context_sqrtbalanced",
+    "cnn_seed20261108",
+    "cnn_seed20261109",
+    "cnn_seed20261110",
+    "cnn_seed20261111",
+    "cnn_seed20261112",
+    "cnn_lowpass16",
+    "cnn_lowpass16_seed20261109",
+    "cnn_lowpass16_seed20261110",
+    "cnn_hfdrop",
+    "cnn_hfdrop_seed20261109",
+    "cnn_hfdrop_seed20261110"
+  ],
+  "resamples": 10000,
+  "seed": 20261126,
+  "ranking": {
+    "sleep_edf": {
+      "kendall_tau_kappa": -0.27485380116959063,
+      "p_value": 0.10816832184111735,
+      "models": 19,
+      "tau_ci95": [
+        -0.47368421052631576,
+        0.017543859649122806
+      ],
+      "best_headband_model_here": "v2",
+      "best_headband_kappa": 0.5792895188872503,
+      "boas_best_model": "cnn_context_sqrtbalanced",
+      "boas_best_rank_here": 13,
+      "yasa_minus_best_headband_kappa": {
+        "mean_difference": 0.0957582124112354,
+        "ci95": [
+          0.02067369201220824,
+          0.17027412248718415
+        ]
+      }
+    },
+    "dodh": {
+      "kendall_tau_kappa": 0.27485380116959063,
+      "p_value": 0.10816832184111735,
+      "models": 19,
+      "tau_ci95": [
+        -0.19298245614035084,
+        0.3333333333333333
+      ],
+      "best_headband_model_here": "cnn_balanced",
+      "best_headband_kappa": 0.44461008032832233,
+      "boas_best_model": "cnn_context_sqrtbalanced",
+      "boas_best_rank_here": 10,
+      "yasa_minus_best_headband_kappa": {
+        "mean_difference": 0.21042388732286074,
+        "ci95": [
+          0.14896872497369154,
+          0.27348272410692426
+        ]
+      }
+    },
+    "hmc": {
+      "kendall_tau_kappa": 0.23976608187134502,
+      "p_value": 0.16374964550644155,
+      "models": 19,
+      "tau_ci95": [
+        -0.22807017543859648,
+        0.3567251461988304
+      ],
+      "best_headband_model_here": "cnn_balanced",
+      "best_headband_kappa": 0.42978498411889815,
+      "boas_best_model": "cnn_context_sqrtbalanced",
+      "boas_best_rank_here": 3,
+      "yasa_minus_best_headband_kappa": {
+        "mean_difference": 0.18436950116459513,
+        "ci95": [
+          0.13580456307578637,
+          0.2328074830788568
+        ]
+      }
+    }
+  },
+  "five_seeds": {
+    "models": {
+      "cnn_seed20261108": {
+        "boas_kappa": 0.7192560671201226,
+        "sleep_edf_wake_recall": 0.09973462640052849,
+        "dodh_wake_recall": 0.45235198548193767,
+        "hmc_wake_recall": 0.6494466456841903
+      },
+      "cnn_seed20261109": {
+        "boas_kappa": 0.7217294330577955,
+        "sleep_edf_wake_recall": 0.30372730948880466,
+        "dodh_wake_recall": 0.5780311038724772,
+        "hmc_wake_recall": 0.7620122026259619
+      },
+      "cnn_seed20261110": {
+        "boas_kappa": 0.7239874884790483,
+        "sleep_edf_wake_recall": 0.3146938186349357,
+        "dodh_wake_recall": 0.4790427514673369,
+        "hmc_wake_recall": 0.6112371765750025
+      },
+      "cnn_seed20261111": {
+        "boas_kappa": 0.7272593685349531,
+        "sleep_edf_wake_recall": 0.3002642933942823,
+        "dodh_wake_recall": 0.6524374217637251,
+        "hmc_wake_recall": 0.6996508566159769
+      },
+      "cnn_seed20261112": {
+        "boas_kappa": 0.7232941805047447,
+        "sleep_edf_wake_recall": 0.37108070245755,
+        "dodh_wake_recall": 0.5604164944507047,
+        "hmc_wake_recall": 0.7266550929431811
+      }
+    },
+    "ranges": {
+      "boas_kappa": {
+        "min": 0.7192560671201226,
+        "max": 0.7272593685349531,
+        "range": 0.008003301414830521
+      },
+      "sleep_edf_wake_recall": {
+        "min": 0.09973462640052849,
+        "max": 0.37108070245755,
+        "range": 0.2713460760570215
+      },
+      "dodh_wake_recall": {
+        "min": 0.45235198548193767,
+        "max": 0.6524374217637251,
+        "range": 0.20008543628178743
+      },
+      "hmc_wake_recall": {
+        "min": 0.6112371765750025,
+        "max": 0.7620122026259619,
+        "range": 0.15077502605095938
+      }
+    },
+    "rule": {
+      "statement": "Sleep-EDF wake recall range >= 0.10 and BOAS kappa range < 0.02",
+      "holds": true
+    }
+  }
+}

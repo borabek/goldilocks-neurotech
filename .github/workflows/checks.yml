@@ -1,0 +1,52 @@
+name: checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Unit tests
+        run: python -m pytest -q
+
+      - name: Every figure in the paper, README, model cards and slides has a saved result behind it; hashes match
+        run: python scripts/verify_claims.py
+
+      - name: The paper's benchmark and numbers regenerate unchanged from the saved predictions
+        run: |
+          python analysis/benchmark.py
+          python paper/make_numbers.py
+          python scripts/compare_json.py results/paper/benchmark.json
+          git diff --exit-code paper/numbers.tex paper/table1.tex
+
+      - name: The pre-registered external test re-scores unchanged
+        run: |
+          python src/external_eval.py score
+          python scripts/compare_json.py results/external_dodh/metrics.json results/external_hmc/metrics.json results/external_test_verdicts.json
+
+      - name: The prereg-v2.1 multiple-testing correction re-computes unchanged
+        run: |
+          python analysis/prereg_v2_holm.py
+          python scripts/compare_json.py results/prereg_v2_1/holm.json
+
+      - name: Pre-registered files still match their frozen hashes
+        run: |
+          python - <<'PY'
+          import hashlib, json, sys
+          files = json.load(open('preregistration_hashes.json'))['files']
+          bad = [f for f, h in files.items() if hashlib.sha256(open(f, 'rb').read()).hexdigest() != h]
+          print(len(files), 'frozen files,', len(bad), 'changed', bad)
+          sys.exit(1 if bad else 0)
+          PY

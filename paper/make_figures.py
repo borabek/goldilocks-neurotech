@@ -45,16 +45,22 @@ def fig_ranking():
     x = np.arange(len(DATASETS))
     labelled = {'yasa': ('YASA (PSG-trained)', YASA), 'v2': ('v2 (features)', V2),
                 'cnn_context_sqrtbalanced': ('best CNN on BOAS', CNN), 'cnn_balanced': ('worst CNN on BOAS', CNN)}
+    ends = []
     for m in headband + ['yasa']:
         y = [b[ds][m]['kappa']['mean'] for ds in DATASETS]
         if m in labelled:
             name, col = labelled[m]
             ls = '--' if m == 'cnn_balanced' else '-'
             ax.plot(x, y, color=col, lw=2, ls=ls, marker='o', ms=4, mec='white', mew=0.8, zorder=3)
-            ax.annotate(name, (x[-1], y[-1]), xytext=(5, 0), textcoords='offset points', va='center',
-                        fontsize=6.5, color=INK)
+            ends.append([y[-1], name])
         else:
             ax.plot(x, y, color=CNN, lw=0.8, alpha=0.45, zorder=2)
+    ends.sort()                                   # spread the end labels so they never overlap
+    for i in range(1, len(ends)):
+        ends[i][0] = max(ends[i][0], ends[i - 1][0] + 0.045)
+    for y_end, name in ends:
+        ax.annotate(name, (x[-1], y_end), xytext=(5, 0), textcoords='offset points', va='center',
+                    fontsize=6.5, color=INK)
     ax.plot([], [], color=CNN, lw=0.8, alpha=0.45, label='other CNN variants')
     ax.legend(loc='lower left', frameon=False)
     ax.set_xticks(x, [NAMES[d] for d in DATASETS])
@@ -91,17 +97,19 @@ def fig_mechanism():
             vals = []
             for s in seed_list:
                 if rec == 'cnn':
-                    name = f'cnn_seed{s}'                      # 10-pass plain CNN at every seed
-                else:
-                    name = rec if s == seed_list[0] else f'{rec}_seed{s}'
+                    continue                                   # plain CNN: five seeds, drawn below
+                name = rec if s == seed_list[0] else f'{rec}_seed{s}'
                 vals.append(boas_wake_recall(name) if ds == 'boas' else seeds['mean_wake_recall'][name][ds])
-            xs = k + (j - 1) * 0.22 + np.array([-0.05, 0, 0.05])
+            if rec == 'cnn':
+                five = load('results/paper/ranking_extended.json')['five_seeds']['models']
+                vals = [boas_wake_recall(m) if ds == 'boas' else five[m][f'{ds}_wake_recall'] for m in sorted(five)]
+            xs = k + (j - 1) * 0.22 + np.linspace(-0.06, 0.06, len(vals))
             a.plot(xs, vals, ls='none', marker=mk, ms=4.2, color=col, mec='white', mew=0.6,
                    label=label if k == 0 else None, zorder=3)
             a.plot([k + (j - 1) * 0.22 - 0.08, k + (j - 1) * 0.22 + 0.08], [np.mean(vals)] * 2, color=col, lw=1.2)
     a.set_xticks(range(len(DATASETS)), [NAMES[d] for d in DATASETS])
     a.set_ylim(0, 1)
-    a.set_ylabel('Wake recall (three seeds each)')
+    a.set_ylabel('Wake recall, one dot per seed')
     a.legend(loc='upper right', frameon=False, ncol=1)
     a.set_title('(a) Wake recall across training seeds', loc='left')
     grid(a)

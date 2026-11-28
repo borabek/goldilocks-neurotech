@@ -41,10 +41,11 @@ variant by its BOAS score would have picked the wrong one.
   so on 23-hour recordings it reports about 13 extra hours of sleep. On night-only PSG it finds half
   (DOD-H) to two thirds (HMC) of wake. It uses 16-30 Hz power as a wake cue, which forehead headband
   wake carries about twice as much of as Fpz-Cz wake.
-- **Seed sensitivity.** With the same data and recipe, the training seed alone moved Sleep-EDF wake
-  recall between 0.10 and 0.31 and HMC wake recall between 0.61 and 0.76, while BOAS kappa stayed
-  within 0.01. Any comparison between single-seed CNNs on external data should be treated as noise
-  unless it is far larger than that.
+- **Seed sensitivity.** Five copies of the plain CNN, trained on the same data with the same recipe
+  and different seeds, score between 0.719 and 0.727 kappa on the headband. Off it they disagree:
+  wake recall runs from 0.10 to 0.37 on Sleep-EDF, 0.45 to 0.65 on DOD-H and 0.61 to 0.76 on HMC.
+  Treat a difference between two single-seed CNNs on external data as noise unless it is well
+  outside that spread.
 - **Retraining without beta does not fix it.** `cnn_hfdrop` (16-30 Hz dropped at random during
   training) looked like a fix on one seed and was not robust across three. `cnn_lowpass16` was worse.
 - **Confidence.** On Sleep-EDF its most confident epochs are mostly wrong (risk-coverage AURC 0.64),
