@@ -10,9 +10,9 @@ It also verifies SHA256SUMS.txt, so a file edited after the hashes were written 
 
 What each check can and cannot do, stated plainly because a verifier that oversells itself is
 worse than none. The figure check catches an *invented* number: one that matches no stored
-metric at any sensible rounding. It does not reliably catch a *substituted* one. Around fourteen
-thousand legitimate metric values are stored across the result files, so a wrong figure at three
-decimals can coincide with some other real metric by chance; a deliberate swap of 0.661 for
+metric at any sensible rounding. It does not reliably catch a *substituted* one. Tens of thousands
+of legitimate metric values are stored across the result files (the report prints the count), so a
+wrong figure at three decimals can coincide with some other real metric by chance; a deliberate swap of 0.661 for
 0.761 passes this check for that reason. The hash check is what catches substitution: it fails
 on any edit made after SHA256SUMS.txt was written. Run both, and rebuild the hashes only from a
 clean `hackathon/tools/make_presentation.py` run.
@@ -64,7 +64,7 @@ ALLOWED = {
 METRIC_KEY = re.compile(
     r'kappa|macro_f1|weighted_f1|f1_|per_stage|accuracy|tst|sleep_time|error_minutes|mae|'
     r'log_loss|brier|ece|covered|coverage|width|spread|gain|temperature|minutes|'
-    r'correlation|ratio|groups|people|epochs|seconds|seed', re.I)
+    r'correlation|ratio|groups|people|epochs|seconds|seed|hours|tau|p_holm|p_two_sided|p_value|bootstrap_p|share|rows', re.I)
 
 
 def result_values():
@@ -83,18 +83,22 @@ def result_values():
         for n in (0, 1, 2, 3):
             found.add(f'{round(float(x), n):.{n}f}')
             found.add(f'{round(float(x) * 100, n):.{n}f}')
-        found.add(f'{abs(round(float(x), 3)):.3f}')
+            # The scanner reads digits only, so a figure printed with a minus sign arrives unsigned.
+            found.add(f'{abs(round(float(x), n)):.{n}f}')
 
-    def walk(o, key=''):
+    def walk(o, key='', inherited=False):
+        named = inherited or bool(METRIC_KEY.search(key or ''))
         if isinstance(o, dict):
             for k, v in o.items():
-                walk(v, k)
+                # A summary stored as {'kappa': {'mean': ..., 'ci95': [...]}} names the metric one level
+                # up; only those two generic child keys inherit it, so the pool does not balloon.
+                walk(v, k, named and k in ('mean', 'ci95', 'mean_change', 'mean_difference'))
         elif isinstance(o, list):
             for v in o:
-                walk(v, key)
+                walk(v, key, inherited)
         elif isinstance(o, bool):
             pass
-        elif isinstance(o, (int, float)) and METRIC_KEY.search(key or ''):
+        elif isinstance(o, (int, float)) and named:
             add(o)
 
     for p in sorted(ROOT.glob('results/**/*.json')) + sorted(ROOT.glob('neurorelease/**/out/*.json')):
@@ -122,6 +126,31 @@ def shown_numbers(html_path):
     text = re.sub(r'\bet al\.\s*(19|20)\d\d', ' ', text)
     text = re.sub(r'\b[0-9a-f]{16,}\b', ' ', text)      # content hashes
     text = re.sub(r'(\d),(\d{3})\b', r'\1\2', text)       # 294,208 is one number, not two
+    out = []
+    for m in re.finditer(r'(?<![\w.])(\d+(?:\.\d+)?)(?![\w])', text):
+        out.append((m.group(1), text[max(0, m.start() - 60):m.end() + 30].strip()))
+    return out
+
+
+def paper_numbers():
+    """Numbers in the paper source after the \\val macros are replaced by their generated values."""
+    paper = ROOT / 'paper'
+    if not (paper / 'main.tex').exists():
+        return []
+    defs = dict(re.findall(r'\\csname val@([^\\]+)\\endcsname\{([^}]*)\}', (paper / 'numbers.tex').read_text()))
+    text = (paper / 'main.tex').read_text()
+    text = text.split('\\begin{document}', 1)[1]                       # the preamble holds layout lengths
+    text = text.replace('\\input{table1}', (paper / 'table1.tex').read_text())
+    text = re.sub(r'(?<!\\)%.*', ' ', text)                               # comments
+    text = re.sub(r'\\val\{([^}]*)\}\{([^}]*)\}\{([^}]*)\}', lambda m: defs[f'{m[1]}@{m[2]}@{m[3]}'], text)
+    text = re.sub(r'\\(cite|ref|label|url|input|includegraphics|bibliography|bibliographystyle|texttt)'
+                  r'(\[[^\]]*\])?\{[^}]*\}', ' ', text)
+    text = re.sub(r'\\begin\{tabular\}\{[^}]*\}', ' ', text)
+    text = re.sub(r'\\(begin|end)\{[^}]*\}(\[[^\]]*\])?', ' ', text)
+    text = re.sub(r'\\[a-zA-Z]+\*?', ' ', text)                          # remaining commands
+    text = text.replace('$', ' ').replace('{', ' ').replace('}', ' ').replace('~', ' ')
+    text = text.replace('--', ' ').replace(',', ' , ')
+    text = re.sub(r'(\d) , (\d{3})\b', r'\1\2', text)                     # 10,000 is one number
     out = []
     for m in re.finditer(r'(?<![\w.])(\d+(?:\.\d+)?)(?![\w])', text):
         out.append((m.group(1), text[max(0, m.start() - 60):m.end() + 30].strip()))
@@ -157,14 +186,16 @@ def main():
     pages = [p for p in (ROOT / 'hackathon/handout/goldilocks_handout.html',
                          ROOT / 'hackathon/slides/goldilocks_support_slides.html',
                          ROOT / 'README.md') if p.exists()]
+    pages += sorted((ROOT / 'docs/model_cards').glob('*.md'))   # hand-written, so worth checking too
     if not pages:
         print(json.dumps({'error': 'no generated presentation found; run hackathon/tools/make_presentation.py'}))
         return 1
 
     unsupported = []
     checked = 0
-    for page in pages:
-        for num, context in shown_numbers(page):
+    sources = [(page.name, shown_numbers(page)) for page in pages] + [('paper/main.tex', paper_numbers())]
+    for name, numbers in sources:
+        for num, context in numbers:
             if num in ALLOWED or num.lstrip('0') in ALLOWED:
                 continue
             checked += 1
@@ -173,7 +204,7 @@ def main():
             stripped = num.rstrip('0').rstrip('.') if '.' in num else num
             if stripped in values:
                 continue
-            unsupported.append({'page': page.name, 'number': num, 'context': ' '.join(context.split())})
+            unsupported.append({'page': name, 'number': num, 'context': ' '.join(context.split())})
 
     hash_problems = check_hashes()
     report = {

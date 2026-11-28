@@ -31,7 +31,12 @@ RECIPES = ['cnn', 'cnn_lowpass16', 'cnn_hfdrop']
 DATASETS = ['sleep_edf', 'dodh', 'hmc']
 
 
+MATCHED = False   # --matched-passes: use the 10-pass plain CNN at seed 20261108 (deviations log, 28 Nov)
+
+
 def folder(recipe, seed):
+    if MATCHED and recipe == 'cnn' and seed == SEEDS[0]:
+        return f'cnn_seed{seed}'
     return recipe if seed == SEEDS[0] else f'{recipe}_seed{seed}'
 
 
@@ -76,7 +81,11 @@ def main():
     ap.add_argument('--ext-cache', required=True)
     ap.add_argument('--new-cache', required=True)
     ap.add_argument('--only-seed', type=int, help='score one seed and stop (warms the row cache)')
+    ap.add_argument('--matched-passes', action='store_true',
+                    help='compare 10-pass models with the 10-pass plain CNN at every seed (writes seeds_matched_passes.json)')
     args = ap.parse_args()
+    global MATCHED
+    MATCHED = args.matched_passes
     pe.cc.TWOCHANNEL = False
     rng = np.random.default_rng(pe.SEED)
     trans, prior = fit_trans_prior(args.boas_cache)
@@ -94,7 +103,7 @@ def main():
             boas[name] = json.loads((ROOT / 'results' / name / 'cnn_metrics.json').read_text())['cnn_results']['kappa']
             rows[name] = {}
             for ds in DATASETS:
-                if seed == SEEDS[0]:          # the original runs, already scored by prereg_v2_eval.py
+                if name == recipe:            # the original runs, already scored by prereg_v2_eval.py
                     rows[name][ds] = [{k: r[k] for k in ['recording', 'kappa', 'wake_recall']}
                                       for r in first[ds][recipe]]
                 else:
@@ -102,9 +111,17 @@ def main():
             print(name, round(boas[name], 3),
                   {ds: round(float(np.nanmean([r['wake_recall'] for r in rows[name][ds]])), 3) for ds in DATASETS},
                   flush=True)
+    frozen = {ds: [{k: r[k] for k in ['recording', 'kappa', 'wake_recall']} for r in first[ds]['cnn']]
+              for ds in DATASETS}
+    if MATCHED:
+        rows['cnn_frozen_25_passes'] = frozen
+        boas['cnn_frozen_25_passes'] = json.loads((ROOT / 'results/cnn/cnn_metrics.json').read_text())['cnn_results']['kappa']
     report = {'addendum': 'PREREGISTRATION.md, prereg-v2.1 item 1 (post-result robustness check)',
               'seeds': SEEDS, 'boas_kappa': boas, 'mean_wake_recall': {}, 'matched_seed_change': {},
               'change_vs_frozen_cnn': {}, 'pooled_over_seeds': {}, 'robust': {}}
+    if MATCHED:
+        report['matched_passes'] = ('every seed compared with the 10-pass plain CNN of the same seed; '
+                                    'see the 28 November entry of the deviations log')
     for name in rows:
         report['mean_wake_recall'][name] = {ds: float(np.nanmean([r['wake_recall'] for r in rows[name][ds]]))
                                             for ds in DATASETS}
@@ -117,17 +134,18 @@ def main():
                      'kappa': pe.paired(rows[base][ds], rows[new][ds], 'kappa', rng),
                      'boas_kappa_drop': boas[base] - boas[new]} for ds in DATASETS}
             report['change_vs_frozen_cnn'][recipe][str(seed)] = {
-                ds: pe.paired(rows['cnn'][ds], rows[new][ds], 'wake_recall', rng) for ds in DATASETS}
+                ds: pe.paired(frozen[ds], rows[new][ds], 'wake_recall', rng) for ds in DATASETS}
         pooled = {}
         for ds in DATASETS:
             avg = lambda r: [{'wake_recall': float(np.nanmean([rows[folder(r, s)][ds][i]['wake_recall'] for s in SEEDS]))}
-                             for i in range(len(rows['cnn'][ds]))]
+                             for i in range(len(frozen[ds]))]
             pooled[ds] = pe.paired(avg('cnn'), avg(recipe), 'wake_recall', rng)
         report['pooled_over_seeds'][recipe] = pooled
         report['robust'][recipe] = all(report['matched_seed_change'][recipe][str(s)][ds]['wake_recall']['mean_change'] > 0
                                        for s in SEEDS for ds in DATASETS)
     (ROOT / 'results/prereg_v2_1').mkdir(parents=True, exist_ok=True)
-    (ROOT / 'results/prereg_v2_1/seeds.json').write_text(json.dumps({**report, 'per_person': rows}, indent=2))
+    out_name = 'seeds_matched_passes.json' if MATCHED else 'seeds.json'
+    (ROOT / 'results/prereg_v2_1' / out_name).write_text(json.dumps({**report, 'per_person': rows}, indent=2))
     for recipe in ['cnn_lowpass16', 'cnn_hfdrop']:
         print(recipe, 'robust', report['robust'][recipe])
         for s in SEEDS:

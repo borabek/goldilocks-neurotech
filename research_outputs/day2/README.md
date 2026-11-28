@@ -252,7 +252,7 @@ does nothing measurable on DOD-H and hurts on HMC. `cnn_lowpass16` is worse: poo
 −0.026, −0.049 and −0.112.
 
 The larger lesson is about the plain CNN itself. Its wake recall on Sleep-EDF is 0.13, 0.30 and
-0.32 across three seeds with the same data and recipe, and on HMC 0.64, 0.76 and 0.61. BOAS kappa
+0.31 across three seeds with the same data and recipe, and on HMC 0.64, 0.76 and 0.61. BOAS kappa
 moves by only 0.006 across the same seeds. The seed chosen for the frozen model happens to sit at
 the bottom of that range on Sleep-EDF. So a single-seed difference of 5 to 7 points in external
 wake recall is inside what the seed alone does, and the prereg-v2 result was most likely that.
@@ -264,6 +264,41 @@ difference of a few points between two single-seed CNNs does not.
 What survives of the 16-30 Hz story is what the band occlusion below shows on the frozen model: the
 CNN does use beta power as a wake cue. Training it to do without that cue does not reliably help it
 on other devices.
+
+### Correction, 28 November: matched training length (`results/prereg_v2_1/seeds_matched_passes.json`)
+
+While writing the model cards I found that the comparison above is not like for like. The frozen
+plain CNN in `results/cnn/` was trained for 25 passes (pass 21 selected). `cnn_lowpass16`,
+`cnn_hfdrop` and all six replicate-seed models were trained for 10, despite the prereg-v2 text
+saying the recipe matched. So the seed 20261108 row above compares a 25-pass plain CNN with 10-pass
+variants. The correction was written into the deviations log and pushed before its result: train a
+10-pass plain CNN at seed 20261108 (`results/cnn_seed20261108/`) and use it as that seed's baseline.
+The rule for "robust" is unchanged. The table above is left as it was.
+
+Plain CNN, 10 passes at every seed, mean wake recall:
+
+| Seed | BOAS kappa | Sleep-EDF | DOD-H | HMC |
+| --- | --- | --- | --- | --- |
+| 20261108 | 0.719 | 0.100 | 0.452 | 0.649 |
+| 20261109 | 0.722 | 0.304 | 0.578 | 0.762 |
+| 20261110 | 0.724 | 0.315 | 0.479 | 0.611 |
+| frozen model (25 passes, seed 20261108) | 0.728 | 0.130 | 0.503 | 0.638 |
+
+Training length is not what moves the number: at the same seed, 10 and 25 passes give 0.10 and 0.13 on
+Sleep-EDF. The seed does: 0.10 to 0.31 with everything else fixed.
+
+`cnn_hfdrop` against the 10-pass plain CNN of the same seed, change in wake recall [95% CI]:
+
+| Seed | Sleep-EDF | DOD-H | HMC |
+| --- | --- | --- | --- |
+| 20261108 | +0.079 [0.051, 0.108] | +0.103 [0.063, 0.144] | +0.059 [0.032, 0.084] |
+| 20261109 | −0.017 [−0.039, 0.006] | −0.029 [−0.061, 0.001] | −0.107 [−0.153, −0.067] |
+| 20261110 | +0.040 [0.019, 0.063] | +0.036 [0.003, 0.065] | −0.073 [−0.125, −0.027] |
+| Pooled over seeds | +0.034 [0.017, 0.053] | +0.036 [0.008, 0.064] | −0.040 [−0.069, −0.014] |
+
+The conclusion does not change: four of nine matched comparisons are at or below zero, so the effect
+is not robust. Pooled, the dropout helps a little on Sleep-EDF and DOD-H and hurts on HMC.
+`cnn_lowpass16` pooled: −0.016, −0.032 and −0.116.
 
 ### Multiple testing (`results/prereg_v2_1/holm.json`)
 

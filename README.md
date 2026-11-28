@@ -28,13 +28,14 @@ off-the-shelf baseline. DOD-H's five human scorers give a ceiling.
   0.13 on Sleep-EDF for the frozen model. Band occlusion shows it uses 16-30 Hz power as a wake
   cue on every dataset.
 - Retraining the CNN without that cue looked like a fix on one seed. Across three seeds it isn't.
-  The plain CNN's own Sleep-EDF wake recall ranges from 0.13 to 0.32 with the seed alone, so
+  The plain CNN's own Sleep-EDF wake recall ranges from 0.10 to 0.31 with the seed alone, so
   single-seed comparisons between CNN variants of a few points carry no weight.
 - A label-free sleep-window detector, applied only to recordings longer than 14.4 hours, cuts
   YASA's sleep-time error on Sleep-EDF from 110 to 41 min and v2's from 236 to 158 min, and leaves
   night recordings untouched.
 
-The full write-ups, with every number traced to a result file, are in
+The preprint is [`paper/main.pdf`](paper/main.pdf). The full write-ups, with every number traced to a
+result file, are in
 [`research_outputs/day1/`](research_outputs/day1/README.md) (exploratory checks) and
 [`research_outputs/day2/`](research_outputs/day2/README.md) (the pre-registered test and the
 checks that followed it).
@@ -57,7 +58,8 @@ tests/                    unit tests
 data/                     derived features, selections and manifests (raw recordings are downloaded)
 results/                  every saved model, prediction and metric
 research_outputs/         dated write-ups of the research rounds
-docs/                     data sources and licences, where files moved
+paper/                    the preprint: LaTeX source, figure and number scripts, built PDF
+docs/                     data sources and licences, model cards, where files moved
 hackathon/                the hackathon submission, kept as it was
 neurorelease/             the drug-delivery research track from the hackathon
 ```
@@ -79,6 +81,8 @@ python scripts/verify_claims.py          # every figure on the slides and handou
                                          # saved results, and every file against SHA256SUMS.txt
 python src/reproduce_v2.py               # v2 tests and evaluation from the saved weights
 python src/external_eval.py score        # re-score the pre-registered external test
+python analysis/benchmark.py             # the paper's main table and ranking test
+python paper/make_numbers.py && python paper/make_figures.py   # regenerate the paper's numbers and figures
 ```
 
 The raw recordings are not in the repository. `scripts/fetch_external_data.py`,

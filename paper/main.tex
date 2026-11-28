@@ -1,0 +1,400 @@
+\documentclass[10pt,twocolumn]{article}
+\usepackage[a4paper,margin=18mm,columnsep=6mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{enumitem}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage[hidelinks]{hyperref}
+\setlist{nosep,leftmargin=*}
+\input{numbers}
+
+\title{\Large\bfseries Held-out people are not a new device:\\a pre-registered test of forehead-EEG sleep staging on unseen recorders}
+\author{Bora Bayrakci\\[1pt]\small University of Essex\\\small\texttt{ilbanbora@gmail.com}}
+\date{\small Preprint, November 2026. Code, results and pre-registration: \url{https://github.com/borabek/goldilocks-neurotech}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Sleep stagers for wearable EEG are usually chosen by their score on held-out people from the
+device they were trained on. I tested whether that choice says anything about a new device. Two
+model families were trained on a two-channel forehead headband (BOAS) and frozen: a gradient-boosted
+spectral-feature model and seven variants of a small convolutional network. They were then
+evaluated on Sleep-EDF and, under an analysis plan committed before any label was opened, on DOD-H
+and a 25-recording subset of HMC. Across the eight headband models, the BOAS ranking did not predict
+the ranking on any new dataset (Kendall $\tau$ between $\val{rank}{sleep_edf}{tau}$ and
+$\val{rank}{hmc}{tau}$). The model with the lowest BOAS kappa was the best headband model on
+DOD-H and HMC, and an off-the-shelf stager trained on clinical recordings (YASA) beat every
+headband model on all three new datasets (kappa \val{dodh}{yasa}{kappa} on DOD-H). A label-free
+gain calibration helped where the amplitude mismatch was large (DOD-H, macro-F1 $+0.161$) and hurt
+where it was small (HMC, $-0.088$). The convolutional models lost wake on clinical recordings, and
+band occlusion shows they use 16--30\,Hz power as a wake cue; but a retraining meant to remove that
+reliance did not hold up across training seeds, because the seed alone moved Sleep-EDF wake
+recall from 0.10 to 0.31. In-domain score was not a safe guide to cross-device performance here,
+and single-seed comparisons between network variants carried less information than they appeared to.
+\end{abstract}
+
+\section{Introduction}
+
+Consumer and research headbands now record EEG at home over many nights, and automatic sleep
+staging is what makes those recordings usable \cite{phan2022}. A headband stager is normally
+developed the way any supervised model is: train on some people, select on others, report a score
+on held-out people from the same device. Those held-out people share the electrodes, the amplifier,
+the montage, the population and the scoring team with the training set. The score they give answers
+``how well does this model work on another person wearing this headband?'' It does not answer
+``how well will it work on a different recorder?'', which is the question that matters once a model
+is shipped to a new device, a new clinic or a new version of the hardware.
+
+Work on cross-dataset sleep staging has shown that performance drops when a model meets an unseen
+database \cite{alvarez2021,robustsleepnet,sleepdg,usleep}. In general machine learning, in-domain and
+out-of-domain accuracy are often strongly correlated across models \cite{miller2021}, which would
+make in-domain selection a reasonable proxy. Whether that holds for a forehead headband and
+clinical polysomnography (PSG), which differ in electrode type, placement, amplitude and recording
+length, is an empirical question. This paper asks it directly and fixes the analysis in advance.
+
+The contributions are:
+\begin{enumerate}
+\item A ranking test: eight models trained on the same headband data, compared on held-out headband
+people and on three external datasets. The in-domain ranking carries no information about the
+external one.
+\item A pre-registered external test on two datasets opened only after the hypotheses, thresholds,
+models and analysis code were committed and hashed (tag \texttt{prereg-v1}). One hypothesis held on
+one dataset and was contradicted on the other; the other was mixed on both.
+\item A mechanism study of the convolutional models' wake failure, including a pre-registered
+retraining and a replicate-seed check that overturned its apparent success.
+\end{enumerate}
+Every number in this paper is generated from result files in the repository, and a script checks
+the text against them.
+
+\section{Related work}
+
+\textbf{Cross-dataset sleep staging.} Alvarez-Estevez and Rijsman evaluated one architecture on six
+public databases and found that external performance fell below local performance, with ensembles
+of local models narrowing the gap \cite{alvarez2021}. RobustSleepNet was trained leave-one-dataset-out
+on eight datasets so that it would handle arbitrary montages, reaching most of the F1 of a dataset-specific
+model on unseen data \cite{robustsleepnet}. U-Sleep trained on many clinical cohorts for the same
+reason \cite{usleep}, and SleepDG framed the problem as domain generalisation with feature alignment
+\cite{sleepdg}. These studies train on many PSG sources to get robustness. The setting here is the
+opposite and is common in practice: a single wearable device, a single training dataset, and a model
+chosen on that device's held-out people.
+
+\textbf{In-domain versus out-of-domain performance.} Miller et al.\ reported that across many models,
+out-of-distribution accuracy is often a linear function of in-distribution accuracy
+\cite{miller2021}. Gulrajani and Lopez-Paz showed that how a model is selected decides much of what
+domain generalisation methods appear to achieve \cite{gulrajani2021}. The ranking test here is a small
+instance of both questions for sleep staging under a device change.
+
+\textbf{Selective prediction.} Withholding outputs when confidence is low trades coverage for error
+\cite{geifman2017}. I use risk--coverage curves to ask whether the models' own confidence could
+protect a sleep-time claim on a new device.
+
+\textbf{Reference tools.} YASA is an open-source stager trained on several thousand clinical
+recordings and is used here as the off-the-shelf baseline \cite{yasa}. DOD-H provides five
+independent scorings per night, which gives a human ceiling \cite{dod}.
+
+\section{Data and models}
+
+\textbf{Training data.} BOAS contains 128 nights with a forehead headband and simultaneous PSG,
+staged by expert consensus \cite{boas}. The models use the two headband channels. People were split
+before any modelling into fitting, selection, calibration and test groups; the 20 test people were
+used for every BOAS number below.
+
+\textbf{External data.} Sleep-EDF \cite{kemp2000}: the first night of subjects 00--19, Fpz-Cz,
+scored with Rechtschaffen and Kales rules (stages 3 and 4 merged into N3). These recordings last about
+23 hours, and most of each is daytime wake, so the Sleep-EDF results were looked at during development
+and are not a fresh test. DOD-H \cite{dod}: 25 healthy adults, frontal derivations FP1-F3 and FP2-F4,
+reference built from the five scorers with the dataset's own consensus rules. HMC \cite{hmc}: 25 of
+the 151 recordings, drawn with a fixed seed from the file listing, channel F4-M1, AASM scoring by the
+clinic's technologists, a clinical population. DOD-H and HMC were downloaded and their labels opened
+only after the pre-registration was tagged.
+
+\textbf{Models.} All models were frozen before external testing.
+\begin{itemize}
+\item \emph{v2}: gradient-boosted trees on 14 spectral and amplitude features per 30-second epoch
+and channel, with temporal context and a hidden-Markov smoother; channel probabilities are averaged.
+\item \emph{CNN family}: a small one-dimensional convolutional network on the 64\,Hz signal with
+instance normalisation after every convolution \cite{ulyanov2016}, which makes it close to
+scale-invariant. Seven variants differ in class weighting, augmentation and a temporal context head;
+the plain CNN is the reference variant.
+\item \emph{YASA} 0.7.0 \cite{yasa}, run on the same channel, never trained on BOAS.
+\end{itemize}
+
+\section{Evaluation protocol}
+
+\textbf{Scoring.} The primary window is the whole recording, restricted to epochs with a reference
+label and usable signal. Metrics are computed per person and then averaged: Cohen's kappa, macro-F1,
+wake F1 and recall, and the absolute error in total sleep time. Uncertainty comes from a paired
+person-level bootstrap with 10,000 resamples.
+
+\textbf{Pre-registration.} Before DOD-H and HMC were opened, the hypotheses, decision thresholds,
+models, two alternative headlines and the scoring code were committed and their hashes stored. Two
+hypotheses were tested on each dataset:
+\begin{itemize}
+\item \emph{H1 (amplitude).} A label-free gain, estimated once per dataset from the 75th percentile of
+epoch log standard deviation and matched to BOAS, improves v2's macro-F1 by at least 0.03 with a
+95\% interval above zero. H1b, added as a dated amendment before any external data were opened,
+tests the sleep-time error and kappa.
+\item \emph{H2 (wake).} The plain CNN's wake recall is below 0.50 while v2's is at least 0.60
+(supported); at least 0.70 contradicts it; anything between is mixed.
+\end{itemize}
+Holm correction runs over the six confirmatory tests. Analyses added later are labelled as
+exploratory, and every departure from the plan is logged in the pre-registration's deviations
+section.
+
+\section{Results}
+
+\subsection{In-domain ranking does not predict external ranking}
+
+Figure~\ref{fig:ranking} and Table~\ref{tab:bench} show the main result. On BOAS the CNN variants
+lead, with kappa up to \val{boas}{cnn_context_sqrtbalanced}{kappa}, ahead of v2
+(\val{boas}{v2}{kappa}) and YASA (\val{boas}{yasa}{kappa}). On every external dataset the order
+changes. Kendall's $\tau$ between BOAS kappa and external kappa across the eight headband models was
+$\val{rank}{sleep_edf}{tau}$ on Sleep-EDF, $\val{rank}{dodh}{tau}$ on DOD-H and $\val{rank}{hmc}{tau}$ on
+HMC. The best model on BOAS ranked \val{rank}{sleep_edf}{bestrank}th, \val{rank}{dodh}{bestrank}th
+and \val{rank}{hmc}{bestrank}rd of eight. The class-balanced CNN, which had the lowest BOAS kappa
+(\val{boas}{cnn_balanced}{kappa}), was the best headband model on DOD-H
+(\val{dodh}{cnn_balanced}{kappa}) and HMC (\val{hmc}{cnn_balanced}{kappa}). With eight models these
+correlations are imprecise, but none of them points towards in-domain selection working.
+
+YASA, which never saw the headband and ranked last on it, was the best model on all three external
+datasets. On DOD-H its kappa of \val{dodh}{yasa}{kappa} sits just below the range of the individual
+human scorers, each compared with the consensus of the other four (0.690 to 0.789).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/fig1_ranking.pdf}
+\caption{Kappa on held-out BOAS people and on three external datasets. Lines join the same frozen
+model. The ordering on the headband does not carry over.}
+\label{fig:ranking}
+\end{figure}
+
+\begin{table*}[t]
+\centering\small
+\caption{Main benchmark, whole-recording window. Mean over people with 95\% bootstrap intervals.
+BOAS: 20 people; Sleep-EDF: 20; DOD-H: 25; HMC: 25.}
+\label{tab:bench}
+\input{table1}
+\end{table*}
+
+\subsection{The pre-registered external test}
+
+\textbf{H1, amplitude.} On DOD-H, whose signals are about four times smaller than the headband's
+(estimated gain \val{gain}{dodh}{q75}), uncalibrated v2 collapsed (kappa \val{dodh}{v2}{kappa}) and
+the calibration recovered a large part of it: macro-F1 $+0.161$ [0.119, 0.202], kappa $+0.207$
+[0.145, 0.273], sleep-time error $-11.3$ minutes [$-19.1$, $-2.3$]. H1 and H1b were supported, and
+they are the only two tests that survive Holm correction. On HMC the estimated gain was a modest
+\val{gain}{hmc}{q75}, and applying it made v2 worse: macro-F1 $-0.088$ [$-0.127$, $-0.049$] and
+sleep-time error $+81.7$ minutes [49.8, 117.5]. Both were contradicted. An exploratory error analysis
+shows how: scaling the signal up pushed REM, the stage whose EEG is closest to wake, over the wake
+boundary. The share of reference REM called wake rose from 11\% to 43\%. The gain statistic responds
+to montage, population and the amount of wake as well as to amplitude, so it overshoots when the true
+mismatch is small.
+
+\textbf{H2, wake.} The plain CNN's wake recall was 0.503 [0.420, 0.586] on DOD-H and 0.638 [0.561,
+0.710] on HMC, between the two pre-registered thresholds on both: mixed. On Sleep-EDF it was
+0.13. The near-total loss of wake there therefore does not replicate on night recordings, although
+the CNNs still miss a third to a half of wake.
+
+\textbf{Headline.} The pre-registration held two alternative headlines. The data chose the second:
+selecting by in-domain score did not pick the models that travel, and amplitude calibration
+explained part of the drop on only one of the two new datasets.
+
+\subsection{Why the CNNs lose wake}
+
+Several explanations were ruled out on Sleep-EDF. Changing the normalisation window or rescaling the
+input moved the CNN's macro-F1 by no more than 0.001, as the instance-normalisation argument predicted.
+Cropping to a label-free night window barely helped, and only an oracle window built from the labels
+removed the sleep-time error. Switching the input to Pz-Oz raised wake recall from 0.13 to 0.37, still
+far below the 0.87 on the headband. Rebuilding the input caches from the original files reproduced
+them bit for bit.
+
+The spectrum of wake points elsewhere. Headband wake carries about twice the 16--30\,Hz power share of
+Sleep-EDF wake (0.071 against 0.038), consistent with forehead muscle activity. Band occlusion on the
+frozen CNN (Figure~\ref{fig:mech}b) shows that removing 16--30\,Hz lowers the wake probability of wake
+epochs on every dataset, two to four times more than it lowers that of sleep epochs: a specific wake
+cue, used on all devices rather than only on the headband. Removing 0.5--4\,Hz has a larger effect, but
+it raises the wake probability of sleep epochs just as much, so it is the network's general sleep
+signal rather than a wake cue.
+
+A pre-registered retraining tested whether removing the reliance helps. Dropping 16--30\,Hz at
+random during training raised wake recall on all three external datasets on the original seed, and
+the effect survived Holm correction. A replicate-seed check, added and logged as a deviation after
+that result, overturned it (Figure~\ref{fig:mech}a). The retrained models used 10 training passes
+while the frozen CNN had used 25, so the check compares every model with a 10-pass plain CNN of the
+same seed (a discrepancy found later and logged as a deviation). Across three seeds, that plain CNN's
+Sleep-EDF wake recall ranged from 0.10 to 0.31, its DOD-H wake recall from 0.45 to 0.58 and its HMC
+wake recall from 0.61 to 0.76, while BOAS kappa moved by less than 0.01. Training length was not the
+cause: at the original seed, 10 and 25 passes gave 0.10 and 0.13 on Sleep-EDF. Four of the nine
+matched-seed comparisons for the dropout model were at or below zero. Pooled over seeds, it helped a
+little on Sleep-EDF and DOD-H and hurt on HMC. Every single-seed CNN comparison in this work, including the H2
+verdict on HMC, has to be read with this spread in mind.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/fig2_mechanism.pdf}
+\caption{(a) Wake recall of three CNN recipes, each trained with three seeds (dots; bars are the
+means). The spread across seeds is as large as the difference between recipes. (b) Change in the
+frozen CNN's wake probability on reference-wake epochs when one band is removed at test time
+(symmetric log scale).}
+\label{fig:mech}
+\end{figure*}
+
+\subsection{Recording length and the sleep-time error}
+
+On Sleep-EDF, v2 overestimated sleep by 236 minutes on average, because most of each recording is
+daytime wake that it partly scores as sleep (Figure~\ref{fig:failure}). A label-free detector that keeps
+the longest smoothed run of sleep, with its two settings chosen on 56 development recordings, cut v2's
+error to 158 minutes and YASA's from 110 to 41 minutes. On night recordings it made things slightly
+worse. Applied only to recordings longer than 14.4 hours, a threshold fixed from the lengths of
+training and development recordings, it keeps the gain on Sleep-EDF and leaves every night recording
+unchanged. No test recording falls near the threshold, so this rule is safe rather than tested.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/fig3_failure_case.pdf}
+\caption{A Sleep-EDF recording where the reference has 473 minutes of sleep in a 23-hour recording.
+v2 and the CNN both score most of the day as N2. YASA tracks the night but also scores scattered
+daytime sleep.}
+\label{fig:failure}
+\end{figure*}
+
+\subsection{Can confidence protect a claim?}
+
+Figure~\ref{fig:rc} shows risk--coverage curves, ranking epochs by the model's top probability. On
+BOAS both models' confident epochs are mostly right. Off the headband this breaks: on Sleep-EDF the
+CNN's most confident epochs are mostly wrong (area under the curve 0.64), and on HMC the epochs v2 is
+most sure of are wrong more often than its epochs overall. A recording-level gate that withholds
+the sleep-time claim when the estimated gain is far from one did better where the mismatch was real:
+it blocked 4 of 12 large errors on Sleep-EDF without withholding a good claim, and flagged 24 of 25
+DOD-H recordings as out of range. On BOAS it withheld four good claims to block one bad one. A useful
+gate needs more than a single amplitude statistic.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/fig4_risk_coverage.pdf}
+\caption{Risk--coverage curves: error rate among the epochs kept when epochs are kept in order of the
+model's own confidence. Lower is better.}
+\label{fig:rc}
+\end{figure*}
+
+\subsection{The gap to the vendor's scorer}
+
+BOAS ships with the device maker's own stager. On the epochs it labels, it reaches kappa
+\val{bb}{vendor_covered}{bitbrain} on the test people, against \val{bb}{vendor_covered}{cnn_ensemble}
+for an ensemble of seven CNNs. One exploratory attempt averaged the ensemble's probabilities with v2's,
+with the weight (\val{bb}{w}{v2} for v2) chosen on six selection people only. On the test people this
+reached \val{bb}{vendor_covered}{fusion}, and the remaining gap to the vendor,
+$\val{bb}{paired}{fusion_minus_bitbrain_vendor_covered}$ [$\val{bb}{paired}{fusion_minus_bitbrain_vendor_covered_lo}$,
+$\val{bb}{paired}{fusion_minus_bitbrain_vendor_covered_hi}$], is no longer distinguishable from zero. The
+test people had been inspected before, so this says only that the two families make different errors
+on the headband.
+
+\section{Discussion}
+
+The practical lesson is a rule about selection: choose a model for a new device on validation data
+that looks like the deployment setting, not only on held-out people from the training device. Here
+the in-domain score was close to uninformative, and the most useful single fact was something the
+in-domain score could not show: YASA, trained on many clinical recordings, was robust to the device
+change, and every model trained on one headband was not.
+
+The two families failed differently. v2 depends on absolute amplitude, so a gross gain mismatch
+breaks it and a label-free correction repairs much of the damage; a small mismatch is better left
+alone. The CNNs are scale-invariant by design and fail on wake instead, partly because they learned a
+high-frequency wake cue that clinical frontal derivations carry less of. Neither failure was visible
+on held-out headband people.
+
+The replicate-seed result is the finding I would most want another group to check. If seed-to-seed
+spread in external wake recall is this large for other small networks, then single-seed comparisons
+of architectures or augmentations under device shift are close to uninformative, however carefully
+their in-domain scores are measured.
+
+\textbf{Future work.} The next steps follow the project's roadmap. Engineering: a shift check that
+withholds the sleep-time claim when a recording falls outside the training conditions, and a viewer
+that shows it. Research: train the sleep-window detector on data with real daytime wake; replace the
+single gain statistic with a multi-feature shift detector; repeat the ranking test with more model
+families and more seeds; validate on paired headband and PSG nights recorded for the purpose. Longer
+term, the daytime half of the original idea, attention during a focus task, needs its own consented
+recordings and ethics approval.
+
+\section{Limitations}
+
+Sleep-EDF was inspected during development, so only DOD-H and HMC are clean tests, each with 25
+people. All training data and two of the three external datasets come from healthy adults; HMC is a
+clinical sample but small. Eight models give an imprecise rank correlation. The external CNN numbers
+come from one training seed, and the seed check shows how much that matters. DOD-H's signals are
+band-limited compared with the others, which was noted before scoring but complicates the H2 reading
+there. The pre-registered H2 thresholds turned out to sit either side of the observed values, which
+made a mixed verdict likely. Nothing here supports clinical use.
+
+\section*{Data and code availability}
+All code, frozen models, saved predictions, metric files, the pre-registration with its amendments
+and deviations, and the scripts that generate every figure and number in this paper are in the
+repository linked above. Raw recordings are downloaded from their original sources by scripts in the
+repository. A Zenodo archive accompanies this version.
+
+\section*{Acknowledgements}
+The project began at the Oxford NeuroTech Hackathon (November 2026). The research reported here was
+carried out afterwards by the author alone.
+
+\small
+\bibliographystyle{unsrtnat}
+\bibliography{refs}
+
+\onecolumn
+\appendix
+\section{Appendix}
+
+\subsection{All headband models}
+The full per-model, per-dataset metrics, including the four CNN variants and three context models not
+shown in Table~\ref{tab:bench}, are in \texttt{results/paper/benchmark.json}. The script that writes it
+recomputes every value from the saved predictions and checks 108 of them against the metric files
+written at evaluation time.
+
+\subsection{Pre-registration verdicts}
+\begin{center}\small
+\begin{tabular}{lll}
+\toprule
+Test & DOD-H (25) & HMC (25) \\
+\midrule
+H1, macro-F1, v2 + gain vs v2 & supported: $+0.161$ [0.119, 0.202] & contradicted: $-0.088$ [$-0.127$, $-0.049$] \\
+H1b, sleep-time error (min) & supported: $-11.3$ [$-19.1$, $-2.3$] & contradicted: $+81.7$ [49.8, 117.5] \\
+H1b, kappa & supported: $+0.207$ [0.145, 0.273] & contradicted: $-0.088$ [$-0.135$, $-0.044$] \\
+H2, CNN wake recall & mixed: 0.503 (v2 0.142) & mixed: 0.638 (v2 0.760) \\
+Family gap, macro-F1 & mixed: $-0.149$ & closes: $-0.034$ [$-0.075$, 0.005] \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Checks added after the pre-registered result}
+Logged as addendum prereg-v2.1 before they were run. Holm correction across the six wake tests of the
+retrained CNNs: all three dropout results remained significant on the original seed (adjusted $p$ =
+0.001, 0.019 and 0.002). Replicate seeds: see the Results. Band occlusion: the pre-registered
+prediction that the 16--30\,Hz bands would matter more on BOAS than on the external datasets failed;
+the summed drop in wake probability was 0.048 on BOAS against 0.059, 0.066 and 0.088 elsewhere.
+Calibration: expected calibration error of the plain CNN was 0.053 on BOAS and 0.419 on Sleep-EDF.
+
+\subsection{Labelling scheme}
+BOAS has little N3: 3.6\% of scored epochs, against 14.0\% on DOD-H and 20.5\% on HMC. Every
+headband-trained model under-calls N3 everywhere, including on BOAS, where v2 sends 41\% of reference
+N3 to N2. The N3 deficit is a property of the training labels.
+
+\subsection{The drug-delivery track}
+The hackathon project had a second, separate track: predicting brain exposure from blood exposure and
+formulation, using the supporting data of Yousfan et al.\ \cite{yousfan2024} (402 rows, held out by
+source study). Measured blood exposure carried nearly all the signal; formulation descriptors did not
+transfer across studies, and adding them made predictions worse. A leakage audit found two
+measurements reported under two study titles each; after merging them, the best model was no longer
+distinguishable from a route-specific brain/blood ratio (difference interval $-0.097$ to $+0.015$ on
+the log scale). The audit's self-tests were rerun for this paper; the full model rerun needs the
+workbook, which is licensed for non-commercial use and is not redistributed. Saved outputs are in
+\texttt{neurorelease/exposure\_model/out/}.
+
+\subsection{Author contributions}
+B.B.\ designed the study, wrote the pre-registration, built and evaluated the models, analysed the
+results and wrote the paper.
+
+\end{document}
