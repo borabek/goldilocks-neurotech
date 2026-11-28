@@ -192,6 +192,16 @@ results are labelled post hoc.
     written; this note goes next to its result.
 - 27 November 2026, after the prereg-v2 result: replicate seeds were added despite the prereg-v2
   sentence ruling them out. See addendum prereg-v2.1; the prereg-v2 verdicts are unchanged by it.
+- 28 November 2026, found while writing the model cards: the prereg-v2 addendum says the two new
+  CNNs use the same 10 passes as `results/cnn/`. They don't match it: the frozen plain CNN was trained
+  for 25 passes (pass 21 selected), while `cnn_lowpass16`, `cnn_hfdrop` and every replicate-seed model
+  were trained for 10. Every comparison against the frozen CNN therefore mixes the recipe change with
+  a shorter training run, and the seed 20261108 entry of the prereg-v2.1 seed check compares a
+  25-pass plain CNN with 10-pass variants. Correction, written before its result is known: train a
+  10-pass plain CNN at seed 20261108 (`results/cnn_seed20261108/`), use it as the matched baseline for
+  that seed, and re-apply the prereg-v2.1 robustness rule unchanged. The frozen 25-pass CNN stays the
+  model of the pre-registered external test; its verdicts are unaffected. The original seed-check file
+  is kept as it was.
 
 ## Addendum prereg-v2: two CNNs that can't lean on 16-30 Hz
 
