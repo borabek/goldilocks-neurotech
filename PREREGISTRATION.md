@@ -273,3 +273,21 @@ CNN and `cnn_hfdrop` on each dataset, and per-stage F1 for v2 on HMC against DOD
 where H1 failed on HMC. For the CNN models, whose probabilities are saved or can be recomputed,
 expected calibration error (ECE, 10 equal-width bins on the top probability) on each dataset.
 Descriptive, no thresholds.
+
+## Addendum, 28 November 2026: two more seeds and a wider ranking test
+
+Written and pushed before either analysis below was run. Both are exploratory.
+
+**More seeds.** The plain CNN is trained with seeds 20261111 and 20261112, 10 passes, everything else as
+in the matched-length check. With the three 10-pass seeds already trained this gives five. Reported:
+each seed's BOAS kappa and its wake recall on Sleep-EDF, DOD-H and HMC, and the range across the five.
+The paper's statement that the seed alone moves external wake recall stands if the five-seed range of
+Sleep-EDF wake recall is at least 0.10 while the BOAS kappa range stays below 0.02; otherwise the
+statement is weakened in the text to match.
+
+**Wider ranking test.** Kendall's tau between BOAS kappa and external kappa, computed over every
+headband-trained model with predictions on all four datasets: v2, the seven CNN variants, the 10-pass
+plain CNNs at all seeds, and the lowpass and dropout CNNs at their three seeds. A 95% interval comes
+from resampling people within each dataset (10,000 resamples, seed 20261126) and recomputing every
+model's mean kappa and the tau. Also reported: the paired difference in kappa between YASA and the
+best headband model on each external dataset, with its person-level interval.
