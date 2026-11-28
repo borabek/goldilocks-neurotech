@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-28",
+  "workbook": "mp3c00880_si_003.xlsx (Yousfan et al., Mol. Pharmaceutics 2024, supporting information; CC BY-NC 4.0, not redistributed)",
+  "workbook_md5": "fdd98a50447d9fd21288b0c2ca653601",
+  "md5_matches_the_event_run": true,
+  "commands": [
+    "python neurorelease/exposure_model/exposure_model.py <workbook> <outdir>",
+    "python neurorelease/exposure_model/leakage_audit.py <workbook> <outdir>"
+  ],
+  "compared_with": ["out/exposure_results.json", "out/leakage_audit.json"],
+  "values_compared": {"exposure_results.json": 100, "leakage_audit.json": 177},
+  "values_that_differ": 0,
+  "audit_exit_status": 1,
+  "audit_exit_status_meaning": "by design: the audit exits non-zero because a headline verdict changes under source-merged grouping, as recorded on 7 November"
+}

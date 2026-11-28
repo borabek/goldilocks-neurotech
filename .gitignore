@@ -18,3 +18,6 @@ data/eeg_digital/
 data/external_sleepedf/*.edf
 data/external_sleepedf_dev/compact/*.npz
 data/external_hmc/compact/*.npz
+
+# Yousfan et al. supporting workbook: CC BY-NC 4.0, not redistributed
+data/external_yousfan/

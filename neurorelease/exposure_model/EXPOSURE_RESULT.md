@@ -77,3 +77,10 @@ when a verdict changes, so this cannot be missed in a rerun.
 - Study identity is a normalised title string, not a verified DOI. This is now audited rather than assumed: `leakage_audit.py` found two duplicated measurements split across folds and the headline comparison changes once they are merged (see the leakage audit section). Resolving identities by DOI remains outstanding work; the remaining 157 groups are unverified beyond the audit's four detectors.
 - CC BY-NC 4.0: no commercial use of models trained on these data.
 - Brain-derived quantities (brain Cmax, C0, Tmax, Tmin, residence time, every brain/blood ratio, and the workbook's own `AUC` ratio column) are excluded from the inputs by an assertion in the code, not by convention.
+
+## Rerun, 28 November 2026
+
+Both scripts were run again from the original workbook (same MD5 as on 7 November). Every value in
+`out/exposure_results.json` and `out/leakage_audit.json` came out the same, to within 1e-9.
+Details: `out/rerun_check.json`. The workbook itself stays out of the repository (CC BY-NC 4.0);
+keep a copy in `data/external_yousfan/`, which git ignores.
